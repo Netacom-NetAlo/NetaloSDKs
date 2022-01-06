@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint NetaloSDKs.podspec' to ensure this is a
+#  Be sure to run `pod spec lint NetacomSDKs.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "NetaloSDKs"
+  spec.name         = "NetacomSDKs"
   spec.version      = "0.0.1"
-    spec.summary      = "NetaloSDKs is a SDK support for CallSDK, ChatSDK, UISDK"
+    spec.summary      = "NetacomSDKs is a SDK support for CallSDK, ChatSDK, UISDK"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
     spec.description  = "Demo is SDK included for CallSDK, ChatSDK, UISDK support SDK for user app"
 
-  spec.homepage     = "http://EXAMPLE/NetaloSDKs"
+  spec.homepage     = "http://EXAMPLE/NetacomSDKs"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -84,7 +84,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/hieunetacom/NetaloSDKs.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/hieunetacom/NetacomSDKs.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -95,8 +95,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  #spec.source_files  = "NetaloSDKs/**/*.{h,m,swift}"
-  #spec.exclude_files = "NetaloSDKs/Exclude"
+  #spec.source_files  = "NetacomSDKs/**/*.{h,m,swift}"
+  #spec.exclude_files = "NetacomSDKs/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -138,5 +138,5 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-    spec.ios.vendored_frameworks = "ForwardMessageComponent.framework", "SelectGroupOwnerComponent.framework", "DocumentViewerComponent.framework", "ShareComponent.framework", "EditContactComponent.framework", "BackgroundPickerComponent.framework", "LocationPickerComponent.framework", "StickerPickerComponent.framework", "MediaDetailComponent.framework", "SearchComponent.framework", "CallComponent.framework", "ChatComponent.framework", "MediaPickerComponent.framework", "ContactDetailComponent.framework", "GroupDetailComponent.framework", "NACallSDK.framework", "CreateSecretChatComponent.framework", "AddContactComponent.framework", "WebViewComponent.framework", "NewGroupComponent.framework", "AccountComponent.framework", "ListContactComponent.framework", "ListCallComponent.framework", "ListGroupComponent.framework", "AuthorizationComponent.framework", "NetAloCoreComponent.framework", "NATheme.framework", "NALocalization.framework", "NASocketPlatform.framework", "NetAloFull.framework", "NetAloLite.framework", "NARealmPlatform.framework", "NANetworkPlatform.framework", "NADomain.framework", "NACoreUI.framework", "NACoreUtils.framework"
+    spec.ios.vendored_frameworks = "ForwardMessageComponent.framework", "SelectGroupOwnerComponent.framework", "DocumentViewerComponent.framework", "ShareComponent.framework", "EditContactComponent.framework", "NotificationComponent.framework" "BackgroundPickerComponent.framework", "LocationPickerComponent.framework", "StickerPickerComponent.framework", "MediaDetailComponent.framework", "SearchComponent.framework", "CallComponent.framework", "ChatComponent.framework", "MediaPickerComponent.framework", "ContactDetailComponent.framework", "GroupDetailComponent.framework", "NACallSDK.framework", "CreateSecretChatComponent.framework", "AddContactComponent.framework", "WebViewComponent.framework", "NewGroupComponent.framework", "AccountComponent.framework", "ListContactComponent.framework", "ListCallComponent.framework", "ListGroupComponent.framework", "AuthorizationComponent.framework", "NetAloCoreComponent.framework", "NATheme.framework", "NALocalization.framework", "NASocketPlatform.framework", "NetAloFull.framework", "NetAloLite.framework", "NARealmPlatform.framework", "NANetworkPlatform.framework", "NADomain.framework", "NACoreUI.framework", "NACoreUtils.framework"
 end

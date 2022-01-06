@@ -1,4 +1,4 @@
-# Pods for NetaloCommonSDK
+# Pods for NetacomSDKs
 How to intergrate: 
 #=================Init Podfile========================#
 B1- Init Podfile
