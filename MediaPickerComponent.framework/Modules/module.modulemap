@@ -1,0 +1,11 @@
+framework module MediaPickerComponent {
+  umbrella header "MediaPickerComponent.h"
+
+  export *
+  module * { export * }
+}
+
+module MediaPickerComponent.Swift {
+    header "MediaPickerComponent-Swift.h"
+    requires objc
+}

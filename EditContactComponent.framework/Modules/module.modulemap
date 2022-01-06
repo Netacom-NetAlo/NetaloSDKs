@@ -1,0 +1,6 @@
+framework module EditContactComponent {
+  umbrella header "EditContactComponent.h"
+
+  export *
+  module * { export * }
+}

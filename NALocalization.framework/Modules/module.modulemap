@@ -1,0 +1,11 @@
+framework module NALocalization {
+  umbrella header "NALocalization.h"
+
+  export *
+  module * { export * }
+}
+
+module NALocalization.Swift {
+    header "NALocalization-Swift.h"
+    requires objc
+}

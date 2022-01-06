@@ -1,0 +1,11 @@
+framework module ListGroupComponent {
+  umbrella header "ListGroupComponent.h"
+
+  export *
+  module * { export * }
+}
+
+module ListGroupComponent.Swift {
+    header "ListGroupComponent-Swift.h"
+    requires objc
+}

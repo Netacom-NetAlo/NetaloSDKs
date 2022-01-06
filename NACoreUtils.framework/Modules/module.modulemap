@@ -1,0 +1,11 @@
+framework module NACoreUtils {
+  umbrella header "NACoreUtils.h"
+
+  export *
+  module * { export * }
+}
+
+module NACoreUtils.Swift {
+    header "NACoreUtils-Swift.h"
+    requires objc
+}

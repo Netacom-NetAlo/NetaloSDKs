@@ -1,0 +1,11 @@
+framework module NARealmPlatform {
+  umbrella header "NARealmPlatform.h"
+
+  export *
+  module * { export * }
+}
+
+module NARealmPlatform.Swift {
+    header "NARealmPlatform-Swift.h"
+    requires objc
+}

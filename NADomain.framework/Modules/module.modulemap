@@ -1,0 +1,11 @@
+framework module NADomain {
+  umbrella header "NADomain.h"
+
+  export *
+  module * { export * }
+}
+
+module NADomain.Swift {
+    header "NADomain-Swift.h"
+    requires objc
+}

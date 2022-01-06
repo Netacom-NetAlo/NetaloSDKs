@@ -1,0 +1,11 @@
+framework module NANetworkPlatform {
+  umbrella header "NANetworkPlatform.h"
+
+  export *
+  module * { export * }
+}
+
+module NANetworkPlatform.Swift {
+    header "NANetworkPlatform-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+framework module NASocketPlatform {
+  umbrella header "NASocketPlatform.h"
+
+  export *
+  module * { export * }
+}
+
+module NASocketPlatform.Swift {
+    header "NASocketPlatform-Swift.h"
+    requires objc
+}

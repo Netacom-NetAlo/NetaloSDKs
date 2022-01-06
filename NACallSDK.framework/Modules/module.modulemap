@@ -1,0 +1,11 @@
+framework module NACallSDK {
+  umbrella header "NACallSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module NACallSDK.Swift {
+    header "NACallSDK-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+framework module ContactDetailComponent {
+  umbrella header "ContactDetailComponent.h"
+
+  export *
+  module * { export * }
+}
+
+module ContactDetailComponent.Swift {
+    header "ContactDetailComponent-Swift.h"
+    requires objc
+}

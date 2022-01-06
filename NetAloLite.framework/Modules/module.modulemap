@@ -1,0 +1,11 @@
+framework module NetAloLite {
+  umbrella header "NetAloLite.h"
+
+  export *
+  module * { export * }
+}
+
+module NetAloLite.Swift {
+    header "NetAloLite-Swift.h"
+    requires objc
+}
