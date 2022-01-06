@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		evScBxMES5v+3/BjdRTVMl4juuI=
+		QtQAg1IeCSxvFmNxN08HPnbryh0=
 		</data>
 		<key>LocationPickerVC.nib/objects-11.0+.nib</key>
 		<data>
@@ -24,29 +24,29 @@
 		<data>
 		tSCZjvru4lAQn5Hp57wj6VbvoXY=
 		</data>
-		<key>Modules/LocationPickerComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		lLth27M1v2DUKv3mfoTTWhH97Hw=
+		hmFWW4hJZYXg9mtE5vvr5mscR+0=
 		</data>
-		<key>Modules/LocationPickerComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		lLth27M1v2DUKv3mfoTTWhH97Hw=
+		hmFWW4hJZYXg9mtE5vvr5mscR+0=
 		</data>
-		<key>Modules/LocationPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		TBbyX49SIs/TpOkkRQWjkEXtlAY=
+		2HwfErrkdWyy8q9nD7GmTF+IjHM=
 		</data>
-		<key>Modules/LocationPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		IL4DBUBKfcuNvEs0mzro7foIaPc=
+		8ECN3pcmOuHLD9aFEZP2OjU9xNc=
 		</data>
-		<key>Modules/LocationPickerComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		TBbyX49SIs/TpOkkRQWjkEXtlAY=
+		2HwfErrkdWyy8q9nD7GmTF+IjHM=
 		</data>
-		<key>Modules/LocationPickerComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		IL4DBUBKfcuNvEs0mzro7foIaPc=
+		8ECN3pcmOuHLD9aFEZP2OjU9xNc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,70 +99,70 @@
 			m/VxL0ZkFuDuI1ajrZVydRwkGtgWGdreX+qZXjE8mfk=
 			</data>
 		</dict>
-		<key>Modules/LocationPickerComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lLth27M1v2DUKv3mfoTTWhH97Hw=
+			hmFWW4hJZYXg9mtE5vvr5mscR+0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Il7r7aXAn7A73UKBmGbN+KkrCR94SSTdqtDzpLotlR0=
+			iWs3N5rTOquiuZCzOgODj1Aig5GIq3GtHVUlbD4FCxg=
 			</data>
 		</dict>
-		<key>Modules/LocationPickerComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lLth27M1v2DUKv3mfoTTWhH97Hw=
+			hmFWW4hJZYXg9mtE5vvr5mscR+0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Il7r7aXAn7A73UKBmGbN+KkrCR94SSTdqtDzpLotlR0=
+			iWs3N5rTOquiuZCzOgODj1Aig5GIq3GtHVUlbD4FCxg=
 			</data>
 		</dict>
-		<key>Modules/LocationPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TBbyX49SIs/TpOkkRQWjkEXtlAY=
+			2HwfErrkdWyy8q9nD7GmTF+IjHM=
 			</data>
 			<key>hash2</key>
 			<data>
-			xGbEAq5Hy0itoAc4ntEEru4OebUZU4bMbl5nKBcGOSw=
+			rZYM43TIUxWFIcU3GZquQ18L5DsMsRFn4E9nS8sWnP0=
 			</data>
 		</dict>
-		<key>Modules/LocationPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IL4DBUBKfcuNvEs0mzro7foIaPc=
+			8ECN3pcmOuHLD9aFEZP2OjU9xNc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ToAHgcvd9pYLMmbNfL7bZnHCQI5eipiN7JniVHQ2nAU=
+			cMW+C1/oKzNWuRfd+FMFYD+W4wLkbZ7LPUJ1kl3uNss=
 			</data>
 		</dict>
-		<key>Modules/LocationPickerComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TBbyX49SIs/TpOkkRQWjkEXtlAY=
+			2HwfErrkdWyy8q9nD7GmTF+IjHM=
 			</data>
 			<key>hash2</key>
 			<data>
-			xGbEAq5Hy0itoAc4ntEEru4OebUZU4bMbl5nKBcGOSw=
+			rZYM43TIUxWFIcU3GZquQ18L5DsMsRFn4E9nS8sWnP0=
 			</data>
 		</dict>
-		<key>Modules/LocationPickerComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/LocationPickerComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IL4DBUBKfcuNvEs0mzro7foIaPc=
+			8ECN3pcmOuHLD9aFEZP2OjU9xNc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ToAHgcvd9pYLMmbNfL7bZnHCQI5eipiN7JniVHQ2nAU=
+			cMW+C1/oKzNWuRfd+FMFYD+W4wLkbZ7LPUJ1kl3uNss=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

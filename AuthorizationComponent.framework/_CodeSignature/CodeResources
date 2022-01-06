@@ -82,7 +82,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3lv1e3LTUZJnf+8gFYb1XEd2MEQ=
+		dAVLqzo75Agh4oeOAImgdqCupYU=
 		</data>
 		<key>ListCountryVC.nib/objects-11.0+.nib</key>
 		<data>
@@ -92,29 +92,29 @@
 		<data>
 		E7AbrS3eX8xFaJGtrcFO2O7RMcQ=
 		</data>
-		<key>Modules/AuthorizationComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		E3CbMwUPFSn68Atd5HfWWHSQFWc=
+		GE5KGq8yonC3aon7s4nZqJUXw3w=
 		</data>
-		<key>Modules/AuthorizationComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		E3CbMwUPFSn68Atd5HfWWHSQFWc=
+		GE5KGq8yonC3aon7s4nZqJUXw3w=
 		</data>
-		<key>Modules/AuthorizationComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		kLdevWSggNGq8Od9iXcCRvLocQo=
+		v63PGMr7MDl9OnQQtmR6TO7LjMk=
 		</data>
-		<key>Modules/AuthorizationComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		6zMsDpuUjJ105IoR+sKWFmqtpAI=
+		EF7E0YWk2Y8RqQ5EYpd4pt7N1bI=
 		</data>
-		<key>Modules/AuthorizationComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		kLdevWSggNGq8Od9iXcCRvLocQo=
+		v63PGMr7MDl9OnQQtmR6TO7LjMk=
 		</data>
-		<key>Modules/AuthorizationComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		6zMsDpuUjJ105IoR+sKWFmqtpAI=
+		EF7E0YWk2Y8RqQ5EYpd4pt7N1bI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -354,70 +354,70 @@
 			FnqWGqR1MqTm0hDL9XtpSkwVj4l+il0pEBBnfxfHW70=
 			</data>
 		</dict>
-		<key>Modules/AuthorizationComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E3CbMwUPFSn68Atd5HfWWHSQFWc=
+			GE5KGq8yonC3aon7s4nZqJUXw3w=
 			</data>
 			<key>hash2</key>
 			<data>
-			N3kqIIdyiZrhbmuC6WQKngJQXOFzt63xtV3/UWbj8A4=
+			MMLw+E1RJdNRtMiaMd608xyX6vl+UZKOS19gMQOfhUw=
 			</data>
 		</dict>
-		<key>Modules/AuthorizationComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E3CbMwUPFSn68Atd5HfWWHSQFWc=
+			GE5KGq8yonC3aon7s4nZqJUXw3w=
 			</data>
 			<key>hash2</key>
 			<data>
-			N3kqIIdyiZrhbmuC6WQKngJQXOFzt63xtV3/UWbj8A4=
+			MMLw+E1RJdNRtMiaMd608xyX6vl+UZKOS19gMQOfhUw=
 			</data>
 		</dict>
-		<key>Modules/AuthorizationComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kLdevWSggNGq8Od9iXcCRvLocQo=
+			v63PGMr7MDl9OnQQtmR6TO7LjMk=
 			</data>
 			<key>hash2</key>
 			<data>
-			rP+wIjktdau4cP7ElfvqQ56CHyzZivR2177y5MUzjMU=
+			v+Tb41tSWx1KG4cFag5qukl49kjyFaPgF+gibAo1aNs=
 			</data>
 		</dict>
-		<key>Modules/AuthorizationComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6zMsDpuUjJ105IoR+sKWFmqtpAI=
+			EF7E0YWk2Y8RqQ5EYpd4pt7N1bI=
 			</data>
 			<key>hash2</key>
 			<data>
-			JeqlEGN0unpbFjde6SIfdBUtR07Smf/yA0F1QolXnCo=
+			4M+Y9nYfeR3U3ne7IVImnvbI7pBLDr+s3Zht5tNQfqY=
 			</data>
 		</dict>
-		<key>Modules/AuthorizationComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kLdevWSggNGq8Od9iXcCRvLocQo=
+			v63PGMr7MDl9OnQQtmR6TO7LjMk=
 			</data>
 			<key>hash2</key>
 			<data>
-			rP+wIjktdau4cP7ElfvqQ56CHyzZivR2177y5MUzjMU=
+			v+Tb41tSWx1KG4cFag5qukl49kjyFaPgF+gibAo1aNs=
 			</data>
 		</dict>
-		<key>Modules/AuthorizationComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/AuthorizationComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6zMsDpuUjJ105IoR+sKWFmqtpAI=
+			EF7E0YWk2Y8RqQ5EYpd4pt7N1bI=
 			</data>
 			<key>hash2</key>
 			<data>
-			JeqlEGN0unpbFjde6SIfdBUtR07Smf/yA0F1QolXnCo=
+			4M+Y9nYfeR3U3ne7IVImnvbI7pBLDr+s3Zht5tNQfqY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -22,35 +22,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FB2T9g573AkRQgpQfEp0etcNi7s=
+		Niw/NSk4bVx9L8qqUC0T+nkfu+Y=
 		</data>
 		<key>MediaDetailVC.nib</key>
 		<data>
 		ck88zBTCZlL+t1Z0hcGPYuCR89w=
 		</data>
-		<key>Modules/MediaDetailComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		64fFBWCAjvp+3PfMmO7cze0aZHU=
+		EIZbwJg2w8ifMo8RsPzOnCxGq/w=
 		</data>
-		<key>Modules/MediaDetailComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		64fFBWCAjvp+3PfMmO7cze0aZHU=
+		EIZbwJg2w8ifMo8RsPzOnCxGq/w=
 		</data>
-		<key>Modules/MediaDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		I48S4xHFgttkoDFrl13I393UekQ=
+		LZcmHXy3E1vO2RENzd+k3933cWY=
 		</data>
-		<key>Modules/MediaDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+i2qOR/fClmGCn84oj4NDek6nik=
+		jtVzMJp6wT/Ddce0hynr6VFBm8w=
 		</data>
-		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		I48S4xHFgttkoDFrl13I393UekQ=
+		LZcmHXy3E1vO2RENzd+k3933cWY=
 		</data>
-		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		+i2qOR/fClmGCn84oj4NDek6nik=
+		jtVzMJp6wT/Ddce0hynr6VFBm8w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -114,70 +114,70 @@
 			4r4/47U5GcI0opGsi9WN51VZaIoOf3cmXHgqIZNAGTE=
 			</data>
 		</dict>
-		<key>Modules/MediaDetailComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			64fFBWCAjvp+3PfMmO7cze0aZHU=
+			EIZbwJg2w8ifMo8RsPzOnCxGq/w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wu1QyNWIdjPxRYuui1WXrRpPVe3XUnoS569EgfdrxVU=
+			1nM4ZuvqV6Pa/6uC3xeapIqTCY34x9RVthp9qNQ2QVQ=
 			</data>
 		</dict>
-		<key>Modules/MediaDetailComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			64fFBWCAjvp+3PfMmO7cze0aZHU=
+			EIZbwJg2w8ifMo8RsPzOnCxGq/w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wu1QyNWIdjPxRYuui1WXrRpPVe3XUnoS569EgfdrxVU=
+			1nM4ZuvqV6Pa/6uC3xeapIqTCY34x9RVthp9qNQ2QVQ=
 			</data>
 		</dict>
-		<key>Modules/MediaDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I48S4xHFgttkoDFrl13I393UekQ=
+			LZcmHXy3E1vO2RENzd+k3933cWY=
 			</data>
 			<key>hash2</key>
 			<data>
-			pxgw0KYAbSFELUnjXQklYFyDjdNjnbZNeO47U9Zd8+Y=
+			7ioKD+qI3uy+mSX9cm5b1+dvdnLG4nzvajToWAlK7rE=
 			</data>
 		</dict>
-		<key>Modules/MediaDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+i2qOR/fClmGCn84oj4NDek6nik=
+			jtVzMJp6wT/Ddce0hynr6VFBm8w=
 			</data>
 			<key>hash2</key>
 			<data>
-			w5NNI8yiuFCb3vP55jHwP02x+hJAKuuH8tBciucep7c=
+			8QGk5eFqYCSWSInEFA7ZUcu9WlIllVyoBtkyDQq3Dxo=
 			</data>
 		</dict>
-		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I48S4xHFgttkoDFrl13I393UekQ=
+			LZcmHXy3E1vO2RENzd+k3933cWY=
 			</data>
 			<key>hash2</key>
 			<data>
-			pxgw0KYAbSFELUnjXQklYFyDjdNjnbZNeO47U9Zd8+Y=
+			7ioKD+qI3uy+mSX9cm5b1+dvdnLG4nzvajToWAlK7rE=
 			</data>
 		</dict>
-		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/MediaDetailComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+i2qOR/fClmGCn84oj4NDek6nik=
+			jtVzMJp6wT/Ddce0hynr6VFBm8w=
 			</data>
 			<key>hash2</key>
 			<data>
-			w5NNI8yiuFCb3vP55jHwP02x+hJAKuuH8tBciucep7c=
+			8QGk5eFqYCSWSInEFA7ZUcu9WlIllVyoBtkyDQq3Dxo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

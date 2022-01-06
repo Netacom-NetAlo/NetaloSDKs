@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OTH6Z7cIUEJLOcF5eHYIUQlqwJQ=
+		xeyMf5l3RZc/X6H7c1bosvdT1gw=
 		</data>
-		<key>Modules/MediaPickerComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		JROJ/Skw56YcdH8w0W4IS7qcPEk=
+		Gf2+tVjVIEE4hF7/ubvVulf4GLY=
 		</data>
-		<key>Modules/MediaPickerComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		JROJ/Skw56YcdH8w0W4IS7qcPEk=
+		Gf2+tVjVIEE4hF7/ubvVulf4GLY=
 		</data>
-		<key>Modules/MediaPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		+dfDHzf3DPGr7TblDStrP/gP3X4=
+		9mwDHymL0SrwKv+ZUjAPqvz3oIM=
 		</data>
-		<key>Modules/MediaPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		nIm1PrveWcSW7K6YdA0cBmfkSz4=
+		ACUieFzCO6kC06GGA5+LpnsE08Y=
 		</data>
-		<key>Modules/MediaPickerComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		+dfDHzf3DPGr7TblDStrP/gP3X4=
+		9mwDHymL0SrwKv+ZUjAPqvz3oIM=
 		</data>
-		<key>Modules/MediaPickerComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		nIm1PrveWcSW7K6YdA0cBmfkSz4=
+		ACUieFzCO6kC06GGA5+LpnsE08Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,70 +77,70 @@
 			MAYTVK1E0iyrVlYLN3mreLkinD3V9/HYLuimVksPGGg=
 			</data>
 		</dict>
-		<key>Modules/MediaPickerComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JROJ/Skw56YcdH8w0W4IS7qcPEk=
+			Gf2+tVjVIEE4hF7/ubvVulf4GLY=
 			</data>
 			<key>hash2</key>
 			<data>
-			PtvBM4RP/GgQInbgdJNWNg47OX/HNDRWvWQMckNKVmo=
+			ixb3cJYz+76EktS8n4O8FNlRxVvwBe/1qdOyDli/W8E=
 			</data>
 		</dict>
-		<key>Modules/MediaPickerComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JROJ/Skw56YcdH8w0W4IS7qcPEk=
+			Gf2+tVjVIEE4hF7/ubvVulf4GLY=
 			</data>
 			<key>hash2</key>
 			<data>
-			PtvBM4RP/GgQInbgdJNWNg47OX/HNDRWvWQMckNKVmo=
+			ixb3cJYz+76EktS8n4O8FNlRxVvwBe/1qdOyDli/W8E=
 			</data>
 		</dict>
-		<key>Modules/MediaPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+dfDHzf3DPGr7TblDStrP/gP3X4=
+			9mwDHymL0SrwKv+ZUjAPqvz3oIM=
 			</data>
 			<key>hash2</key>
 			<data>
-			3HYA0bH5NfPZCpMGIIfCNEApyEz+5r3Qi/xU+FsiExA=
+			zNwfI4Otbhf3qoYuzjtQ+jlt7KCeIhtOoUG7gWl16AI=
 			</data>
 		</dict>
-		<key>Modules/MediaPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nIm1PrveWcSW7K6YdA0cBmfkSz4=
+			ACUieFzCO6kC06GGA5+LpnsE08Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			6k0bZiZCiVHXgmiT0gKjLLooyMX8Kj+CiHb4KDLorfs=
+			yhH4xn/Gl/q+wozM0wqp1d46E89aN4MHFImPHbgXsyY=
 			</data>
 		</dict>
-		<key>Modules/MediaPickerComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+dfDHzf3DPGr7TblDStrP/gP3X4=
+			9mwDHymL0SrwKv+ZUjAPqvz3oIM=
 			</data>
 			<key>hash2</key>
 			<data>
-			3HYA0bH5NfPZCpMGIIfCNEApyEz+5r3Qi/xU+FsiExA=
+			zNwfI4Otbhf3qoYuzjtQ+jlt7KCeIhtOoUG7gWl16AI=
 			</data>
 		</dict>
-		<key>Modules/MediaPickerComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/MediaPickerComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nIm1PrveWcSW7K6YdA0cBmfkSz4=
+			ACUieFzCO6kC06GGA5+LpnsE08Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			6k0bZiZCiVHXgmiT0gKjLLooyMX8Kj+CiHb4KDLorfs=
+			yhH4xn/Gl/q+wozM0wqp1d46E89aN4MHFImPHbgXsyY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

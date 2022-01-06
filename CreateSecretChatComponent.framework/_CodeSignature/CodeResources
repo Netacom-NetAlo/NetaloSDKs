@@ -22,31 +22,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2l4UUUYU7d7cUt7kICgJ2TvDhBU=
+		7Zp1IND1MglcPNN/abXu3AfmE2U=
 		</data>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		q7cmmi8Tp9mbaEsp+W4tm8S1NC8=
+		UC2WUbaqBbRe6wf/Uaw+/YAqZ+I=
 		</data>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		q7cmmi8Tp9mbaEsp+W4tm8S1NC8=
+		UC2WUbaqBbRe6wf/Uaw+/YAqZ+I=
 		</data>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		mVCSKOipns6gElipdAfQL8vkaOI=
+		SEkRnARc6g9aajdNnqIp/nGyP30=
 		</data>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		drkuccr+Ml5xBXA0p6wK7IBjzx8=
+		rBOzNRo8GTZEPNIkAkE26UUw/8Y=
 		</data>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		mVCSKOipns6gElipdAfQL8vkaOI=
+		SEkRnARc6g9aajdNnqIp/nGyP30=
 		</data>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		drkuccr+Ml5xBXA0p6wK7IBjzx8=
+		rBOzNRo8GTZEPNIkAkE26UUw/8Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,70 +99,70 @@
 			+22S4Lk9PfJdwcGhIdakF1/68UXJJ49rpYSxpOhbJDU=
 			</data>
 		</dict>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q7cmmi8Tp9mbaEsp+W4tm8S1NC8=
+			UC2WUbaqBbRe6wf/Uaw+/YAqZ+I=
 			</data>
 			<key>hash2</key>
 			<data>
-			bL6hMBRJ1mWXZRzBB32s62qV4WqkS6rUl11p140//TA=
+			FPsP13qirHRA5IWZbi3YmLQnM/lK/4BtyE+gpSELuis=
 			</data>
 		</dict>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q7cmmi8Tp9mbaEsp+W4tm8S1NC8=
+			UC2WUbaqBbRe6wf/Uaw+/YAqZ+I=
 			</data>
 			<key>hash2</key>
 			<data>
-			bL6hMBRJ1mWXZRzBB32s62qV4WqkS6rUl11p140//TA=
+			FPsP13qirHRA5IWZbi3YmLQnM/lK/4BtyE+gpSELuis=
 			</data>
 		</dict>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mVCSKOipns6gElipdAfQL8vkaOI=
+			SEkRnARc6g9aajdNnqIp/nGyP30=
 			</data>
 			<key>hash2</key>
 			<data>
-			aIN9gIjv4LgVUBKAJ6EAxURRP95Om/zNwKKg6uGOuOc=
+			VaWMtELH0CvHHPnAVa7biaxJXODvrmI102LB4psfjEw=
 			</data>
 		</dict>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			drkuccr+Ml5xBXA0p6wK7IBjzx8=
+			rBOzNRo8GTZEPNIkAkE26UUw/8Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			4B6bHOVp/yzhYwVwQwJAuasCZPOFs7XlAF6G/s065+g=
+			G/9c+rzlG6J043IImVyXaC1bd7HYP6Sf+SRx81ADiNI=
 			</data>
 		</dict>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mVCSKOipns6gElipdAfQL8vkaOI=
+			SEkRnARc6g9aajdNnqIp/nGyP30=
 			</data>
 			<key>hash2</key>
 			<data>
-			aIN9gIjv4LgVUBKAJ6EAxURRP95Om/zNwKKg6uGOuOc=
+			VaWMtELH0CvHHPnAVa7biaxJXODvrmI102LB4psfjEw=
 			</data>
 		</dict>
-		<key>Modules/CreateSecretChatComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			drkuccr+Ml5xBXA0p6wK7IBjzx8=
+			rBOzNRo8GTZEPNIkAkE26UUw/8Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			4B6bHOVp/yzhYwVwQwJAuasCZPOFs7XlAF6G/s065+g=
+			G/9c+rzlG6J043IImVyXaC1bd7HYP6Sf+SRx81ADiNI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

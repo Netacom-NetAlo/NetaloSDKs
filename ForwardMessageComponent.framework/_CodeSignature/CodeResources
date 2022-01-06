@@ -22,31 +22,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AwzrfrsILO6flOlgSPyw967R0C0=
+		Nghbjhx2SWye3zmDX9v6jnsyiEQ=
 		</data>
-		<key>Modules/ForwardMessageComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		adjgkCIAAmJuPHMz+BXXomsd6qk=
+		EeRN0xcV4+Zubwh2BMSP/94VIzQ=
 		</data>
-		<key>Modules/ForwardMessageComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		adjgkCIAAmJuPHMz+BXXomsd6qk=
+		EeRN0xcV4+Zubwh2BMSP/94VIzQ=
 		</data>
-		<key>Modules/ForwardMessageComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		3eOnQvKI/j/6Awo+WEjdpjgemgQ=
+		aRtw5zCEaGTwLZ2iq3j3DoAiMVQ=
 		</data>
-		<key>Modules/ForwardMessageComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7KhqNGi7h1fiWkmB1eqG91T+24w=
+		4O6oxJoUANryHxg6T94A+JzQhjo=
 		</data>
-		<key>Modules/ForwardMessageComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		3eOnQvKI/j/6Awo+WEjdpjgemgQ=
+		aRtw5zCEaGTwLZ2iq3j3DoAiMVQ=
 		</data>
-		<key>Modules/ForwardMessageComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		7KhqNGi7h1fiWkmB1eqG91T+24w=
+		4O6oxJoUANryHxg6T94A+JzQhjo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,70 +99,70 @@
 			cN8oIqwOcNLCusQ8fYIYMWmwUC3wlDLcmJQSRBa9Qfc=
 			</data>
 		</dict>
-		<key>Modules/ForwardMessageComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			adjgkCIAAmJuPHMz+BXXomsd6qk=
+			EeRN0xcV4+Zubwh2BMSP/94VIzQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			8uw80mtnS9kbHNePUrg9YgEWkzxzoFnZ5lsgCb2YGjY=
+			ZZ+foTLgCchU0++BfU8ICrZHFOihfA9ljJe/L/zTh4o=
 			</data>
 		</dict>
-		<key>Modules/ForwardMessageComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			adjgkCIAAmJuPHMz+BXXomsd6qk=
+			EeRN0xcV4+Zubwh2BMSP/94VIzQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			8uw80mtnS9kbHNePUrg9YgEWkzxzoFnZ5lsgCb2YGjY=
+			ZZ+foTLgCchU0++BfU8ICrZHFOihfA9ljJe/L/zTh4o=
 			</data>
 		</dict>
-		<key>Modules/ForwardMessageComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3eOnQvKI/j/6Awo+WEjdpjgemgQ=
+			aRtw5zCEaGTwLZ2iq3j3DoAiMVQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			jlGC+8B1d3+AuFLPmEue+PGxCR1Bd8haCgda1JtSWFg=
+			qZfE7qT5FDa5tL6AW3yZPIciShiC6Kl9KBnGLkDneLo=
 			</data>
 		</dict>
-		<key>Modules/ForwardMessageComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7KhqNGi7h1fiWkmB1eqG91T+24w=
+			4O6oxJoUANryHxg6T94A+JzQhjo=
 			</data>
 			<key>hash2</key>
 			<data>
-			zEIabVtGI2f8csEOrDOwiMrrKDKdAcr8/j+liEYKT0o=
+			rm3I1fduDathaYbCzESyLVf1avq2by5Cvo36hsSjzKg=
 			</data>
 		</dict>
-		<key>Modules/ForwardMessageComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3eOnQvKI/j/6Awo+WEjdpjgemgQ=
+			aRtw5zCEaGTwLZ2iq3j3DoAiMVQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			jlGC+8B1d3+AuFLPmEue+PGxCR1Bd8haCgda1JtSWFg=
+			qZfE7qT5FDa5tL6AW3yZPIciShiC6Kl9KBnGLkDneLo=
 			</data>
 		</dict>
-		<key>Modules/ForwardMessageComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/ForwardMessageComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7KhqNGi7h1fiWkmB1eqG91T+24w=
+			4O6oxJoUANryHxg6T94A+JzQhjo=
 			</data>
 			<key>hash2</key>
 			<data>
-			zEIabVtGI2f8csEOrDOwiMrrKDKdAcr8/j+liEYKT0o=
+			rm3I1fduDathaYbCzESyLVf1avq2by5Cvo36hsSjzKg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

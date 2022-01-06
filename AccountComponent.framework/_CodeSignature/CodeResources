@@ -98,31 +98,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		d+XcrQ0NQA059ax8aA82lx7fPYo=
+		KGEKN2xXBeWDH+ijwmpBwEmbXF8=
 		</data>
-		<key>Modules/AccountComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/AccountComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		b9yixkyeAbtB1UXzDpK1YPlsP7Q=
+		9W0CIlTf4DiFiLnL45szRgmxTls=
 		</data>
-		<key>Modules/AccountComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/AccountComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		b9yixkyeAbtB1UXzDpK1YPlsP7Q=
+		9W0CIlTf4DiFiLnL45szRgmxTls=
 		</data>
-		<key>Modules/AccountComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AccountComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		S4/wcmr15I+BAkBsVgUI/DKRMHI=
+		YkbXFgM3QSQFXnXFqsfoAGE6ZdU=
 		</data>
-		<key>Modules/AccountComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AccountComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		DBTygKTKPOhbkzYSstAMPm8KAHU=
+		lZHaDjpC48lhkkxGxz6W5HMR8nc=
 		</data>
-		<key>Modules/AccountComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/AccountComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		S4/wcmr15I+BAkBsVgUI/DKRMHI=
+		YkbXFgM3QSQFXnXFqsfoAGE6ZdU=
 		</data>
-		<key>Modules/AccountComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/AccountComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		DBTygKTKPOhbkzYSstAMPm8KAHU=
+		lZHaDjpC48lhkkxGxz6W5HMR8nc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -384,70 +384,70 @@
 			aLXSB2qz0v1u9gcru3zz0I2eqRP/1yo99mMYx4UeLUc=
 			</data>
 		</dict>
-		<key>Modules/AccountComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/AccountComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b9yixkyeAbtB1UXzDpK1YPlsP7Q=
+			9W0CIlTf4DiFiLnL45szRgmxTls=
 			</data>
 			<key>hash2</key>
 			<data>
-			F0xQgRzO7oPK87qE9dMNOzzEz/C/r/GZBdF5ZUqayWg=
+			uDjdiinUlePE7pc6lQegc0fENhriwCu/vwIRQpv7ZPQ=
 			</data>
 		</dict>
-		<key>Modules/AccountComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/AccountComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b9yixkyeAbtB1UXzDpK1YPlsP7Q=
+			9W0CIlTf4DiFiLnL45szRgmxTls=
 			</data>
 			<key>hash2</key>
 			<data>
-			F0xQgRzO7oPK87qE9dMNOzzEz/C/r/GZBdF5ZUqayWg=
+			uDjdiinUlePE7pc6lQegc0fENhriwCu/vwIRQpv7ZPQ=
 			</data>
 		</dict>
-		<key>Modules/AccountComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AccountComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S4/wcmr15I+BAkBsVgUI/DKRMHI=
+			YkbXFgM3QSQFXnXFqsfoAGE6ZdU=
 			</data>
 			<key>hash2</key>
 			<data>
-			pIrXY5vN4Zik55534CE5Xf70TOHDfwkuDroiPDiQXsY=
+			ds3gcs6DA+gkV+aBJOjB+4+TfTcNpvwVckTssWmTQ3U=
 			</data>
 		</dict>
-		<key>Modules/AccountComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AccountComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DBTygKTKPOhbkzYSstAMPm8KAHU=
+			lZHaDjpC48lhkkxGxz6W5HMR8nc=
 			</data>
 			<key>hash2</key>
 			<data>
-			UoZ8pplsfecwyd7DRiSoV/Gwo9S3+GosazMGepdnK+4=
+			vOK9668iOOtzqkExDr/c2yc3LqcH+TJC7cSdCQOUCtI=
 			</data>
 		</dict>
-		<key>Modules/AccountComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/AccountComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S4/wcmr15I+BAkBsVgUI/DKRMHI=
+			YkbXFgM3QSQFXnXFqsfoAGE6ZdU=
 			</data>
 			<key>hash2</key>
 			<data>
-			pIrXY5vN4Zik55534CE5Xf70TOHDfwkuDroiPDiQXsY=
+			ds3gcs6DA+gkV+aBJOjB+4+TfTcNpvwVckTssWmTQ3U=
 			</data>
 		</dict>
-		<key>Modules/AccountComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/AccountComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DBTygKTKPOhbkzYSstAMPm8KAHU=
+			lZHaDjpC48lhkkxGxz6W5HMR8nc=
 			</data>
 			<key>hash2</key>
 			<data>
-			UoZ8pplsfecwyd7DRiSoV/Gwo9S3+GosazMGepdnK+4=
+			vOK9668iOOtzqkExDr/c2yc3LqcH+TJC7cSdCQOUCtI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

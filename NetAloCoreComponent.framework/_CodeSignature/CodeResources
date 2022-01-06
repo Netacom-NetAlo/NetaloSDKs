@@ -186,7 +186,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		T7bSUmUhzCa27A5QA5U3S7D7C6w=
+		VUch+rzBgpJFoTvPkK7rr6qumaY=
 		</data>
 		<key>InviteFriendCell.nib</key>
 		<data>
@@ -208,29 +208,29 @@
 		<data>
 		loi9zQBF8gPkIsRPBlAMhqHmabE=
 		</data>
-		<key>Modules/NetAloCoreComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		mHcmg4heaHQK04YzEOuizuUdtLo=
+		gWEmsxZmK/sXcJ48qnktOZMGf5E=
 		</data>
-		<key>Modules/NetAloCoreComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		mHcmg4heaHQK04YzEOuizuUdtLo=
+		gWEmsxZmK/sXcJ48qnktOZMGf5E=
 		</data>
-		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		CJdVPF+6QA2HzzlMG1ErWKS8NEo=
+		v+dCXXXfzG+mh4VhkST/BzJB39E=
 		</data>
-		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		j0zzgRtxBBasRRsKv3zofcgthPs=
+		NB4mujMJSOj8XkTRdlmtdYhf5+c=
 		</data>
-		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		CJdVPF+6QA2HzzlMG1ErWKS8NEo=
+		v+dCXXXfzG+mh4VhkST/BzJB39E=
 		</data>
-		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		j0zzgRtxBBasRRsKv3zofcgthPs=
+		NB4mujMJSOj8XkTRdlmtdYhf5+c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -905,70 +905,70 @@
 			XDqoUbwwoVTWnmq+Jv+mTcNpE+Ydo1nn8zFZP0fcgaA=
 			</data>
 		</dict>
-		<key>Modules/NetAloCoreComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mHcmg4heaHQK04YzEOuizuUdtLo=
+			gWEmsxZmK/sXcJ48qnktOZMGf5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			dorCqDE6I5bgxHZbbM5VEoBV4CbFo2Ieb1OGZ7hsgKw=
+			XinDDsWLSxuJoWL5hMwk5Aqo5/2Ldz8j6JTxOVY9YiQ=
 			</data>
 		</dict>
-		<key>Modules/NetAloCoreComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mHcmg4heaHQK04YzEOuizuUdtLo=
+			gWEmsxZmK/sXcJ48qnktOZMGf5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			dorCqDE6I5bgxHZbbM5VEoBV4CbFo2Ieb1OGZ7hsgKw=
+			XinDDsWLSxuJoWL5hMwk5Aqo5/2Ldz8j6JTxOVY9YiQ=
 			</data>
 		</dict>
-		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CJdVPF+6QA2HzzlMG1ErWKS8NEo=
+			v+dCXXXfzG+mh4VhkST/BzJB39E=
 			</data>
 			<key>hash2</key>
 			<data>
-			gIwZHbycBkYb1fTrW27bhiMUj8XBNq5+Ebo60SIgsu0=
+			KszljEjHsuSSLzmR/CghCiIG3CcXMUmSIO8zB1DEy8I=
 			</data>
 		</dict>
-		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			j0zzgRtxBBasRRsKv3zofcgthPs=
+			NB4mujMJSOj8XkTRdlmtdYhf5+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			dR62ZA6b5B2zvZf5TCFVEyg+4T4lbgQhWDxGVtW9GR0=
+			SuqlKQ+JndwaekjCMMQUd+TqKR9JEu8XqMIyKgy1CHw=
 			</data>
 		</dict>
-		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CJdVPF+6QA2HzzlMG1ErWKS8NEo=
+			v+dCXXXfzG+mh4VhkST/BzJB39E=
 			</data>
 			<key>hash2</key>
 			<data>
-			gIwZHbycBkYb1fTrW27bhiMUj8XBNq5+Ebo60SIgsu0=
+			KszljEjHsuSSLzmR/CghCiIG3CcXMUmSIO8zB1DEy8I=
 			</data>
 		</dict>
-		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/NetAloCoreComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			j0zzgRtxBBasRRsKv3zofcgthPs=
+			NB4mujMJSOj8XkTRdlmtdYhf5+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			dR62ZA6b5B2zvZf5TCFVEyg+4T4lbgQhWDxGVtW9GR0=
+			SuqlKQ+JndwaekjCMMQUd+TqKR9JEu8XqMIyKgy1CHw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

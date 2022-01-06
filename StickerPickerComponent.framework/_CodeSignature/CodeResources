@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PDP8ZZ89wNesrmg+7J5Bhfp++rs=
+		uDYyTyNVZIZ6lzp+/LQDyVL/kQM=
 		</data>
-		<key>Modules/StickerPickerComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		e0vekHQFNNr5jtCT1GLru5XX7cs=
+		4mXmWfm7XeYw+W5Os3mCVc49okQ=
 		</data>
-		<key>Modules/StickerPickerComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		e0vekHQFNNr5jtCT1GLru5XX7cs=
+		4mXmWfm7XeYw+W5Os3mCVc49okQ=
 		</data>
-		<key>Modules/StickerPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		kYS17qfZoOOy6OJl9KeCPM5AEsM=
+		h1o6gV63KI2TdnOKqn41ghk9aRY=
 		</data>
-		<key>Modules/StickerPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		zyNvPoI+HwB2ZH7yXyHfvYvCgck=
+		NH8pJFdPdYNguuDamO8W8NalD5g=
 		</data>
-		<key>Modules/StickerPickerComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		kYS17qfZoOOy6OJl9KeCPM5AEsM=
+		h1o6gV63KI2TdnOKqn41ghk9aRY=
 		</data>
-		<key>Modules/StickerPickerComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		zyNvPoI+HwB2ZH7yXyHfvYvCgck=
+		NH8pJFdPdYNguuDamO8W8NalD5g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,70 +77,70 @@
 			Js9iQgCoqrTxllgo/QiJkjFH4bGUBUAqhJhKcQmVD8I=
 			</data>
 		</dict>
-		<key>Modules/StickerPickerComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e0vekHQFNNr5jtCT1GLru5XX7cs=
+			4mXmWfm7XeYw+W5Os3mCVc49okQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			yHLoqmbH966Dckt+kX4fgKAXY0DE80hISjp+thX93VY=
+			q738r59PbbSELWP/1FXuCuc2jn8cxbLHeUo2ldvwllQ=
 			</data>
 		</dict>
-		<key>Modules/StickerPickerComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e0vekHQFNNr5jtCT1GLru5XX7cs=
+			4mXmWfm7XeYw+W5Os3mCVc49okQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			yHLoqmbH966Dckt+kX4fgKAXY0DE80hISjp+thX93VY=
+			q738r59PbbSELWP/1FXuCuc2jn8cxbLHeUo2ldvwllQ=
 			</data>
 		</dict>
-		<key>Modules/StickerPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kYS17qfZoOOy6OJl9KeCPM5AEsM=
+			h1o6gV63KI2TdnOKqn41ghk9aRY=
 			</data>
 			<key>hash2</key>
 			<data>
-			A7i9QhcmdlmCVTrLt1P5H9+ktVLaXiHzP10VcijtdTI=
+			FWDl3MakoMSIduTXDLeHvD1AGR+Z4f3BgcdWhlFN+r0=
 			</data>
 		</dict>
-		<key>Modules/StickerPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zyNvPoI+HwB2ZH7yXyHfvYvCgck=
+			NH8pJFdPdYNguuDamO8W8NalD5g=
 			</data>
 			<key>hash2</key>
 			<data>
-			TFtHbLAQ7OBD0+yUxEZ/dHs825Ce1klc2ZD118b8wwI=
+			nfwHCa6rKelsI3Hk6iV/RaFabwfpeWOJl4bCRpOm0Nc=
 			</data>
 		</dict>
-		<key>Modules/StickerPickerComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kYS17qfZoOOy6OJl9KeCPM5AEsM=
+			h1o6gV63KI2TdnOKqn41ghk9aRY=
 			</data>
 			<key>hash2</key>
 			<data>
-			A7i9QhcmdlmCVTrLt1P5H9+ktVLaXiHzP10VcijtdTI=
+			FWDl3MakoMSIduTXDLeHvD1AGR+Z4f3BgcdWhlFN+r0=
 			</data>
 		</dict>
-		<key>Modules/StickerPickerComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/StickerPickerComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zyNvPoI+HwB2ZH7yXyHfvYvCgck=
+			NH8pJFdPdYNguuDamO8W8NalD5g=
 			</data>
 			<key>hash2</key>
 			<data>
-			TFtHbLAQ7OBD0+yUxEZ/dHs825Ce1klc2ZD118b8wwI=
+			nfwHCa6rKelsI3Hk6iV/RaFabwfpeWOJl4bCRpOm0Nc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

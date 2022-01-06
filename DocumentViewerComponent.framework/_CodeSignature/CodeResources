@@ -22,31 +22,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jhN6fmyh8RpZDOVz2zCyBx/xn+0=
+		QE6HQ3wU0caS4ujqbV1oN0+FiWA=
 		</data>
-		<key>Modules/DocumentViewerComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Sk4rPncUQYcfiL+5IRjvs55fNpc=
+		qPUSAGPQiecT1w+jaJsSagG+tAA=
 		</data>
-		<key>Modules/DocumentViewerComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		Sk4rPncUQYcfiL+5IRjvs55fNpc=
+		qPUSAGPQiecT1w+jaJsSagG+tAA=
 		</data>
-		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		xV4AI5xdY3bkooODsunV+ZrqiUU=
+		kDYCWsIwJSJ2GuwxCWA5jXbbUPo=
 		</data>
-		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Ryuyr92plfO4CZITeFbHRduAmCE=
+		8FXnzEfx0lYdj/ZC3Go9Gmf17kw=
 		</data>
-		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		xV4AI5xdY3bkooODsunV+ZrqiUU=
+		kDYCWsIwJSJ2GuwxCWA5jXbbUPo=
 		</data>
-		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Ryuyr92plfO4CZITeFbHRduAmCE=
+		8FXnzEfx0lYdj/ZC3Go9Gmf17kw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,70 +99,70 @@
 			BZ5HPSD587OArghprrub0oXQFO+5sRaoZW9sNOT4Mgo=
 			</data>
 		</dict>
-		<key>Modules/DocumentViewerComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Sk4rPncUQYcfiL+5IRjvs55fNpc=
+			qPUSAGPQiecT1w+jaJsSagG+tAA=
 			</data>
 			<key>hash2</key>
 			<data>
-			fPfop6RMIuUNIsVWDYlCamc//+DzJDOOnDd4vOWe8JM=
+			8ahPCeRwJMXgDKDddHvhVNmAhJslANPfSKm7z52dyYI=
 			</data>
 		</dict>
-		<key>Modules/DocumentViewerComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Sk4rPncUQYcfiL+5IRjvs55fNpc=
+			qPUSAGPQiecT1w+jaJsSagG+tAA=
 			</data>
 			<key>hash2</key>
 			<data>
-			fPfop6RMIuUNIsVWDYlCamc//+DzJDOOnDd4vOWe8JM=
+			8ahPCeRwJMXgDKDddHvhVNmAhJslANPfSKm7z52dyYI=
 			</data>
 		</dict>
-		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xV4AI5xdY3bkooODsunV+ZrqiUU=
+			kDYCWsIwJSJ2GuwxCWA5jXbbUPo=
 			</data>
 			<key>hash2</key>
 			<data>
-			sboE3R/F/umfxKupJJLzlHAuYj2K9pa4YoM9EaKTs2c=
+			ebTMqKIobu+KwfglDDCEo5PDpdDl7+cJ95MZjySHr54=
 			</data>
 		</dict>
-		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ryuyr92plfO4CZITeFbHRduAmCE=
+			8FXnzEfx0lYdj/ZC3Go9Gmf17kw=
 			</data>
 			<key>hash2</key>
 			<data>
-			GMTb50HGlgqWGL9aeVkL+ybDVlDn23/guaZE0CRvQiM=
+			5d4Lun+PizwpDzrgdW4wRTUqqeCdfix2kOtWSMkjl7w=
 			</data>
 		</dict>
-		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xV4AI5xdY3bkooODsunV+ZrqiUU=
+			kDYCWsIwJSJ2GuwxCWA5jXbbUPo=
 			</data>
 			<key>hash2</key>
 			<data>
-			sboE3R/F/umfxKupJJLzlHAuYj2K9pa4YoM9EaKTs2c=
+			ebTMqKIobu+KwfglDDCEo5PDpdDl7+cJ95MZjySHr54=
 			</data>
 		</dict>
-		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/DocumentViewerComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ryuyr92plfO4CZITeFbHRduAmCE=
+			8FXnzEfx0lYdj/ZC3Go9Gmf17kw=
 			</data>
 			<key>hash2</key>
 			<data>
-			GMTb50HGlgqWGL9aeVkL+ybDVlDn23/guaZE0CRvQiM=
+			5d4Lun+PizwpDzrgdW4wRTUqqeCdfix2kOtWSMkjl7w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

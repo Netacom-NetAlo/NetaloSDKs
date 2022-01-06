@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9guJXedIQK22UDg93Qrf92XMHB8=
+		9Bych/6vnDgzb/N8cJ47F+LNiIs=
 		</data>
-		<key>Modules/NACallSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/NACallSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		pHR5KFJi/znA4kfQUA3xx9Ui2JE=
+		V7HDzDLlHyzzOW/KmCGZanaftg4=
 		</data>
-		<key>Modules/NACallSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/NACallSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		pHR5KFJi/znA4kfQUA3xx9Ui2JE=
+		V7HDzDLlHyzzOW/KmCGZanaftg4=
 		</data>
-		<key>Modules/NACallSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/NACallSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Uw7bNPqdlz0Mdkyz+q7zPoXYpP8=
+		NNJuB3NCRjgJ0tTSyDQdLxkVuHE=
 		</data>
-		<key>Modules/NACallSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/NACallSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		eMR/OrJbbLRh8ZrzB+6190Q7n00=
+		pdjkwbfa428RsiqM4RKFzrEmYLU=
 		</data>
-		<key>Modules/NACallSDK.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/NACallSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Uw7bNPqdlz0Mdkyz+q7zPoXYpP8=
+		NNJuB3NCRjgJ0tTSyDQdLxkVuHE=
 		</data>
-		<key>Modules/NACallSDK.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/NACallSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		eMR/OrJbbLRh8ZrzB+6190Q7n00=
+		pdjkwbfa428RsiqM4RKFzrEmYLU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,70 +69,70 @@
 			Tj4rnLgYq2bcQi3AWnnDzvkdyFbjIZBo/fEwHwyYDp4=
 			</data>
 		</dict>
-		<key>Modules/NACallSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/NACallSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pHR5KFJi/znA4kfQUA3xx9Ui2JE=
+			V7HDzDLlHyzzOW/KmCGZanaftg4=
 			</data>
 			<key>hash2</key>
 			<data>
-			4soKSON/0DkBLsbAOcJNn18ZVk+/VjVj2Wa2UznhRmk=
+			UJ1mqbCZJjvTh/tcYB7kiYPS3d+hJaMc7cNDQS5IVLA=
 			</data>
 		</dict>
-		<key>Modules/NACallSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/NACallSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pHR5KFJi/znA4kfQUA3xx9Ui2JE=
+			V7HDzDLlHyzzOW/KmCGZanaftg4=
 			</data>
 			<key>hash2</key>
 			<data>
-			4soKSON/0DkBLsbAOcJNn18ZVk+/VjVj2Wa2UznhRmk=
+			UJ1mqbCZJjvTh/tcYB7kiYPS3d+hJaMc7cNDQS5IVLA=
 			</data>
 		</dict>
-		<key>Modules/NACallSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/NACallSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Uw7bNPqdlz0Mdkyz+q7zPoXYpP8=
+			NNJuB3NCRjgJ0tTSyDQdLxkVuHE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ywyaH3dezhwbBs2NWh/Da6hhuYPnL9Y2WokOpD3hgKU=
+			18gl5MrYl0fYYBWavZqNuUnRGCaxSF4ehb1ttc8jrXY=
 			</data>
 		</dict>
-		<key>Modules/NACallSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/NACallSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eMR/OrJbbLRh8ZrzB+6190Q7n00=
+			pdjkwbfa428RsiqM4RKFzrEmYLU=
 			</data>
 			<key>hash2</key>
 			<data>
-			0iLTB7rydKWcMl5pTOMRoz8mTuHgVhZvDxVMBRQlLEE=
+			icCdjz99FtN4bwCSWTyfjW5Yz4z+UdevHA74wPpTZYw=
 			</data>
 		</dict>
-		<key>Modules/NACallSDK.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/NACallSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Uw7bNPqdlz0Mdkyz+q7zPoXYpP8=
+			NNJuB3NCRjgJ0tTSyDQdLxkVuHE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ywyaH3dezhwbBs2NWh/Da6hhuYPnL9Y2WokOpD3hgKU=
+			18gl5MrYl0fYYBWavZqNuUnRGCaxSF4ehb1ttc8jrXY=
 			</data>
 		</dict>
-		<key>Modules/NACallSDK.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/NACallSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eMR/OrJbbLRh8ZrzB+6190Q7n00=
+			pdjkwbfa428RsiqM4RKFzrEmYLU=
 			</data>
 			<key>hash2</key>
 			<data>
-			0iLTB7rydKWcMl5pTOMRoz8mTuHgVhZvDxVMBRQlLEE=
+			icCdjz99FtN4bwCSWTyfjW5Yz4z+UdevHA74wPpTZYw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jqsujFVn/FesNezGje3C8VRRCC0=
+		UXMNT1SXxrcNIhhOocQtCYBoHmU=
 		</data>
 		<key>ListCall.storyboardc/Info.plist</key>
 		<data>
@@ -36,29 +36,29 @@
 		<data>
 		lQFY4sef4rc0Zns7wftVu54jdio=
 		</data>
-		<key>Modules/ListCallComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/ListCallComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		hgCcUSJ3wxp5r3xU+6GwTLCQBFU=
+		k/SqiZVbpULvraHo3ZMZHP7jO00=
 		</data>
-		<key>Modules/ListCallComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/ListCallComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		hgCcUSJ3wxp5r3xU+6GwTLCQBFU=
+		k/SqiZVbpULvraHo3ZMZHP7jO00=
 		</data>
-		<key>Modules/ListCallComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/ListCallComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		OLg83hAGQZmMyyt9lHR6RH+e0lY=
+		ofz71uxC6utLJ0Gt54m5i35hGX0=
 		</data>
-		<key>Modules/ListCallComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/ListCallComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		XBhmJjfxlPYVOTF+frlpjhUayG8=
+		GfjNCpLTnUlEQHddjomDwxbHy2o=
 		</data>
-		<key>Modules/ListCallComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/ListCallComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		OLg83hAGQZmMyyt9lHR6RH+e0lY=
+		ofz71uxC6utLJ0Gt54m5i35hGX0=
 		</data>
-		<key>Modules/ListCallComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/ListCallComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		XBhmJjfxlPYVOTF+frlpjhUayG8=
+		GfjNCpLTnUlEQHddjomDwxbHy2o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -152,70 +152,70 @@
 			XYUVS1q5+5/2sTBj9gAHDX+lvUM2zd+NwjDGq5t218w=
 			</data>
 		</dict>
-		<key>Modules/ListCallComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/ListCallComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hgCcUSJ3wxp5r3xU+6GwTLCQBFU=
+			k/SqiZVbpULvraHo3ZMZHP7jO00=
 			</data>
 			<key>hash2</key>
 			<data>
-			gE7HY4C5RJgWhRtQar/BGbvazJXThc5hRIX+EjVX264=
+			2Yn0N/K2juS9TXxwqqTathHrhnxDg07YmxmKbOgt3LA=
 			</data>
 		</dict>
-		<key>Modules/ListCallComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/ListCallComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hgCcUSJ3wxp5r3xU+6GwTLCQBFU=
+			k/SqiZVbpULvraHo3ZMZHP7jO00=
 			</data>
 			<key>hash2</key>
 			<data>
-			gE7HY4C5RJgWhRtQar/BGbvazJXThc5hRIX+EjVX264=
+			2Yn0N/K2juS9TXxwqqTathHrhnxDg07YmxmKbOgt3LA=
 			</data>
 		</dict>
-		<key>Modules/ListCallComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/ListCallComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OLg83hAGQZmMyyt9lHR6RH+e0lY=
+			ofz71uxC6utLJ0Gt54m5i35hGX0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6doRlStglNCvpHmQxVFVV01ZOdRrewy57BS66mhRgJk=
+			+DaymeTjfZFdiFID+N19jnMLk4TvI+Qwzyt/bKIGMbQ=
 			</data>
 		</dict>
-		<key>Modules/ListCallComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/ListCallComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XBhmJjfxlPYVOTF+frlpjhUayG8=
+			GfjNCpLTnUlEQHddjomDwxbHy2o=
 			</data>
 			<key>hash2</key>
 			<data>
-			1+CBG+lZUSwgb3U5fNUKWbEUcxSmjz88b4WXcbjivR8=
+			1CoH8VdY+rx+GOhT0aVLW5rbMTFz3cR5IFcOXuiqeSU=
 			</data>
 		</dict>
-		<key>Modules/ListCallComponent.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/ListCallComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OLg83hAGQZmMyyt9lHR6RH+e0lY=
+			ofz71uxC6utLJ0Gt54m5i35hGX0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6doRlStglNCvpHmQxVFVV01ZOdRrewy57BS66mhRgJk=
+			+DaymeTjfZFdiFID+N19jnMLk4TvI+Qwzyt/bKIGMbQ=
 			</data>
 		</dict>
-		<key>Modules/ListCallComponent.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/ListCallComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XBhmJjfxlPYVOTF+frlpjhUayG8=
+			GfjNCpLTnUlEQHddjomDwxbHy2o=
 			</data>
 			<key>hash2</key>
 			<data>
-			1+CBG+lZUSwgb3U5fNUKWbEUcxSmjz88b4WXcbjivR8=
+			1CoH8VdY+rx+GOhT0aVLW5rbMTFz3cR5IFcOXuiqeSU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
