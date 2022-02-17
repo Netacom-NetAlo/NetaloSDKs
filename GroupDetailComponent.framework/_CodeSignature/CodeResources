@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		uGq1qd7ybo6FrMdDQR58ZNq89WQ=
+		6JCEsH7XBubYgbaSmdXz0haaYtU=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		uGq1qd7ybo6FrMdDQR58ZNq89WQ=
+		6JCEsH7XBubYgbaSmdXz0haaYtU=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		o3IUQKKQnQn90OiBSiHuke55eXk=
+		XWGWdke56RFEbGb5HUH30gc05GU=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		o3IUQKKQnQn90OiBSiHuke55eXk=
+		XWGWdke56RFEbGb5HUH30gc05GU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -209,22 +209,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uGq1qd7ybo6FrMdDQR58ZNq89WQ=
+			6JCEsH7XBubYgbaSmdXz0haaYtU=
 			</data>
 			<key>hash2</key>
 			<data>
-			LoRvjB8Kt4ZiamSFKWE23sqiTqanmtbnx4FN8V2smL4=
+			qDetXtV8/09+PxnhBM5cwTYOXBgXnLlJI5k3//haHIg=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uGq1qd7ybo6FrMdDQR58ZNq89WQ=
+			6JCEsH7XBubYgbaSmdXz0haaYtU=
 			</data>
 			<key>hash2</key>
 			<data>
-			LoRvjB8Kt4ZiamSFKWE23sqiTqanmtbnx4FN8V2smL4=
+			qDetXtV8/09+PxnhBM5cwTYOXBgXnLlJI5k3//haHIg=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -242,11 +242,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o3IUQKKQnQn90OiBSiHuke55eXk=
+			XWGWdke56RFEbGb5HUH30gc05GU=
 			</data>
 			<key>hash2</key>
 			<data>
-			i7ikkedL9+y733xGTMA5H/R6giG9JsYh2QBNaoFO/+c=
+			NKYOHZZT7q0CbQ7WV4k08d1EUjU5C/tn05fS5e/mmjI=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64.swiftdoc</key>
@@ -264,11 +264,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o3IUQKKQnQn90OiBSiHuke55eXk=
+			XWGWdke56RFEbGb5HUH30gc05GU=
 			</data>
 			<key>hash2</key>
 			<data>
-			i7ikkedL9+y733xGTMA5H/R6giG9JsYh2QBNaoFO/+c=
+			NKYOHZZT7q0CbQ7WV4k08d1EUjU5C/tn05fS5e/mmjI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

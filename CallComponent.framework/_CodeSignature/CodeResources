@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/CallComponent-Swift.h</key>
 		<data>
-		fsA0vh8ux/P+/4CNz/apVYjKrSI=
+		NmlcKtWqeVpJiKs9kQVRsOinvmw=
 		</data>
 		<key>Headers/CallComponent.h</key>
 		<data>
@@ -22,27 +22,27 @@
 		</data>
 		<key>Modules/CallComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		7JEWzM/Kr1/VjhwGKXoq4VZr+4E=
+		j/Kl49q4IpsYLVrWKBlTLJlAIa4=
 		</data>
 		<key>Modules/CallComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		7JEWzM/Kr1/VjhwGKXoq4VZr+4E=
+		j/Kl49q4IpsYLVrWKBlTLJlAIa4=
 		</data>
 		<key>Modules/CallComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		5GFb6np6ToD4FnKsHlXJ7rZz6Uk=
+		43SLjDG+KJyd+s2trG5XsihZ6AY=
 		</data>
 		<key>Modules/CallComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Ha8PcXOmfg2NW7UMa6LP8F4gsyc=
+		WTW0duABcUSS8IiX9MyTyYDHbaQ=
 		</data>
 		<key>Modules/CallComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		5GFb6np6ToD4FnKsHlXJ7rZz6Uk=
+		43SLjDG+KJyd+s2trG5XsihZ6AY=
 		</data>
 		<key>Modules/CallComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Ha8PcXOmfg2NW7UMa6LP8F4gsyc=
+		WTW0duABcUSS8IiX9MyTyYDHbaQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>PersonalCallVC.nib/objects-11.0+.nib</key>
 		<data>
-		MvriUZ4gyNhNCs5pAgJPqaGEZtA=
+		pIb/vm87MLYLG4a80ywqRw80shM=
 		</data>
 		<key>PersonalCallVC.nib/runtime.nib</key>
 		<data>
-		OxOZ1KVAN7X7DsboyHkjFWdt7lE=
+		NKEAfxrf87DFx4z/O4Ik5mkoinQ=
 		</data>
 		<key>VideoViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -82,11 +82,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fsA0vh8ux/P+/4CNz/apVYjKrSI=
+			NmlcKtWqeVpJiKs9kQVRsOinvmw=
 			</data>
 			<key>hash2</key>
 			<data>
-			KDjEHaD37bmUP6WPtsTJJ0gQR603wfRheQIwEykwKVI=
+			eVeZOZT1IyN4J6WNMoKUvuKgXz37/CybsUAC7wtoOYI=
 			</data>
 		</dict>
 		<key>Headers/CallComponent.h</key>
@@ -104,66 +104,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7JEWzM/Kr1/VjhwGKXoq4VZr+4E=
+			j/Kl49q4IpsYLVrWKBlTLJlAIa4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q7KfCaE1jwvFP0FYPQp1iLnXTRCn5P/L333EhOTe2YA=
+			LmO0rU3Tz9HbInyJMv421RTFUYEbelOlVGStMr9GiMY=
 			</data>
 		</dict>
 		<key>Modules/CallComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7JEWzM/Kr1/VjhwGKXoq4VZr+4E=
+			j/Kl49q4IpsYLVrWKBlTLJlAIa4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q7KfCaE1jwvFP0FYPQp1iLnXTRCn5P/L333EhOTe2YA=
+			LmO0rU3Tz9HbInyJMv421RTFUYEbelOlVGStMr9GiMY=
 			</data>
 		</dict>
 		<key>Modules/CallComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5GFb6np6ToD4FnKsHlXJ7rZz6Uk=
+			43SLjDG+KJyd+s2trG5XsihZ6AY=
 			</data>
 			<key>hash2</key>
 			<data>
-			A942DbFbbrBDwjTVMj5Erzv1Ka54mMG7ZSt8MbLDzcM=
+			aFjpU2/3nZKGfa7aTHO497hsCyR7//XwyyR5J+f8FDU=
 			</data>
 		</dict>
 		<key>Modules/CallComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ha8PcXOmfg2NW7UMa6LP8F4gsyc=
+			WTW0duABcUSS8IiX9MyTyYDHbaQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			8BIe3C3t076dKLoTmycEr+k+VEfaBiU/uom0tN9IDzg=
+			z6p67AkE7F1WqDdav2C4TP9EI/jquI5+kz8nHLpqHH4=
 			</data>
 		</dict>
 		<key>Modules/CallComponent.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5GFb6np6ToD4FnKsHlXJ7rZz6Uk=
+			43SLjDG+KJyd+s2trG5XsihZ6AY=
 			</data>
 			<key>hash2</key>
 			<data>
-			A942DbFbbrBDwjTVMj5Erzv1Ka54mMG7ZSt8MbLDzcM=
+			aFjpU2/3nZKGfa7aTHO497hsCyR7//XwyyR5J+f8FDU=
 			</data>
 		</dict>
 		<key>Modules/CallComponent.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ha8PcXOmfg2NW7UMa6LP8F4gsyc=
+			WTW0duABcUSS8IiX9MyTyYDHbaQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			8BIe3C3t076dKLoTmycEr+k+VEfaBiU/uom0tN9IDzg=
+			z6p67AkE7F1WqDdav2C4TP9EI/jquI5+kz8nHLpqHH4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -181,22 +181,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MvriUZ4gyNhNCs5pAgJPqaGEZtA=
+			pIb/vm87MLYLG4a80ywqRw80shM=
 			</data>
 			<key>hash2</key>
 			<data>
-			+gUtlS9N/V4eljOMZgG7Z9xtx3aS6R3t69ZSGoCsDA8=
+			SOBsU3ZNfQ9Kd/GawQDh8fQp/klUbkExcwytUTadfu4=
 			</data>
 		</dict>
 		<key>PersonalCallVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OxOZ1KVAN7X7DsboyHkjFWdt7lE=
+			NKEAfxrf87DFx4z/O4Ik5mkoinQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			B3pjrgzI10qVKIOALs+8E9anTsvBWuB8Cqb5uZ4g9eo=
+			KR1rGmeOzrkEE0RMFrNDhXS9pquncdfFGXJP1ekWUWM=
 			</data>
 		</dict>
 		<key>VideoViewController.nib/objects-11.0+.nib</key>

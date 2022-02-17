@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		hmFWW4hJZYXg9mtE5vvr5mscR+0=
+		Hp9p+GfOS88+fxd1Ps3CgcbZ4uE=
 		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		hmFWW4hJZYXg9mtE5vvr5mscR+0=
+		Hp9p+GfOS88+fxd1Ps3CgcbZ4uE=
 		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8ECN3pcmOuHLD9aFEZP2OjU9xNc=
+		s8uLEEcs2QwuuoddefRubfYRPi4=
 		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		8ECN3pcmOuHLD9aFEZP2OjU9xNc=
+		s8uLEEcs2QwuuoddefRubfYRPi4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,22 +103,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hmFWW4hJZYXg9mtE5vvr5mscR+0=
+			Hp9p+GfOS88+fxd1Ps3CgcbZ4uE=
 			</data>
 			<key>hash2</key>
 			<data>
-			iWs3N5rTOquiuZCzOgODj1Aig5GIq3GtHVUlbD4FCxg=
+			kAdW1H6Fsz9qk58p82l35hOS1a7aqNZg9jcBalIbAjc=
 			</data>
 		</dict>
 		<key>Modules/LocationPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hmFWW4hJZYXg9mtE5vvr5mscR+0=
+			Hp9p+GfOS88+fxd1Ps3CgcbZ4uE=
 			</data>
 			<key>hash2</key>
 			<data>
-			iWs3N5rTOquiuZCzOgODj1Aig5GIq3GtHVUlbD4FCxg=
+			kAdW1H6Fsz9qk58p82l35hOS1a7aqNZg9jcBalIbAjc=
 			</data>
 		</dict>
 		<key>Modules/LocationPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -136,11 +136,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8ECN3pcmOuHLD9aFEZP2OjU9xNc=
+			s8uLEEcs2QwuuoddefRubfYRPi4=
 			</data>
 			<key>hash2</key>
 			<data>
-			cMW+C1/oKzNWuRfd+FMFYD+W4wLkbZ7LPUJ1kl3uNss=
+			R5EtJ68p0JT3OXiiwQhE0WtLLeQYO6fVKsDQw9b5zgI=
 			</data>
 		</dict>
 		<key>Modules/LocationPickerComponent.swiftmodule/arm64.swiftdoc</key>
@@ -158,11 +158,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8ECN3pcmOuHLD9aFEZP2OjU9xNc=
+			s8uLEEcs2QwuuoddefRubfYRPi4=
 			</data>
 			<key>hash2</key>
 			<data>
-			cMW+C1/oKzNWuRfd+FMFYD+W4wLkbZ7LPUJ1kl3uNss=
+			R5EtJ68p0JT3OXiiwQhE0WtLLeQYO6fVKsDQw9b5zgI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -189,6 +189,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreGraphics;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -281,6 +282,17 @@ SWIFT_CLASS("_TtC8NACoreUI20CollectionViewSource")
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView moveItemAtIndexPath:(NSIndexPath * _Nonnull)sourceIndexPath toIndexPath:(NSIndexPath * _Nonnull)destinationIndexPath;
 @end
 
+@class UITouch;
+@class UIEvent;
+
+SWIFT_CLASS("_TtC8NACoreUI18DragableCameraView")
+@interface DragableCameraView : UIView
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC8NACoreUI13DraggableView")
 @interface DraggableView : UIView
@@ -344,6 +356,8 @@ SWIFT_CLASS("_TtC8NACoreUI21KMPlaceholderTextView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
 @end
+
+
 
 
 
