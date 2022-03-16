@@ -22,31 +22,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SuGVCyEaIpSbMVKHyaq+oZjUuTE=
+		PaY3XKB5GCqOG+MUtlp4AHa2z5w=
 		</data>
-		<key>Modules/AddContactComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Modules/AddContactComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		xfWbsFWLExYQOVxGaM3d0JyQo6E=
+		2ZRgXgrQQ1XWtSe7m2EB615jS/8=
 		</data>
-		<key>Modules/AddContactComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/AddContactComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		xfWbsFWLExYQOVxGaM3d0JyQo6E=
+		2ZRgXgrQQ1XWtSe7m2EB615jS/8=
 		</data>
-		<key>Modules/AddContactComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/AddContactComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		hDmQMlp96J//3nJiI+bLanBQLkA=
+		aFMaRUxSJX6AWlLCXyg9YxLas88=
 		</data>
-		<key>Modules/AddContactComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/AddContactComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0Oh6Pu0ip/CA+ybYUnFrSgDwkGQ=
+		eUgI1UG+h4pG4d8nMuN7eE+sV10=
 		</data>
-		<key>Modules/AddContactComponent.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/AddContactComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		hDmQMlp96J//3nJiI+bLanBQLkA=
+		aFMaRUxSJX6AWlLCXyg9YxLas88=
 		</data>
-		<key>Modules/AddContactComponent.swiftmodule/arm64.swiftmodule</key>
+		<key>Modules/AddContactComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		0Oh6Pu0ip/CA+ybYUnFrSgDwkGQ=
+		eUgI1UG+h4pG4d8nMuN7eE+sV10=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,70 +99,70 @@
 			3B3iUpbvlmmBkH7+22kqgjAuhS7fCd7uMn1k6zTEw48=
 			</data>
 		</dict>
-		<key>Modules/AddContactComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Modules/AddContactComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xfWbsFWLExYQOVxGaM3d0JyQo6E=
+			2ZRgXgrQQ1XWtSe7m2EB615jS/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			XdJAL9K/rUye16EPJKVdoN3qdy21TpM3JjGc71fsghA=
+			GkZZlC1q3aq/dQYPY7Q8eAkaCqT2hbwELYDzIxVFvGI=
 			</data>
 		</dict>
-		<key>Modules/AddContactComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/AddContactComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xfWbsFWLExYQOVxGaM3d0JyQo6E=
+			2ZRgXgrQQ1XWtSe7m2EB615jS/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			XdJAL9K/rUye16EPJKVdoN3qdy21TpM3JjGc71fsghA=
+			GkZZlC1q3aq/dQYPY7Q8eAkaCqT2hbwELYDzIxVFvGI=
 			</data>
 		</dict>
-		<key>Modules/AddContactComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/AddContactComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hDmQMlp96J//3nJiI+bLanBQLkA=
+			aFMaRUxSJX6AWlLCXyg9YxLas88=
 			</data>
 			<key>hash2</key>
 			<data>
-			b9rnGq/y6buG5vEMRPXeUzA88dEhNot8z3w8igYrKZE=
+			ryIPi76Zx5kkSYiYQxEQm4/C/PRM65rrNAwPOT7/LUo=
 			</data>
 		</dict>
-		<key>Modules/AddContactComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/AddContactComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0Oh6Pu0ip/CA+ybYUnFrSgDwkGQ=
+			eUgI1UG+h4pG4d8nMuN7eE+sV10=
 			</data>
 			<key>hash2</key>
 			<data>
-			cofAkIMY0PtNX8z00Aag6aybOjX74je494IkjFbnVfo=
+			T2oQUQDb6f3mmw+ogwvkAM5izhxxdjFiqMLkdfz92ic=
 			</data>
 		</dict>
-		<key>Modules/AddContactComponent.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/AddContactComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hDmQMlp96J//3nJiI+bLanBQLkA=
+			aFMaRUxSJX6AWlLCXyg9YxLas88=
 			</data>
 			<key>hash2</key>
 			<data>
-			b9rnGq/y6buG5vEMRPXeUzA88dEhNot8z3w8igYrKZE=
+			ryIPi76Zx5kkSYiYQxEQm4/C/PRM65rrNAwPOT7/LUo=
 			</data>
 		</dict>
-		<key>Modules/AddContactComponent.swiftmodule/arm64.swiftmodule</key>
+		<key>Modules/AddContactComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0Oh6Pu0ip/CA+ybYUnFrSgDwkGQ=
+			eUgI1UG+h4pG4d8nMuN7eE+sV10=
 			</data>
 			<key>hash2</key>
 			<data>
-			cofAkIMY0PtNX8z00Aag6aybOjX74je494IkjFbnVfo=
+			T2oQUQDb6f3mmw+ogwvkAM5izhxxdjFiqMLkdfz92ic=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

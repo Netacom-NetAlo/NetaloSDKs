@@ -38,7 +38,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R/PKJPrFtc7hbhMzHnL1aoaNQnE=
+		5PLfCfJW4rmHAdwYQP+n1+mNe4M=
 		</data>
 		<key>InputBar.nib/objects-14.0+.nib</key>
 		<data>
@@ -76,29 +76,29 @@
 		<data>
 		E9FQ+qQR/XhMFk03A52N7zKPdwc=
 		</data>
-		<key>Modules/ChatComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Modules/ChatComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		7D1BmISZdLg6O6sF6VgElpVAF+k=
+		tq6UPRhYkx8UqAfdDDM4b65nIrQ=
 		</data>
-		<key>Modules/ChatComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/ChatComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		7D1BmISZdLg6O6sF6VgElpVAF+k=
+		tq6UPRhYkx8UqAfdDDM4b65nIrQ=
 		</data>
-		<key>Modules/ChatComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		rCTdGcNp++3sGf5fOoiU0opasbk=
+		fluHI5yAQqTyUrXJVX5wBabRFmo=
 		</data>
-		<key>Modules/ChatComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AXWG5eWzNtGyS+eM7HVR9jm9Y2E=
+		IbcD7/C11bF+pxA2QQ3R61daCJ0=
 		</data>
-		<key>Modules/ChatComponent.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		rCTdGcNp++3sGf5fOoiU0opasbk=
+		fluHI5yAQqTyUrXJVX5wBabRFmo=
 		</data>
-		<key>Modules/ChatComponent.swiftmodule/arm64.swiftmodule</key>
+		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		AXWG5eWzNtGyS+eM7HVR9jm9Y2E=
+		IbcD7/C11bF+pxA2QQ3R61daCJ0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -330,70 +330,70 @@
 			jZIgyBIhPQNF9cVwRqkSg+gNHYRa+tr2ORSf3fS3brM=
 			</data>
 		</dict>
-		<key>Modules/ChatComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Modules/ChatComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7D1BmISZdLg6O6sF6VgElpVAF+k=
+			tq6UPRhYkx8UqAfdDDM4b65nIrQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			hI0gem0OxN2jWk5ve6dj4yQLTUuRQztZ0A9UmaAInT0=
+			OM0lpTzVRobs0k0HPq/DeVlkja/ysGUIsk/0vT+zi5c=
 			</data>
 		</dict>
-		<key>Modules/ChatComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/ChatComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7D1BmISZdLg6O6sF6VgElpVAF+k=
+			tq6UPRhYkx8UqAfdDDM4b65nIrQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			hI0gem0OxN2jWk5ve6dj4yQLTUuRQztZ0A9UmaAInT0=
+			OM0lpTzVRobs0k0HPq/DeVlkja/ysGUIsk/0vT+zi5c=
 			</data>
 		</dict>
-		<key>Modules/ChatComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rCTdGcNp++3sGf5fOoiU0opasbk=
+			fluHI5yAQqTyUrXJVX5wBabRFmo=
 			</data>
 			<key>hash2</key>
 			<data>
-			SY3C8s5t1c2DsnfmJSsTlVp8L7yy/sB60P/nQFDDqGM=
+			d0ItqpfGn+0j7XP+YwE4AEB7EyKrp840pVcZplbvcTo=
 			</data>
 		</dict>
-		<key>Modules/ChatComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AXWG5eWzNtGyS+eM7HVR9jm9Y2E=
+			IbcD7/C11bF+pxA2QQ3R61daCJ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			DKnAlJs+4BD1Q3wIJoXm7VDPu+Idx+3D3axFag2Lr8U=
+			CvJ6xtonKJiXTRgZAe2vCRtlK0Xr6A9Q+hUoAqMX1EE=
 			</data>
 		</dict>
-		<key>Modules/ChatComponent.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rCTdGcNp++3sGf5fOoiU0opasbk=
+			fluHI5yAQqTyUrXJVX5wBabRFmo=
 			</data>
 			<key>hash2</key>
 			<data>
-			SY3C8s5t1c2DsnfmJSsTlVp8L7yy/sB60P/nQFDDqGM=
+			d0ItqpfGn+0j7XP+YwE4AEB7EyKrp840pVcZplbvcTo=
 			</data>
 		</dict>
-		<key>Modules/ChatComponent.swiftmodule/arm64.swiftmodule</key>
+		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AXWG5eWzNtGyS+eM7HVR9jm9Y2E=
+			IbcD7/C11bF+pxA2QQ3R61daCJ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			DKnAlJs+4BD1Q3wIJoXm7VDPu+Idx+3D3axFag2Lr8U=
+			CvJ6xtonKJiXTRgZAe2vCRtlK0Xr6A9Q+hUoAqMX1EE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

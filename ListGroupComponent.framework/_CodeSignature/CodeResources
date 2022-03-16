@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		K7hPsovDQzgiFDlaID3XS+Rn048=
+		9MfifoR+x0ApCq3uAWjNVf7YP8w=
 		</data>
 		<key>ListGroup.storyboardc/Info.plist</key>
 		<data>
@@ -44,29 +44,29 @@
 		<data>
 		BzaAW3+ECqCvRyYPqwaoYG811Z0=
 		</data>
-		<key>Modules/ListGroupComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Modules/ListGroupComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		sBxdEC80zGt3TPj0m2GlNyjyNHE=
+		AEsmHZXhrSoK4PciAZYYNXgFtfU=
 		</data>
-		<key>Modules/ListGroupComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/ListGroupComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		sBxdEC80zGt3TPj0m2GlNyjyNHE=
+		AEsmHZXhrSoK4PciAZYYNXgFtfU=
 		</data>
-		<key>Modules/ListGroupComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/ListGroupComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jNyUdQgxrbs/n5l5osEIRUEdKYs=
+		z7x+HRtjq/Khw8LJclI06IltIwE=
 		</data>
-		<key>Modules/ListGroupComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/ListGroupComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uvSELc59qXm/qDdnlYWmeDwzDro=
+		NXF6uB/pIUyuwzEc08o9QQWFibc=
 		</data>
-		<key>Modules/ListGroupComponent.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/ListGroupComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		jNyUdQgxrbs/n5l5osEIRUEdKYs=
+		z7x+HRtjq/Khw8LJclI06IltIwE=
 		</data>
-		<key>Modules/ListGroupComponent.swiftmodule/arm64.swiftmodule</key>
+		<key>Modules/ListGroupComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		uvSELc59qXm/qDdnlYWmeDwzDro=
+		NXF6uB/pIUyuwzEc08o9QQWFibc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -174,70 +174,70 @@
 			mBxXV2CxmP/wTd/uKEmg4Rjq9CwyHo3FIEtjo7NWdlQ=
 			</data>
 		</dict>
-		<key>Modules/ListGroupComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Modules/ListGroupComponent.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sBxdEC80zGt3TPj0m2GlNyjyNHE=
+			AEsmHZXhrSoK4PciAZYYNXgFtfU=
 			</data>
 			<key>hash2</key>
 			<data>
-			xER2Q8diumHFYyB/31nbEjG5sCGikRC4fWBQZPXE0IE=
+			RwcE7AKsgGhqr9JejrYIqEpQlQDHZWXbzJlNTf8W3j0=
 			</data>
 		</dict>
-		<key>Modules/ListGroupComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/ListGroupComponent.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sBxdEC80zGt3TPj0m2GlNyjyNHE=
+			AEsmHZXhrSoK4PciAZYYNXgFtfU=
 			</data>
 			<key>hash2</key>
 			<data>
-			xER2Q8diumHFYyB/31nbEjG5sCGikRC4fWBQZPXE0IE=
+			RwcE7AKsgGhqr9JejrYIqEpQlQDHZWXbzJlNTf8W3j0=
 			</data>
 		</dict>
-		<key>Modules/ListGroupComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/ListGroupComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jNyUdQgxrbs/n5l5osEIRUEdKYs=
+			z7x+HRtjq/Khw8LJclI06IltIwE=
 			</data>
 			<key>hash2</key>
 			<data>
-			LTHJfeDl/cKSjtuGmUbdLGRx3vLB9O0f5sKYtDArpZI=
+			aXWd1Tl570FSMxOXdsGFxte2ZU2CsRNT41byhjq49LQ=
 			</data>
 		</dict>
-		<key>Modules/ListGroupComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/ListGroupComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uvSELc59qXm/qDdnlYWmeDwzDro=
+			NXF6uB/pIUyuwzEc08o9QQWFibc=
 			</data>
 			<key>hash2</key>
 			<data>
-			+CYjJXeUTNE4MkWZCWoiSf0WETm8MTOf3DKYaNmRh3k=
+			Cte405dabv1o0zfvAUVIHPqbwcrtrkb08a//fISKnmQ=
 			</data>
 		</dict>
-		<key>Modules/ListGroupComponent.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/ListGroupComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jNyUdQgxrbs/n5l5osEIRUEdKYs=
+			z7x+HRtjq/Khw8LJclI06IltIwE=
 			</data>
 			<key>hash2</key>
 			<data>
-			LTHJfeDl/cKSjtuGmUbdLGRx3vLB9O0f5sKYtDArpZI=
+			aXWd1Tl570FSMxOXdsGFxte2ZU2CsRNT41byhjq49LQ=
 			</data>
 		</dict>
-		<key>Modules/ListGroupComponent.swiftmodule/arm64.swiftmodule</key>
+		<key>Modules/ListGroupComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uvSELc59qXm/qDdnlYWmeDwzDro=
+			NXF6uB/pIUyuwzEc08o9QQWFibc=
 			</data>
 			<key>hash2</key>
 			<data>
-			+CYjJXeUTNE4MkWZCWoiSf0WETm8MTOf3DKYaNmRh3k=
+			Cte405dabv1o0zfvAUVIHPqbwcrtrkb08a//fISKnmQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
