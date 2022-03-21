@@ -22,15 +22,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xeyMf5l3RZc/X6H7c1bosvdT1gw=
+		wj/xmRs/Z5JWEQWGZjcHYwQXq+8=
 		</data>
 		<key>Modules/MediaPickerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Hrb/d5F2jvPye42aGFx/b3aKiWI=
+		/efTGgghkS76v7Elkf5sRayAcp4=
 		</data>
 		<key>Modules/MediaPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		Hrb/d5F2jvPye42aGFx/b3aKiWI=
+		/efTGgghkS76v7Elkf5sRayAcp4=
 		</data>
 		<key>Modules/MediaPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/MediaPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		HBkr0U4fimn3B3BmMXbULOzZ00A=
+		J1LcdaIV87ILAQsMoZ9Sx/wdJY0=
 		</data>
 		<key>Modules/MediaPickerComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/MediaPickerComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		HBkr0U4fimn3B3BmMXbULOzZ00A=
+		J1LcdaIV87ILAQsMoZ9Sx/wdJY0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -111,22 +111,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hrb/d5F2jvPye42aGFx/b3aKiWI=
+			/efTGgghkS76v7Elkf5sRayAcp4=
 			</data>
 			<key>hash2</key>
 			<data>
-			aeoyb0WX4ruPmUWZ1kQN7x0+ODdhMUKpP6PLnKFo8bE=
+			O/Qo+ea5H81KQkAcHa+gXax4SdwvWVElSkmadrCB9qU=
 			</data>
 		</dict>
 		<key>Modules/MediaPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Hrb/d5F2jvPye42aGFx/b3aKiWI=
+			/efTGgghkS76v7Elkf5sRayAcp4=
 			</data>
 			<key>hash2</key>
 			<data>
-			aeoyb0WX4ruPmUWZ1kQN7x0+ODdhMUKpP6PLnKFo8bE=
+			O/Qo+ea5H81KQkAcHa+gXax4SdwvWVElSkmadrCB9qU=
 			</data>
 		</dict>
 		<key>Modules/MediaPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HBkr0U4fimn3B3BmMXbULOzZ00A=
+			J1LcdaIV87ILAQsMoZ9Sx/wdJY0=
 			</data>
 			<key>hash2</key>
 			<data>
-			/rfQyiUq642OhvvS4J1udXgFwHaJb+7Bp0aSAFsQr7s=
+			OE930XIb7PNXG/5OoRyH5B9M3s19x6nn8eo6++JCFCI=
 			</data>
 		</dict>
 		<key>Modules/MediaPickerComponent.swiftmodule/arm64.swiftdoc</key>
@@ -166,11 +166,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HBkr0U4fimn3B3BmMXbULOzZ00A=
+			J1LcdaIV87ILAQsMoZ9Sx/wdJY0=
 			</data>
 			<key>hash2</key>
 			<data>
-			/rfQyiUq642OhvvS4J1udXgFwHaJb+7Bp0aSAFsQr7s=
+			OE930XIb7PNXG/5OoRyH5B9M3s19x6nn8eo6++JCFCI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -30,15 +30,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YWuUsGfo/3hV0Fr3X4m0Wr/hekg=
+		KjrceMv5tUJedDckYG6cvEPwI7s=
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		MWg1/oWfrZGQsG9XYR7SGM+cjm0=
+		s+zJlVJVJO/Gfpg7cDbZBEopesA=
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		MWg1/oWfrZGQsG9XYR7SGM+cjm0=
+		s+zJlVJVJO/Gfpg7cDbZBEopesA=
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xSFBtTi3p2UoZmaKf49DuOFsthw=
+		NviwKlQrzF4Hag7tzxkPE5Qv49Q=
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		xSFBtTi3p2UoZmaKf49DuOFsthw=
+		NviwKlQrzF4Hag7tzxkPE5Qv49Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -133,22 +133,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MWg1/oWfrZGQsG9XYR7SGM+cjm0=
+			s+zJlVJVJO/Gfpg7cDbZBEopesA=
 			</data>
 			<key>hash2</key>
 			<data>
-			quhM3SC5WBSJiJdu8N2le/mQjX2upMxpB4+cvk1fD0E=
+			3ucciSWoxIjfgwSKf7ddB97WyCN5NwaespsTEiTGN5g=
 			</data>
 		</dict>
 		<key>Modules/ContactDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MWg1/oWfrZGQsG9XYR7SGM+cjm0=
+			s+zJlVJVJO/Gfpg7cDbZBEopesA=
 			</data>
 			<key>hash2</key>
 			<data>
-			quhM3SC5WBSJiJdu8N2le/mQjX2upMxpB4+cvk1fD0E=
+			3ucciSWoxIjfgwSKf7ddB97WyCN5NwaespsTEiTGN5g=
 			</data>
 		</dict>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -166,11 +166,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xSFBtTi3p2UoZmaKf49DuOFsthw=
+			NviwKlQrzF4Hag7tzxkPE5Qv49Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			X6xLn7bEmjPcy0vOZHx4MXtTII7o9lX2GPsbQVLBdnY=
+			rR+sBtm/+1gyGBgspe39TspKfBLkRyF4DzQ9qFT08U0=
 			</data>
 		</dict>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64.swiftdoc</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xSFBtTi3p2UoZmaKf49DuOFsthw=
+			NviwKlQrzF4Hag7tzxkPE5Qv49Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			X6xLn7bEmjPcy0vOZHx4MXtTII7o9lX2GPsbQVLBdnY=
+			rR+sBtm/+1gyGBgspe39TspKfBLkRyF4DzQ9qFT08U0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

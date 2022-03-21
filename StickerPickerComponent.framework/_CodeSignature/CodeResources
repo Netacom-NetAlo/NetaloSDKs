@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uDYyTyNVZIZ6lzp+/LQDyVL/kQM=
+		A2FmZ4rb4FgoS4264AUuFmO+M0E=
 		</data>
 		<key>Modules/StickerPickerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		4mXmWfm7XeYw+W5Os3mCVc49okQ=
+		T6eHu91RIHemJ61WjjAPC4LaNPk=
 		</data>
 		<key>Modules/StickerPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		4mXmWfm7XeYw+W5Os3mCVc49okQ=
+		T6eHu91RIHemJ61WjjAPC4LaNPk=
 		</data>
 		<key>Modules/StickerPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/StickerPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		E3GflQMna6UZx0vCv4GklALzBw0=
+		/Uh0gKooihoOP0iA+hKJ9UaBaOI=
 		</data>
 		<key>Modules/StickerPickerComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/StickerPickerComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		E3GflQMna6UZx0vCv4GklALzBw0=
+		/Uh0gKooihoOP0iA+hKJ9UaBaOI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,22 +81,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4mXmWfm7XeYw+W5Os3mCVc49okQ=
+			T6eHu91RIHemJ61WjjAPC4LaNPk=
 			</data>
 			<key>hash2</key>
 			<data>
-			q738r59PbbSELWP/1FXuCuc2jn8cxbLHeUo2ldvwllQ=
+			u/+FnSY5e1Hhiu3ZWm9OEjTJjuK5esY/sIi2QfbOyBM=
 			</data>
 		</dict>
 		<key>Modules/StickerPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4mXmWfm7XeYw+W5Os3mCVc49okQ=
+			T6eHu91RIHemJ61WjjAPC4LaNPk=
 			</data>
 			<key>hash2</key>
 			<data>
-			q738r59PbbSELWP/1FXuCuc2jn8cxbLHeUo2ldvwllQ=
+			u/+FnSY5e1Hhiu3ZWm9OEjTJjuK5esY/sIi2QfbOyBM=
 			</data>
 		</dict>
 		<key>Modules/StickerPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -114,11 +114,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E3GflQMna6UZx0vCv4GklALzBw0=
+			/Uh0gKooihoOP0iA+hKJ9UaBaOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			+92+DAUxnOW4DWeLfD0z9b3F4AbEdzdhQGFCxTbZa7Q=
+			ymxVE/XDw/dMs06a4xAjBoPn4sD9bYEG1DqtbVX+TZE=
 			</data>
 		</dict>
 		<key>Modules/StickerPickerComponent.swiftmodule/arm64.swiftdoc</key>
@@ -136,11 +136,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E3GflQMna6UZx0vCv4GklALzBw0=
+			/Uh0gKooihoOP0iA+hKJ9UaBaOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			+92+DAUxnOW4DWeLfD0z9b3F4AbEdzdhQGFCxTbZa7Q=
+			ymxVE/XDw/dMs06a4xAjBoPn4sD9bYEG1DqtbVX+TZE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -30,11 +30,11 @@
 		</data>
 		<key>GroupMemberListVC.nib/objects-11.0+.nib</key>
 		<data>
-		9TadGw4shJeGP4jxpqhcwY19eqU=
+		SLwQ7we7e1whSb0VF2vfMGfJqy4=
 		</data>
 		<key>GroupMemberListVC.nib/runtime.nib</key>
 		<data>
-		jwy93cQqvk4JIWlEKkTFkhSmAus=
+		MCgtj+yqi69hcQ2qLYJRxtviv1I=
 		</data>
 		<key>Headers/GroupDetailComponent-Swift.h</key>
 		<data>
@@ -46,15 +46,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4p2wh1z3AQijBucjkR5+SOFuzgY=
+		LEpX5CGCbEUrQX0W4jEYk9OpBL0=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		q3xPy6qI2l1ZXrwWt//zPhCoy1Y=
+		xJcIw/Ah9qi/tqNVF+LfrTDh41E=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		q3xPy6qI2l1ZXrwWt//zPhCoy1Y=
+		xJcIw/Ah9qi/tqNVF+LfrTDh41E=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		XWGWdke56RFEbGb5HUH30gc05GU=
+		IAFaqN6C+/dS4JuUT3W7j7VyC8k=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		XWGWdke56RFEbGb5HUH30gc05GU=
+		IAFaqN6C+/dS4JuUT3W7j7VyC8k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,19 +78,19 @@
 		</data>
 		<key>MoveMemberVC.nib/objects-11.0+.nib</key>
 		<data>
-		gYLJw39sN2xdtJYoeLucyhFeQo0=
+		DzhYX89Ece75nR1ylbucZ3IDVOc=
 		</data>
 		<key>MoveMemberVC.nib/runtime.nib</key>
 		<data>
-		Ey/Bu6nkyM+IPX51zs52Twr1s6w=
+		mpzkazAbtM+bgOCuwIHceE/8B2E=
 		</data>
 		<key>QRCodeVC.nib/objects-11.0+.nib</key>
 		<data>
-		rn1r8hbEyttM4o+twlvIrRhbqfY=
+		FIAKv+KgJ2Sn+Z1ivPybgFiQ9s8=
 		</data>
 		<key>QRCodeVC.nib/runtime.nib</key>
 		<data>
-		tQYcR8WbOiPwPdZkWvLfkob9og8=
+		FXyDjTefJNmCAKhMf8Z2+9vSaFo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -165,22 +165,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9TadGw4shJeGP4jxpqhcwY19eqU=
+			SLwQ7we7e1whSb0VF2vfMGfJqy4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gSnYeh4IR7qNHDaymkTJ0yswTemBw9q1ZgjZQYrHRTQ=
+			tu1f7CvriazNGNAlCuDckzU8xp0bbqC00iA58YpAsmc=
 			</data>
 		</dict>
 		<key>GroupMemberListVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jwy93cQqvk4JIWlEKkTFkhSmAus=
+			MCgtj+yqi69hcQ2qLYJRxtviv1I=
 			</data>
 			<key>hash2</key>
 			<data>
-			2avR4PN219rS/gkluZt7LJm5+u4SnAqd4tgQnIP2DKw=
+			vRrgAaE4MEwZ2zcTG4WKVTpu7KE3ibzmFmzSMA6VrxI=
 			</data>
 		</dict>
 		<key>Headers/GroupDetailComponent-Swift.h</key>
@@ -209,22 +209,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q3xPy6qI2l1ZXrwWt//zPhCoy1Y=
+			xJcIw/Ah9qi/tqNVF+LfrTDh41E=
 			</data>
 			<key>hash2</key>
 			<data>
-			OqH1xZVQr+Q6rNgLFI4Hvx5pJINkHIQJS97IuhmCx5k=
+			p7S4L7dTlm2F7oi1Hmv+cAwesOns/ABu5RTcdw/vf0U=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q3xPy6qI2l1ZXrwWt//zPhCoy1Y=
+			xJcIw/Ah9qi/tqNVF+LfrTDh41E=
 			</data>
 			<key>hash2</key>
 			<data>
-			OqH1xZVQr+Q6rNgLFI4Hvx5pJINkHIQJS97IuhmCx5k=
+			p7S4L7dTlm2F7oi1Hmv+cAwesOns/ABu5RTcdw/vf0U=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -242,11 +242,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XWGWdke56RFEbGb5HUH30gc05GU=
+			IAFaqN6C+/dS4JuUT3W7j7VyC8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			NKYOHZZT7q0CbQ7WV4k08d1EUjU5C/tn05fS5e/mmjI=
+			Yzy3YwE8AkZ28S5IWY0uIkQdY1Tb4MlThG+wn6IhpsA=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/arm64.swiftdoc</key>
@@ -264,11 +264,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XWGWdke56RFEbGb5HUH30gc05GU=
+			IAFaqN6C+/dS4JuUT3W7j7VyC8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			NKYOHZZT7q0CbQ7WV4k08d1EUjU5C/tn05fS5e/mmjI=
+			Yzy3YwE8AkZ28S5IWY0uIkQdY1Tb4MlThG+wn6IhpsA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -286,44 +286,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gYLJw39sN2xdtJYoeLucyhFeQo0=
+			DzhYX89Ece75nR1ylbucZ3IDVOc=
 			</data>
 			<key>hash2</key>
 			<data>
-			l9ZViaKHpJ312v01VFVzJ0YZK1KWFZum9a32myc7uG8=
+			vkgrqYfrS9+4/vLuw3udYJTLAzL1ZjtjML216KsgBNM=
 			</data>
 		</dict>
 		<key>MoveMemberVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ey/Bu6nkyM+IPX51zs52Twr1s6w=
+			mpzkazAbtM+bgOCuwIHceE/8B2E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xq058tJFZZPZHrH1sPDi7JHhsOsbX+j7QMirYsqfleg=
+			hUdUmUzdCxWXSvI8QsPPSr8/fMdKDLmLNcPwoKwkHPk=
 			</data>
 		</dict>
 		<key>QRCodeVC.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rn1r8hbEyttM4o+twlvIrRhbqfY=
+			FIAKv+KgJ2Sn+Z1ivPybgFiQ9s8=
 			</data>
 			<key>hash2</key>
 			<data>
-			jgBpfboNpqj8SpcBHCIQ9deDx1TzxqOPYDxXWhEktPQ=
+			vi6Wa04+Jo594TcPIKt+rcSCYXc9dgG45aoCjIvafZQ=
 			</data>
 		</dict>
 		<key>QRCodeVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tQYcR8WbOiPwPdZkWvLfkob9og8=
+			FXyDjTefJNmCAKhMf8Z2+9vSaFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			/FFTEHYytV/9XGWCD+AKH+4H3ZWg1/lRdARsKsmlNR8=
+			l6Gu/obE+eV9+xpt0vEogOzAWN1IY2kOZuG2H0PFBFo=
 			</data>
 		</dict>
 	</dict>
