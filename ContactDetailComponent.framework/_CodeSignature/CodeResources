@@ -6,11 +6,11 @@
 	<dict>
 		<key>ContactDetailVC.nib/objects-11.0+.nib</key>
 		<data>
-		SVRZ+6hXRBAm4jqaoj+mCsSw94g=
+		hXKT3s/Z5j1xHcyazRKyvNDogpM=
 		</data>
 		<key>ContactDetailVC.nib/runtime.nib</key>
 		<data>
-		PO7F0FEPt39oDTx1+q1e4D9aFk4=
+		51c1V6gH7dxAGokdSCJgE9/TNHk=
 		</data>
 		<key>EditContactVC.nib/objects-11.0+.nib</key>
 		<data>
@@ -30,15 +30,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YWuUsGfo/3hV0Fr3X4m0Wr/hekg=
+		grbPOR8U+y7eHaWb6r8T4PMKaew=
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		MWg1/oWfrZGQsG9XYR7SGM+cjm0=
+		ONcSB67wWgubtsXoaStTqw8Vacg=
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		MWg1/oWfrZGQsG9XYR7SGM+cjm0=
+		ONcSB67wWgubtsXoaStTqw8Vacg=
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xSFBtTi3p2UoZmaKf49DuOFsthw=
+		OxTJ5w7h0eXLTmu58FaeFXjTnjE=
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		xSFBtTi3p2UoZmaKf49DuOFsthw=
+		OxTJ5w7h0eXLTmu58FaeFXjTnjE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,22 +67,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SVRZ+6hXRBAm4jqaoj+mCsSw94g=
+			hXKT3s/Z5j1xHcyazRKyvNDogpM=
 			</data>
 			<key>hash2</key>
 			<data>
-			1XFaAZDKIvta0cguSsWBkwbo1Txv8ClMTCvG6mPG/Dk=
+			9AzEcBJFK0ozx4KJ56xvfVy9mt4pGS9JJoxx98g95bU=
 			</data>
 		</dict>
 		<key>ContactDetailVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PO7F0FEPt39oDTx1+q1e4D9aFk4=
+			51c1V6gH7dxAGokdSCJgE9/TNHk=
 			</data>
 			<key>hash2</key>
 			<data>
-			gCMiPx9hW9EgE4TFrMlAOdAZeOiTV6IbY9xyn6O6+Io=
+			WrgdI5iP1ZceFIfvwMsFCILv31Sye45WJTLCGpgDAXk=
 			</data>
 		</dict>
 		<key>EditContactVC.nib/objects-11.0+.nib</key>
@@ -133,22 +133,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MWg1/oWfrZGQsG9XYR7SGM+cjm0=
+			ONcSB67wWgubtsXoaStTqw8Vacg=
 			</data>
 			<key>hash2</key>
 			<data>
-			quhM3SC5WBSJiJdu8N2le/mQjX2upMxpB4+cvk1fD0E=
+			jWhKb1E1mQD0NPCte/8NsECq+h6oFAVf5nMzu5GJTBA=
 			</data>
 		</dict>
 		<key>Modules/ContactDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MWg1/oWfrZGQsG9XYR7SGM+cjm0=
+			ONcSB67wWgubtsXoaStTqw8Vacg=
 			</data>
 			<key>hash2</key>
 			<data>
-			quhM3SC5WBSJiJdu8N2le/mQjX2upMxpB4+cvk1fD0E=
+			jWhKb1E1mQD0NPCte/8NsECq+h6oFAVf5nMzu5GJTBA=
 			</data>
 		</dict>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -166,11 +166,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xSFBtTi3p2UoZmaKf49DuOFsthw=
+			OxTJ5w7h0eXLTmu58FaeFXjTnjE=
 			</data>
 			<key>hash2</key>
 			<data>
-			X6xLn7bEmjPcy0vOZHx4MXtTII7o9lX2GPsbQVLBdnY=
+			TnH+a2rM98636bG7NdEp0arA6VB3tbKmcq5ljIwTa0s=
 			</data>
 		</dict>
 		<key>Modules/ContactDetailComponent.swiftmodule/arm64.swiftdoc</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xSFBtTi3p2UoZmaKf49DuOFsthw=
+			OxTJ5w7h0eXLTmu58FaeFXjTnjE=
 			</data>
 			<key>hash2</key>
 			<data>
-			X6xLn7bEmjPcy0vOZHx4MXtTII7o9lX2GPsbQVLBdnY=
+			TnH+a2rM98636bG7NdEp0arA6VB3tbKmcq5ljIwTa0s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

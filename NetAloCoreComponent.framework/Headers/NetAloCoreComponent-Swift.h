@@ -1084,6 +1084,28 @@ SWIFT_CLASS("_TtC19NetAloCoreComponent15StickerListView")
 @end
 
 
+SWIFT_CLASS("_TtC19NetAloCoreComponent20StickerStoreItemCell")
+@interface StickerStoreItemCell : NABaseView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@interface StickerStoreItemCell (SWIFT_EXTENSION(NetAloCoreComponent)) <UIGestureRecognizerDelegate>
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer * _Nonnull)gestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+SWIFT_CLASS("_TtC19NetAloCoreComponent18StickerStoreItemVM")
+@interface StickerStoreItemVM : NABaseVM
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC19NetAloCoreComponent9StickerVM")
 @interface StickerVM : NABaseVM
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1232,7 +1254,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) CGFloat snackbarMinHeight;)
 
 
 
-
 @interface TTGSnackbar (SWIFT_EXTENSION(NetAloCoreComponent))
 - (void)setUpDefaultUIWithIcon:(UIImage * _Nullable)icon iconTintColor:(UIColor * _Nonnull)iconTintColor;
 - (void)setThemes;
@@ -1250,6 +1271,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) CGFloat snackbarMinHeight;)
 /// Dismiss the snackbar manually.
 - (void)dismiss;
 @end
+
 
 /// Snackbar animation types.
 /// <ul>

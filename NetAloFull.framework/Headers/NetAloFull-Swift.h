@@ -245,17 +245,6 @@ SWIFT_CLASS("_TtC10NetAloFull10NetAloFull")
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 @end
 
-
-@interface NetAloFull (SWIFT_EXTENSION(NetAloFull))
-- (void)setUserProfileUrlWith:(NSString * _Nonnull)userProfileUrl;
-- (void)getNumberOfBadge:(void (^ _Nonnull)(NSInteger))completion;
-- (NSString * _Nonnull)getUserProfileUrl SWIFT_WARN_UNUSED_RESULT;
-- (void)blockUserWithBlockedID:(NSString * _Nonnull)blockedID completion:(void (^ _Nonnull)(BOOL))completion;
-- (void)unblockUserWithBlockedID:(NSString * _Nonnull)blockedID completion:(void (^ _Nonnull)(BOOL))completion;
-- (void)sendMessageWithContent:(NSString * _Nonnull)content targetUserID:(NSString * _Nonnull)targetUserID completion:(void (^ _Nonnull)(BOOL))completion;
-- (void)isChattedWithTargetUserID:(NSString * _Nonnull)targetUserID completion:(void (^ _Nonnull)(BOOL))completion;
-@end
-
 @class UIApplication;
 @class NSData;
 @class NSUserActivity;
@@ -273,6 +262,22 @@ SWIFT_CLASS("_TtC10NetAloFull10NetAloFull")
 - (UIInterfaceOrientationMask)application:(UIApplication * _Nonnull)application supportedInterfaceOrientationsForWindow:(UIWindow * _Nullable)window SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)application:(UIApplication * _Nonnull)app openURL:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)application:(UIApplication * _Nonnull)application openURL:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface NetAloFull (SWIFT_EXTENSION(NetAloFull))
+- (void)setUserProfileUrlWith:(NSString * _Nonnull)userProfileUrl;
+- (void)getNumberOfBadge:(void (^ _Nonnull)(NSInteger))completion;
+- (NSString * _Nonnull)getUserProfileUrl SWIFT_WARN_UNUSED_RESULT;
+- (void)blockUserWithBlockedID:(NSString * _Nonnull)blockedID completion:(void (^ _Nonnull)(BOOL))completion;
+- (void)unblockUserWithBlockedID:(NSString * _Nonnull)blockedID completion:(void (^ _Nonnull)(BOOL))completion;
+- (void)sendMessageWithContent:(NSString * _Nonnull)content targetUserID:(NSString * _Nonnull)targetUserID completion:(void (^ _Nonnull)(BOOL))completion;
+- (void)isChattedWithTargetUserID:(NSString * _Nonnull)targetUserID completion:(void (^ _Nonnull)(BOOL))completion;
+- (void)addContactSDKWithTargetName:(NSString * _Nonnull)targetName targetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)deleteContactSDKWithTargetName:(NSString * _Nonnull)targetName targetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestAddContactSDKWithTargetName:(NSString * _Nonnull)targetName targetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)checkFriendWithTargetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)forceBroadCastUserStatusWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 @end
 
 

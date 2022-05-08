@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Niw/NSk4bVx9L8qqUC0T+nkfu+Y=
+		Vx/rkzEC5TRRXt8H+y+J6S5aBds=
 		</data>
 		<key>MediaDetailVC.nib</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		mqvMCeY/5oenOOd9+p8aSwWxOAo=
+		Dnv6b/IWWX1Bg5Wc4hgKzetULK8=
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		mqvMCeY/5oenOOd9+p8aSwWxOAo=
+		Dnv6b/IWWX1Bg5Wc4hgKzetULK8=
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ywubfSccxiACDwe/qCTnWs9PyD4=
+		hzGdtKgcLpfKfDD8Gu9DGPOkkR8=
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ywubfSccxiACDwe/qCTnWs9PyD4=
+		hzGdtKgcLpfKfDD8Gu9DGPOkkR8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -118,22 +118,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mqvMCeY/5oenOOd9+p8aSwWxOAo=
+			Dnv6b/IWWX1Bg5Wc4hgKzetULK8=
 			</data>
 			<key>hash2</key>
 			<data>
-			gjSH1F0FaT8NP/hBW47W7IVVYQueqB/eRCeU9BWHfyo=
+			D3XyUnNQGL1yYzKuwS4LklFRWKFOy9V8Aodty2TT5Rg=
 			</data>
 		</dict>
 		<key>Modules/MediaDetailComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mqvMCeY/5oenOOd9+p8aSwWxOAo=
+			Dnv6b/IWWX1Bg5Wc4hgKzetULK8=
 			</data>
 			<key>hash2</key>
 			<data>
-			gjSH1F0FaT8NP/hBW47W7IVVYQueqB/eRCeU9BWHfyo=
+			D3XyUnNQGL1yYzKuwS4LklFRWKFOy9V8Aodty2TT5Rg=
 			</data>
 		</dict>
 		<key>Modules/MediaDetailComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -151,11 +151,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ywubfSccxiACDwe/qCTnWs9PyD4=
+			hzGdtKgcLpfKfDD8Gu9DGPOkkR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			EsfEfQrqGPg8Ns0RbWzvRpUxkMQKSHlgzzwfS6mAkko=
+			MMwWsK4p2aFbTpChMA5vJKqHyNhlfXarivfuOlPslgg=
 			</data>
 		</dict>
 		<key>Modules/MediaDetailComponent.swiftmodule/arm64.swiftdoc</key>
@@ -173,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ywubfSccxiACDwe/qCTnWs9PyD4=
+			hzGdtKgcLpfKfDD8Gu9DGPOkkR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			EsfEfQrqGPg8Ns0RbWzvRpUxkMQKSHlgzzwfS6mAkko=
+			MMwWsK4p2aFbTpChMA5vJKqHyNhlfXarivfuOlPslgg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
