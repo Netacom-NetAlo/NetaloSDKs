@@ -22,15 +22,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		F7FwY8hgpkLtD+smqHz3dEeK+o4=
+		fpNS7QZkqIM2MfcAtmocaAgsKI0=
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		2cdrNMh8Kn4RdZlpEZWfprHyWeg=
+		nj3hzps0ZJpNr6RtIPvaU8+Xa6w=
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		2cdrNMh8Kn4RdZlpEZWfprHyWeg=
+		nj3hzps0ZJpNr6RtIPvaU8+Xa6w=
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Gd0OrvUmu2yH9mxRaVqDCaIUc4I=
+		FSD36NWhDkI6da666ZOB6b81U8k=
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Gd0OrvUmu2yH9mxRaVqDCaIUc4I=
+		FSD36NWhDkI6da666ZOB6b81U8k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -111,22 +111,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2cdrNMh8Kn4RdZlpEZWfprHyWeg=
+			nj3hzps0ZJpNr6RtIPvaU8+Xa6w=
 			</data>
 			<key>hash2</key>
 			<data>
-			7IfFl/aHvexxvOxAQXNvKqLK178bBafeLLnqkcHcR4g=
+			nxq7l9q/bnROGgRsF+Um9JDaJN5k4StGWtoyUEzaBDA=
 			</data>
 		</dict>
 		<key>Modules/NewGroupComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2cdrNMh8Kn4RdZlpEZWfprHyWeg=
+			nj3hzps0ZJpNr6RtIPvaU8+Xa6w=
 			</data>
 			<key>hash2</key>
 			<data>
-			7IfFl/aHvexxvOxAQXNvKqLK178bBafeLLnqkcHcR4g=
+			nxq7l9q/bnROGgRsF+Um9JDaJN5k4StGWtoyUEzaBDA=
 			</data>
 		</dict>
 		<key>Modules/NewGroupComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gd0OrvUmu2yH9mxRaVqDCaIUc4I=
+			FSD36NWhDkI6da666ZOB6b81U8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			u+i5mwwUbc6st9isv+FHi7L5dwej9SYoE7xr4B7suuM=
+			sI99i4XcIS9nKFcJHDRQ84+vASY/xubkI9BIz66i2Y4=
 			</data>
 		</dict>
 		<key>Modules/NewGroupComponent.swiftmodule/arm64.swiftdoc</key>
@@ -166,11 +166,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gd0OrvUmu2yH9mxRaVqDCaIUc4I=
+			FSD36NWhDkI6da666ZOB6b81U8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			u+i5mwwUbc6st9isv+FHi7L5dwej9SYoE7xr4B7suuM=
+			sI99i4XcIS9nKFcJHDRQ84+vASY/xubkI9BIz66i2Y4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

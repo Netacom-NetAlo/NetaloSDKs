@@ -1,3 +1,8 @@
+
+#V4
+
+- Show group chat with groupID 
+
 #V3
 
 - Update for dev 2.3.9(1)

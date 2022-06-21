@@ -22,15 +22,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/AWH1niWxZ9rl4TxGQ5BrrGHaW0=
+		SwmR26a5etKFwIBUlZY9lssMGGU=
 		</data>
 		<key>Modules/ForwardMessageComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		FJ1kcoYKKt1DtZq1/0F3+jd7azQ=
+		YLzmSrxndAVMl6Y22w4G9Oob5yI=
 		</data>
 		<key>Modules/ForwardMessageComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		FJ1kcoYKKt1DtZq1/0F3+jd7azQ=
+		YLzmSrxndAVMl6Y22w4G9Oob5yI=
 		</data>
 		<key>Modules/ForwardMessageComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/ForwardMessageComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		XZCrLtF4rYrikDR4JPllJN9DxUw=
+		J7Gw1j7uoNXJspSkV10zovgswAA=
 		</data>
 		<key>Modules/ForwardMessageComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ForwardMessageComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		XZCrLtF4rYrikDR4JPllJN9DxUw=
+		J7Gw1j7uoNXJspSkV10zovgswAA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,22 +103,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FJ1kcoYKKt1DtZq1/0F3+jd7azQ=
+			YLzmSrxndAVMl6Y22w4G9Oob5yI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bsv0k7Ui8IwiTviGxwLa6cPfVytnIWwKTQCkFLvLumA=
+			VChRG8DO0jgCz4XtRPBxiK34/K6J0YgL5vfhM9rBx9E=
 			</data>
 		</dict>
 		<key>Modules/ForwardMessageComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FJ1kcoYKKt1DtZq1/0F3+jd7azQ=
+			YLzmSrxndAVMl6Y22w4G9Oob5yI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bsv0k7Ui8IwiTviGxwLa6cPfVytnIWwKTQCkFLvLumA=
+			VChRG8DO0jgCz4XtRPBxiK34/K6J0YgL5vfhM9rBx9E=
 			</data>
 		</dict>
 		<key>Modules/ForwardMessageComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -136,11 +136,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XZCrLtF4rYrikDR4JPllJN9DxUw=
+			J7Gw1j7uoNXJspSkV10zovgswAA=
 			</data>
 			<key>hash2</key>
 			<data>
-			eKM/Hq/0SCicvB6txX8x/3tAcTDrpPeZqs/m7fKt9kk=
+			TX9OWzX2+zwdHrNpvbTJjzGbJ/UU79ChOHTYql6z1IQ=
 			</data>
 		</dict>
 		<key>Modules/ForwardMessageComponent.swiftmodule/arm64.swiftdoc</key>
@@ -158,11 +158,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XZCrLtF4rYrikDR4JPllJN9DxUw=
+			J7Gw1j7uoNXJspSkV10zovgswAA=
 			</data>
 			<key>hash2</key>
 			<data>
-			eKM/Hq/0SCicvB6txX8x/3tAcTDrpPeZqs/m7fKt9kk=
+			TX9OWzX2+zwdHrNpvbTJjzGbJ/UU79ChOHTYql6z1IQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
