@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/WebViewComponent-Swift.h</key>
 		<data>
-		7Qjj0Lz4dW0Q9SqBp1W68CA6hPc=
+		6dW4BrwRilAYVYtxeBJZB/6U3N8=
 		</data>
 		<key>Headers/WebViewComponent.h</key>
 		<data>
@@ -14,31 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		juqDFX8ncYpQaXUzKDIYcFQNpxM=
+		UDOHNvxDj8yomxtLug7z/FwGd3w=
 		</data>
 		<key>Modules/WebViewComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		OhMS8WRA+2+IuEJdCbdbglKuusQ=
-		</data>
-		<key>Modules/WebViewComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		OhMS8WRA+2+IuEJdCbdbglKuusQ=
+		OIvcPZnBPRFbN/9eDubW19MgmL4=
 		</data>
 		<key>Modules/WebViewComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		k5fDaWryIqryxkLT0EAqePkeyPE=
+		q+Uyyb+wzDWLOE28ZuRM63WvoKc=
 		</data>
 		<key>Modules/WebViewComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		y7oTsehf7qu1kXtldhRi2mltbE4=
-		</data>
-		<key>Modules/WebViewComponent.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		k5fDaWryIqryxkLT0EAqePkeyPE=
-		</data>
-		<key>Modules/WebViewComponent.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		y7oTsehf7qu1kXtldhRi2mltbE4=
+		2e59O443m0CzSzuGEDjRFCz5cnY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,11 +47,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Qjj0Lz4dW0Q9SqBp1W68CA6hPc=
+			6dW4BrwRilAYVYtxeBJZB/6U3N8=
 			</data>
 			<key>hash2</key>
 			<data>
-			a8OfIbHHOOQkW9lM8f6mV+OPckEgVSWfIc4eID5EeXE=
+			d/wBXBbo/F3tEnYcFJbTdhyJ6LF/nZNyc247amJIq/o=
 			</data>
 		</dict>
 		<key>Headers/WebViewComponent.h</key>
@@ -81,66 +69,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OhMS8WRA+2+IuEJdCbdbglKuusQ=
+			OIvcPZnBPRFbN/9eDubW19MgmL4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yxt15e1IXVvu9EiVWqUmbq+3eNjovAfyiTxrb1TdZ4k=
-			</data>
-		</dict>
-		<key>Modules/WebViewComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OhMS8WRA+2+IuEJdCbdbglKuusQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			Yxt15e1IXVvu9EiVWqUmbq+3eNjovAfyiTxrb1TdZ4k=
+			T70He4tKd496eviCngreyBCH9bruotPg3HZrvRv1mYw=
 			</data>
 		</dict>
 		<key>Modules/WebViewComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k5fDaWryIqryxkLT0EAqePkeyPE=
+			q+Uyyb+wzDWLOE28ZuRM63WvoKc=
 			</data>
 			<key>hash2</key>
 			<data>
-			s6PtFN551A51gKv9az6/1suSWp2vNAsTEjkOauC7xy0=
+			JYulU5HWmFP4XfAceFhQbgYTo/e0smY8kT+An+3t3Mw=
 			</data>
 		</dict>
 		<key>Modules/WebViewComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y7oTsehf7qu1kXtldhRi2mltbE4=
+			2e59O443m0CzSzuGEDjRFCz5cnY=
 			</data>
 			<key>hash2</key>
 			<data>
-			KW5uTIpcsuqKXjf0KX0YjUysNL4ymdJkUQ0jAmJDpuw=
-			</data>
-		</dict>
-		<key>Modules/WebViewComponent.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			k5fDaWryIqryxkLT0EAqePkeyPE=
-			</data>
-			<key>hash2</key>
-			<data>
-			s6PtFN551A51gKv9az6/1suSWp2vNAsTEjkOauC7xy0=
-			</data>
-		</dict>
-		<key>Modules/WebViewComponent.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			y7oTsehf7qu1kXtldhRi2mltbE4=
-			</data>
-			<key>hash2</key>
-			<data>
-			KW5uTIpcsuqKXjf0KX0YjUysNL4ymdJkUQ0jAmJDpuw=
+			VBzlD3mFDc9oubJ9Trg+IlnXmw4C33d2DQkZHqxjve0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -6,15 +6,15 @@
 	<dict>
 		<key>AddContactVC.nib/objects-11.0+.nib</key>
 		<data>
-		MNq0pmJbfjZ4/1I2hAjptdFXQDY=
+		LQfZmaVLYiMz51iPrNYm7zOMNJE=
 		</data>
 		<key>AddContactVC.nib/runtime.nib</key>
 		<data>
-		TEfzIa2zz8/7YHw018M+27weClo=
+		VVqSoWN9twy1Blp5/llvetFr+6k=
 		</data>
 		<key>Headers/AddContactComponent-Swift.h</key>
 		<data>
-		YoRpoWrRRKLd079g9S5vNlPOXY0=
+		H2OBP/kLF9GUyWwpGUkfCp7Li9c=
 		</data>
 		<key>Headers/AddContactComponent.h</key>
 		<data>
@@ -22,31 +22,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		n0k+QywpXnokXy85+JKY4xnd9w4=
+		w/4e4HmGWpaZASNMKGUgFGYA37s=
 		</data>
 		<key>Modules/AddContactComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		tqGowy4h6v5leSWWyYsWqqD4tT4=
-		</data>
-		<key>Modules/AddContactComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		tqGowy4h6v5leSWWyYsWqqD4tT4=
+		OL3g/LPBWfQqXqhNoRNl8yjhsqo=
 		</data>
 		<key>Modules/AddContactComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		hDmQMlp96J//3nJiI+bLanBQLkA=
+		gJ96zLcap/v1ehm0XrYJEE++/DA=
 		</data>
 		<key>Modules/AddContactComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		VFoW+xwH+MfKK+5Z/0JItCGrdCY=
-		</data>
-		<key>Modules/AddContactComponent.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		hDmQMlp96J//3nJiI+bLanBQLkA=
-		</data>
-		<key>Modules/AddContactComponent.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		VFoW+xwH+MfKK+5Z/0JItCGrdCY=
+		L/mp4lAse8tFpPixuQuu6rKhxHU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,33 +47,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MNq0pmJbfjZ4/1I2hAjptdFXQDY=
+			LQfZmaVLYiMz51iPrNYm7zOMNJE=
 			</data>
 			<key>hash2</key>
 			<data>
-			27Wns35+slnES36dELQO4sjJQIKrG/9N0T388JeQtRU=
+			tQG6B9g/GklLfOdww5t0/f+/8UuR2n9qIF+lsHqq1+A=
 			</data>
 		</dict>
 		<key>AddContactVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TEfzIa2zz8/7YHw018M+27weClo=
+			VVqSoWN9twy1Blp5/llvetFr+6k=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dv1e7r0+ZprGsFzBrn4JIzy6mGbESd2iDoj1WS8HncY=
+			uIwmJzjDf+H6lBZFGHMckWC+g5aDh74IcgzEN0KfgV4=
 			</data>
 		</dict>
 		<key>Headers/AddContactComponent-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YoRpoWrRRKLd079g9S5vNlPOXY0=
+			H2OBP/kLF9GUyWwpGUkfCp7Li9c=
 			</data>
 			<key>hash2</key>
 			<data>
-			hoBR0DJuR4Q65tMMiQxnaXdUWqG/0V0KlrhTOkhXuiQ=
+			dMem5+Kri6piogYSzb9kXB50EwGzYPnaYVCSWlWq50g=
 			</data>
 		</dict>
 		<key>Headers/AddContactComponent.h</key>
@@ -103,66 +91,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tqGowy4h6v5leSWWyYsWqqD4tT4=
+			OL3g/LPBWfQqXqhNoRNl8yjhsqo=
 			</data>
 			<key>hash2</key>
 			<data>
-			VrWt7t+UMcFZxhPxq83x4tY35+5N9c3Kuppy2Icy574=
-			</data>
-		</dict>
-		<key>Modules/AddContactComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tqGowy4h6v5leSWWyYsWqqD4tT4=
-			</data>
-			<key>hash2</key>
-			<data>
-			VrWt7t+UMcFZxhPxq83x4tY35+5N9c3Kuppy2Icy574=
+			zkFZ6PFIrCzdUeNUJWXsPtrcN7CRKikr3OtFMTCC7Z0=
 			</data>
 		</dict>
 		<key>Modules/AddContactComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hDmQMlp96J//3nJiI+bLanBQLkA=
+			gJ96zLcap/v1ehm0XrYJEE++/DA=
 			</data>
 			<key>hash2</key>
 			<data>
-			b9rnGq/y6buG5vEMRPXeUzA88dEhNot8z3w8igYrKZE=
+			UcLmHryxVze/InzvEga8dxZfVhXiRn1GKDlOM1asP8w=
 			</data>
 		</dict>
 		<key>Modules/AddContactComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VFoW+xwH+MfKK+5Z/0JItCGrdCY=
+			L/mp4lAse8tFpPixuQuu6rKhxHU=
 			</data>
 			<key>hash2</key>
 			<data>
-			nO48Mi2D/O2NryPNOFBcwCnF852GzXfZcEo6xuPUlGU=
-			</data>
-		</dict>
-		<key>Modules/AddContactComponent.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hDmQMlp96J//3nJiI+bLanBQLkA=
-			</data>
-			<key>hash2</key>
-			<data>
-			b9rnGq/y6buG5vEMRPXeUzA88dEhNot8z3w8igYrKZE=
-			</data>
-		</dict>
-		<key>Modules/AddContactComponent.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VFoW+xwH+MfKK+5Z/0JItCGrdCY=
-			</data>
-			<key>hash2</key>
-			<data>
-			nO48Mi2D/O2NryPNOFBcwCnF852GzXfZcEo6xuPUlGU=
+			et8HT9hRThV7UFLeoim3V4ehCLvA0TqYbYXMH/4zLOQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

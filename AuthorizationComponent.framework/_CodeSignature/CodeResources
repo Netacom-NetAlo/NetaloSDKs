@@ -6,11 +6,11 @@
 	<dict>
 		<key>Base.lproj/Login.storyboardc/5zQ-3Z-QMl-view-J9C-6q-NPd.nib/objects-11.0+.nib</key>
 		<data>
-		pqJZRLZJQyHm2fH0twjee0cI2eM=
+		I94xh2Oht11aDzGvUwLwbRwqlnM=
 		</data>
 		<key>Base.lproj/Login.storyboardc/5zQ-3Z-QMl-view-J9C-6q-NPd.nib/runtime.nib</key>
 		<data>
-		vUmG6fWzQw05y8PAYgZgs1DjDfg=
+		QJvOg5KZBGl3itHxHxzR3tUPAwM=
 		</data>
 		<key>Base.lproj/Login.storyboardc/ConfirmOTPVC.nib/objects-11.0+.nib</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Base.lproj/Login.storyboardc/D7P-sP-9Xy-view-rIV-tx-fhZ.nib/objects-11.0+.nib</key>
 		<data>
-		m4zPnax+hqqBU6K5ngngI2iXe7k=
+		SzQu+zFK1/3BCTfPYpfm6LLgWAo=
 		</data>
 		<key>Base.lproj/Login.storyboardc/D7P-sP-9Xy-view-rIV-tx-fhZ.nib/runtime.nib</key>
 		<data>
-		q1hQ3PE/A6DrPfB/G9yX0jqF37I=
+		k+fV9FRBw4+pxQf0D0MxovYdtmo=
 		</data>
 		<key>Base.lproj/Login.storyboardc/ImageUploadVC.nib/objects-11.0+.nib</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Base.lproj/Login.storyboardc/Rgc-IF-GQc-view-u0v-sL-Grn.nib/objects-11.0+.nib</key>
 		<data>
-		pqJ2uKWFpt5xZ0OgKD3UFmdp/MM=
+		qbOr0i5tOoZZAd4FsoViFQn7fCk=
 		</data>
 		<key>Base.lproj/Login.storyboardc/Rgc-IF-GQc-view-u0v-sL-Grn.nib/runtime.nib</key>
 		<data>
-		/PEiyE1OsJPXqLMSwvjQBTMEbiE=
+		ZdnbmyhnSDKjfwwq8+oGlqxH5MQ=
 		</data>
 		<key>Base.lproj/Login.storyboardc/UpdateProfileVC.nib/objects-11.0+.nib</key>
 		<data>
@@ -66,15 +66,15 @@
 		</data>
 		<key>Base.lproj/Login.storyboardc/pf8-Jh-QAK-view-9kS-7q-hQs.nib/objects-11.0+.nib</key>
 		<data>
-		Ft86kmdHZKqF8COBTWiLvSeCxl8=
+		S52x+X+uG25+MXTmgFtuiVpZMBg=
 		</data>
 		<key>Base.lproj/Login.storyboardc/pf8-Jh-QAK-view-9kS-7q-hQs.nib/runtime.nib</key>
 		<data>
-		MMK1Lt8Oh1wm68bGnJn+Yb0b/Uk=
+		gNzqQt5JMQhb0sYaHwD1ohuvET8=
 		</data>
 		<key>Headers/AuthorizationComponent-Swift.h</key>
 		<data>
-		z/1E3uprdDmRo7qVio69kb3w3KY=
+		zg2xvDfMlglYqjusOTx72LJmFyU=
 		</data>
 		<key>Headers/AuthorizationComponent.h</key>
 		<data>
@@ -82,39 +82,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pGhe9VTY8Z+4N3cq8MPvy3SNb5s=
+		8V3je+qiTiwpHd4vCDj1RliaQXw=
 		</data>
 		<key>ListCountryVC.nib/objects-11.0+.nib</key>
 		<data>
-		H16ZWlcSL+efw9VMpK5Aq9ifYjg=
+		MoV6I+OwqMzss1BBR48DSDxj/OM=
 		</data>
 		<key>ListCountryVC.nib/runtime.nib</key>
 		<data>
-		E7AbrS3eX8xFaJGtrcFO2O7RMcQ=
+		QqJbAHJLuEoMaJrNRgEEqMpc6+o=
 		</data>
 		<key>Modules/AuthorizationComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		SFDijudMgSTdwmBnWo0ig3+A68s=
-		</data>
-		<key>Modules/AuthorizationComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		SFDijudMgSTdwmBnWo0ig3+A68s=
+		BuCke+yXWMqlUl0Hd126KADUZJg=
 		</data>
 		<key>Modules/AuthorizationComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		v63PGMr7MDl9OnQQtmR6TO7LjMk=
+		aoQme+CEQnL3q02+SWuZXW7n2Pk=
 		</data>
 		<key>Modules/AuthorizationComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Qm/Uk9YrkNIFkvhMCqICKYR9x6g=
-		</data>
-		<key>Modules/AuthorizationComponent.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		v63PGMr7MDl9OnQQtmR6TO7LjMk=
-		</data>
-		<key>Modules/AuthorizationComponent.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		Qm/Uk9YrkNIFkvhMCqICKYR9x6g=
+		oFZ7xiHJzA+1d8gj4MfveH2vPkM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -127,22 +115,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pqJZRLZJQyHm2fH0twjee0cI2eM=
+			I94xh2Oht11aDzGvUwLwbRwqlnM=
 			</data>
 			<key>hash2</key>
 			<data>
-			3TuvDz5XZn/KEdceALw5SDncv33sMkS8RPQQZZylc0w=
+			+Z1NtIBPXuHV/GzmFA4jCQ0UTo7ml6+g3RKucqjMHwQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Login.storyboardc/5zQ-3Z-QMl-view-J9C-6q-NPd.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vUmG6fWzQw05y8PAYgZgs1DjDfg=
+			QJvOg5KZBGl3itHxHxzR3tUPAwM=
 			</data>
 			<key>hash2</key>
 			<data>
-			B9wE61HwhDJ5Cs3W4O1ueOEl5DG+ioyqEYAdTRQJBCQ=
+			BzikPDswCLasrROSV8CKs6VUCy7e5Vl5hx+6ydVLbrk=
 			</data>
 		</dict>
 		<key>Base.lproj/Login.storyboardc/ConfirmOTPVC.nib/objects-11.0+.nib</key>
@@ -171,22 +159,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m4zPnax+hqqBU6K5ngngI2iXe7k=
+			SzQu+zFK1/3BCTfPYpfm6LLgWAo=
 			</data>
 			<key>hash2</key>
 			<data>
-			i14wUHK8uNX7zQN9xi11M/iKyq58fahmdVT2gtNbkFc=
+			vV7kGgs2/rSYTVTvSrDLKRp/veuvz02pKhccKozYS8M=
 			</data>
 		</dict>
 		<key>Base.lproj/Login.storyboardc/D7P-sP-9Xy-view-rIV-tx-fhZ.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q1hQ3PE/A6DrPfB/G9yX0jqF37I=
+			k+fV9FRBw4+pxQf0D0MxovYdtmo=
 			</data>
 			<key>hash2</key>
 			<data>
-			2oD2gJBcGiBlYcQJ7FjfFOzB51GQbs5yTfK9A1MUhjQ=
+			vqzbOrBuKCQ8hnzilc8xxkTnhbvzHd0qtpcl8g8c88U=
 			</data>
 		</dict>
 		<key>Base.lproj/Login.storyboardc/ImageUploadVC.nib/objects-11.0+.nib</key>
@@ -248,22 +236,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pqJ2uKWFpt5xZ0OgKD3UFmdp/MM=
+			qbOr0i5tOoZZAd4FsoViFQn7fCk=
 			</data>
 			<key>hash2</key>
 			<data>
-			gkJkibugQjSQ/WTACNR9XKpMoRtPnRC8FkPHnBF7C/M=
+			D+AFfzxg0+Q2EDEeWbNEyHGqM+tRGyhShEsE12QGh+Y=
 			</data>
 		</dict>
 		<key>Base.lproj/Login.storyboardc/Rgc-IF-GQc-view-u0v-sL-Grn.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/PEiyE1OsJPXqLMSwvjQBTMEbiE=
+			ZdnbmyhnSDKjfwwq8+oGlqxH5MQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			mw+io1FAcKT5fxhezE91tkc0za3CQxSxBxaPPwGMYlQ=
+			JBuhWJiaLJaL2L4zJjvSuw9ays2K7TYA+mhP4AWWLZw=
 			</data>
 		</dict>
 		<key>Base.lproj/Login.storyboardc/UpdateProfileVC.nib/objects-11.0+.nib</key>
@@ -292,33 +280,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ft86kmdHZKqF8COBTWiLvSeCxl8=
+			S52x+X+uG25+MXTmgFtuiVpZMBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			/ocXpwh8EUPV7lR9bbjd0Kmq6AgfNls9RKznWSU1dSU=
+			v+9U5AfUPZGlZJIJC4DpvEKGy08vFDJTAZJbkffTU4w=
 			</data>
 		</dict>
 		<key>Base.lproj/Login.storyboardc/pf8-Jh-QAK-view-9kS-7q-hQs.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MMK1Lt8Oh1wm68bGnJn+Yb0b/Uk=
+			gNzqQt5JMQhb0sYaHwD1ohuvET8=
 			</data>
 			<key>hash2</key>
 			<data>
-			30brPEb0aGgmxZ+hOWMK6A5CR7vNWMYLAXeWE3hKx+U=
+			1m1IObx3XwruBZ5alILi4P3GUvr/J5k0vVkoJH6sf00=
 			</data>
 		</dict>
 		<key>Headers/AuthorizationComponent-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z/1E3uprdDmRo7qVio69kb3w3KY=
+			zg2xvDfMlglYqjusOTx72LJmFyU=
 			</data>
 			<key>hash2</key>
 			<data>
-			C0E6Mp/QMeWGNEIT4bHG9z3ZhclezFHuWHLLq7OAUuE=
+			77udWdIUQdklotmrmANMBhLeufdobVN8aXzE0bZjS04=
 			</data>
 		</dict>
 		<key>Headers/AuthorizationComponent.h</key>
@@ -336,88 +324,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H16ZWlcSL+efw9VMpK5Aq9ifYjg=
+			MoV6I+OwqMzss1BBR48DSDxj/OM=
 			</data>
 			<key>hash2</key>
 			<data>
-			RSGMBywJiPl97YryA7GdGm3gp1Uq+CAYv2YI9eCBJVs=
+			5GUUCbXJenhv9cGjI6PWHi3ZXF5IX0BNSQssW9DRqbU=
 			</data>
 		</dict>
 		<key>ListCountryVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E7AbrS3eX8xFaJGtrcFO2O7RMcQ=
+			QqJbAHJLuEoMaJrNRgEEqMpc6+o=
 			</data>
 			<key>hash2</key>
 			<data>
-			FnqWGqR1MqTm0hDL9XtpSkwVj4l+il0pEBBnfxfHW70=
+			rmoDxq2rjylQM6fgPpbylJl8YgkB48TffiY1MtXpZWY=
 			</data>
 		</dict>
 		<key>Modules/AuthorizationComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SFDijudMgSTdwmBnWo0ig3+A68s=
+			BuCke+yXWMqlUl0Hd126KADUZJg=
 			</data>
 			<key>hash2</key>
 			<data>
-			HQIV1CR0sxi/NElgVUn+7aRiTpLxr3Sr1UEHzLDt4hs=
-			</data>
-		</dict>
-		<key>Modules/AuthorizationComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SFDijudMgSTdwmBnWo0ig3+A68s=
-			</data>
-			<key>hash2</key>
-			<data>
-			HQIV1CR0sxi/NElgVUn+7aRiTpLxr3Sr1UEHzLDt4hs=
+			TtqoiGNRebgJaStuffVrdI6Fsc6clKMrCrhGq8/5lv4=
 			</data>
 		</dict>
 		<key>Modules/AuthorizationComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			v63PGMr7MDl9OnQQtmR6TO7LjMk=
+			aoQme+CEQnL3q02+SWuZXW7n2Pk=
 			</data>
 			<key>hash2</key>
 			<data>
-			v+Tb41tSWx1KG4cFag5qukl49kjyFaPgF+gibAo1aNs=
+			lsercayWxijs8gsnlHTI5iINsaaydJAN2D07hPyE0J8=
 			</data>
 		</dict>
 		<key>Modules/AuthorizationComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Qm/Uk9YrkNIFkvhMCqICKYR9x6g=
+			oFZ7xiHJzA+1d8gj4MfveH2vPkM=
 			</data>
 			<key>hash2</key>
 			<data>
-			jtGJ7uL3c+pii3vuzKhY040/7qvVsExQOv0LXTypnbQ=
-			</data>
-		</dict>
-		<key>Modules/AuthorizationComponent.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			v63PGMr7MDl9OnQQtmR6TO7LjMk=
-			</data>
-			<key>hash2</key>
-			<data>
-			v+Tb41tSWx1KG4cFag5qukl49kjyFaPgF+gibAo1aNs=
-			</data>
-		</dict>
-		<key>Modules/AuthorizationComponent.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Qm/Uk9YrkNIFkvhMCqICKYR9x6g=
-			</data>
-			<key>hash2</key>
-			<data>
-			jtGJ7uL3c+pii3vuzKhY040/7qvVsExQOv0LXTypnbQ=
+			x7JGXcBZDEjWFKWilo36beB8jiYrFlQsUIegSxKQJYI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

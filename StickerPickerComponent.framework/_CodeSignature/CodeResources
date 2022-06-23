@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/StickerPickerComponent-Swift.h</key>
 		<data>
-		mkvGJ9INbnxMUHTQoNeaUQ/QUjY=
+		VW9Wl1JvLtB3dZtnUjUUVKL3p2c=
 		</data>
 		<key>Headers/StickerPickerComponent.h</key>
 		<data>
@@ -14,31 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		U8d0QKp2NmUT1jJUXEWUpjwVzdM=
+		NhZS75o2zPAB+9cFKRNPWrQFbgg=
 		</data>
 		<key>Modules/StickerPickerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		AS3NBNWuFRAHkWBUalqpEhrZOsE=
-		</data>
-		<key>Modules/StickerPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		AS3NBNWuFRAHkWBUalqpEhrZOsE=
+		Zj7Zem80wVr9FZjKQGcwF6gD6WI=
 		</data>
 		<key>Modules/StickerPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		h1o6gV63KI2TdnOKqn41ghk9aRY=
+		x+TQiD250iFzG1d7pxgnk6YF4Hw=
 		</data>
 		<key>Modules/StickerPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		cfPmuP6zXiGlQ5DwWBLuzi8xWZM=
-		</data>
-		<key>Modules/StickerPickerComponent.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		h1o6gV63KI2TdnOKqn41ghk9aRY=
-		</data>
-		<key>Modules/StickerPickerComponent.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		cfPmuP6zXiGlQ5DwWBLuzi8xWZM=
+		CdBi6g4MCcc/9goGtS/gXOH2+Vw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,19 +34,19 @@
 		</data>
 		<key>StickerPickerVC.nib/objects-11.0+.nib</key>
 		<data>
-		4g4XyYCSzQO/zL6/v8gCoe1aXJk=
+		D2rWUwP85vMKOoWob1Dk5XPw9pE=
 		</data>
 		<key>StickerPickerVC.nib/runtime.nib</key>
 		<data>
-		FesTZN8KxHz6GaTuw60I1o5+fMk=
+		dH82PK4yrdiqlwp0ZiNzWBkBwOg=
 		</data>
 		<key>StickersStoreVC.nib/objects-11.0+.nib</key>
 		<data>
-		DhbOVpu9zxuLkXcRcSBJJAljHHc=
+		O0ihsHwoJiYuCjRWzikh+GHe2oA=
 		</data>
 		<key>StickersStoreVC.nib/runtime.nib</key>
 		<data>
-		xaFjUmFQHG1hotsk1OHuz3QYOEA=
+		UIaNcKyTPLK1lAKB3SUzIsuxzgI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,11 +55,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mkvGJ9INbnxMUHTQoNeaUQ/QUjY=
+			VW9Wl1JvLtB3dZtnUjUUVKL3p2c=
 			</data>
 			<key>hash2</key>
 			<data>
-			JYjEyrglebKskWhwYITy2am+007yeoHT4h+edgAAf28=
+			JVqQnvcRIKn9cyhR658Xh+4fqx2qS3WS1aRQcoqwRUI=
 			</data>
 		</dict>
 		<key>Headers/StickerPickerComponent.h</key>
@@ -89,66 +77,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AS3NBNWuFRAHkWBUalqpEhrZOsE=
+			Zj7Zem80wVr9FZjKQGcwF6gD6WI=
 			</data>
 			<key>hash2</key>
 			<data>
-			SSbZvsMCr17sXS1PcckC8BUzJztmG+35vl6L25sYF/w=
-			</data>
-		</dict>
-		<key>Modules/StickerPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AS3NBNWuFRAHkWBUalqpEhrZOsE=
-			</data>
-			<key>hash2</key>
-			<data>
-			SSbZvsMCr17sXS1PcckC8BUzJztmG+35vl6L25sYF/w=
+			QZ1suYsbaudCXjei5wJm70EJ9UeBXaI9eAvyNpPZi80=
 			</data>
 		</dict>
 		<key>Modules/StickerPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h1o6gV63KI2TdnOKqn41ghk9aRY=
+			x+TQiD250iFzG1d7pxgnk6YF4Hw=
 			</data>
 			<key>hash2</key>
 			<data>
-			FWDl3MakoMSIduTXDLeHvD1AGR+Z4f3BgcdWhlFN+r0=
+			dKE9pU/Z+V8SV3ox6tuZ2ZyOcOtFqN7qrl9sZVRS+LM=
 			</data>
 		</dict>
 		<key>Modules/StickerPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cfPmuP6zXiGlQ5DwWBLuzi8xWZM=
+			CdBi6g4MCcc/9goGtS/gXOH2+Vw=
 			</data>
 			<key>hash2</key>
 			<data>
-			qglMwqt+x7+jCbKJlVOgEFQa7hrylOuuscIP/+KOaMk=
-			</data>
-		</dict>
-		<key>Modules/StickerPickerComponent.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			h1o6gV63KI2TdnOKqn41ghk9aRY=
-			</data>
-			<key>hash2</key>
-			<data>
-			FWDl3MakoMSIduTXDLeHvD1AGR+Z4f3BgcdWhlFN+r0=
-			</data>
-		</dict>
-		<key>Modules/StickerPickerComponent.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cfPmuP6zXiGlQ5DwWBLuzi8xWZM=
-			</data>
-			<key>hash2</key>
-			<data>
-			qglMwqt+x7+jCbKJlVOgEFQa7hrylOuuscIP/+KOaMk=
+			Z3CmfbTVm56raiei8VYuORkw/UQw2satmOSZuVT4GfE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -166,44 +121,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4g4XyYCSzQO/zL6/v8gCoe1aXJk=
+			D2rWUwP85vMKOoWob1Dk5XPw9pE=
 			</data>
 			<key>hash2</key>
 			<data>
-			zv1lus8vAYQdzWDcFbF5fXRzxFtXiMQyaWkm+uoQBtk=
+			K8RidxfQyacMVPK2cw/XiucUtUibxRsxsjfNbl8Q4GA=
 			</data>
 		</dict>
 		<key>StickerPickerVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FesTZN8KxHz6GaTuw60I1o5+fMk=
+			dH82PK4yrdiqlwp0ZiNzWBkBwOg=
 			</data>
 			<key>hash2</key>
 			<data>
-			0XGgNREsZ+8KOVIyFoxxs4makF1OT4jAix1i9AdcABc=
+			18ghGxFB5YMWHidzWnB2+hjXVIgQWo+BblLtmhcmNrw=
 			</data>
 		</dict>
 		<key>StickersStoreVC.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DhbOVpu9zxuLkXcRcSBJJAljHHc=
+			O0ihsHwoJiYuCjRWzikh+GHe2oA=
 			</data>
 			<key>hash2</key>
 			<data>
-			rQvX+YwWVGwTnmQiJ6lJWLeJ+WnQCUnqk14AX/eeskY=
+			QfCycAbbh2yAeVIBghpgW1Zj54KmX3D488X/2A8YOTY=
 			</data>
 		</dict>
 		<key>StickersStoreVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xaFjUmFQHG1hotsk1OHuz3QYOEA=
+			UIaNcKyTPLK1lAKB3SUzIsuxzgI=
 			</data>
 			<key>hash2</key>
 			<data>
-			/MaNdrBw2Cx0tIxnoM+FMYtemT3jpSvZEFT2UfyU6Ck=
+			HvBCbR6ZqxLiEDphUNAO2yD28bkcmey0rEvIzd9QDGA=
 			</data>
 		</dict>
 	</dict>

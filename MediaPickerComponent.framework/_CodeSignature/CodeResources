@@ -6,15 +6,15 @@
 	<dict>
 		<key>AddGPSPhotoVC.nib/objects-11.0+.nib</key>
 		<data>
-		o1DZXmg5O8PsqLSOF+GtflvMWdA=
+		w1EfzvZULv1GUsW4hZKEes9D2p0=
 		</data>
 		<key>AddGPSPhotoVC.nib/runtime.nib</key>
 		<data>
-		i78CNizwG8StcnIghK1z6iNQ3gc=
+		t0B4wrnJ5brY63zoOxIhTJAG600=
 		</data>
 		<key>Headers/MediaPickerComponent-Swift.h</key>
 		<data>
-		C2EWqIBHuUxUwIZ/cKti/iDg9hk=
+		dtpYoSszweydgFnpEm8qqR0kDLU=
 		</data>
 		<key>Headers/MediaPickerComponent.h</key>
 		<data>
@@ -22,31 +22,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5U/AGYVJT41UOOHbHIC0exgAZX0=
+		gbuKC3fFYcntDep4dUULh3pF7fU=
 		</data>
 		<key>Modules/MediaPickerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		rmSHP5VWSbfsjWbEVtu2XOZG8lE=
-		</data>
-		<key>Modules/MediaPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		rmSHP5VWSbfsjWbEVtu2XOZG8lE=
+		DyzrcDYG11ibjxzLf+t2x+N8Lfc=
 		</data>
 		<key>Modules/MediaPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		9mwDHymL0SrwKv+ZUjAPqvz3oIM=
+		+evGDQBLlOBFCVQAPvShZcSHcdU=
 		</data>
 		<key>Modules/MediaPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		EXOPg9aDeozjiAIpgWuwl2TOf58=
-		</data>
-		<key>Modules/MediaPickerComponent.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		9mwDHymL0SrwKv+ZUjAPqvz3oIM=
-		</data>
-		<key>Modules/MediaPickerComponent.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		EXOPg9aDeozjiAIpgWuwl2TOf58=
+		7BeHtHVxEyTonyHRxtu7LG8jq2I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,11 +42,11 @@
 		</data>
 		<key>MultiImagePickerVC.nib/objects-11.0+.nib</key>
 		<data>
-		bzKZUBklqa74FOPv7eLgQV/ztyM=
+		FsbzOOrwi0GRvXTwaX2rX/mDORI=
 		</data>
 		<key>MultiImagePickerVC.nib/runtime.nib</key>
 		<data>
-		JRg9E1zzuGl1+VjEr7Ep+wbEq6A=
+		wi5Uw9WmowC0IUGDYsCUvkv3lmI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,33 +55,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o1DZXmg5O8PsqLSOF+GtflvMWdA=
+			w1EfzvZULv1GUsW4hZKEes9D2p0=
 			</data>
 			<key>hash2</key>
 			<data>
-			+NdjoAVW8bhhKIjfk1gEp2ji79YddW5Eo8KEo5+i1LU=
+			Dh3oQUZgY1nDPMO8okFcgh+52V75sbg8z4SwDU0+QVQ=
 			</data>
 		</dict>
 		<key>AddGPSPhotoVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i78CNizwG8StcnIghK1z6iNQ3gc=
+			t0B4wrnJ5brY63zoOxIhTJAG600=
 			</data>
 			<key>hash2</key>
 			<data>
-			TcIW/aWk//PoOjyoVwW3WgLoQSTXqY2IBsb/8tnWet8=
+			/TlC1J7VhtXsYE4s6Oiv6et5bW2dmmEp2qAjvvyr0+s=
 			</data>
 		</dict>
 		<key>Headers/MediaPickerComponent-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C2EWqIBHuUxUwIZ/cKti/iDg9hk=
+			dtpYoSszweydgFnpEm8qqR0kDLU=
 			</data>
 			<key>hash2</key>
 			<data>
-			3vct5oFWO4Upu0QqS65bccXeiEjAF6whF6bvfi/tMNQ=
+			OF/t0T3plKq2rhRJHqdH6Yz5R0tZmaEnJu6qLEJm/RI=
 			</data>
 		</dict>
 		<key>Headers/MediaPickerComponent.h</key>
@@ -111,66 +99,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rmSHP5VWSbfsjWbEVtu2XOZG8lE=
+			DyzrcDYG11ibjxzLf+t2x+N8Lfc=
 			</data>
 			<key>hash2</key>
 			<data>
-			uZ6PjOBkhHro3N4GFByovfkGt1ki3xCOQODSF6HBxn4=
-			</data>
-		</dict>
-		<key>Modules/MediaPickerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rmSHP5VWSbfsjWbEVtu2XOZG8lE=
-			</data>
-			<key>hash2</key>
-			<data>
-			uZ6PjOBkhHro3N4GFByovfkGt1ki3xCOQODSF6HBxn4=
+			4TwZvDaMEBMhrdVj1qW/yLpBsbTlr+8WzZYQ5EK0XfM=
 			</data>
 		</dict>
 		<key>Modules/MediaPickerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9mwDHymL0SrwKv+ZUjAPqvz3oIM=
+			+evGDQBLlOBFCVQAPvShZcSHcdU=
 			</data>
 			<key>hash2</key>
 			<data>
-			zNwfI4Otbhf3qoYuzjtQ+jlt7KCeIhtOoUG7gWl16AI=
+			UPIOZpWQd7HroKpWo3MiLB7mPSc1rqzbeSnNbHT3LN4=
 			</data>
 		</dict>
 		<key>Modules/MediaPickerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EXOPg9aDeozjiAIpgWuwl2TOf58=
+			7BeHtHVxEyTonyHRxtu7LG8jq2I=
 			</data>
 			<key>hash2</key>
 			<data>
-			EwrOS9iITW1Mw7PYVldYrm7Ff5eKTXQ32a3Ya6ZZatw=
-			</data>
-		</dict>
-		<key>Modules/MediaPickerComponent.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9mwDHymL0SrwKv+ZUjAPqvz3oIM=
-			</data>
-			<key>hash2</key>
-			<data>
-			zNwfI4Otbhf3qoYuzjtQ+jlt7KCeIhtOoUG7gWl16AI=
-			</data>
-		</dict>
-		<key>Modules/MediaPickerComponent.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EXOPg9aDeozjiAIpgWuwl2TOf58=
-			</data>
-			<key>hash2</key>
-			<data>
-			EwrOS9iITW1Mw7PYVldYrm7Ff5eKTXQ32a3Ya6ZZatw=
+			kJorvUGru4r0GTVFD49tlhAoxFpDGkSjSBTPExuZnyA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -188,22 +143,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bzKZUBklqa74FOPv7eLgQV/ztyM=
+			FsbzOOrwi0GRvXTwaX2rX/mDORI=
 			</data>
 			<key>hash2</key>
 			<data>
-			UGHTVnT/CppxspQp3tezw+yCuh3qaA5jKesGW9aP3Rw=
+			0qJVq1WO/6FITfmqYWl4A6PWD91TXhuqZlW/vqUkhAM=
 			</data>
 		</dict>
 		<key>MultiImagePickerVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JRg9E1zzuGl1+VjEr7Ep+wbEq6A=
+			wi5Uw9WmowC0IUGDYsCUvkv3lmI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ExPlMKaim2Lyvc+koZ9GiTA7kcIF45ZWs747HCFbDJM=
+			TG11CRMyrUkWFqjIk4EhbBvNboNy8mXPTS4n/T/TDXw=
 			</data>
 		</dict>
 	</dict>

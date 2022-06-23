@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ShareComponent-Swift.h</key>
 		<data>
-		e29HllCvqEf92eoguGGmbkL/0CA=
+		69ntN2qdiCq0gmF6Z8p6Yr8dOkc=
 		</data>
 		<key>Headers/ShareComponent.h</key>
 		<data>
@@ -14,31 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		k3Hssqh1F9iJZTUHGt3wsm56org=
+		ws00B7bWT79cVDBwlpzKz/s2xsQ=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		SXZnhC7QbrBR+DElMoKFsgKmV5s=
-		</data>
-		<key>Modules/ShareComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		SXZnhC7QbrBR+DElMoKFsgKmV5s=
+		B3GGwVUagTBCHLbZjbSMelFGzOY=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		+OiSAyouFoxdIBza3TO6l+7GpcU=
+		PySeu4XHoMk0Cz+IjjFs1TiIc10=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7y66cnC25KJsa2ito++pq7+8HM0=
-		</data>
-		<key>Modules/ShareComponent.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		+OiSAyouFoxdIBza3TO6l+7GpcU=
-		</data>
-		<key>Modules/ShareComponent.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		7y66cnC25KJsa2ito++pq7+8HM0=
+		J2LMYbuSZ02w84RF7n5hPDEO9rw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,19 +34,19 @@
 		</data>
 		<key>ShareCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		QV7h5u/D1vVYI3qrg3+p+Q7tHKw=
+		JtN9q62B7k2JV1tqyiw2K7G0VgY=
 		</data>
 		<key>ShareCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		77RZLIoqS3H/cHSJcgLzLouveNQ=
+		B9oETjW/HOb0iIAQCIoBlZP2dAA=
 		</data>
 		<key>ShareViewController.nib/objects-11.0+.nib</key>
 		<data>
-		R8hwBqsu6iWelDIxEzCyKgHpusg=
+		89c78exFpaLmRB8bzVXrbdZUe3U=
 		</data>
 		<key>ShareViewController.nib/runtime.nib</key>
 		<data>
-		NRjHHHU90Qhqga7TcwJic65A1wg=
+		zuulsV73q+WUMn98DlQZCq0tAdI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,11 +55,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e29HllCvqEf92eoguGGmbkL/0CA=
+			69ntN2qdiCq0gmF6Z8p6Yr8dOkc=
 			</data>
 			<key>hash2</key>
 			<data>
-			uyBFMd/9SwtYzcFPJT8OkFQSRgkFBTPlDb8HAYJ8YSo=
+			igLm6hsN9OmaBI9Xm9hNmxnNj4Q3W59lzWrnk5+Xunk=
 			</data>
 		</dict>
 		<key>Headers/ShareComponent.h</key>
@@ -89,66 +77,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SXZnhC7QbrBR+DElMoKFsgKmV5s=
+			B3GGwVUagTBCHLbZjbSMelFGzOY=
 			</data>
 			<key>hash2</key>
 			<data>
-			00Cm5amTTjF+O7q6yf8ONZRDReS/ycqbNZPGauxgrLw=
-			</data>
-		</dict>
-		<key>Modules/ShareComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SXZnhC7QbrBR+DElMoKFsgKmV5s=
-			</data>
-			<key>hash2</key>
-			<data>
-			00Cm5amTTjF+O7q6yf8ONZRDReS/ycqbNZPGauxgrLw=
+			wD8qxg9IhG+fjlVzbDda9LYljr+ffiTFLInYE5WMa7c=
 			</data>
 		</dict>
 		<key>Modules/ShareComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+OiSAyouFoxdIBza3TO6l+7GpcU=
+			PySeu4XHoMk0Cz+IjjFs1TiIc10=
 			</data>
 			<key>hash2</key>
 			<data>
-			r8F5dA1+Vkr62X6J5FEJA91XG05BVSYRIHU7lCnfX1k=
+			t0kqgc86+gUWTYioufqrAfr/WkwXFHdnt12h4itiOOE=
 			</data>
 		</dict>
 		<key>Modules/ShareComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7y66cnC25KJsa2ito++pq7+8HM0=
+			J2LMYbuSZ02w84RF7n5hPDEO9rw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ca0+ZYWqD/AtaCVJozLWyPItYS3WP5iI9nPOSGJ/H/U=
-			</data>
-		</dict>
-		<key>Modules/ShareComponent.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+OiSAyouFoxdIBza3TO6l+7GpcU=
-			</data>
-			<key>hash2</key>
-			<data>
-			r8F5dA1+Vkr62X6J5FEJA91XG05BVSYRIHU7lCnfX1k=
-			</data>
-		</dict>
-		<key>Modules/ShareComponent.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7y66cnC25KJsa2ito++pq7+8HM0=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ca0+ZYWqD/AtaCVJozLWyPItYS3WP5iI9nPOSGJ/H/U=
+			qQi5waA7OAe+QqMERhfQOujrOXqXr35RqvKN4SSfHI4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -166,44 +121,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QV7h5u/D1vVYI3qrg3+p+Q7tHKw=
+			JtN9q62B7k2JV1tqyiw2K7G0VgY=
 			</data>
 			<key>hash2</key>
 			<data>
-			bRiRzEKqwrxzO/Urql+jrHRp+71cxP5ghM1aPifz3k4=
+			3cE+tWUQFJi+rnaAigLa+RTNz7P2Y19vDualyqlDmXQ=
 			</data>
 		</dict>
 		<key>ShareCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			77RZLIoqS3H/cHSJcgLzLouveNQ=
+			B9oETjW/HOb0iIAQCIoBlZP2dAA=
 			</data>
 			<key>hash2</key>
 			<data>
-			KgdrCd6OxEC8dCVpiSKDlVhCA2ByjNEhUn16x1bABEE=
+			STXbc0QcZSW219XPUcxv3b8mBECsnu6wJJM9xQuWn0Q=
 			</data>
 		</dict>
 		<key>ShareViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R8hwBqsu6iWelDIxEzCyKgHpusg=
+			89c78exFpaLmRB8bzVXrbdZUe3U=
 			</data>
 			<key>hash2</key>
 			<data>
-			ExwcmDL6g8AG4rpFbqziHSG8MPsLFX+iDNA49gmW7AU=
+			prnQPTRVzkxqTPXrYafJA3Ut67gyBlBC3h3sCYjNHVA=
 			</data>
 		</dict>
 		<key>ShareViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NRjHHHU90Qhqga7TcwJic65A1wg=
+			zuulsV73q+WUMn98DlQZCq0tAdI=
 			</data>
 			<key>hash2</key>
 			<data>
-			VvDpKz2j0AjXyIrYo15BtHJgUR3ZA4IuoZc+dDr8Yp0=
+			kjhWb4uaTkngiNuz6Rray9RqTCTZZd8860aJj+zpVk0=
 			</data>
 		</dict>
 	</dict>

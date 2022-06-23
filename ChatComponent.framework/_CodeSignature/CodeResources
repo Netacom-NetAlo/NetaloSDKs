@@ -6,19 +6,19 @@
 	<dict>
 		<key>AudioPicker.nib</key>
 		<data>
-		xcndrvhUrsFfbanXq5sLtwcbhiI=
+		Gh2herKSTTvKu4xXXEcbp2aMbXI=
 		</data>
 		<key>Block.nib</key>
 		<data>
-		0ttR8lZuhzFJgdsfRMl/ZZJdKW4=
+		QmTRxJPGP3ibYcMlPgM5Wzxwaa8=
 		</data>
 		<key>ChatVC.nib/objects-11.0+.nib</key>
 		<data>
-		EdDcK5s+3F17is7YZKcS8fXqzuE=
+		JMq5j2C9RqtfDdP6ayknH1iFjYg=
 		</data>
 		<key>ChatVC.nib/runtime.nib</key>
 		<data>
-		2ygE40Jpk2o+v8F5oT4hWb7wUrI=
+		njr3thnkWQ8bqMaSHDiwzYmpc/w=
 		</data>
 		<key>EmptyListMessageVC.nib</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>GroupCallInfoView.nib</key>
 		<data>
-		ESHJggxfNQRNhaSOe4k4Y+uhRZg=
+		+oxlO3q1j5ELW1BWcq8o9BG4UAw=
 		</data>
 		<key>Headers/ChatComponent-Swift.h</key>
 		<data>
-		7bZ2T371hqmdaF+0Hb9OU4jQ9fk=
+		WW8CFYPHhyvDcSYF1RK6BZPnQII=
 		</data>
 		<key>Headers/ChatComponent.h</key>
 		<data>
@@ -38,15 +38,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6NeIEGflEZMJ6XJLARreoMtUBHY=
+		uFjNMVtfVcYOTjOPBOppulmlAxM=
 		</data>
 		<key>InputBar.nib/objects-14.0+.nib</key>
 		<data>
-		xtSL4zazpLF6cXSd8dzhza4yaik=
+		GWpB1JceZhivh9f+Z+XFRh7x6zI=
 		</data>
 		<key>InputBar.nib/runtime.nib</key>
 		<data>
-		EmuFBLzSGvqtI0oeK8tp+MtVK5I=
+		NzaHw4QZ7xLuPOLyDwjE2CLfDAk=
 		</data>
 		<key>ListMention.nib/objects-11.0+.nib</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>MediaTypeCell.nib</key>
 		<data>
-		24ht0D2Z1eeENFUQHQDXGlcG5n0=
+		jed+IkoTA0P4rwXketaEHFtBBR0=
 		</data>
 		<key>MentionCell.nib</key>
 		<data>
-		zfKMr2IsyhPsnhTLD7FyqkOjdAQ=
+		arfObTrks/jwMN9G8brVJClQcIc=
 		</data>
 		<key>MessageOptionsVC.nib/objects-11.0+.nib</key>
 		<data>
@@ -78,27 +78,15 @@
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		dmnSgbHsypfdA0k4dG19xM/LGNY=
-		</data>
-		<key>Modules/ChatComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		dmnSgbHsypfdA0k4dG19xM/LGNY=
+		NM8u5x7mTijwwQt3d5jR+FMnJCE=
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		TghSb8PdOICH2vc+kUd2oKkF52g=
+		Ze9U1BUV7nSzqQsqwRJSUVnKmQY=
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		S0Ivv6Lh8ctUeBixlR2AVnIIiL8=
-		</data>
-		<key>Modules/ChatComponent.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		TghSb8PdOICH2vc+kUd2oKkF52g=
-		</data>
-		<key>Modules/ChatComponent.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		S0Ivv6Lh8ctUeBixlR2AVnIIiL8=
+		3+9igcmR5WCc35ieEGo6KZchIw8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,27 +94,27 @@
 		</data>
 		<key>NavigationHeader.nib</key>
 		<data>
-		+EBrA5DEl9tjlvs78rDFGagZpH8=
+		M8Yp5VhW/RZwmfI4i9gPnX+7lOg=
 		</data>
 		<key>Picker.nib</key>
 		<data>
-		LG+xHoUWMK4jmx/dh3zI4vO4Ro8=
+		YKAydc4tDVCi7PDax8gxlGQ0fQc=
 		</data>
 		<key>PinMessageView.nib</key>
 		<data>
-		53g9s7Gt1H9ICJwwnIRsEaaFSR0=
+		yxjgEaviqmH1QHQI3IfU9hW+gxM=
 		</data>
 		<key>StickerPicker.nib</key>
 		<data>
-		840c24FO3NeYH/XRdO7B81n2tqA=
+		wUZAi3AHdZvxWCC9uH4Jw/1O7a0=
 		</data>
 		<key>TimePickerVC.nib/objects-11.0+.nib</key>
 		<data>
-		uM/sSEIcoS07VNYuhvrvd+iIo6U=
+		L+AjOmYt6Trpz6873JTUHUf9v5g=
 		</data>
 		<key>TimePickerVC.nib/runtime.nib</key>
 		<data>
-		wgfr8BxepNxsoR+U8rbUG4ssJKs=
+		yyaIMM0rEetZ1dlQM04AE2yGaRA=
 		</data>
 		<key>Typing.nib</key>
 		<data>
@@ -134,7 +122,7 @@
 		</data>
 		<key>UnknownContact.nib</key>
 		<data>
-		0pMWJR5TbNpRrl51jq+7Futx9Ss=
+		HhsCZ379V/ACUJAhbfD3FLDovjY=
 		</data>
 		<key>VideoPlayerView.nib</key>
 		<data>
@@ -147,44 +135,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xcndrvhUrsFfbanXq5sLtwcbhiI=
+			Gh2herKSTTvKu4xXXEcbp2aMbXI=
 			</data>
 			<key>hash2</key>
 			<data>
-			p3qVrRLlpnCxEk2LFUfBdpfOkU195XMN95C6lCd5CIE=
+			G+2bR+G8YBE/dXnC0YvyoAjtw0WMDdLliB4CLBUv7aY=
 			</data>
 		</dict>
 		<key>Block.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0ttR8lZuhzFJgdsfRMl/ZZJdKW4=
+			QmTRxJPGP3ibYcMlPgM5Wzxwaa8=
 			</data>
 			<key>hash2</key>
 			<data>
-			qH0ZmIjw97/eZAKOpfzlkllmaUDRBCEbdTfxxI2QpkA=
+			DrgIziszbyUB4RQsBQfcDIbOCr3k3+X7HB+WXJqgJ9s=
 			</data>
 		</dict>
 		<key>ChatVC.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EdDcK5s+3F17is7YZKcS8fXqzuE=
+			JMq5j2C9RqtfDdP6ayknH1iFjYg=
 			</data>
 			<key>hash2</key>
 			<data>
-			D6A3LySlWvrHjmEJIBkQ+1aq2YkpDeeW96+DzYuUlVU=
+			FwhJBlL0MKI3aR8HinWTfj3/1wiSycL7yQl7B4T9Dd0=
 			</data>
 		</dict>
 		<key>ChatVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2ygE40Jpk2o+v8F5oT4hWb7wUrI=
+			njr3thnkWQ8bqMaSHDiwzYmpc/w=
 			</data>
 			<key>hash2</key>
 			<data>
-			mYs2Z1EdjcEtneddiYy6vJIvqhh/d2mFeEw3vr6TVyY=
+			t7woyl8/QX+esHimThEgLwYCuB+1+OTOFnQmj7XblLw=
 			</data>
 		</dict>
 		<key>EmptyListMessageVC.nib</key>
@@ -202,22 +190,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ESHJggxfNQRNhaSOe4k4Y+uhRZg=
+			+oxlO3q1j5ELW1BWcq8o9BG4UAw=
 			</data>
 			<key>hash2</key>
 			<data>
-			NRk5pXrLxJK3vPJRUpToQPmKeXb7jzYLNCegXOSGXqU=
+			300xOQqkoddR3Wj2Z0+pkaLE4vku19BUnDSKKOafKTM=
 			</data>
 		</dict>
 		<key>Headers/ChatComponent-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7bZ2T371hqmdaF+0Hb9OU4jQ9fk=
+			WW8CFYPHhyvDcSYF1RK6BZPnQII=
 			</data>
 			<key>hash2</key>
 			<data>
-			p0+KbKPkeMbMJJTfZXG/awY3ig9QyVlTfrKVAeRUEFo=
+			NAy4eEZVKK4QZI25fX1St7KWgOqVevSlLXMI885ZkR4=
 			</data>
 		</dict>
 		<key>Headers/ChatComponent.h</key>
@@ -235,22 +223,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xtSL4zazpLF6cXSd8dzhza4yaik=
+			GWpB1JceZhivh9f+Z+XFRh7x6zI=
 			</data>
 			<key>hash2</key>
 			<data>
-			w78sry0s+VCfUGgwcv/lj+kUK5VCcAcAKHwz0yotAd4=
+			6nXom33svHkZIdbnYLMFyXssXSyPG+R86kyVLFpOvKM=
 			</data>
 		</dict>
 		<key>InputBar.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EmuFBLzSGvqtI0oeK8tp+MtVK5I=
+			NzaHw4QZ7xLuPOLyDwjE2CLfDAk=
 			</data>
 			<key>hash2</key>
 			<data>
-			1rv0vCJ2Qp7tk0fgAozEGdCA3+KaDkzdOEVcQFhkRi8=
+			awxyLOZd3k04bU8udXY2yFj22afRNk9FOjvj4FZPiPQ=
 			</data>
 		</dict>
 		<key>ListMention.nib/objects-11.0+.nib</key>
@@ -290,22 +278,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			24ht0D2Z1eeENFUQHQDXGlcG5n0=
+			jed+IkoTA0P4rwXketaEHFtBBR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			hiQXUi0Zm7vTJUifyutsipUZyqQULQFZmuw+//IzM/A=
+			chVD3Wtou3lAoDg5P36YAwQ00/sgb23LNMi3tCBusUI=
 			</data>
 		</dict>
 		<key>MentionCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zfKMr2IsyhPsnhTLD7FyqkOjdAQ=
+			arfObTrks/jwMN9G8brVJClQcIc=
 			</data>
 			<key>hash2</key>
 			<data>
-			XtJzK02S0UoNsHdQeCMwmihQY968N5QOxX9p5EKKVBQ=
+			RX1ERy9xUV5UlX/0qwmslYeqkxm66+rIWwKrLyRRS+Q=
 			</data>
 		</dict>
 		<key>MessageOptionsVC.nib/objects-11.0+.nib</key>
@@ -334,66 +322,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dmnSgbHsypfdA0k4dG19xM/LGNY=
+			NM8u5x7mTijwwQt3d5jR+FMnJCE=
 			</data>
 			<key>hash2</key>
 			<data>
-			9BK/NsN/btZlTEy7f9p5S/LbE8AyKnRaTfmjvD5/Ox4=
-			</data>
-		</dict>
-		<key>Modules/ChatComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dmnSgbHsypfdA0k4dG19xM/LGNY=
-			</data>
-			<key>hash2</key>
-			<data>
-			9BK/NsN/btZlTEy7f9p5S/LbE8AyKnRaTfmjvD5/Ox4=
+			kEA0MsDlRD8xPBKw9bgl9RXiwtARNNPHgwVfFtudjgA=
 			</data>
 		</dict>
 		<key>Modules/ChatComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TghSb8PdOICH2vc+kUd2oKkF52g=
+			Ze9U1BUV7nSzqQsqwRJSUVnKmQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			muQYm9l9e/2Im9n5YZu7Y5BtvsynqbP7wT9IwYnJIaA=
+			CFSw3xROYpQNtGYF4h0WOiFtRVzL6rseV7m4LGxgUAk=
 			</data>
 		</dict>
 		<key>Modules/ChatComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S0Ivv6Lh8ctUeBixlR2AVnIIiL8=
+			3+9igcmR5WCc35ieEGo6KZchIw8=
 			</data>
 			<key>hash2</key>
 			<data>
-			2RDUdjjILM+RzQcurw+LzQNlpydaRY3EuyxnSUWH4SE=
-			</data>
-		</dict>
-		<key>Modules/ChatComponent.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TghSb8PdOICH2vc+kUd2oKkF52g=
-			</data>
-			<key>hash2</key>
-			<data>
-			muQYm9l9e/2Im9n5YZu7Y5BtvsynqbP7wT9IwYnJIaA=
-			</data>
-		</dict>
-		<key>Modules/ChatComponent.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			S0Ivv6Lh8ctUeBixlR2AVnIIiL8=
-			</data>
-			<key>hash2</key>
-			<data>
-			2RDUdjjILM+RzQcurw+LzQNlpydaRY3EuyxnSUWH4SE=
+			qUvTs9m49SPyEA+Wt0i9b8hZuP6+dW6PTXuZWGQG7us=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -411,66 +366,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+EBrA5DEl9tjlvs78rDFGagZpH8=
+			M8Yp5VhW/RZwmfI4i9gPnX+7lOg=
 			</data>
 			<key>hash2</key>
 			<data>
-			NYLtqKEn1axAKaaYy6Y3sH7ZZaSHSdoK9Zpg4Lyhfo0=
+			djR8ImI3jl4Ik2Yuav7Dd8RpxQsIFqkGvjy5t44Cdjk=
 			</data>
 		</dict>
 		<key>Picker.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LG+xHoUWMK4jmx/dh3zI4vO4Ro8=
+			YKAydc4tDVCi7PDax8gxlGQ0fQc=
 			</data>
 			<key>hash2</key>
 			<data>
-			gHXxJOhojLEZhB8lR/0Ce6YdL5iV1MBb2aJqJjjQJn4=
+			kOIHhW2MKDbjzWI4nUUutedmKhRhYedr7oaAc8w7GGM=
 			</data>
 		</dict>
 		<key>PinMessageView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			53g9s7Gt1H9ICJwwnIRsEaaFSR0=
+			yxjgEaviqmH1QHQI3IfU9hW+gxM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z/tHIGy5LP+EQbxR/fQpuqXNkDzDkIGTS+QUg1gzN+U=
+			Uf/YiAyPcSsITcM6F/5cmgXZYr9v0aiCuj0xSxpcQYw=
 			</data>
 		</dict>
 		<key>StickerPicker.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			840c24FO3NeYH/XRdO7B81n2tqA=
+			wUZAi3AHdZvxWCC9uH4Jw/1O7a0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6F5pkehOadanaweDDmU5RK6/rBBCtfiK1iowIAvP6EM=
+			7giZUBykvTCHf6r+rrR0403e8Ow4Qk8ox0MVoEPlJ0c=
 			</data>
 		</dict>
 		<key>TimePickerVC.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uM/sSEIcoS07VNYuhvrvd+iIo6U=
+			L+AjOmYt6Trpz6873JTUHUf9v5g=
 			</data>
 			<key>hash2</key>
 			<data>
-			BGEPusy/JqbMFcwqd5I8F2KZJFcEqrWR/XfCSxXM5wI=
+			uIm0pS0j3ozMcKAQyFQ+nXTL+flnM8jD5toM3mV2dmc=
 			</data>
 		</dict>
 		<key>TimePickerVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wgfr8BxepNxsoR+U8rbUG4ssJKs=
+			yyaIMM0rEetZ1dlQM04AE2yGaRA=
 			</data>
 			<key>hash2</key>
 			<data>
-			r+RVqihEjne/RrfXS9sQNJrMSNyI9gLkRUW89/LFwbc=
+			UpN0FLMLNZgcciuy4VcVftzKG+UdQdvDe4/bJflOxtk=
 			</data>
 		</dict>
 		<key>Typing.nib</key>
@@ -488,11 +443,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0pMWJR5TbNpRrl51jq+7Futx9Ss=
+			HhsCZ379V/ACUJAhbfD3FLDovjY=
 			</data>
 			<key>hash2</key>
 			<data>
-			y0dMOStUP4X4yWWfRdIhH7jCHNuHGOOSVYSibey2quw=
+			JkUw1WARBW2xD3Bx7vCb6TmPgqipZVlnfvrkjWfq38w=
 			</data>
 		</dict>
 		<key>VideoPlayerView.nib</key>

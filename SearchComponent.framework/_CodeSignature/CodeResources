@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SearchComponent-Swift.h</key>
 		<data>
-		yYsNDkaAtuiplG2/dsCFPT1o9qk=
+		5e7ixaMC5eQS8FiYhkCQHP2u7bY=
 		</data>
 		<key>Headers/SearchComponent.h</key>
 		<data>
@@ -14,31 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZoAqnPCdaH5tlv22iJZIvQ/QGPs=
+		RJ+xt/ylINLci+6cntntM3SZt/4=
 		</data>
 		<key>Modules/SearchComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		iaLl1xCgUxfYQ8LxOdRk7Kmsf/M=
-		</data>
-		<key>Modules/SearchComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		iaLl1xCgUxfYQ8LxOdRk7Kmsf/M=
+		Oep6GORiBQFbhfOh8FNj6LgYTMY=
 		</data>
 		<key>Modules/SearchComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		6j6ay5jtbundXJ6LTp7UENbiiWQ=
+		mjECXwKCB5R225yCNK1rwkD386o=
 		</data>
 		<key>Modules/SearchComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		eBMl1DfV6mbj8o1Y2LIBI9twtxw=
-		</data>
-		<key>Modules/SearchComponent.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		6j6ay5jtbundXJ6LTp7UENbiiWQ=
-		</data>
-		<key>Modules/SearchComponent.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		eBMl1DfV6mbj8o1Y2LIBI9twtxw=
+		Otk/0vRrKk68JTrd98J/UfsbOFA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,11 +34,11 @@
 		</data>
 		<key>SearchVC.nib/objects-11.0+.nib</key>
 		<data>
-		y53GQ/UmibPuxkefi2BFiKNLMPI=
+		MnQZ9HJMWfuC5vjwy/ea0w7BSkw=
 		</data>
 		<key>SearchVC.nib/runtime.nib</key>
 		<data>
-		rovFCSrOsMl+38l7I6DQXfnKhdA=
+		NSoztOKHcXX6hB8aOsaTOyDXZo4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -59,11 +47,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yYsNDkaAtuiplG2/dsCFPT1o9qk=
+			5e7ixaMC5eQS8FiYhkCQHP2u7bY=
 			</data>
 			<key>hash2</key>
 			<data>
-			q6S9MCprWIn6cLzzqnuH2ytLWMpMP8eLTCucd+NeOmM=
+			7kFHdBYXHtXjoJd0aD2V5treaKAY2tPbC3h+uK6+ypg=
 			</data>
 		</dict>
 		<key>Headers/SearchComponent.h</key>
@@ -81,66 +69,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iaLl1xCgUxfYQ8LxOdRk7Kmsf/M=
+			Oep6GORiBQFbhfOh8FNj6LgYTMY=
 			</data>
 			<key>hash2</key>
 			<data>
-			9iy4OPYUCXtkRZDPSXQXEvC2Mz5c3gXcUGQpMunKQZU=
-			</data>
-		</dict>
-		<key>Modules/SearchComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iaLl1xCgUxfYQ8LxOdRk7Kmsf/M=
-			</data>
-			<key>hash2</key>
-			<data>
-			9iy4OPYUCXtkRZDPSXQXEvC2Mz5c3gXcUGQpMunKQZU=
+			o/aeOIezCRs1iAL9UwaIjn0wBKPBr1cRoes85KjDx1M=
 			</data>
 		</dict>
 		<key>Modules/SearchComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6j6ay5jtbundXJ6LTp7UENbiiWQ=
+			mjECXwKCB5R225yCNK1rwkD386o=
 			</data>
 			<key>hash2</key>
 			<data>
-			xIklpNG/EqWQApBI+Zf0NWMFWbCTL7FU+000yBWLcS0=
+			Ivea93D10xMHpPLaWUXAEdF+kdRMd0LAqfutjrNadXY=
 			</data>
 		</dict>
 		<key>Modules/SearchComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eBMl1DfV6mbj8o1Y2LIBI9twtxw=
+			Otk/0vRrKk68JTrd98J/UfsbOFA=
 			</data>
 			<key>hash2</key>
 			<data>
-			kq1RarcIhkQmQIOPRTKPn4dVOU+eJcpo7B+sbll22yI=
-			</data>
-		</dict>
-		<key>Modules/SearchComponent.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6j6ay5jtbundXJ6LTp7UENbiiWQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			xIklpNG/EqWQApBI+Zf0NWMFWbCTL7FU+000yBWLcS0=
-			</data>
-		</dict>
-		<key>Modules/SearchComponent.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			eBMl1DfV6mbj8o1Y2LIBI9twtxw=
-			</data>
-			<key>hash2</key>
-			<data>
-			kq1RarcIhkQmQIOPRTKPn4dVOU+eJcpo7B+sbll22yI=
+			+ETUpEfv7wj3HpbcZTzL8l/62KLrX4YAW20RcZ271XI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -158,22 +113,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y53GQ/UmibPuxkefi2BFiKNLMPI=
+			MnQZ9HJMWfuC5vjwy/ea0w7BSkw=
 			</data>
 			<key>hash2</key>
 			<data>
-			J8E2Qq5YoJFIQFy3QYW4pXEbWzTpb2F/O+7ttQhzsII=
+			i1Vs7Qbq2eQaMeBYGuWfsZG3Dnlu5fxE3S0DYHNjQ1Y=
 			</data>
 		</dict>
 		<key>SearchVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rovFCSrOsMl+38l7I6DQXfnKhdA=
+			NSoztOKHcXX6hB8aOsaTOyDXZo4=
 			</data>
 			<key>hash2</key>
 			<data>
-			hX1/lhtq5EoH1shVIMrIEw7Xz8EO9vIlB5j9h7TOwh0=
+			Pcn7iGZ+Sx4PmGPqBWsPdixN9kR1mgEyUth5IPWUqFI=
 			</data>
 		</dict>
 	</dict>
