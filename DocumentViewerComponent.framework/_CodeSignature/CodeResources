@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/DocumentViewerComponent-Swift.h</key>
 		<data>
-		Dv9eyYkcwlKAF28yKzI82A6IcXs=
+		SG5uYuCB/QP9poDJfXkXuLPAg9A=
 		</data>
 		<key>Headers/DocumentViewerComponent.h</key>
 		<data>
@@ -22,31 +22,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UsSKdUsjgd4bR7JdRYLnlk8ihcY=
+		gE9arKg5rZ7QTrerZkmC09UXyHs=
 		</data>
 		<key>Modules/DocumentViewerComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		T/+mKdLZheEveB9XAryCnKVBEHY=
-		</data>
-		<key>Modules/DocumentViewerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		T/+mKdLZheEveB9XAryCnKVBEHY=
+		AHDCTJk/LoMOdykNka6Qkq51dHM=
 		</data>
 		<key>Modules/DocumentViewerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		kDYCWsIwJSJ2GuwxCWA5jXbbUPo=
+		cgJXmQ6YzTCwJfYasaigl8661cM=
 		</data>
 		<key>Modules/DocumentViewerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		0zarajYm0dXUO68v+hx23mOWG6c=
-		</data>
-		<key>Modules/DocumentViewerComponent.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		kDYCWsIwJSJ2GuwxCWA5jXbbUPo=
-		</data>
-		<key>Modules/DocumentViewerComponent.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		0zarajYm0dXUO68v+hx23mOWG6c=
+		4nw11Q2c5Ekh9NNUMhDWqrTgkGo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,11 +69,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dv9eyYkcwlKAF28yKzI82A6IcXs=
+			SG5uYuCB/QP9poDJfXkXuLPAg9A=
 			</data>
 			<key>hash2</key>
 			<data>
-			QNgj9o5gG674FL8zrO6aAoAay/x8/2uVpnT51cW52k4=
+			zOUMntFSRn+Ltt5cZdwp/s+vuGOni9rkrz8gGJ01cQI=
 			</data>
 		</dict>
 		<key>Headers/DocumentViewerComponent.h</key>
@@ -103,66 +91,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T/+mKdLZheEveB9XAryCnKVBEHY=
+			AHDCTJk/LoMOdykNka6Qkq51dHM=
 			</data>
 			<key>hash2</key>
 			<data>
-			A0e1NRLeYBFBe3KeWL4W7mSbN019dgW2HWJ07NZwbdg=
-			</data>
-		</dict>
-		<key>Modules/DocumentViewerComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			T/+mKdLZheEveB9XAryCnKVBEHY=
-			</data>
-			<key>hash2</key>
-			<data>
-			A0e1NRLeYBFBe3KeWL4W7mSbN019dgW2HWJ07NZwbdg=
+			2686nPPV1M5q05cYuZX9rttpqvyHm6CTMfuRB5FIAFY=
 			</data>
 		</dict>
 		<key>Modules/DocumentViewerComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kDYCWsIwJSJ2GuwxCWA5jXbbUPo=
+			cgJXmQ6YzTCwJfYasaigl8661cM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ebTMqKIobu+KwfglDDCEo5PDpdDl7+cJ95MZjySHr54=
+			XD8uOKZqrTWv4ZF6mwV2JnSY9FhbNIXo3l5nLIjI7L8=
 			</data>
 		</dict>
 		<key>Modules/DocumentViewerComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0zarajYm0dXUO68v+hx23mOWG6c=
+			4nw11Q2c5Ekh9NNUMhDWqrTgkGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			wE3s4XhHGYfYKvWSr5MAvg3t5AGYfbZQj0na8HZka94=
-			</data>
-		</dict>
-		<key>Modules/DocumentViewerComponent.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kDYCWsIwJSJ2GuwxCWA5jXbbUPo=
-			</data>
-			<key>hash2</key>
-			<data>
-			ebTMqKIobu+KwfglDDCEo5PDpdDl7+cJ95MZjySHr54=
-			</data>
-		</dict>
-		<key>Modules/DocumentViewerComponent.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0zarajYm0dXUO68v+hx23mOWG6c=
-			</data>
-			<key>hash2</key>
-			<data>
-			wE3s4XhHGYfYKvWSr5MAvg3t5AGYfbZQj0na8HZka94=
+			kMJSiBmMEUjIiKGF3p1rdToH3ITWFgZlCTgUoGVnXYs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
