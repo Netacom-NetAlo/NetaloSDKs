@@ -379,6 +379,13 @@ SWIFT_CLASS("_TtC19NetAloCoreComponent15FileLibraryCell")
 @end
 
 
+SWIFT_CLASS("_TtC19NetAloCoreComponent17FilterContactCell")
+@interface FilterContactCell : NABaseView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC19NetAloCoreComponent16FooterAccoutCell")
 @interface FooterAccoutCell : NABaseView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -461,6 +468,15 @@ SWIFT_CLASS("_TtC19NetAloCoreComponent21GroupDetailHeaderView")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lbSubtitle;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified ivAvatar_top;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lbDescription;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+
+SWIFT_CLASS("_TtC19NetAloCoreComponent13GroupListView")
+@interface GroupListView : NABaseView
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -798,12 +814,20 @@ SWIFT_CLASS("_TtC19NetAloCoreComponent19NAAudioRecorderView")
 
 
 
-SWIFT_CLASS("_TtC19NetAloCoreComponent19NABaseTableViewCell")
-@interface NABaseTableViewCell : UITableViewCell
+SWIFT_CLASS("_TtC19NetAloCoreComponent28UIBaseTableViewComponentCell")
+@interface UIBaseTableViewComponentCell : UITableViewCell
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+/// Create a new cell with style and identifier for reuse.
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19NetAloCoreComponent19NABaseTableViewCell")
+@interface NABaseTableViewCell : UIBaseTableViewComponentCell
 - (void)awakeFromNib;
 - (void)prepareForReuse;
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -973,9 +997,9 @@ SWIFT_CLASS("_TtC19NetAloCoreComponent14SearchListView")
 
 
 SWIFT_CLASS("_TtC19NetAloCoreComponent16SearchResultCell")
-@interface SearchResultCell : NABaseView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@interface SearchResultCell : NABaseTableViewCell
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -1230,17 +1254,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) CGFloat snackbarMinHeight;)
 
 
 
+@interface TTGSnackbar (SWIFT_EXTENSION(NetAloCoreComponent))
+- (void)setUpDefaultUIWithIcon:(UIImage * _Nullable)icon iconTintColor:(UIColor * _Nonnull)iconTintColor;
+- (void)setThemes;
+@end
+
 
 @interface TTGSnackbar (SWIFT_EXTENSION(NetAloCoreComponent))
 /// Show the snackbar.
 - (void)show;
 @end
 
-
-@interface TTGSnackbar (SWIFT_EXTENSION(NetAloCoreComponent))
-- (void)setUpDefaultUIWithIcon:(UIImage * _Nullable)icon iconTintColor:(UIColor * _Nonnull)iconTintColor;
-- (void)setThemes;
-@end
 
 
 @interface TTGSnackbar (SWIFT_EXTENSION(NetAloCoreComponent))
@@ -1342,6 +1366,7 @@ SWIFT_CLASS("_TtC19NetAloCoreComponent14TopicTitleCell")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

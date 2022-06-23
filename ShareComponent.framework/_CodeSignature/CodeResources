@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		k3Hssqh1F9iJZTUHGt3wsm56org=
+		BDOZa6ABu2l3O/j/ZR4cbx53Sqo=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		SXZnhC7QbrBR+DElMoKFsgKmV5s=
+		KnXKMX0oNMdG+WEyVSFx1sP+gUE=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		SXZnhC7QbrBR+DElMoKFsgKmV5s=
+		KnXKMX0oNMdG+WEyVSFx1sP+gUE=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7y66cnC25KJsa2ito++pq7+8HM0=
+		JHaKk0EOqE9BVYeVYBcFnK5BMVs=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		7y66cnC25KJsa2ito++pq7+8HM0=
+		JHaKk0EOqE9BVYeVYBcFnK5BMVs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>ShareCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		QV7h5u/D1vVYI3qrg3+p+Q7tHKw=
+		Fx4QVn3fGxHIyIvy9xClF+7z3n4=
 		</data>
 		<key>ShareCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		77RZLIoqS3H/cHSJcgLzLouveNQ=
+		Oc3HG3Fv1dgRUV/oGwSreYpW7w0=
 		</data>
 		<key>ShareViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -89,22 +89,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SXZnhC7QbrBR+DElMoKFsgKmV5s=
+			KnXKMX0oNMdG+WEyVSFx1sP+gUE=
 			</data>
 			<key>hash2</key>
 			<data>
-			00Cm5amTTjF+O7q6yf8ONZRDReS/ycqbNZPGauxgrLw=
+			6ia/bfElT5TjUqc/qQFzN76AsG4KgLHSCntMrzTIIpk=
 			</data>
 		</dict>
 		<key>Modules/ShareComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SXZnhC7QbrBR+DElMoKFsgKmV5s=
+			KnXKMX0oNMdG+WEyVSFx1sP+gUE=
 			</data>
 			<key>hash2</key>
 			<data>
-			00Cm5amTTjF+O7q6yf8ONZRDReS/ycqbNZPGauxgrLw=
+			6ia/bfElT5TjUqc/qQFzN76AsG4KgLHSCntMrzTIIpk=
 			</data>
 		</dict>
 		<key>Modules/ShareComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -122,11 +122,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7y66cnC25KJsa2ito++pq7+8HM0=
+			JHaKk0EOqE9BVYeVYBcFnK5BMVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ca0+ZYWqD/AtaCVJozLWyPItYS3WP5iI9nPOSGJ/H/U=
+			LpiYceztu4wqdCJnulORVc5/Zoui5lWSszuJ1vPGw+I=
 			</data>
 		</dict>
 		<key>Modules/ShareComponent.swiftmodule/arm64.swiftdoc</key>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7y66cnC25KJsa2ito++pq7+8HM0=
+			JHaKk0EOqE9BVYeVYBcFnK5BMVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ca0+ZYWqD/AtaCVJozLWyPItYS3WP5iI9nPOSGJ/H/U=
+			LpiYceztu4wqdCJnulORVc5/Zoui5lWSszuJ1vPGw+I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -166,22 +166,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QV7h5u/D1vVYI3qrg3+p+Q7tHKw=
+			Fx4QVn3fGxHIyIvy9xClF+7z3n4=
 			</data>
 			<key>hash2</key>
 			<data>
-			bRiRzEKqwrxzO/Urql+jrHRp+71cxP5ghM1aPifz3k4=
+			ANsucuJeieySASCw6VFQUx78xCvMWxAbA5nmcLzJxDw=
 			</data>
 		</dict>
 		<key>ShareCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			77RZLIoqS3H/cHSJcgLzLouveNQ=
+			Oc3HG3Fv1dgRUV/oGwSreYpW7w0=
 			</data>
 			<key>hash2</key>
 			<data>
-			KgdrCd6OxEC8dCVpiSKDlVhCA2ByjNEhUn16x1bABEE=
+			dujVWwEw0s41IxAl07WcuVJK+TN29Mawk1zXXiJXo8o=
 			</data>
 		</dict>
 		<key>ShareViewController.nib/objects-11.0+.nib</key>

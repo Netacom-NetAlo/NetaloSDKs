@@ -22,15 +22,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EgqZKORvv9/L3A1X6o9bQ/39nes=
+		vzAcAIo4IeyWYmvjQTqRw/aYtRI=
 		</data>
 		<key>Modules/CreateSecretChatComponent.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		CyUn6ObctlaMHOj26DuLEPxql6g=
+		CiRs5gjFKfVgDHHmAJX7lsR8BPw=
 		</data>
 		<key>Modules/CreateSecretChatComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		CyUn6ObctlaMHOj26DuLEPxql6g=
+		CiRs5gjFKfVgDHHmAJX7lsR8BPw=
 		</data>
 		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		w3R7bu900B8uhTuk9B3M+p9TZdo=
+		UJaVyvd0MtrgAg2xluHQfJyhj1s=
 		</data>
 		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		w3R7bu900B8uhTuk9B3M+p9TZdo=
+		UJaVyvd0MtrgAg2xluHQfJyhj1s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,22 +103,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CyUn6ObctlaMHOj26DuLEPxql6g=
+			CiRs5gjFKfVgDHHmAJX7lsR8BPw=
 			</data>
 			<key>hash2</key>
 			<data>
-			iuBHeKaSVahnGSfoqWl52ulyUAigNoTWPeJ+RTkqyTQ=
+			u4mY9cDnLpAxkt2kHT0WDPqo1yLMiGw14Mfa1cxq2Go=
 			</data>
 		</dict>
 		<key>Modules/CreateSecretChatComponent.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CyUn6ObctlaMHOj26DuLEPxql6g=
+			CiRs5gjFKfVgDHHmAJX7lsR8BPw=
 			</data>
 			<key>hash2</key>
 			<data>
-			iuBHeKaSVahnGSfoqWl52ulyUAigNoTWPeJ+RTkqyTQ=
+			u4mY9cDnLpAxkt2kHT0WDPqo1yLMiGw14Mfa1cxq2Go=
 			</data>
 		</dict>
 		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -136,11 +136,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w3R7bu900B8uhTuk9B3M+p9TZdo=
+			UJaVyvd0MtrgAg2xluHQfJyhj1s=
 			</data>
 			<key>hash2</key>
 			<data>
-			dep/wmTfxaqhktwPSY7IeXdhEDno+/pW4RJEmx/BV4E=
+			UvcqO+enRXdWLjuByGtMNN+9rcoWqbaZjQAFXYikfK8=
 			</data>
 		</dict>
 		<key>Modules/CreateSecretChatComponent.swiftmodule/arm64.swiftdoc</key>
@@ -158,11 +158,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w3R7bu900B8uhTuk9B3M+p9TZdo=
+			UJaVyvd0MtrgAg2xluHQfJyhj1s=
 			</data>
 			<key>hash2</key>
 			<data>
-			dep/wmTfxaqhktwPSY7IeXdhEDno+/pW4RJEmx/BV4E=
+			UvcqO+enRXdWLjuByGtMNN+9rcoWqbaZjQAFXYikfK8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

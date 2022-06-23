@@ -373,6 +373,7 @@ SWIFT_CLASS("_TtC13ChatComponent24ShareLocationMessageCell")
 
 
 
+
 SWIFT_CLASS("_TtC13ChatComponent16VideoMessageCell")
 @interface VideoMessageCell : BaseMessageContentCell
 - (void)layoutSubviews;

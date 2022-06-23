@@ -209,9 +209,25 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NetaloConfiguration;
+@class NSNumber;
+@protocol NetAloUser;
+@class NSString;
 
 SWIFT_CLASS("_TtC10NetAloFull10NetAloFull")
 @interface NetAloFull : NSObject
+- (nonnull instancetype)initWithConfig:(NetaloConfiguration * _Nonnull)config OBJC_DESIGNATED_INITIALIZER;
+- (void)initializeObjc:(void (^ _Nonnull)(BOOL))completion;
+- (void)logout;
+- (BOOL)setWithUser:(id <NetAloUser> _Nonnull)user error:(NSError * _Nullable * _Nullable)error;
+- (void)loginWithUser:(id <NetAloUser> _Nonnull)user;
+@property (nonatomic) BOOL isBuildForSDK;
+- (void)buildSDKModule;
+- (void)showListGroup;
+- (void)showVNDemoVC;
+- (void)showChatUserWith:(int64_t)contactId phone:(NSString * _Nullable)phone fullName:(NSString * _Nullable)fullName email:(NSString * _Nullable)email profileUrl:(NSString * _Nonnull)profileUrl;
+- (void)showCallUserWith:(int64_t)contactId phone:(NSString * _Nullable)phone fullName:(NSString * _Nullable)fullName email:(NSString * _Nullable)email profileUrl:(NSString * _Nonnull)profileUrl isVideoCall:(BOOL)isVideoCall;
+- (void)setLanguageWithLanguage:(NSString * _Nonnull)language;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -223,18 +239,18 @@ SWIFT_CLASS("_TtC10NetAloFull10NetAloFull")
 @class UNNotificationResponse;
 
 @interface NetAloFull (SWIFT_EXTENSION(NetAloFull)) <UNUserNotificationCenterDelegate>
+- (void)requestNotificationtPermission;
+- (void)requestOjectiveCPermission;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 @end
 
 @class UIApplication;
-@class NSNumber;
 @class NSData;
 @class NSUserActivity;
 @protocol UIUserActivityRestoring;
 @class UIWindow;
 @class NSURL;
-@class NSString;
 
 @interface NetAloFull (SWIFT_EXTENSION(NetAloFull)) <UIApplicationDelegate>
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
@@ -246,6 +262,22 @@ SWIFT_CLASS("_TtC10NetAloFull10NetAloFull")
 - (UIInterfaceOrientationMask)application:(UIApplication * _Nonnull)application supportedInterfaceOrientationsForWindow:(UIWindow * _Nullable)window SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)application:(UIApplication * _Nonnull)app openURL:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)application:(UIApplication * _Nonnull)application openURL:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface NetAloFull (SWIFT_EXTENSION(NetAloFull))
+- (void)setUserProfileUrlWith:(NSString * _Nonnull)userProfileUrl;
+- (void)getNumberOfBadge:(void (^ _Nonnull)(NSInteger))completion;
+- (NSString * _Nonnull)getUserProfileUrl SWIFT_WARN_UNUSED_RESULT;
+- (void)blockUserWithBlockedID:(NSString * _Nonnull)blockedID completion:(void (^ _Nonnull)(BOOL))completion;
+- (void)unblockUserWithBlockedID:(NSString * _Nonnull)blockedID completion:(void (^ _Nonnull)(BOOL))completion;
+- (void)sendMessageWithContent:(NSString * _Nonnull)content targetUserID:(NSString * _Nonnull)targetUserID completion:(void (^ _Nonnull)(BOOL))completion;
+- (void)isChattedWithTargetUserID:(NSString * _Nonnull)targetUserID completion:(void (^ _Nonnull)(BOOL))completion;
+- (void)addContactSDKWithTargetName:(NSString * _Nonnull)targetName targetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)deleteContactSDKWithTargetName:(NSString * _Nonnull)targetName targetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestAddContactSDKWithTargetName:(NSString * _Nonnull)targetName targetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)checkFriendWithTargetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)forceBroadCastUserStatusWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 @end
 
 
@@ -272,6 +304,15 @@ SWIFT_CLASS("_TtC10NetAloFull16NetAloUserHolder")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+SWIFT_CLASS("_TtC10NetAloFull19NetaloConfiguration")
+@interface NetaloConfiguration : NSObject
+- (nonnull instancetype)initWithEnviroment:(NSInteger)enviroment appId:(int64_t)appId appKey:(NSString * _Nonnull)appKey accountKey:(NSString * _Nonnull)accountKey appGroupIdentifier:(NSString * _Nonnull)appGroupIdentifier allowSyncDataInApp:(BOOL)allowSyncDataInApp allowSyncContactInApp:(BOOL)allowSyncContactInApp userProfileUrl:(NSString * _Nonnull)userProfileUrl allowCustomUsername:(BOOL)allowCustomUsername forceUpdateProfile:(BOOL)forceUpdateProfile allowCustomProfile:(BOOL)allowCustomProfile allowSetUserProfileUrl:(BOOL)allowSetUserProfileUrl allowAddContact:(BOOL)allowAddContact allowBlockContact:(BOOL)allowBlockContact isVideoCallEnable:(BOOL)isVideoCallEnable isVoiceCallEnable:(BOOL)isVoiceCallEnable isHiddenSecretChat:(BOOL)isHiddenSecretChat allowLocationEnable:(BOOL)allowLocationEnable allowTrackingUsingSDK:(BOOL)allowTrackingUsingSDK enableUserStatusInChat:(BOOL)enableUserStatusInChat allowTrackingBadgeNumber:(BOOL)allowTrackingBadgeNumber isHiddenEditProfile:(BOOL)isHiddenEditProfile allowEditContact:(BOOL)allowEditContact searchByLike:(BOOL)searchByLike allowReferralCode:(BOOL)allowReferralCode allowReplaceCountrycode:(BOOL)allowReplaceCountrycode;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
