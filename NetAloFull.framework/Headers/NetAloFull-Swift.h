@@ -229,10 +229,10 @@ SWIFT_CLASS("_TtC10NetAloFull10NetAloFull")
 - (void)loginWithUser:(id <NetAloUser> _Nonnull)user;
 @property (nonatomic) BOOL isBuildForSDK;
 - (void)buildSDKModule;
-- (void)showListGroup;
-- (void)showVNDemoVC;
-- (void)showChatUserWith:(int64_t)contactId phone:(NSString * _Nullable)phone fullName:(NSString * _Nullable)fullName email:(NSString * _Nullable)email profileUrl:(NSString * _Nonnull)profileUrl;
-- (void)showCallUserWith:(int64_t)contactId phone:(NSString * _Nullable)phone fullName:(NSString * _Nullable)fullName email:(NSString * _Nullable)email profileUrl:(NSString * _Nonnull)profileUrl isVideoCall:(BOOL)isVideoCall;
+- (void)showListGroupWithCompletion:(void (^ _Nonnull)(NSError * _Nullable))completion;
+- (void)showVNDemoVCWithCompletion:(void (^ _Nullable)(NSError * _Nullable))completion;
+- (void)showChatUserWith:(int64_t)contactId phone:(NSString * _Nullable)phone fullName:(NSString * _Nullable)fullName email:(NSString * _Nullable)email profileUrl:(NSString * _Nonnull)profileUrl completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
+- (void)showCallUserWith:(int64_t)contactId phone:(NSString * _Nullable)phone fullName:(NSString * _Nullable)fullName email:(NSString * _Nullable)email profileUrl:(NSString * _Nonnull)profileUrl isVideoCall:(BOOL)isVideoCall completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
 - (void)setLanguageWithLanguage:(NSString * _Nonnull)language;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
