@@ -6,6 +6,6 @@ framework module GroupDetailComponent {
 }
 
 module GroupDetailComponent.Swift {
-    header "GroupDetailComponent-Swift.h"
-    requires objc
+  header "GroupDetailComponent-Swift.h"
+  requires objc
 }

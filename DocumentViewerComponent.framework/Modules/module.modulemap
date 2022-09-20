@@ -6,6 +6,6 @@ framework module DocumentViewerComponent {
 }
 
 module DocumentViewerComponent.Swift {
-    header "DocumentViewerComponent-Swift.h"
-    requires objc
+  header "DocumentViewerComponent-Swift.h"
+  requires objc
 }

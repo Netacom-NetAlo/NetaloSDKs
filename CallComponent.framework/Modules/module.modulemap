@@ -6,6 +6,6 @@ framework module CallComponent {
 }
 
 module CallComponent.Swift {
-    header "CallComponent-Swift.h"
-    requires objc
+  header "CallComponent-Swift.h"
+  requires objc
 }

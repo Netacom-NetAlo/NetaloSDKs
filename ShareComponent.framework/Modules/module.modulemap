@@ -6,6 +6,6 @@ framework module ShareComponent {
 }
 
 module ShareComponent.Swift {
-    header "ShareComponent-Swift.h"
-    requires objc
+  header "ShareComponent-Swift.h"
+  requires objc
 }

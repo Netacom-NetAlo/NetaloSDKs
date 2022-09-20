@@ -6,6 +6,6 @@ framework module CreateSecretChatComponent {
 }
 
 module CreateSecretChatComponent.Swift {
-    header "CreateSecretChatComponent-Swift.h"
-    requires objc
+  header "CreateSecretChatComponent-Swift.h"
+  requires objc
 }

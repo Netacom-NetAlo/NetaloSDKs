@@ -6,6 +6,6 @@ framework module NATheme {
 }
 
 module NATheme.Swift {
-    header "NATheme-Swift.h"
-    requires objc
+  header "NATheme-Swift.h"
+  requires objc
 }

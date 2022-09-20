@@ -6,6 +6,6 @@ framework module SearchComponent {
 }
 
 module SearchComponent.Swift {
-    header "SearchComponent-Swift.h"
-    requires objc
+  header "SearchComponent-Swift.h"
+  requires objc
 }

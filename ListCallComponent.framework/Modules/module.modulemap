@@ -6,6 +6,6 @@ framework module ListCallComponent {
 }
 
 module ListCallComponent.Swift {
-    header "ListCallComponent-Swift.h"
-    requires objc
+  header "ListCallComponent-Swift.h"
+  requires objc
 }

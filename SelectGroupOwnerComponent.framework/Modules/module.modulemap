@@ -6,6 +6,6 @@ framework module SelectGroupOwnerComponent {
 }
 
 module SelectGroupOwnerComponent.Swift {
-    header "SelectGroupOwnerComponent-Swift.h"
-    requires objc
+  header "SelectGroupOwnerComponent-Swift.h"
+  requires objc
 }

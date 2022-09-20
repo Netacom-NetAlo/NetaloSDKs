@@ -6,6 +6,6 @@ framework module ListContactComponent {
 }
 
 module ListContactComponent.Swift {
-    header "ListContactComponent-Swift.h"
-    requires objc
+  header "ListContactComponent-Swift.h"
+  requires objc
 }

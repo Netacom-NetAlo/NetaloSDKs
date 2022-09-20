@@ -6,6 +6,6 @@ framework module ChatComponent {
 }
 
 module ChatComponent.Swift {
-    header "ChatComponent-Swift.h"
-    requires objc
+  header "ChatComponent-Swift.h"
+  requires objc
 }

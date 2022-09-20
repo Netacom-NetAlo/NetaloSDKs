@@ -6,6 +6,6 @@ framework module ForwardMessageComponent {
 }
 
 module ForwardMessageComponent.Swift {
-    header "ForwardMessageComponent-Swift.h"
-    requires objc
+  header "ForwardMessageComponent-Swift.h"
+  requires objc
 }
