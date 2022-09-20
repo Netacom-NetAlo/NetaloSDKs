@@ -272,6 +272,8 @@ SWIFT_CLASS("_TtC10NetAloFull10NetAloFull")
 
 
 @interface NetAloFull (SWIFT_EXTENSION(NetAloFull))
+- (void)socketConnect;
+- (void)disConnectSocket;
 - (void)setUserProfileUrlWith:(NSString * _Nonnull)userProfileUrl;
 - (void)getNumberOfBadge:(void (^ _Nonnull)(NSInteger))completion;
 - (NSString * _Nonnull)getUserProfileUrl SWIFT_WARN_UNUSED_RESULT;
