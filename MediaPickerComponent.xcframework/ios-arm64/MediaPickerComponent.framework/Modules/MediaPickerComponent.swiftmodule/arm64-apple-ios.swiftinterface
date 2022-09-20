@@ -1,0 +1,63 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MediaPickerComponent
+import Carbon
+import CoreLocation
+import Foundation
+@_exported import MediaPickerComponent
+import MobileCoreServices
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NANetworkPlatform
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Photos
+import Resolver
+import RxCocoa
+import RxRelay
+import RxSwift
+import Swift
+import UIKit.UIImage
+import UIKit
+import XCoordinator
+import _Concurrency
+public enum MediaPickerRoute : XCoordinator.Route {
+  case main(NetAloLite.MultiImagePickerConfig)
+  case alert(NetAloCoreComponent.NAAlertVM)
+  case dismiss
+  case releaseIfNeeded(isFromCamera: Swift.Bool = false)
+  case openCamera(UIKit.UIViewController)
+  case openAddGPS(image: UIKit.UIImage)
+  case progressHUD(Swift.String, Swift.Bool)
+}
+public class MediaPickerCoordinator : XCoordinator.ViewCoordinator<MediaPickerComponent.MediaPickerRoute>, NACoreUtils.EventPublisherType {
+  public var eventPublisher: RxSwift.PublishSubject<MediaPickerComponent.MediaPickerComponentManager.Event>
+  final public let animateViews: RxSwift.ReplaySubject<(container: UIKit.UIViewController, navigationView: UIKit.UIView, navigationHeight: UIKit.NSLayoutConstraint, coordinatedScrollView: UIKit.UIScrollView)>
+  @objc deinit
+  public init(rootViewController: UIKit.UIViewController, container: UIKit.UIView, config: NetAloLite.MultiImagePickerConfig)
+  override public func prepareTransition(for route: MediaPickerComponent.MediaPickerRoute) -> XCoordinator.ViewTransition
+  public typealias Event = MediaPickerComponent.MediaPickerComponentManager.Event
+}
+open class MediaPickerComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case close
+    case releaseIfNeeded
+    case mediaURL(imageUrls: [Foundation.URL], videoUrls: [Foundation.URL])
+    case mediaRaw(images: [UIKit.UIImage], videos: [NetAloCoreComponent.VideoAsset])
+  }
+  public init()
+  public struct Input {
+    public init(rootViewController: UIKit.UIViewController = UIViewController(), container: UIKit.UIView, config: NetAloLite.MultiImagePickerConfig = .default)
+  }
+  public struct Output {
+    public let rootCoodinator: MediaPickerComponent.MediaPickerCoordinator
+    public let eventObservable: RxSwift.Observable<MediaPickerComponent.MediaPickerComponentManager.Event>
+    public let animateViews: RxSwift.Observable<(container: UIKit.UIViewController, navigationView: UIKit.UIView, navigationHeight: UIKit.NSLayoutConstraint, coordinatedScrollView: UIKit.UIScrollView)>
+  }
+  public func transform(input: MediaPickerComponent.MediaPickerComponentManager.Input) -> MediaPickerComponent.MediaPickerComponentManager.Output
+  @objc deinit
+}

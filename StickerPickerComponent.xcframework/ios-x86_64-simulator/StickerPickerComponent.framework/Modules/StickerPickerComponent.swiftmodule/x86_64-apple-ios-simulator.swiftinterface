@@ -1,0 +1,72 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name StickerPickerComponent
+import Carbon
+import MobileCoreServices
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxRelay
+import RxSwift
+@_exported import StickerPickerComponent
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class StickerCategoryFlowLayoutAdapter : Carbon.UICollectionViewFlowLayoutAdapter {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForFooterInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, insetForSectionAt section: Swift.Int) -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreGraphics.CGFloat
+  override public init(data: [Carbon.Section] = super)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class StickerGroupFlowLayoutAdapter : Carbon.UICollectionViewFlowLayoutAdapter {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForFooterInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, insetForSectionAt section: Swift.Int) -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreGraphics.CGFloat
+  override public init(data: [Carbon.Section] = super)
+  @objc deinit
+}
+public enum StickerPickerRoute : XCoordinator.Route {
+  case main(category: NADomain.NAStickerCategory?)
+  case dismiss
+  case releaseIfNeeded
+  case showStickerStore
+}
+public class StickerPickerCoordinator : XCoordinator.ViewCoordinator<StickerPickerComponent.StickerPickerRoute>, NACoreUtils.EventPublisherType {
+  public var eventPublisher: RxSwift.PublishSubject<StickerPickerComponent.StickerPickerComponentManager.Event>
+  final public let animateViews: RxSwift.ReplaySubject<(container: UIKit.UIViewController, navigationView: UIKit.UIView?, navigationHeight: UIKit.NSLayoutConstraint?, coordinatedScrollView: UIKit.UIScrollView)>
+  @objc deinit
+  public init(rootViewController: UIKit.UIViewController, container: UIKit.UIView, cate: NADomain.NAStickerCategory?)
+  override public func prepareTransition(for route: StickerPickerComponent.StickerPickerRoute) -> XCoordinator.ViewTransition
+  public typealias Event = StickerPickerComponent.StickerPickerComponentManager.Event
+}
+open class StickerPickerComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case close
+    case releaseIfNeeded
+    case stickerSelected(NADomain.NAStickerItem)
+  }
+  public init()
+  public struct Input {
+    public init(rootViewController: UIKit.UIViewController, container: UIKit.UIView, stickerCate: NADomain.NAStickerCategory?)
+  }
+  public struct Output {
+    public let rootCoodinator: StickerPickerComponent.StickerPickerCoordinator
+    public let eventObservable: RxSwift.Observable<StickerPickerComponent.StickerPickerComponentManager.Event>
+    public let animateViews: RxSwift.Observable<(container: UIKit.UIViewController, navigationView: UIKit.UIView?, navigationHeight: UIKit.NSLayoutConstraint?, coordinatedScrollView: UIKit.UIScrollView)>
+  }
+  public func transform(input: StickerPickerComponent.StickerPickerComponentManager.Input) -> StickerPickerComponent.StickerPickerComponentManager.Output
+  @objc deinit
+}

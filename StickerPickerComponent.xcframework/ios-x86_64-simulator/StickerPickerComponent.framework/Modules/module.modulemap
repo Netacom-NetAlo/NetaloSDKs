@@ -1,0 +1,11 @@
+framework module StickerPickerComponent {
+  umbrella header "StickerPickerComponent.h"
+
+  export *
+  module * { export * }
+}
+
+module StickerPickerComponent.Swift {
+    header "StickerPickerComponent-Swift.h"
+    requires objc
+}

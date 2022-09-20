@@ -1,0 +1,124 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ListGroupComponent
+import Carbon
+import Foundation
+@_exported import ListGroupComponent
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxSwift
+import Swift
+import UIKit.UIImage
+import UIKit
+import XCoordinator
+import _Concurrency
+open class ListGroupComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case createGroup
+    case search
+    case dismiss
+    case showChat(group: NADomain.NAGroup)
+    case groupCall(type: NADomain.CallType, group: NADomain.NAGroup, isCreateCall: Swift.Bool, messageID: Swift.String)
+    case chooseOwnerIfNeeded(group: NADomain.NAGroup)
+    case loadedListGroup
+    case close
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, isInitFromSDK: Swift.Bool = false)
+  }
+  public struct Output {
+    public let rootCoodinator: ListGroupComponent.ListGroupCoordinator
+    public let eventObservable: RxSwift.Observable<ListGroupComponent.ListGroupComponentManager.Event>
+  }
+  public func transform(input: ListGroupComponent.ListGroupComponentManager.Input) -> ListGroupComponent.ListGroupComponentManager.Output
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class ListGroupVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
+  public struct Input {
+    public init(initialLoad: RxSwift.Observable<Swift.Void>, viewWillAppear: RxSwift.Observable<Swift.Void>, releaseIfNeed: RxSwift.Observable<Swift.Void>, loadMore: RxSwift.Observable<Swift.Void>, groupItemTrigger: RxSwift.Observable<(data: NADomain.NAGroup, action: NetAloCoreComponent.GroupComponent.Action)>)
+  }
+  public struct Output {
+    public let groups: RxCocoa.Driver<[NADomain.NAGroup]>
+    public let loading: RxCocoa.Driver<Swift.Bool>
+  }
+  public enum Event {
+    case search
+    case createGroup
+    case alertForceUpdate
+    case alertOptionUpdate
+    case chat(with: NADomain.NAGroup)
+    case groupOption(of: NADomain.NAGroup)
+    case deleteGroup(actions: [UIKit.UIAlertAction])
+    case groupCallInvitation(groupCall: NADomain.NAGroupCall, group: NADomain.NAGroup, invitedUser: NADomain.NAUser)
+    case chooseGroupOwnerIfNeeded(group: NADomain.NAGroup)
+    case close
+  }
+  public var eventPublisher: RxSwift.PublishSubject<ListGroupComponent.ListGroupVM.Event>
+  public var hideSwipeCellTrigger: RxSwift.PublishSubject<Swift.Void>
+  public func transform(input: ListGroupComponent.ListGroupVM.Input) -> ListGroupComponent.ListGroupVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum ListGroupRoute : XCoordinator.Route {
+  case main
+  case groupOption(of: NADomain.NAGroup)
+  case dismiss
+  case popToRoot
+  case deleteGroup(actions: [UIKit.UIAlertAction])
+  case alert(NetAloCoreComponent.NAAlertVM)
+}
+public class ListGroupCoordinator : XCoordinator.NavigationCoordinator<ListGroupComponent.ListGroupRoute>, NACoreUtils.EventPublisherType, NetAloCoreComponent.NotificationPesentableCoordinator, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<ListGroupComponent.ListGroupComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil, isInitFromSDK: Swift.Bool? = false)
+  public var text: NALocalization.NAText {
+    get
+  }
+  override public func prepareTransition(for route: ListGroupComponent.ListGroupRoute) -> XCoordinator.NavigationTransition
+  public func canPresent(notication: NetAloCoreComponent.NotificationParam) -> Swift.Bool
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = ListGroupComponent.ListGroupComponentManager.Event
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class GroupOptionVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public struct Action {
+    public var didBackToListGroup: RxSwift.Observable<Swift.Void> {
+      get
+    }
+  }
+  final public let action: ListGroupComponent.GroupOptionVM.Action
+  public func transform(input: ListGroupComponent.GroupOptionVM.Input) -> ListGroupComponent.GroupOptionVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class GroupOptionVC : NetAloCoreComponent.NABaseVC, NACoreUI.BindableType, NACoreUI.NibLoadable {
+  @_Concurrency.MainActor(unsafe) public static func instantiate(group: NADomain.NAGroup) -> ListGroupComponent.GroupOptionVC
+  @_Concurrency.MainActor(unsafe) public var viewModel: ListGroupComponent.GroupOptionVM!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func bindViewModel()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  public typealias ViewModelType = ListGroupComponent.GroupOptionVM
+  @objc deinit
+}

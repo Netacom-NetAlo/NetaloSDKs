@@ -1,0 +1,79 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ContactDetailComponent
+import Carbon
+@_exported import ContactDetailComponent
+import MessageUI
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxGesture
+import RxSwift
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+public enum ContactDetailRoute : XCoordinator.Route {
+  case main(group: NADomain.NAGroup?, contact: NADomain.NAContact?, historyCall: NetAloCoreComponent.GroupHistoryCall?, groupType: NADomain.NAGroup.GroupType?, isPersonalChat: Swift.Bool)
+  case edit(contact: NADomain.NAContact)
+  case add(contact: NADomain.NAContact)
+  case alert(NetAloCoreComponent.NAAlertVM)
+  case dismiss
+  case pop
+  case popToRoot
+  case deleteContact
+}
+public class ContactDetailCoordinator : XCoordinator.NavigationCoordinator<ContactDetailComponent.ContactDetailRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  override public var viewController: UIKit.UIViewController! {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public var eventPublisher: RxSwift.PublishSubject<ContactDetailComponent.ContactDetailComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil, group: NADomain.NAGroup?, contact: NADomain.NAContact?, historyCall: NetAloCoreComponent.GroupHistoryCall?, groupType: NADomain.NAGroup.GroupType?, isPersonalChat: Swift.Bool)
+  @objc deinit
+  override public func prepareTransition(for route: ContactDetailComponent.ContactDetailRoute) -> XCoordinator.NavigationTransition
+  public typealias Event = ContactDetailComponent.ContactDetailComponentManager.Event
+}
+@_hasMissingDesignatedInitializers public class EditContactValidateBuilder {
+  final public let userName: RxRelay.BehaviorRelay<Swift.String>
+  final public let _defaultUser: RxRelay.BehaviorRelay<NADomain.NAUser?>
+  public func build() -> RxSwift.Observable<(Swift.String)>
+  public func checkValidate() -> RxSwift.Observable<Swift.Bool>
+  @objc deinit
+}
+open class ContactDetailComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case mediaDetail(media: NADomain.NAMediaLibraryModel, mediaType: NADomain.MediaType)
+    case changeBackground(group: NADomain.NAGroup, isHistoryCall: Swift.Bool)
+    case call(type: NADomain.CallType, targetUser: NADomain.NAUser, group: NADomain.NAGroup)
+    case presentDocumentViewer(NADomain.NAFile)
+    case releaseIfNeed
+    case createGroup(contacts: [NADomain.NAContact])
+    case createChat(contact: NADomain.NAContact)
+    case createSecretChat(group: NADomain.NAGroup)
+    case addContact(NADomain.NAContact)
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, group: NADomain.NAGroup? = nil, contact: NADomain.NAContact? = nil, historyCall: NetAloCoreComponent.GroupHistoryCall? = nil, groupType: NADomain.NAGroup.GroupType? = nil, isPersonalChat: Swift.Bool)
+  }
+  public struct Output {
+    public let rootCoodinator: ContactDetailComponent.ContactDetailCoordinator
+    public let eventObservable: RxSwift.Observable<ContactDetailComponent.ContactDetailComponentManager.Event>
+  }
+  public func transform(input: ContactDetailComponent.ContactDetailComponentManager.Input) -> ContactDetailComponent.ContactDetailComponentManager.Output
+  @objc deinit
+}

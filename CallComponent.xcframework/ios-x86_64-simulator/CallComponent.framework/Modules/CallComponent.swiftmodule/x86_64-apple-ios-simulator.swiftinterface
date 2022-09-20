@@ -1,0 +1,170 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CallComponent
+import AVFoundation
+@_exported import CallComponent
+import Foundation
+import JitsiMeetSDK
+import NACallSDK
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxSwift
+import Swift
+import UIKit
+import WebRTC
+import XCoordinator
+import _Concurrency
+@objc @_inheritsConvenienceInitializers public class NAFloatingVideoViewAppearance : ObjectiveC.NSObject {
+  @Resolver.LazyInjected @_projectedValueProperty($themeManager) public var themeManager: NATheme.NAThemeServiceProtocol {
+    get
+    set
+    _modify
+  }
+  public var $themeManager: Resolver.LazyInjected<NATheme.NAThemeServiceProtocol> {
+    get
+    set
+  }
+  public static let defaultAppearance: CallComponent.NAFloatingVideoViewAppearance
+  public var animationDuration: Swift.Double
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum JitsiFeatureFlag : Swift.String {
+  case addPeopleEnabled
+  case audioFocusDisabled
+  case audioMuteEnabled
+  case audioOnlyEnabled
+  case calendarEnabled
+  case callIntegrationEnabled
+  case closeCaptionsEnabled
+  case conferenceTimerEnabled
+  case chatEnabled
+  case filmstripEnabled
+  case fullscreenEnabled
+  case helpButtonEnabled
+  case inviteEnabled
+  case iOSRecordingEnabled
+  case iOSScreenSharingEnabled
+  case kickOutEnabled
+  case liveStreamingEnabled
+  case meetingNameEnabled
+  case meetingPasswordEnabled
+  case notificationsEnabled
+  case overflowMenuEnabled
+  case pipEnabled
+  case raiseHandEnabled
+  case recordingEnabled
+  case resolution
+  case serverUrlChangeEnabled
+  case tileViewEnabled
+  case toolboxAlwaysVisible
+  case toolboxEnabled
+  case videoMuteEnabled
+  case videoShareEnabled
+  case welcomePageEnabled
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CallStatus : Swift.String {
+  case success
+  case missed
+  case notReach
+  case ringing
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CallDataType {
+  case incomeData(data: CallComponent.IncomingScreenData)
+  case outGoingData(data: CallComponent.OutgoingScreenData)
+  case groupCall(data: CallComponent.GroupCallScreenData)
+}
+public struct OutgoingScreenData {
+  public init(type: NADomain.CallType, callSDK: NACallSDK.NACallSDKManager, targetUser: NADomain.NAUser, conversation: NADomain.NAGroup)
+}
+public struct IncomingScreenData {
+  public init(type: NADomain.CallType, callSDK: NACallSDK.NACallSDKManager, isAnswer: Swift.Bool, callerID: Swift.String)
+}
+public struct GroupCallScreenData {
+  public init(type: NADomain.CallType, callSDK: NACallSDK.NACallSDKManager, isCreateCall: Swift.Bool, group: NADomain.NAGroup, messageID: Swift.String = "")
+}
+public struct CallComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case finishCall
+    public static func == (a: CallComponent.CallComponentManager.Event, b: CallComponent.CallComponentManager.Event) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, screen: NACallSDK.TypeCallRTC, data: CallComponent.CallDataType)
+  }
+  public struct Output {
+    public let rootCoodinator: CallComponent.CallCoordinator
+    public let eventObservable: RxSwift.Observable<CallComponent.CallComponentManager.Event>
+  }
+  public func transform(input: CallComponent.CallComponentManager.Input) -> CallComponent.CallComponentManager.Output
+}
+@objc public class NAVideoCallData : ObjectiveC.NSObject {
+  public var callSDK: NACallSDK.NACallSDKManager?
+  public var contact: NADomain.NAContact?
+  public var isShowLocalView: Swift.Bool?
+  public init(callSDK: NACallSDK.NACallSDKManager?, contact: NADomain.NAContact?, isShowLocalView: Swift.Bool?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class NAFloatingVideoView : NACoreUI.DragableCameraView {
+  @_Concurrency.MainActor(unsafe) final public let disposeBag: RxSwift.DisposeBag
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) final public func show(onComplete: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) final public func dismiss(animated: Swift.Bool, onComplete: (() -> Swift.Void)? = nil)
+}
+extension CallComponent.NAFloatingVideoView {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) final public class func show(data: CallComponent.NAVideoCallData?, onTap: (() -> Swift.Void)? = nil) -> CallComponent.NAFloatingVideoView?
+  @_Concurrency.MainActor(unsafe) final public class func dismissView(animated: Swift.Bool)
+}
+public enum CallRoute : XCoordinator.Route {
+  case personalCall(data: CallComponent.CallDataType)
+  case dismiss
+  case dismissCall
+  case dismissGroupCall
+  case alert(alertVM: NetAloCoreComponent.NAAlertVM)
+  case groupCall(data: CallComponent.CallDataType)
+  case initFromFloatingView
+}
+public class CallCoordinator : XCoordinator.NavigationCoordinator<CallComponent.CallRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<CallComponent.CallComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil, screen: NACallSDK.TypeCallRTC, data: CallComponent.CallDataType)
+  @objc deinit
+  override public func prepareTransition(for route: CallComponent.CallRoute) -> XCoordinator.NavigationTransition
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = CallComponent.CallComponentManager.Event
+}
+extension CallComponent.JitsiFeatureFlag : Swift.Equatable {}
+extension CallComponent.JitsiFeatureFlag : Swift.Hashable {}
+extension CallComponent.JitsiFeatureFlag : Swift.RawRepresentable {}
+extension CallComponent.CallStatus : Swift.Equatable {}
+extension CallComponent.CallStatus : Swift.Hashable {}
+extension CallComponent.CallStatus : Swift.RawRepresentable {}
+extension CallComponent.CallComponentManager.Event : Swift.Equatable {}
+extension CallComponent.CallComponentManager.Event : Swift.Hashable {}

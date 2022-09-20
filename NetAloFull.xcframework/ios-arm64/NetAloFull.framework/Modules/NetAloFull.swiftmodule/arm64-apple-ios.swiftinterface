@@ -1,0 +1,375 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NetAloFull
+import AccountComponent
+import AddContactComponent
+import AuthorizationComponent
+import BackgroundPickerComponent
+import CallComponent
+import Carbon
+import ChatComponent
+import ContactDetailComponent
+import CreateSecretChatComponent
+import DocumentViewerComponent
+import ForwardMessageComponent
+import Foundation
+import GroupDetailComponent
+import Intents
+import ListCallComponent
+import ListContactComponent
+import ListGroupComponent
+import LocationPickerComponent
+import MediaDetailComponent
+import MediaPickerComponent
+import MessageUI
+import NACallSDK
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NANetworkPlatform
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+@_exported import NetAloFull
+import NetAloLite
+import NewGroupComponent
+import NotificationComponent
+import Resolver
+import RxCocoa
+import RxSwift
+import SearchComponent
+import SelectGroupOwnerComponent
+import StickerPickerComponent
+import Swift
+import UIKit
+import WebViewComponent
+import XCoordinator
+import _Concurrency
+open class SDKComponent : NACoreUtils.ViewModelType {
+  public enum Event {
+    case showChat(contact: NADomain.NAContact)
+    case showGroupChat(group: NADomain.NAGroup)
+    case showListGroup
+    case showVNDDemo
+    case showMedia(NetAloLite.MultiImagePickerConfig)
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?)
+  }
+  public struct Output {
+    public let rootCoodinator: NetAloFull.SDKCoordinator
+    public let eventObservable: RxSwift.Observable<NetAloFull.SDKComponent.Event>
+  }
+  public func transform(input: NetAloFull.SDKComponent.Input) -> NetAloFull.SDKComponent.Output
+  @objc deinit
+}
+public enum VNDDemoRoute : XCoordinator.Route {
+  case main
+  case alert(NetAloCoreComponent.NAAlertVM)
+  case dismiss
+  case pop
+  case groupOption(of: NADomain.NAGroup)
+  case deleteGroup(actions: [UIKit.UIAlertAction])
+  case inviteFriend([NADomain.NAContact])
+  case localContactDetail(NADomain.NALocalContact)
+  case sendSMS([NADomain.NALocalContact])
+}
+@_hasMissingDesignatedInitializers public class VNDDemoCoordinator : XCoordinator.NavigationCoordinator<NetAloFull.VNDDemoRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<NetAloFull.VNDDemoComponent.Event>
+  public var text: NALocalization.NAText {
+    get
+  }
+  @objc deinit
+  override public func prepareTransition(for route: NetAloFull.VNDDemoRoute) -> XCoordinator.NavigationTransition
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = NetAloFull.VNDDemoComponent.Event
+}
+public enum DeepLinkInput {
+  case userActivity(Foundation.NSUserActivity)
+  case url(Foundation.URL)
+  case launchOptions([UIKit.UIApplication.LaunchOptionsKey : Any])
+  case notification(UserNotifications.UNNotificationResponse)
+}
+public enum DeepLinkOutput {
+  case startSecretChat(NADomain.NAStartSecretChat)
+  case deleteSecretChat(NADomain.NADeleteSecretChat)
+  case joinGroupLink(token: Swift.String)
+  case call(NADomain.CallType, Swift.String)
+  case message(group: NADomain.NAGroup)
+  case newContact(NADomain.NAContact)
+}
+public protocol DeeplinkParser {
+  func transform(input: NetAloFull.DeepLinkInput) -> RxSwift.Single<NetAloFull.DeepLinkOutput?>
+}
+@_hasMissingDesignatedInitializers public class DeeplinkParserImpl : NetAloFull.DeeplinkParser {
+  public func transform(input: NetAloFull.DeepLinkInput) -> RxSwift.Single<NetAloFull.DeepLinkOutput?>
+  public func parse(notificationResponse: UserNotifications.UNNotificationResponse) -> RxSwift.Single<NetAloFull.DeepLinkOutput?>
+  public func parse(userInfo: [Swift.AnyHashable : Any]) -> RxSwift.Single<NetAloFull.DeepLinkOutput?>
+  public func parse(url: Foundation.URL) -> RxSwift.Single<NetAloFull.DeepLinkOutput?>
+  public func parse(userActivity: Foundation.NSUserActivity) -> RxSwift.Single<NetAloFull.DeepLinkOutput?>
+  public func getStartSecretChat(from info: [Swift.String : Any]?) -> RxSwift.Single<NADomain.NAStartSecretChat?>
+  @objc deinit
+}
+public struct StickerLocal {
+}
+@objc public protocol NetAloUser {
+  @objc var id: Swift.Int64 { get }
+  @objc var phoneNumber: Swift.String { get }
+  @objc var email: Swift.String { get }
+  @objc var fullName: Swift.String { get }
+  @objc var avatarUrl: Swift.String { get }
+  @objc var session: Swift.String { get }
+}
+@objc public class NetAloUserHolder : ObjectiveC.NSObject, NetAloFull.NetAloUser {
+  @objc public var id: Swift.Int64
+  @objc public var phoneNumber: Swift.String
+  @objc public var email: Swift.String
+  @objc public var fullName: Swift.String
+  @objc public var avatarUrl: Swift.String
+  @objc public var session: Swift.String
+  @objc public init(id: Swift.Int64, phoneNumber: Swift.String, email: Swift.String = "", fullName: Swift.String = "", avatarUrl: Swift.String = "", session: Swift.String = "")
+  @objc deinit
+}
+public enum NetaloEnviroment : Swift.Int {
+  case development
+  case testing
+  case production
+  case staging
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class NetaloConfiguration : ObjectiveC.NSObject {
+  public var enviroment: NetAloFull.NetaloEnviroment
+  public var appId: Swift.Int64
+  public var appKey: Swift.String
+  public var accountKey: Swift.String
+  public var appGroupIdentifier: Swift.String
+  public var storeUrl: Foundation.URL
+  public var isLoggingEnable: Swift.Bool
+  public var analytics: [NetAloCoreComponent.AnalyticsProvider]
+  public var featureConfig: NetAloLite.FeatureConfig
+  public var permissions: [NetAloLite.SDKPermissionSet]
+  public var userProfileUrl: Swift.String
+  public init(enviroment: NetAloFull.NetaloEnviroment, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Foundation.URL, isLoggingEnable: Swift.Bool = false, analytics: [NetAloCoreComponent.AnalyticsProvider], featureConfig: NetAloLite.FeatureConfig, permissions: [NetAloLite.SDKPermissionSet], userProfileUrl: Swift.String = "")
+  @objc convenience public init(enviroment: Swift.Int, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Swift.String, forceUpdateProfile: Swift.Bool, allowCustomUsername: Swift.Bool, allowCustomProfile: Swift.Bool, allowCustomAlert: Swift.Bool, allowAddContact: Swift.Bool, allowBlockContact: Swift.Bool, allowSetUserProfileUrl: Swift.Bool, allowEnableLocationFeature: Swift.Bool, allowTrackingUsingSDK: Swift.Bool, isHiddenEditProfile: Swift.Bool, allowAddNewContact: Swift.Bool, allowEditContact: Swift.Bool, isVideoCallEnable: Swift.Bool, isVoiceCallEnable: Swift.Bool, isHiddenSecretChat: Swift.Bool, isSyncDataInApp: Swift.Bool, allowReferralCode: Swift.Bool, searchByLike: Swift.Bool, allowReplaceCountrycode: Swift.Bool, isSyncContactInApp: Swift.Bool, permissions: [Swift.Int])
+  @objc deinit
+}
+public enum SDKRoute : XCoordinator.Route {
+  case main
+  case dismiss
+  public static func == (a: NetAloFull.SDKRoute, b: NetAloFull.SDKRoute) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class SDKCoordinator : XCoordinator.NavigationCoordinator<NetAloFull.SDKRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<NetAloFull.SDKComponent.Event>
+  @objc deinit
+  override public func prepareTransition(for route: NetAloFull.SDKRoute) -> XCoordinator.NavigationTransition
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = NetAloFull.SDKComponent.Event
+}
+@_inheritsConvenienceInitializers public class RootSDKVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
+  public var eventPublisher: RxSwift.PublishSubject<NetAloFull.RootSDKVM.Event>
+  public enum Event {
+    case disConnectSocket
+    case viewDisAppear
+    public static func == (a: NetAloFull.RootSDKVM.Event, b: NetAloFull.RootSDKVM.Event) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloFull.RootSDKVM.Input) -> NetAloFull.RootSDKVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class VNDDemoComponent : NACoreUtils.ViewModelType {
+  public enum Event {
+    case createGroup
+    case search
+    case dismiss
+    case showChat(group: NADomain.NAGroup)
+    case groupCall(type: NADomain.CallType, group: NADomain.NAGroup, isCreateCall: Swift.Bool, messageID: Swift.String)
+    case chooseOwnerIfNeeded(group: NADomain.NAGroup)
+    case loadedListGroup
+    case createContact
+    case inviteFriend
+    case selectContact(NADomain.NAContact)
+    case videoCall(NADomain.NAContact)
+    case voiceCall(NADomain.NAContact)
+    case releaseIfNeed
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?)
+  }
+  public struct Output {
+    public let rootCoodinator: NetAloFull.VNDDemoCoordinator
+    public let eventObservable: RxSwift.Observable<NetAloFull.VNDDemoComponent.Event>
+  }
+  public func transform(input: NetAloFull.VNDDemoComponent.Input) -> NetAloFull.VNDDemoComponent.Output
+  @objc deinit
+}
+@objc final public class NetAloFullManager : ObjectiveC.NSObject {
+  final public var eventObservable: RxSwift.Observable<NetAloFull.NetAloFullManager.Event> {
+    get
+  }
+  @objc public init(config: NetAloFull.NetaloConfiguration)
+  @objc final public func initializeObjc(_ completion: @escaping (Swift.Bool) -> Swift.Void)
+  final public func start() -> RxSwift.Observable<Swift.Void>
+  final public var currentUser: RxSwift.Observable<NetAloFull.NetAloUser?> {
+    get
+  }
+  final public var isAuthorized: Swift.Bool {
+    get
+  }
+  @objc final public func logout()
+  @objc final public func set(user: NetAloFull.NetAloUser) throws
+  @objc final public func loginWith(user: NetAloFull.NetAloUser)
+  final public func build(scenes: [NetAloFull.NetAloFullManager.Scene], navigation: UIKit.UINavigationController? = nil) -> [UIKit.UIViewController]
+  final public func build(scene: NetAloFull.NetAloFullManager.Scene, navigation: UIKit.UINavigationController? = nil) -> UIKit.UIViewController?
+  @objc final public var isBuildForSDK: Swift.Bool
+  @objc final public func buildSDKModule()
+  final public func buildVNDDemoSDK(scenes: [NetAloFull.NetAloFullManager.Scene]) -> [UIKit.UIViewController]
+  @objc final public func showListGroup(completion: @escaping (Swift.Error?) -> Swift.Void)
+  @objc final public func showVNDemoVC(completion: ((Swift.Error?) -> Swift.Void)? = nil)
+  final public func showMedia(pickerConfig: NetAloLite.MultiImagePickerConfig)
+  @objc final public func showChatUser(with contactId: Swift.Int64, phone: Swift.String?, fullName: Swift.String?, email: Swift.String? = nil, profileUrl: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+  final public func showChat(with contact: NADomain.NAContact, completion: @escaping (Swift.Error?) -> Swift.Void)
+  @objc final public func showGroupChat(with groupId: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+  @objc final public func showCallUser(with contactId: Swift.Int64, phone: Swift.String?, fullName: Swift.String?, email: Swift.String? = nil, profileUrl: Swift.String, isVideoCall: Swift.Bool, completion: @escaping (Swift.Error?) -> Swift.Void)
+  final public func showCall(with contact: NADomain.NAContact, isVideoCall: Swift.Bool, completion: @escaping (Swift.Error?) -> Swift.Void)
+  @objc final public func setLanguage(language: Swift.String)
+  final public func setLanguage(with language: NALocalization.SupportLanguage)
+  @objc deinit
+}
+extension NetAloFull.NetAloFullManager {
+  public enum Event : Swift.Equatable {
+    public static func == (lhs: NetAloFull.NetAloFullManager.Event, rhs: NetAloFull.NetAloFullManager.Event) -> Swift.Bool
+    case logout
+    case authorizeSuccess(user: NADomain.NAUser)
+    case pressedUrl(Swift.String)
+    case mediaURL(imageUrls: [Foundation.URL], videoUrls: [Foundation.URL])
+    case checkUserIsFriend(Swift.Int64)
+    case didCloseSDK
+    case updateBadge(Swift.Int)
+    case pressedCall(NADomain.CallType)
+    case sessionExpired
+    case socketError(NADomain.NAError)
+  }
+  public enum Scene : Swift.Equatable {
+    public static func == (lhs: NetAloFull.NetAloFullManager.Scene, rhs: NetAloFull.NetAloFullManager.Scene) -> Swift.Bool
+    case authorization
+    case listGroups
+    case listCalls
+    case listContacts
+    case userAccount
+    case SDK
+    case VNDDemo
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension NetAloFull.NetAloFullManager : UIKit.UIApplicationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func application(_ application: UIKit.UIApplication, didFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc final public func applicationDidBecomeActive(_ application: UIKit.UIApplication)
+  @_Concurrency.MainActor(unsafe) @objc final public func applicationWillTerminate(_ application: UIKit.UIApplication)
+  @_Concurrency.MainActor(unsafe) @objc final public func applicationWillResignActive(_ application: UIKit.UIApplication)
+  @_Concurrency.MainActor(unsafe) @objc final public func application(_ application: UIKit.UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Foundation.Data)
+  @_Concurrency.MainActor(unsafe) @objc final public func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc final public func application(_ application: UIKit.UIApplication, supportedInterfaceOrientationsFor window: UIKit.UIWindow?) -> UIKit.UIInterfaceOrientationMask
+  @_Concurrency.MainActor(unsafe) @objc final public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc final public func application(_ application: UIKit.UIApplication, open url: Foundation.URL, sourceApplication: Swift.String?, annotation: Any) -> Swift.Bool
+}
+extension NetAloFull.NetAloFullManager : UserNotifications.UNUserNotificationCenterDelegate {
+  @objc final public func requestNotificationtPermission()
+  @objc final public func requestOjectiveCPermission()
+  @objc final public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
+  @objc final public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
+}
+extension NetAloFull.NetAloFullManager {
+  @objc final public func socketConnect()
+  @objc final public func disConnectSocket()
+  final public func setHideCallActionInChat(chatConfig: NetAloLite.FeatureConfig.ChatConfig)
+  @objc final public func setUserProfileUrl(with userProfileUrl: Swift.String)
+  @objc final public func getNumberOfBadge(_ completion: @escaping (Swift.Int) -> Swift.Void)
+  @objc final public func getUserProfileUrl() -> Swift.String
+  final public func getGroup(targetUserID: Swift.String) -> RxSwift.Single<NADomain.NAGroup?>
+  @objc final public func blockUser(blockedID: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc final public func unblockUser(blockedID: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc final public func sendMessage(content: Swift.String, targetUserID: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc final public func isChatted(targetUserID: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc final public func addContactSDK(targetName: Swift.String, targetPhone: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func deleteContactSDK(targetName: Swift.String, targetPhone: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func requestAddContactSDK(targetName: Swift.String, targetPhone: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func checkFriend(targetPhone: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func forceBroadCastUserStatus(completion: @escaping (Swift.Bool) -> Swift.Void)
+}
+public enum ModuleRoute : XCoordinator.Route {
+  case chat(option: ChatComponent.ChatComponentManager.Option, initState: ChatComponent.ChatComponentManager.InitState, releaseSDKIfNeeded: Swift.Bool = true)
+  case search
+  case createGroup(viewType: NewGroupComponent.CreateGroupViewType?)
+  case createContact(NADomain.NAContact?, addFromScreenType: AddContactComponent.AddContactFromScreen)
+  case showWebView(type: WebViewComponent.WebViewType)
+  case createSecretChat
+  case personalCall(_: NACallSDK.TypeCallRTC, data: CallComponent.CallDataType)
+  case mediaDetail(media: NADomain.NAMediaLibraryModel, mediaType: NADomain.MediaType, isPresentFromChat: Swift.Bool = false)
+  case contactDetail(group: NADomain.NAGroup? = nil, contact: NADomain.NAContact? = nil, call: NetAloCoreComponent.GroupHistoryCall? = nil, groupType: NADomain.NAGroup.GroupType? = nil, isPersonalChat: Swift.Bool = false)
+  case backgroundPicker(NADomain.NAGroup)
+  case groupDetail(NADomain.NAGroup?)
+  case listMembers(GroupDetailComponent.GroupDetailListType)
+  case documentViewer(NADomain.NAFile)
+  case showMap(NetAloLite.DisplayMapViewType)
+  case groupCall(data: CallComponent.GroupCallScreenData)
+  case returnToRoot(() -> ())
+  case alert(NetAloCoreComponent.NAAlertVM, ok: () -> ())
+  case dismiss
+  case popToRoot
+  case selectGroupOwner(group: NADomain.NAGroup, type: NADomain.SelectType, isLeaveGroup: Swift.Bool = false, isGroupDetail: Swift.Bool = false)
+  case selectOwnerCompleted
+  case leaveGroupSuccess
+  case forwardMessage(ForwardMessageComponent.ForwardMessageComponentManager.ForwardMessageType)
+  case showFLoatingVideoVideoView(isEnable: Swift.Bool, callSDK: NACallSDK.NACallSDKManager?, contact: NADomain.NAContact?, isShowLocalView: Swift.Bool?)
+  case showListGroup
+  case showVNDDemo
+  case showMedia(NetAloLite.MultiImagePickerConfig)
+}
+extension Resolver.MyResolver : Resolver.ResolverRegistering {
+  public static func registerAllServices()
+}
+public protocol ComponentFactory {
+  func createChatComponent() -> ChatComponent.ChatComponentManager
+}
+extension NetAloFull.NetaloEnviroment : Swift.Equatable {}
+extension NetAloFull.NetaloEnviroment : Swift.Hashable {}
+extension NetAloFull.NetaloEnviroment : Swift.RawRepresentable {}
+extension NetAloFull.SDKRoute : Swift.Equatable {}
+extension NetAloFull.SDKRoute : Swift.Hashable {}
+extension NetAloFull.RootSDKVM.Event : Swift.Equatable {}
+extension NetAloFull.RootSDKVM.Event : Swift.Hashable {}
+extension NetAloFull.NetAloFullManager.Scene : Swift.Hashable {}

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NetacomSDKs"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.9"
     spec.summary      = "NetacomSDKs is a SDK support for CallSDK, ChatSDK, UISDK"
 
   # This description is used to generate tags and improve search results.
@@ -37,7 +37,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-    spec.license      = "MIT"
+  spec.license      = "MIT"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
@@ -51,10 +51,10 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Bùi Văn Hiệu" => "buivanhieu2105@gmail.com" }
-  # Or just: spec.author    = "Bùi Văn Hiệu"
-  # spec.authors            = { "Bùi Văn Hiệu" => "buivanhieu2105@gmail.com" }
-  # spec.social_media_url   = "https://twitter.com/Bùi Văn Hiệu"
+  spec.author             = { 'Netacom' => 'help.netacom@gmail.com' }
+  # Or just: spec.author    = "Netacom"
+  # spec.authors            = { "Netacom" => "Netacom" }
+  # spec.social_media_url   = ""
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -84,7 +84,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/hieunetacom/NetacomSDKs.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Netacom-NetAlo/NetaloSDKs-iOS.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -136,7 +136,12 @@ Pod::Spec.new do |spec|
 
   # spec.requires_arc = true
 
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
-    spec.ios.vendored_frameworks = "ForwardMessageComponent.framework", "SelectGroupOwnerComponent.framework", "DocumentViewerComponent.framework", "ShareComponent.framework", "EditContactComponent.framework", "NotificationComponent.framework", "BackgroundPickerComponent.framework", "LocationPickerComponent.framework", "StickerPickerComponent.framework", "MediaDetailComponent.framework", "SearchComponent.framework", "CallComponent.framework", "ChatComponent.framework", "MediaPickerComponent.framework", "ContactDetailComponent.framework", "GroupDetailComponent.framework", "NACallSDK.framework", "CreateSecretChatComponent.framework", "AddContactComponent.framework", "WebViewComponent.framework", "NewGroupComponent.framework", "AccountComponent.framework", "ListContactComponent.framework", "ListCallComponent.framework", "ListGroupComponent.framework", "AuthorizationComponent.framework", "NetAloCoreComponent.framework", "NATheme.framework", "NALocalization.framework", "NASocketPlatform.framework", "NetAloFull.framework", "NetAloLite.framework", "NARealmPlatform.framework", "NANetworkPlatform.framework", "NADomain.framework", "NACoreUI.framework", "NACoreUtils.framework"
+    spec.dependency 'Kingfisher', '6.1.1'
+    spec.dependency 'XCoordinator', '~> 2.0'
+    spec.dependency 'lottie-ios', '3.2.3'  
+    
+    spec.vendored_frameworks = "ForwardMessageComponent.xcframework", "SelectGroupOwnerComponent.xcframework", "DocumentViewerComponent.xcframework", "ShareComponent.xcframework", "EditContactComponent.xcframework", "BackgroundPickerComponent.xcframework", "LocationPickerComponent.xcframework", "StickerPickerComponent.xcframework", "MediaDetailComponent.xcframework", "SearchComponent.xcframework", "CallComponent.xcframework", "ChatComponent.xcframework", "MediaPickerComponent.xcframework", "ContactDetailComponent.xcframework", "GroupDetailComponent.xcframework", "CreateSecretChatComponent.xcframework", "AddContactComponent.xcframework", "WebViewComponent.xcframework", "NewGroupComponent.xcframework", "AccountComponent.xcframework", "ListContactComponent.xcframework", "ListCallComponent.xcframework", "ListGroupComponent.xcframework", "AuthorizationComponent.xcframework", "NetAloCoreComponent.xcframework", "NATheme.xcframework",  "NetAloFull.xcframework", "NACoreUI.xcframework", "NACoreUtils.xcframework", "RxGesture.xcframework", "Carbon.xcframework", "DifferenceKit.xcframework"
+
+    spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end

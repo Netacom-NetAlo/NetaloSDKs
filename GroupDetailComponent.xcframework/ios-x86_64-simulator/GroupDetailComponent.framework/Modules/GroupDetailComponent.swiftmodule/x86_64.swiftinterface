@@ -1,0 +1,109 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GroupDetailComponent
+import Carbon
+@_exported import GroupDetailComponent
+import MediaPickerComponent
+import MessageUI
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NANetworkPlatform
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxGesture
+import RxSwift
+import Swift
+import UIKit.UIImage
+import UIKit
+import XCoordinator
+import _Concurrency
+@_hasMissingDesignatedInitializers public class InputDataValidateBuilder {
+  final public let groupName: RxRelay.BehaviorRelay<Swift.String>
+  final public let description: RxRelay.BehaviorRelay<Swift.String>
+  final public let defaultGroup: RxRelay.BehaviorRelay<NADomain.NAGroup?>
+  public func build() -> RxSwift.Observable<(Swift.String, Swift.String)>
+  public func getValue() -> RxSwift.Observable<(Swift.String, Swift.String)>
+  public func checkValidate() -> RxSwift.Observable<Swift.Bool>
+  @objc deinit
+}
+open class GroupDetailComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case mediaDetail(media: NADomain.NAMediaLibraryModel, mediaType: NADomain.MediaType)
+    case presentDocumentViewer(NADomain.NAFile)
+    case contactDetail(group: NADomain.NAGroup?, contact: NADomain.NAContact?)
+    case listMemberInGroup(listType: GroupDetailComponent.GroupDetailListType)
+    case addMember(group: NADomain.NAGroup)
+    case changeBackground(group: NADomain.NAGroup)
+    case releaseIfNeeded
+    case selectGroupOwner(group: NADomain.NAGroup, type: NADomain.SelectType = .select_owner, isLeaveGroup: Swift.Bool = false)
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, group: NADomain.NAGroup?)
+  }
+  public struct Output {
+    public let rootCoodinator: GroupDetailComponent.GroupDetailCoordinator
+    public let eventObservable: RxSwift.Observable<GroupDetailComponent.GroupDetailComponentManager.Event>
+  }
+  public func transform(input: GroupDetailComponent.GroupDetailComponentManager.Input) -> GroupDetailComponent.GroupDetailComponentManager.Output
+  @objc deinit
+}
+public enum GroupDetailRoute : XCoordinator.Route {
+  case main(group: NADomain.NAGroup?)
+  case edit(group: NADomain.NAGroup?)
+  case listMembers(listType: GroupDetailComponent.GroupDetailListType)
+  case pop
+  case popToRoot
+  case dismiss
+  case finishChangeOwner(isLeaveGroup: Swift.Bool)
+  case alert(alertVM: NetAloCoreComponent.NAAlertVM)
+  case showQRCode(group: NADomain.NAGroup, link: Swift.String, isOwner: Swift.Bool)
+  case shareImage(image: UIKit.UIImage)
+  case moveMember(group: NADomain.NAGroup)
+  case dismissAll
+  case openImagePicker
+  case releaseImagePicker
+}
+public class GroupDetailCoordinator : XCoordinator.NavigationCoordinator<GroupDetailComponent.GroupDetailRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public var eventPublisher: RxSwift.PublishSubject<GroupDetailComponent.GroupDetailComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil, group: NADomain.NAGroup?)
+  @objc deinit
+  override public func prepareTransition(for route: GroupDetailComponent.GroupDetailRoute) -> XCoordinator.NavigationTransition
+  public typealias Event = GroupDetailComponent.GroupDetailComponentManager.Event
+}
+public enum GroupDetailListType {
+  case listMember(group: NADomain.NAGroup)
+  case listAdmin(group: NADomain.NAGroup)
+}
+public enum ChildRoute : XCoordinator.Route {
+  case main(listType: GroupDetailComponent.GroupDetailListType)
+  case addAdmin(group: NADomain.NAGroup)
+  case dismiss
+  case alert(NetAloCoreComponent.NAAlertVM)
+}
+public class GroupListMemberCoordinator : XCoordinator.NavigationCoordinator<GroupDetailComponent.ChildRoute>, NACoreUI.NavigatableCoordinator {
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public var eventPublisher: RxSwift.PublishSubject<GroupDetailComponent.GroupDetailComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil, listType: GroupDetailComponent.GroupDetailListType)
+  @objc deinit
+  override public func prepareTransition(for route: GroupDetailComponent.ChildRoute) -> XCoordinator.NavigationTransition
+  public func dismissAllChildren()
+}

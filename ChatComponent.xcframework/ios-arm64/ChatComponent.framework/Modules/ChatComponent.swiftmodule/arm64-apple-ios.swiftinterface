@@ -1,0 +1,571 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChatComponent
+import AVFoundation
+import AVKit
+import Carbon
+@_exported import ChatComponent
+import Foundation
+import Kingfisher
+import Lottie
+import MapKit
+import MediaPickerComponent
+import MessageKit
+import MessageUI
+import MobileCoreServices
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NARealmPlatform
+import NASocketPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxGesture
+import RxRelay
+import RxSwift
+import SafariServices
+import StickerPickerComponent
+import Swift
+import SwiftLinkPreview
+import UIKit
+import XCoordinator
+import _Concurrency
+open class ChatComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case contactDetail(group: NADomain.NAGroup?, contact: NADomain.NAContact?, groupType: NADomain.NAGroup.GroupType?, isPersonalChat: Swift.Bool = true)
+    case groupDetail(NADomain.NAGroup?)
+    case call(type: NADomain.CallType, targetUser: NADomain.NAUser, group: NADomain.NAGroup)
+    case showMap(NetAloLite.DisplayMapViewType)
+    case release
+    case addContact(NADomain.NAUser)
+    case startChat(NADomain.NAUser)
+    case presentMediaDetail(currentModel: NADomain.NAMediaLibraryModel, type: NADomain.MediaType)
+    case presentDocumentViewer(NADomain.NAFile)
+    case location(NetAloLite.DisplayMapViewType)
+    case liveLocation(NetAloLite.DisplayMapViewType)
+    case groupCall(type: NADomain.CallType, group: NADomain.NAGroup, isCreateCall: Swift.Bool, messageID: Swift.String)
+    case forwardMessage(NADomain.NAMessage)
+    case releaseSDKIfNeeded
+  }
+  public enum Option {
+    case group(NADomain.NAGroup)
+    case publicChat(targetUser: NADomain.NAUser)
+    case listPin(NADomain.NAGroup)
+  }
+  public enum InitState {
+    case forward(NADomain.NAMessage)
+    case none
+  }
+  public init()
+  @objc deinit
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, option: ChatComponent.ChatComponentManager.Option, initState: ChatComponent.ChatComponentManager.InitState)
+  }
+  public struct Output {
+    public let rootCoodinator: ChatComponent.ChatCoordinator
+    public let eventObservable: RxSwift.Observable<ChatComponent.ChatComponentManager.Event>
+  }
+  public func transform(input: ChatComponent.ChatComponentManager.Input) -> ChatComponent.ChatComponentManager.Output
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CallMessageCell : ChatComponent.BaseMessageContentCell {
+  @_Concurrency.MainActor(unsafe) public var lbMain: UIKit.UILabel {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var btnCall: UIKit.UIButton {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var imvCallState: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) public var lbSub: UIKit.UILabel {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open func setupConstraints()
+  @_Concurrency.MainActor(unsafe) override open func setupSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) override open func handleTapGesture(_ gesture: UIKit.UIGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) override open func configure(with message: MessageKit.MessageType, at indexPath: Foundation.IndexPath, and messagesCollectionView: MessageKit.MessagesCollectionView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers open class CallMessageSizeCalculator : MessageKit.MessageSizeCalculator {
+  public var incomingMessageLabelInsets: UIKit.UIEdgeInsets
+  public var outgoingMessageLabelInsets: UIKit.UIEdgeInsets
+  public var incomingReplyMessageLabelInsets: UIKit.UIEdgeInsets
+  public var outgoingReplyMessageLabelInsets: UIKit.UIEdgeInsets
+  override open func messageContainerMaxWidth(for message: MessageKit.MessageType) -> CoreGraphics.CGFloat
+  override open func messageContainerSize(for message: MessageKit.MessageType) -> CoreGraphics.CGSize
+  override public init(layout: MessageKit.MessagesCollectionViewFlowLayout? = nil)
+  @objc deinit
+}
+extension UIKit.UIEdgeInsets {
+  public init(all value: CoreGraphics.CGFloat)
+  public var vertical: CoreGraphics.CGFloat {
+    get
+  }
+  public var horizontal: CoreGraphics.CGFloat {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class FileMessageCell : ChatComponent.BaseMessageContentCell {
+  @_Concurrency.MainActor(unsafe) open func setupConstraints(isFromCurrentSender: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override open func setupSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) override open func handleTapGesture(_ gesture: UIKit.UIGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) override public func showLoading()
+  @_Concurrency.MainActor(unsafe) override public func hideLoading()
+  @_Concurrency.MainActor(unsafe) override open func configure(with message: MessageKit.MessageType, at indexPath: Foundation.IndexPath, and messagesCollectionView: MessageKit.MessagesCollectionView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BaseMessageContentCell : MessageKit.MessageContentCell {
+  @Resolver.LazyInjected @_projectedValueProperty($themeSerice) @_Concurrency.MainActor(unsafe) public var themeSerice: NATheme.NAThemeServiceProtocol {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $themeSerice: Resolver.LazyInjected<NATheme.NAThemeServiceProtocol> {
+    get
+    set
+  }
+  @Resolver.LazyInjected @_projectedValueProperty($localService) @_Concurrency.MainActor(unsafe) public var localService: NALocalization.NALocalizationProtocol {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $localService: Resolver.LazyInjected<NALocalization.NALocalizationProtocol> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var text: NALocalization.NAText {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var theme: NATheme.ThemeMode {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var disposeBag: RxSwift.DisposeBag
+  @_Concurrency.MainActor(unsafe) override open func setupSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) public func themeChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GroupCallMessageCell : ChatComponent.BaseMessageContentCell {
+  @_Concurrency.MainActor(unsafe) public var lbMain: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) public var lbSub: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) public var btnCall: UIKit.UIButton
+  @_Concurrency.MainActor(unsafe) open func setupConstraints()
+  @_Concurrency.MainActor(unsafe) override open func setupSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) override open func handleTapGesture(_ gesture: UIKit.UIGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) override open func configure(with message: MessageKit.MessageType, at indexPath: Foundation.IndexPath, and messagesCollectionView: MessageKit.MessagesCollectionView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol MentionMessageCellDelegate : AnyObject {
+  func didTapMention(_ userId: Swift.String, messageIndex: Swift.Int)
+  func didTapMentionAll()
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MediaTypeCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func selectCell()
+  @_Concurrency.MainActor(unsafe) public func deselectCell()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class VideoMessageCell : ChatComponent.BaseMessageContentCell {
+  @_Concurrency.MainActor(unsafe) public var playButton: UIKit.UIButton {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var loadingIndicator: UIKit.UIActivityIndicatorView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var muteButton: UIKit.UIButton {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var imageView: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) public var isMuted: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var player: AVFoundation.AVPlayer? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var playerItem: AVFoundation.AVPlayerItem? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open func setupConstraints()
+  @_Concurrency.MainActor(unsafe) override open func setupSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) override open func configure(with message: MessageKit.MessageType, at indexPath: Foundation.IndexPath, and messagesCollectionView: MessageKit.MessagesCollectionView)
+  @_Concurrency.MainActor(unsafe) override open func handleTapGesture(_ gesture: UIKit.UIGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) public func updateProgressLabel(uploadProgress: NADomain.UploadTaskProgress)
+  @_Concurrency.MainActor(unsafe) public func playVideo(url: Foundation.URL)
+  @_Concurrency.MainActor(unsafe) public func pauseVideo()
+  @_Concurrency.MainActor(unsafe) public func resumeVideo()
+  @_Concurrency.MainActor(unsafe) public func stopVideo()
+  @_Concurrency.MainActor(unsafe) public func toggleMute(isMuted: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func resetPlayerView()
+  @_Concurrency.MainActor(unsafe) public func prepareVideoPlayerView(url: Foundation.URL)
+  @_Concurrency.MainActor(unsafe) override public func showLoading()
+  @_Concurrency.MainActor(unsafe) override public func hideLoading()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum MessageTextCheckingType {
+  case addressComponents([Foundation.NSTextCheckingKey : Swift.String]?)
+  case date(Foundation.Date?)
+  case phoneNumber(Swift.String?)
+  case link(Foundation.URL?)
+  case transitInfoComponents([Foundation.NSTextCheckingKey : Swift.String]?)
+  case mention(Swift.String)
+  case mentionAll
+  case hashtag(Swift.String)
+  case custom(pattern: Swift.String, match: Swift.String?)
+}
+public enum CustomDetectorType : Swift.Hashable {
+  case address
+  case date
+  case phoneNumber
+  case url
+  case transitInformation
+  case custom(Foundation.NSRegularExpression)
+  public static var hashtag: ChatComponent.CustomDetectorType
+  public static var mention: ChatComponent.CustomDetectorType
+  public var textCheckingType: Foundation.NSTextCheckingResult.CheckingType {
+    get
+  }
+  public var isCustom: Swift.Bool {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ChatComponent.CustomDetectorType, b: ChatComponent.CustomDetectorType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ListMessageType {
+  case normal
+  case listPin
+  public static func == (a: ChatComponent.ListMessageType, b: ChatComponent.ListMessageType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol ForwardMessageCellDelegate : AnyObject {
+  func didTapForwardedMessage(in cell: ChatComponent.ForwardMessageCell)
+  func didTapMention(_ userId: Swift.String, messageIndex: Swift.Int)
+  func didTapMentionAll()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ForwardMessageCell : ChatComponent.BaseMessageContentCell {
+  @_Concurrency.MainActor(unsafe) weak public var forwardMessageCellDelegate: ChatComponent.ForwardMessageCellDelegate?
+  @_Concurrency.MainActor(unsafe) override open func setupSubviews()
+  @_Concurrency.MainActor(unsafe) open func setupConstraints()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) override public func showLoading()
+  @_Concurrency.MainActor(unsafe) override public func hideLoading()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) override open func handleTapGesture(_ gesture: UIKit.UIGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) override open func configure(with message: MessageKit.MessageType, at indexPath: Foundation.IndexPath, and messagesCollectionView: MessageKit.MessagesCollectionView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class NAVideoPlayer : ObjectiveC.NSObject {
+  weak open var playingCell: ChatComponent.VideoMessageCell?
+  open var playingMessage: NADomain.NAMessage?
+  open var state: NACoreUtils.PlayerState
+  open var isFullscreen: Swift.Bool
+  open var playFullscreenPressed: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+  open func configureVideoCell(_ cell: ChatComponent.VideoMessageCell, message: NADomain.NAMessage)
+  open func playVideo(for message: NADomain.NAMessage, in videoCell: ChatComponent.VideoMessageCell, isSecretChat: Swift.Bool)
+  open func prepareVideoForFullscreen(for message: NADomain.NAMessage, isSecretChat: Swift.Bool, in videoCell: ChatComponent.VideoMessageCell)
+  open func pauseVideo()
+  open func stopAnyOngoingPlaying()
+  open func resetVideoPlayer()
+  open func resumeVideo()
+  open func toggleMute(isMuted: Swift.Bool)
+}
+extension ChatComponent.NAVideoPlayer : AVKit.AVPlayerViewControllerDelegate {
+  @objc dynamic public func playerViewController(_ playerViewController: AVKit.AVPlayerViewController, willEndFullScreenPresentationWithAnimationCoordinator coordinator: UIKit.UIViewControllerTransitionCoordinator)
+}
+extension AVKit.AVPlayerViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class LiveLocationMessageCell : ChatComponent.BaseMessageContentCell {
+  @_Concurrency.MainActor(unsafe) open var imageView: UIKit.UIImageView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var locationStatusContainerView: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var redDotView: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var titleLabel: UIKit.UILabel {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var subtitleLabel: UIKit.UILabel {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var circularProgressView: NetAloCoreComponent.KCCircularTimer {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var finishedLocationStatusContainerView: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var finishedTitleLabel: UIKit.UILabel {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var finishedSubtitleLabel: UIKit.UILabel {
+    get
+    set
+  }
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) open func setupConstraints()
+  @_Concurrency.MainActor(unsafe) override open func setupSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) override open func configure(with message: MessageKit.MessageType, at indexPath: Foundation.IndexPath, and messagesCollectionView: MessageKit.MessagesCollectionView)
+  @_Concurrency.MainActor(unsafe) override open func handleTapGesture(_ gesture: UIKit.UIGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+}
+extension NADomain.NAUser : MessageKit.SenderType {
+  public var senderId: Swift.String {
+    get
+  }
+  public var displayName: Swift.String {
+    get
+  }
+}
+public enum ChatRoute : XCoordinator.Route {
+  case main(option: ChatComponent.ChatComponentManager.Option, initState: ChatComponent.ChatComponentManager.InitState)
+  case back
+  case message(group: NADomain.NAGroup?, container: UIKit.UIView)
+  case document(UIKit.UIDocumentPickerDelegate?)
+  case alert(NetAloCoreComponent.NAAlertVM)
+  case mailComposer(delegate: MessageUI.MFMailComposeViewControllerDelegate?, url: Foundation.URL)
+  case safariVC(Foundation.URL)
+  case actionSheet(title: Swift.String?, actions: [UIKit.UIAlertAction])
+  case fullScreenVideoViewer(UIKit.UIViewController)
+  case listPin(NADomain.NAGroup)
+  case pinnedMessage(group: NADomain.NAGroup?, container: UIKit.UIView)
+  case dismiss
+  case dismissAll
+  case timePicker(NADomain.NAGroup)
+  case messageOption(message: NetAloCoreComponent.MessageVM.Output, group: NADomain.NAGroup?, isListPined: Swift.Bool = false)
+  case replyOption(message: NADomain.NAMessage)
+  case copyOption(alert: NetAloCoreComponent.NAAlertVM)
+  case shareOption(items: [Any])
+  case deleteOption(group: NADomain.NAGroup, message: NADomain.NAMessage)
+  case showAlertPin(alert: NetAloCoreComponent.NAAlertVM)
+  case progressHUD
+}
+public class ChatCoordinator : XCoordinator.NavigationCoordinator<ChatComponent.ChatRoute>, NACoreUtils.EventPublisherType, NetAloCoreComponent.NotificationPesentableCoordinator, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<ChatComponent.ChatComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil, option: ChatComponent.ChatComponentManager.Option, initState: ChatComponent.ChatComponentManager.InitState)
+  @objc deinit
+  override public func prepareTransition(for route: ChatComponent.ChatRoute) -> XCoordinator.NavigationTransition
+  public func canPresent(notication: NetAloCoreComponent.NotificationParam) -> Swift.Bool
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public func updateBackground(_ background: NADomain.NAGroupBackground, animated: Swift.Bool = false)
+  public func toggleNavigationHeaderView(isHidden: Swift.Bool)
+  public typealias Event = ChatComponent.ChatComponentManager.Event
+}
+public protocol CustomAudioMessageCellDelegate : AnyObject {
+  func didTapPlayButton(in cell: ChatComponent.CustomAudioMessageCell)
+  func didStartAudio(in cell: ChatComponent.CustomAudioMessageCell)
+  func didPauseAudio(in cell: ChatComponent.CustomAudioMessageCell)
+  func didStopAudio(in cell: ChatComponent.CustomAudioMessageCell)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CustomAudioMessageCell : ChatComponent.BaseMessageContentCell {
+  @_Concurrency.MainActor(unsafe) weak public var cellDelegate: ChatComponent.CustomAudioMessageCellDelegate?
+  @_Concurrency.MainActor(unsafe) public var playButton: UIKit.UIButton {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var durationLabel: UIKit.UILabel {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var progressView: UIKit.UIProgressView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open func setupConstraints()
+  @_Concurrency.MainActor(unsafe) override open func setupSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) override open func handleTapGesture(_ gesture: UIKit.UIGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) override open func configure(with message: MessageKit.MessageType, at indexPath: Foundation.IndexPath, and messagesCollectionView: MessageKit.MessagesCollectionView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension ChatComponent.CustomAudioMessageCell {
+  @_Concurrency.MainActor(unsafe) public func audioProgressTextFormat(_ duration: Swift.Float, for audioCell: ChatComponent.CustomAudioMessageCell) -> Swift.String
+}
+extension NetAloCoreComponent.MessageVM.Output : MessageKit.MessageType {
+  public var sender: MessageKit.SenderType {
+    get
+  }
+  public var kind: MessageKit.MessageKind {
+    get
+  }
+}
+open class MediaTypeComponent : Carbon.IdentifiableComponent {
+  public init(data: ChatComponent.MediaPicker.MediaType, trigger: RxSwift.PublishSubject<(data: ChatComponent.MediaPicker.MediaType, action: ChatComponent.MediaTypeComponent.Action)>)
+  public enum Action {
+    case select
+    public static func == (a: ChatComponent.MediaTypeComponent.Action, b: ChatComponent.MediaTypeComponent.Action) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  final public let trigger: RxSwift.PublishSubject<(data: ChatComponent.MediaPicker.MediaType, action: ChatComponent.MediaTypeComponent.Action)>
+  public var id: ChatComponent.MediaPicker.MediaType {
+    get
+  }
+  public func renderContent() -> ChatComponent.MediaTypeCell
+  public func render(in content: ChatComponent.MediaTypeCell)
+  public func contentDidEndDisplay(_ content: ChatComponent.MediaTypeCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = ChatComponent.MediaTypeCell
+  public typealias ID = ChatComponent.MediaPicker.MediaType
+  @objc deinit
+}
+@objc open class NAAudioPlayer : ObjectiveC.NSObject, AVFAudio.AVAudioPlayerDelegate {
+  open var audioPlayer: AVFAudio.AVAudioPlayer?
+  weak open var playingCell: ChatComponent.CustomAudioMessageCell?
+  open var playingMessage: NADomain.NAMessage?
+  open var state: NACoreUtils.PlayerState {
+    get
+  }
+  weak public var messageCollectionView: MessageKit.MessagesCollectionView?
+  public init(messageCollectionView: MessageKit.MessagesCollectionView)
+  open func configureAudioCell(_ cell: ChatComponent.CustomAudioMessageCell, message: NADomain.NAMessage)
+  open func playSound(for message: NADomain.NAMessage, in audioCell: ChatComponent.CustomAudioMessageCell)
+  open func pauseSound(for message: NADomain.NAMessage, in audioCell: ChatComponent.CustomAudioMessageCell)
+  open func stopAnyOngoingPlaying()
+  open func resumeSound()
+  @objc open func audioPlayerDidFinishPlaying(_ player: AVFAudio.AVAudioPlayer, successfully flag: Swift.Bool)
+  @objc open func audioPlayerDecodeErrorDidOccur(_ player: AVFAudio.AVAudioPlayer, error: Swift.Error?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MediaPicker : NetAloCoreComponent.NABaseView {
+  public enum MediaType : Swift.String {
+    case imageAndVideo
+    case document
+    case location
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) final public let trigger: RxSwift.PublishSubject<(data: ChatComponent.MediaPicker.MediaType, action: ChatComponent.MediaTypeComponent.Action)>
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CustomMessagesFlowLayout : MessageKit.MessagesCollectionViewFlowLayout {
+  @_Concurrency.MainActor(unsafe) open var customMessageSizeCalculator: ChatComponent.CallMessageSizeCalculator {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override open func cellSizeCalculatorForItem(at indexPath: Foundation.IndexPath) -> MessageKit.CellSizeCalculator
+  @_Concurrency.MainActor(unsafe) override open func messageSizeCalculators() -> [MessageKit.MessageSizeCalculator]
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ShareLocationMessageCell : ChatComponent.BaseMessageContentCell {
+  @_Concurrency.MainActor(unsafe) open var imageView: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) open func setupConstraints()
+  @_Concurrency.MainActor(unsafe) override open func setupSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) override open func configure(with message: MessageKit.MessageType, at indexPath: Foundation.IndexPath, and messagesCollectionView: MessageKit.MessagesCollectionView)
+  @_Concurrency.MainActor(unsafe) override open func handleTapGesture(_ gesture: UIKit.UIGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BaseMessageCollectionViewCell : MessageKit.MessageCollectionViewCell {
+  @Resolver.LazyInjected @_projectedValueProperty($themeSerice) @_Concurrency.MainActor(unsafe) public var themeSerice: NATheme.NAThemeServiceProtocol {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $themeSerice: Resolver.LazyInjected<NATheme.NAThemeServiceProtocol> {
+    get
+    set
+  }
+  @Resolver.LazyInjected @_projectedValueProperty($localService) @_Concurrency.MainActor(unsafe) public var localService: NALocalization.NALocalizationProtocol {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $localService: Resolver.LazyInjected<NALocalization.NALocalizationProtocol> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var text: NALocalization.NAText {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var theme: NATheme.ThemeMode {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var disposeBag: RxSwift.DisposeBag
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func setupSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) public func themeChanged()
+  @objc deinit
+}
+extension ChatComponent.ListMessageType : Swift.Equatable {}
+extension ChatComponent.ListMessageType : Swift.Hashable {}
+extension ChatComponent.MediaTypeComponent.Action : Swift.Equatable {}
+extension ChatComponent.MediaTypeComponent.Action : Swift.Hashable {}
+extension ChatComponent.MediaPicker.MediaType : Swift.Equatable {}
+extension ChatComponent.MediaPicker.MediaType : Swift.Hashable {}
+extension ChatComponent.MediaPicker.MediaType : Swift.RawRepresentable {}

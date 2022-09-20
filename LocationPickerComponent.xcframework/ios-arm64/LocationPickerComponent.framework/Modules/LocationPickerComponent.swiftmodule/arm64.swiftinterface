@@ -1,0 +1,55 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LocationPickerComponent
+import Carbon
+import CoreLocation
+@_exported import LocationPickerComponent
+import MapKit
+import MessageUI
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxGesture
+import RxSwift
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+public enum LocationPickerRoute : XCoordinator.Route {
+  case main(type: NetAloLite.DisplayMapViewType)
+  case dismiss
+  case dismissToRoot
+  case alert(alertVM: NetAloCoreComponent.NAAlertVM)
+  case selectLiveLocation(actions: [UIKit.UIAlertAction], title: Swift.String)
+}
+public class LocationPickerCoordinator : XCoordinator.NavigationCoordinator<LocationPickerComponent.LocationPickerRoute>, NACoreUtils.EventPublisherType {
+  public var eventPublisher: RxSwift.PublishSubject<LocationPickerComponent.LocationPickerComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil, type: NetAloLite.DisplayMapViewType)
+  override public func prepareTransition(for route: LocationPickerComponent.LocationPickerRoute) -> XCoordinator.NavigationTransition
+  @objc deinit
+  public typealias Event = LocationPickerComponent.LocationPickerComponentManager.Event
+}
+open class LocationPickerComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case close(group: NADomain.NAGroup?)
+    case dismiss
+    case releaseIfNeeded
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, type: NetAloLite.DisplayMapViewType)
+  }
+  public struct Output {
+    public let rootCoodinator: LocationPickerComponent.LocationPickerCoordinator
+    public let eventObservable: RxSwift.Observable<LocationPickerComponent.LocationPickerComponentManager.Event>
+  }
+  public func transform(input: LocationPickerComponent.LocationPickerComponentManager.Input) -> LocationPickerComponent.LocationPickerComponentManager.Output
+  @objc deinit
+}
