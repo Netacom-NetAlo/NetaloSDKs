@@ -6,6 +6,6 @@ framework module WebViewComponent {
 }
 
 module WebViewComponent.Swift {
-  header "WebViewComponent-Swift.h"
-  requires objc
+    header "WebViewComponent-Swift.h"
+    requires objc
 }

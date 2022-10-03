@@ -6,6 +6,6 @@ framework module ListGroupComponent {
 }
 
 module ListGroupComponent.Swift {
-  header "ListGroupComponent-Swift.h"
-  requires objc
+    header "ListGroupComponent-Swift.h"
+    requires objc
 }

@@ -6,6 +6,6 @@ framework module AuthorizationComponent {
 }
 
 module AuthorizationComponent.Swift {
-  header "AuthorizationComponent-Swift.h"
-  requires objc
+    header "AuthorizationComponent-Swift.h"
+    requires objc
 }

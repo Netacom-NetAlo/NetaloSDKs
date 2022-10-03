@@ -6,6 +6,6 @@ framework module NetAloCoreComponent {
 }
 
 module NetAloCoreComponent.Swift {
-  header "NetAloCoreComponent-Swift.h"
-  requires objc
+    header "NetAloCoreComponent-Swift.h"
+    requires objc
 }

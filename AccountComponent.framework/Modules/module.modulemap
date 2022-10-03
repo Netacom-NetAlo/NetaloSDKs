@@ -6,6 +6,6 @@ framework module AccountComponent {
 }
 
 module AccountComponent.Swift {
-  header "AccountComponent-Swift.h"
-  requires objc
+    header "AccountComponent-Swift.h"
+    requires objc
 }

@@ -6,6 +6,6 @@ framework module NetAloFull {
 }
 
 module NetAloFull.Swift {
-  header "NetAloFull-Swift.h"
-  requires objc
+    header "NetAloFull-Swift.h"
+    requires objc
 }

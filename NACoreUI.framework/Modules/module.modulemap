@@ -6,6 +6,6 @@ framework module NACoreUI {
 }
 
 module NACoreUI.Swift {
-  header "NACoreUI-Swift.h"
-  requires objc
+    header "NACoreUI-Swift.h"
+    requires objc
 }

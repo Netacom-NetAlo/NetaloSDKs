@@ -6,6 +6,6 @@ framework module StickerPickerComponent {
 }
 
 module StickerPickerComponent.Swift {
-  header "StickerPickerComponent-Swift.h"
-  requires objc
+    header "StickerPickerComponent-Swift.h"
+    requires objc
 }

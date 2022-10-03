@@ -6,6 +6,6 @@ framework module MediaPickerComponent {
 }
 
 module MediaPickerComponent.Swift {
-  header "MediaPickerComponent-Swift.h"
-  requires objc
+    header "MediaPickerComponent-Swift.h"
+    requires objc
 }

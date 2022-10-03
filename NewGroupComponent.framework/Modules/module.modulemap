@@ -6,6 +6,6 @@ framework module NewGroupComponent {
 }
 
 module NewGroupComponent.Swift {
-  header "NewGroupComponent-Swift.h"
-  requires objc
+    header "NewGroupComponent-Swift.h"
+    requires objc
 }

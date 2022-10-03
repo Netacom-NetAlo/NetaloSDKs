@@ -6,6 +6,6 @@ framework module LocationPickerComponent {
 }
 
 module LocationPickerComponent.Swift {
-  header "LocationPickerComponent-Swift.h"
-  requires objc
+    header "LocationPickerComponent-Swift.h"
+    requires objc
 }

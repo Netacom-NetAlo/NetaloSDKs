@@ -6,6 +6,6 @@ framework module BackgroundPickerComponent {
 }
 
 module BackgroundPickerComponent.Swift {
-  header "BackgroundPickerComponent-Swift.h"
-  requires objc
+    header "BackgroundPickerComponent-Swift.h"
+    requires objc
 }

@@ -6,6 +6,6 @@ framework module MediaDetailComponent {
 }
 
 module MediaDetailComponent.Swift {
-  header "MediaDetailComponent-Swift.h"
-  requires objc
+    header "MediaDetailComponent-Swift.h"
+    requires objc
 }
