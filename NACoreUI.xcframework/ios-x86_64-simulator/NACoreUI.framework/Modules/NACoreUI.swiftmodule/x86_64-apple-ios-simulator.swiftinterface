@@ -1,0 +1,680 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NACoreUI
+import CommonCrypto
+import Foundation
+@_exported import NACoreUI
+import NACoreUtils
+import Photos
+import RxCocoa
+import RxRelay
+import RxSwift
+import Swift
+import UIKit.UIButton
+import UIKit.UIFont
+import UIKit.UIImageView
+import UIKit
+import UIKit.UILabel
+import UIKit.UIStackView
+import UIKit.UITextField
+import UIKit.UIView
+import XCoordinator
+import _Concurrency
+public protocol CollectionSourceDelegate : AnyObject {
+  func source(_ source: NACoreUI.CollectionViewSource, willDisplay viewModel: NACoreUI.CollectionViewViewModelProtocol, forItemAt indexPath: Foundation.IndexPath)
+  func source(_ source: NACoreUI.CollectionViewSource, didEndDisplaying viewModel: NACoreUI.CollectionViewViewModelProtocol, forItemAt indexPath: Foundation.IndexPath)
+  func source(_ source: NACoreUI.CollectionViewSource, scrollViewDidScroll scrollView: UIKit.UIScrollView)
+  func source(_ source: NACoreUI.CollectionViewSource, scrollViewDidEndDecelerating scrollView: UIKit.UIScrollView)
+}
+extension NACoreUI.CollectionSourceDelegate {
+  public func source(_ source: NACoreUI.CollectionViewSource, scrollViewDidScroll scrollView: UIKit.UIScrollView)
+  public func source(_ source: NACoreUI.CollectionViewSource, scrollViewDidEndDecelerating scrollView: UIKit.UIScrollView)
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class KMPlaceholderTextView : UIKit.UITextView {
+  @_Concurrency.MainActor(unsafe) final public let placeholderLabel: UIKit.UILabel
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var placeholder: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var placeholderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var font: UIKit.UIFont! {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var placeholderFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var text: Swift.String! {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var attributedText: Foundation.NSAttributedString! {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textContainerInset: UIKit.UIEdgeInsets {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect, textContainer: UIKit.NSTextContainer?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public func increaseLineHeight(ratio: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func applyAttributes(_ attributes: [[Foundation.NSAttributedString.Key : Any]], forTexts texts: [Swift.String])
+}
+extension Foundation.NSAttributedString {
+  public func height(withConstraintedWidth width: CoreGraphics.CGFloat) -> CoreGraphics.CGFloat
+  public func width(withConstraintedHeight height: CoreGraphics.CGFloat, font: UIKit.UIFont) -> CoreGraphics.CGFloat
+  public func labelSize(considering maxWidth: CoreGraphics.CGFloat) -> CoreGraphics.CGSize
+}
+extension Swift.String {
+  public func strikeThrough() -> Foundation.NSAttributedString
+  public func width(withConstraintedHeight height: CoreGraphics.CGFloat, font: UIKit.UIFont) -> CoreGraphics.CGFloat
+  public func height(withConstraintedWidth width: CoreGraphics.CGFloat, font: UIKit.UIFont, lineHeight: CoreGraphics.CGFloat = 1.0) -> CoreGraphics.CGFloat
+  public func highlightMultiString(regexString: Swift.String, color: UIKit.UIColor, font: UIKit.UIFont, textAttributes: [Foundation.NSAttributedString.Key : Any]? = nil) -> Foundation.NSMutableAttributedString
+}
+extension XCoordinator.Animation {
+  public static let modal: XCoordinator.Animation
+}
+extension UIKit.UIFont {
+  public static var defaultFontName: Swift.String {
+    get
+  }
+  public static var fontNames: [Swift.String : Swift.String] {
+    get
+  }
+  public static var weightNames: [Swift.String : Swift.String] {
+    get
+  }
+  public static var fontWeights: [Swift.String : UIKit.UIFont.Weight] {
+    get
+  }
+  public static var adjustFontSize: CoreGraphics.CGFloat {
+    get
+  }
+  public static func fontFor(format: Swift.String) -> UIKit.UIFont?
+  public static func systemFontItalic(size fontSize: CoreGraphics.CGFloat = 17.0, fontWeight: UIKit.UIFont.Weight = .regular) -> UIKit.UIFont
+}
+public class FetchPhotosManager {
+  public var images: RxSwift.Observable<[UIKit.UIImage]> {
+    get
+  }
+  public init(_ fetchLimit: Swift.Int = 10, _ sortDescriptors: [Foundation.NSSortDescriptor] = [NSSortDescriptor(key:"creationDate",
+                                                                           ascending: false)])
+  public func startFetch()
+  @objc deinit
+}
+extension CoreGraphics.CGAffineTransform {
+  public mutating func rotate(by rotationAngle: CoreGraphics.CGFloat)
+  public mutating func scale(by scalingFactor: CoreGraphics.CGFloat)
+}
+extension UIKit.UIAlertAction {
+  @_Concurrency.MainActor(unsafe) public var titleTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+}
+public protocol NavigatableCoordinator {
+  var rootVC: UIKit.UINavigationController { get }
+  var lastChild: NACoreUI.NavigatableCoordinator? { get }
+  func dismissAllChildren()
+}
+extension CoreGraphics.CGFloat {
+  public static func random() -> CoreGraphics.CGFloat
+  public var toDouble: Swift.Double {
+    get
+  }
+  public var toUInt: Swift.UInt {
+    get
+  }
+}
+extension UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) public static var uniqueIdentifier: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var uniqueIdentifier: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public static func hasNibIn(collection: UIKit.UICollectionView) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public static func nibIn(collection: UIKit.UICollectionView) -> UIKit.UINib
+  @_Concurrency.MainActor(unsafe) public static func register(nibFor collectionView: UIKit.UICollectionView)
+  @_Concurrency.MainActor(unsafe) public static func register(classFor collectionView: UIKit.UICollectionView)
+  @_Concurrency.MainActor(unsafe) public static func register(itemFor collectionView: UIKit.UICollectionView)
+  @_Concurrency.MainActor(unsafe) public static func reuse(_ collectionView: UIKit.UICollectionView, indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) public static func register(nibFor collectionView: UIKit.UICollectionView, kind: Swift.String)
+  @_Concurrency.MainActor(unsafe) public static func register(classFor collectionView: UIKit.UICollectionView, kind: Swift.String)
+  @_Concurrency.MainActor(unsafe) public static func register(itemFor collectionView: UIKit.UICollectionView, kind: Swift.String)
+  @_Concurrency.MainActor(unsafe) public static func reuse(_ collectionView: UIKit.UICollectionView, indexPath: Foundation.IndexPath, kind: Swift.String) -> UIKit.UICollectionReusableView
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var isVisible: Swift.Bool {
+    get
+  }
+}
+extension Foundation.Date {
+  public static func dates(from fromDate: Foundation.Date, to toDate: Foundation.Date) -> [Foundation.Date]
+  public var startDateInterval: Swift.Int {
+    get
+  }
+  public func isSameDate(date2: Foundation.Date) -> Swift.Bool
+}
+extension XCoordinator.Animation {
+  public static let fade: XCoordinator.Animation
+}
+extension CoreGraphics.CGSize {
+  public func resize(by scale: CoreGraphics.CGFloat) -> CoreGraphics.CGSize
+}
+extension UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) public func setPlaceHolder(color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func setClearButtonColor(color: UIKit.UIColor)
+}
+extension XCoordinator.Transition {
+  public static func presentFullScreen(_ presentable: XCoordinator.Presentable, animation: XCoordinator.Animation? = nil) -> XCoordinator.Transition<RootViewController>
+  public static func dismissAll() -> XCoordinator.Transition<RootViewController>
+}
+public enum CellChangeEvent {
+  case scrollTo(Foundation.IndexPath)
+  case insert([Foundation.IndexPath])
+  case update([Foundation.IndexPath])
+  case delete([Foundation.IndexPath])
+  case move(from: Foundation.IndexPath, to: Foundation.IndexPath)
+  case reset
+  case begin
+  case end
+}
+extension UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) public func registerCellByNib<T>(_ type: T.Type) where T : UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) public func registerCell<T>(_ type: T.Type) where T : UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) public func dequeueCell<T>(_ type: T.Type, forIndexPath indexPath: Foundation.IndexPath) -> T? where T : UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) public func registerReusableView<T>(_ type: T.Type, for supplementaryKind: Swift.String) where T : UIKit.UICollectionReusableView
+  @_Concurrency.MainActor(unsafe) public func dequeReusableView<T>(_ type: T.Type, for supplementaryKind: Swift.String, at indexPath: Foundation.IndexPath) -> T? where T : UIKit.UICollectionReusableView
+  @_Concurrency.MainActor(unsafe) public func reloadDataKeepingOffset()
+  @_Concurrency.MainActor(unsafe) public func scrollToLastItem(animated: Swift.Bool = false, at scrollPosition: UIKit.UICollectionView.ScrollPosition = .top)
+  @_Concurrency.MainActor(unsafe) public func scrollToTop(animated: Swift.Bool = false)
+}
+extension UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) public func indexPathsForElements(in rect: CoreGraphics.CGRect) -> [Foundation.IndexPath]
+  @_Concurrency.MainActor(unsafe) public func beginUpdates()
+  @_Concurrency.MainActor(unsafe) public func endUpdates()
+  @_Concurrency.MainActor(unsafe) public func reload(itemsAt: [Foundation.IndexPath])
+  @_Concurrency.MainActor(unsafe) public func insert(itemsAt: [Foundation.IndexPath])
+  @_Concurrency.MainActor(unsafe) public func delete(itemsAt: [Foundation.IndexPath])
+  @_Concurrency.MainActor(unsafe) public func isValid(indexPath: Foundation.IndexPath) -> Swift.Bool
+}
+public let defaultAnimationDuration: Swift.Double
+extension CoreGraphics.CGFloat {
+  public static let verySmall: CoreGraphics.CGFloat
+}
+@objc public protocol DraggableViewDelegate {
+  @objc optional func panGestureDidBegin(_ panGesture: UIKit.UIPanGestureRecognizer, originalCenter: CoreGraphics.CGPoint)
+  @objc optional func panGestureDidChange(_ panGesture: UIKit.UIPanGestureRecognizer, originalCenter: CoreGraphics.CGPoint, translation: CoreGraphics.CGPoint, velocityInView: CoreGraphics.CGPoint)
+  @objc optional func panGestureDidEnd(_ panGesture: UIKit.UIPanGestureRecognizer, originalCenter: CoreGraphics.CGPoint, translation: CoreGraphics.CGPoint, velocityInView: CoreGraphics.CGPoint)
+  @objc optional func panGestureStateToOriginal(_ panGesture: UIKit.UIPanGestureRecognizer, originalCenter: CoreGraphics.CGPoint, translation: CoreGraphics.CGPoint, velocityInView: CoreGraphics.CGPoint)
+  @objc optional func panGestureShouldBegin(_ panGesture: UIKit.UIPanGestureRecognizer) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class DraggableView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: NACoreUI.DraggableViewDelegate?
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NACoreUI.DraggableView : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+public class ActivityIndicator : RxCocoa.SharedSequenceConvertibleType {
+  public typealias Element = Swift.Bool
+  public typealias SharingStrategy = RxCocoa.DriverSharingStrategy
+  public init()
+  public func asSharedSequence() -> RxCocoa.SharedSequence<NACoreUI.ActivityIndicator.SharingStrategy, NACoreUI.ActivityIndicator.Element>
+  public var isLoading: Swift.Bool {
+    get
+  }
+  @objc deinit
+}
+extension RxSwift.ObservableConvertibleType {
+  public func trackActivity(_ activityIndicator: NACoreUI.ActivityIndicator) -> RxSwift.Observable<Self.Element>
+}
+public enum UIGradienDirection : Swift.Int {
+  case vertical
+  case horizontal
+  case crossVertical
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var cornerRadius: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var borderWidth: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var borderColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var shadowOffset: CoreGraphics.CGSize {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var shadowRadius: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var shadowOpacity: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public func addGradientWith(colors: [UIKit.UIColor], dimension: NACoreUI.UIGradienDirection = .vertical)
+  @_Concurrency.MainActor(unsafe) public func layoutAttachAll(to view: UIKit.UIView)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func addConstraints(_ top: UIKit.NSLayoutYAxisAnchor? = nil, left: UIKit.NSLayoutXAxisAnchor? = nil, bottom: UIKit.NSLayoutYAxisAnchor? = nil, right: UIKit.NSLayoutXAxisAnchor? = nil, centerY: UIKit.NSLayoutYAxisAnchor? = nil, centerX: UIKit.NSLayoutXAxisAnchor? = nil, topConstant: CoreGraphics.CGFloat = 0, leftConstant: CoreGraphics.CGFloat = 0, bottomConstant: CoreGraphics.CGFloat = 0, rightConstant: CoreGraphics.CGFloat = 0, centerYConstant: CoreGraphics.CGFloat = 0, centerXConstant: CoreGraphics.CGFloat = 0, widthConstant: CoreGraphics.CGFloat = 0, heightConstant: CoreGraphics.CGFloat = 0) -> [UIKit.NSLayoutConstraint]
+  @_Concurrency.MainActor(unsafe) public func addCircleLayer(sizePercentage: CoreGraphics.CGFloat, fillColor: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func removeCircleLayer()
+  @_Concurrency.MainActor(unsafe) public func addCircleStrokeLayer(sizePercentage: CoreGraphics.CGFloat, strokeColor: UIKit.UIColor, lineWidth: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func removeCircleStrokeLayer()
+  @_Concurrency.MainActor(unsafe) public func searchVisualEffectsSubview() -> UIKit.UIVisualEffectView?
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var fontFormat: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public class var nibName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public class var nib: UIKit.UINib? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func getAllConstraints() -> [UIKit.NSLayoutConstraint]
+  @_Concurrency.MainActor(unsafe) public func changeHeight(to value: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func changeWidth(to value: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func changeSize(to value: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func setShadow(shadowOffset: CoreGraphics.CGSize = CGSize(width: 0.0, height: 0.0), shadowRadius: CoreGraphics.CGFloat = 2, shadowOpacity: Swift.Float = 0.3, color: UIKit.UIColor = .gray)
+  @_Concurrency.MainActor(unsafe) public func setRadius(_ radius: CoreGraphics.CGFloat = 0)
+  @_Concurrency.MainActor(unsafe) public func setBorder(borderWidth: CoreGraphics.CGFloat = 0, color: UIKit.UIColor = .clear)
+  @_Concurrency.MainActor(unsafe) public func roundCorners(corners: UIKit.UIRectCorner, radius: CoreGraphics.CGFloat, borderColor: UIKit.UIColor, borderWidth: CoreGraphics.CGFloat = 1)
+  @_Concurrency.MainActor(unsafe) public func asImage() -> UIKit.UIImage
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func clearConstraints()
+  @_Concurrency.MainActor(unsafe) public func doZoomBounceAnimation()
+  @_Concurrency.MainActor(unsafe) public func doZoomAnimation()
+  @_Concurrency.MainActor(unsafe) public func rotate45DegreesWithAnimation(withDuration: Foundation.TimeInterval = 0.25)
+  @_Concurrency.MainActor(unsafe) public func rotateBackToiIentityWithAnimation(withDuration: Foundation.TimeInterval = 0.25)
+  @_Concurrency.MainActor(unsafe) public func fillSuperview()
+  @_Concurrency.MainActor(unsafe) public func centerInSuperview()
+  @_Concurrency.MainActor(unsafe) public func constraint(equalTo size: CoreGraphics.CGSize)
+  @_Concurrency.MainActor(unsafe) public func getWidthConstraints() -> [UIKit.NSLayoutConstraint]
+  @_Concurrency.MainActor(unsafe) public func getLeadingConstraints() -> UIKit.NSLayoutConstraint
+  @_Concurrency.MainActor(unsafe) public func getTrailingConstraints() -> UIKit.NSLayoutConstraint
+  @_Concurrency.MainActor(unsafe) public func getBottomConstraints() -> UIKit.NSLayoutConstraint
+  @_Concurrency.MainActor(unsafe) public func getTopConstraints() -> UIKit.NSLayoutConstraint
+  @_Concurrency.MainActor(unsafe) public func changeLeading(to value: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func changeTrailing(to value: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func getHeightConstraints() -> [UIKit.NSLayoutConstraint]
+}
+public typealias CollectionViewCallback = (Any, Foundation.IndexPath) -> Swift.Void
+open class CollectionViewSection {
+  public var grid: NACoreUI.Grid?
+  public var header: NACoreUI.CollectionViewViewModelProtocol?
+  public var footer: NACoreUI.CollectionViewViewModelProtocol?
+  public var items: [NACoreUI.CollectionViewViewModelProtocol]
+  public var callback: NACoreUI.CollectionViewCallback?
+  public init(grid: NACoreUI.Grid? = nil, header: NACoreUI.CollectionViewViewModelProtocol? = nil, footer: NACoreUI.CollectionViewViewModelProtocol? = nil, items: [NACoreUI.CollectionViewViewModelProtocol] = [], callback: NACoreUI.CollectionViewCallback? = nil)
+  public func remove(at index: Swift.Int)
+  public func replace(_ newItem: NACoreUI.CollectionViewViewModelProtocol, at index: Swift.Int)
+  public func insert(_ item: NACoreUI.CollectionViewViewModelProtocol, at index: Swift.Int)
+  public func insert(_ items: [NACoreUI.CollectionViewViewModelProtocol], at index: Swift.Int)
+  public func add(_ item: NACoreUI.CollectionViewViewModelProtocol)
+  @discardableResult
+  public func add(_ items: [NACoreUI.CollectionViewViewModelProtocol]) -> [Foundation.IndexPath]
+  @objc deinit
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor(unsafe) public func scrollToLastItem(animated: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func scrollToTop(animated: Swift.Bool = false)
+}
+extension UIKit.UIStackView {
+  @_Concurrency.MainActor(unsafe) public func removeAllArrangedSubviews()
+}
+extension Swift.Array {
+  public func element(at index: Swift.Int) -> Element?
+}
+@objc open class CollectionViewSource : ObjectiveC.NSObject {
+  open var grid: NACoreUI.Grid
+  open var callback: NACoreUI.CollectionViewCallback?
+  weak public var sourceDelegate: NACoreUI.CollectionSourceDelegate?
+  open var sections: [NACoreUI.CollectionViewSection] {
+    get
+    set
+  }
+  open var emptyViewModel: NACoreUI.CollectionViewViewModelProtocol? {
+    get
+    set
+  }
+  public init(collectionView: UIKit.UICollectionView?, grid: NACoreUI.Grid = Grid(), sections: [NACoreUI.CollectionViewSection] = [], callback: NACoreUI.CollectionViewCallback? = nil)
+  public func add(_ sections: [NACoreUI.CollectionViewSection])
+  public var sectionIndexes: Foundation.IndexSet? {
+    get
+  }
+  public func itemAt(_ section: Swift.Int) -> NACoreUI.CollectionViewSection?
+  public func itemAt(_ indexPath: Foundation.IndexPath) -> NACoreUI.CollectionViewViewModelProtocol?
+  public func register(itemsFor collectionView: UIKit.UICollectionView)
+  @objc deinit
+}
+extension NACoreUI.CollectionViewSource : UIKit.UICollectionViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, canMoveItemAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, moveItemAt sourceIndexPath: Foundation.IndexPath, to destinationIndexPath: Foundation.IndexPath)
+}
+extension NACoreUI.CollectionViewSource : UIKit.UICollectionViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+}
+extension NACoreUI.CollectionViewSource : UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, insetForSectionAt section: Swift.Int) -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForFooterInSection section: Swift.Int) -> CoreGraphics.CGSize
+}
+extension XCoordinator.Animation {
+  public static let scale: XCoordinator.Animation
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class GradientView : UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var firstColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var secondColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var direction: Swift.String {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public class var layerClass: Swift.AnyClass {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) public func setColorButton(first: UIKit.UIColor, last: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIImage {
+  public struct ImageHeaderData {
+  }
+  public enum ImageFormat {
+    case Unknow
+    case PNG
+    case JPEG
+    public var value: Swift.String {
+      get
+    }
+    public static func == (a: UIKit.UIImage.ImageFormat, b: UIKit.UIImage.ImageFormat) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public func scaled(_ newSize: CoreGraphics.CGSize) -> UIKit.UIImage
+  public func jpegData(withCompressionQuality quality: CoreGraphics.CGFloat) -> Foundation.Data?
+  public func imageFormat() -> UIKit.UIImage.ImageFormat
+  public func toData() -> Foundation.Data?
+  public func tintWith(color: UIKit.UIColor) -> UIKit.UIImage
+  convenience public init?(color: UIKit.UIColor, size: CoreGraphics.CGSize = CGSize(width: 1, height: 1))
+}
+public protocol BindableType : AnyObject {
+  associatedtype ViewModelType
+  var viewModel: Self.ViewModelType! { get set }
+  func bindViewModel()
+}
+extension NACoreUI.BindableType where Self : UIKit.UIViewController {
+  public func bind(to model: Self.ViewModelType)
+}
+extension NACoreUI.BindableType where Self : UIKit.UITableViewCell {
+  public func bind(to model: Self.ViewModelType)
+}
+extension NACoreUI.BindableType where Self : UIKit.UICollectionViewCell {
+  public func bind(to model: Self.ViewModelType)
+}
+extension NACoreUI.BindableType where Self : UIKit.UIApplicationDelegate {
+  public func bind(to model: Self.ViewModelType)
+}
+public enum CellAction {
+  case select
+  case unselect
+  case option
+  case delete
+  case favorite
+  case unfavorite
+  case plus
+  case minus
+  case valueChanged
+  case loadMore
+  case share
+  case edit
+  case editEnded
+  case archive
+  case search
+  case deleteAll
+  case selectContact
+  case save
+  public static func == (a: NACoreUI.CellAction, b: NACoreUI.CellAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol CellDelegate : AnyObject {
+  func triggerAction(_ action: NACoreUI.CellAction, indexPath: Foundation.IndexPath, tag: Swift.Int)
+}
+extension XCoordinator.Animation {
+  @available(iOS 10.0, *)
+  public static let swirl: XCoordinator.Animation
+}
+public protocol NibLoadable : AnyObject {
+  static var nibName: Swift.String { get }
+  static var nibBundle: Foundation.Bundle? { get }
+}
+extension NACoreUI.NibLoadable {
+  public static var nib: UIKit.UINib {
+    get
+  }
+  public static var nibName: Swift.String {
+    get
+  }
+  public static var nibBundle: Foundation.Bundle? {
+    get
+  }
+}
+extension NACoreUI.NibLoadable where Self : UIKit.UIView {
+  public static func loadFromNib() -> Self
+}
+extension NACoreUI.NibLoadable where Self : UIKit.UIViewController {
+  public static func loadFromNib() -> Self
+}
+extension UIKit.UIColor {
+  convenience public init(r: Swift.Float, g: Swift.Float, b: Swift.Float, a: CoreGraphics.CGFloat = 1)
+  convenience public init(hex: Swift.String)
+}
+extension RxSwift.Reactive where Base : UIKit.UIScrollView {
+  public var scrolledToBottom: RxCocoa.ControlEvent<Swift.Void> {
+    get
+  }
+  public func scrolledToBottom(throttleSeconds: Swift.Int = 2, offsetRatio: CoreGraphics.CGFloat = 1.0) -> RxCocoa.ControlEvent<Swift.Void>
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CollectionViewCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: NACoreUI.CellDelegate?
+  @_Concurrency.MainActor(unsafe) public var indexPath: Foundation.IndexPath
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) open func initialize()
+  @_Concurrency.MainActor(unsafe) open func reset()
+  @_Concurrency.MainActor(unsafe) open func showLoading()
+  @_Concurrency.MainActor(unsafe) open func hideLoading()
+  @objc deinit
+}
+extension XCoordinator.Animation {
+  public static let navigation: XCoordinator.Animation
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DragableCameraView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension RxCocoa.SharedSequenceConvertibleType {
+  public func mapToVoid() -> RxCocoa.SharedSequence<Self.SharingStrategy, Swift.Void>
+}
+extension RxSwift.ObservableType {
+  public func asDriverOnErrorJustComplete() -> RxCocoa.Driver<Self.Element>
+  public func asDriverOnErrorJustSkip() -> RxCocoa.Driver<Self.Element>
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func setImageColor(color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func setRounded(border: CoreGraphics.CGFloat = 1.0, color: UIKit.UIColor = .clear)
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public func increaseLineHeight(ratio: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func alignImageAndTitleVertically(imageSize: CoreGraphics.CGSize, padding: CoreGraphics.CGFloat = 3.0)
+  @_Concurrency.MainActor(unsafe) public func isUserInteraction(_ value: Swift.Bool, opacity: Swift.Float = 0.5)
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public func loadingIndicator(_ show: Swift.Bool)
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public func addLocalizable(title: Swift.String, font: UIKit.UIFont = UIFont.fontFor(format: "Q-B-16") ?? UIFont.systemFont(ofSize: 14, weight: .regular))
+  @_Concurrency.MainActor(unsafe) public func addStyle(bgColor: UIKit.UIColor = .clear, borderColor: UIKit.UIColor = .clear, borderWidth: CoreGraphics.CGFloat = 0, cornerRadius: CoreGraphics.CGFloat = 5, titleColor: UIKit.UIColor = .white)
+}
+public protocol CollectionViewViewModelProtocol {
+  var cell: NACoreUI.CollectionViewCell.Type { get }
+  var value: Any { get }
+  func config(cell: NACoreUI.CollectionViewCell, data: Any, indexPath: Foundation.IndexPath, grid: NACoreUI.Grid)
+  func size(data: Any, indexPath: Foundation.IndexPath, grid: NACoreUI.Grid, view: UIKit.UIView) -> CoreGraphics.CGSize
+  func callback(data: Any, indexPath: Foundation.IndexPath)
+}
+open class CollectionViewViewModel<Cell, Data> : NACoreUI.CollectionViewViewModelProtocol, NACoreUI.CellDelegate where Cell : NACoreUI.CollectionViewCell {
+  public var data: Data
+  public var cell: NACoreUI.CollectionViewCell.Type {
+    get
+  }
+  public var value: Any {
+    get
+  }
+  public init(_ data: Data)
+  public func config(cell: NACoreUI.CollectionViewCell, data: Any, indexPath: Foundation.IndexPath, grid: NACoreUI.Grid)
+  public func size(data: Any, indexPath: Foundation.IndexPath, grid: NACoreUI.Grid, view: UIKit.UIView) -> CoreGraphics.CGSize
+  public func callback(data: Any, indexPath: Foundation.IndexPath)
+  open func initialize()
+  open func config(cell: Cell, data: Data, indexPath: Foundation.IndexPath, grid: NACoreUI.Grid)
+  open func size(data: Data, indexPath: Foundation.IndexPath, grid: NACoreUI.Grid, view: UIKit.UIView) -> CoreGraphics.CGSize
+  open func callback(data: Data, indexPath: Foundation.IndexPath)
+  open func triggerAction(_ action: NACoreUI.CellAction, indexPath: Foundation.IndexPath, tag: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CollectionViewController : UIKit.UIViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var collectionView: UIKit.UICollectionView!
+  @_Concurrency.MainActor(unsafe) open var source: NACoreUI.CollectionViewSource? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didReceiveMemoryWarning()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension RxSwift.Reactive where Base : XCoordinator.Presentable {
+  public var dismissal: RxSwift.Observable<Swift.Void>! {
+    get
+  }
+}
+extension Photos.PHPhotoLibrary {
+  public static var isAuthorized: RxSwift.Observable<Swift.Bool> {
+    get
+  }
+}
+extension CoreGraphics.CGFloat {
+  public var evenRounded: CoreGraphics.CGFloat {
+    get
+  }
+}
+open class Grid {
+  open var columns: CoreGraphics.CGFloat
+  open var margin: UIKit.UIEdgeInsets
+  open var padding: UIKit.UIEdgeInsets
+  public var verticalMargin: CoreGraphics.CGFloat {
+    get
+  }
+  public var horizontalMargin: CoreGraphics.CGFloat {
+    get
+  }
+  public var verticalPadding: CoreGraphics.CGFloat {
+    get
+  }
+  public var horizontalPadding: CoreGraphics.CGFloat {
+    get
+  }
+  public init(columns: CoreGraphics.CGFloat = 1, margin: UIKit.UIEdgeInsets = .zero, padding: UIKit.UIEdgeInsets = .zero)
+  open func size(for view: UIKit.UIView, ratio: CoreGraphics.CGFloat, items: CoreGraphics.CGFloat = 1, gaps: CoreGraphics.CGFloat? = nil) -> CoreGraphics.CGSize
+  open func size(for view: UIKit.UIView, height: CoreGraphics.CGFloat, items: CoreGraphics.CGFloat = 1, gaps: CoreGraphics.CGFloat? = nil) -> CoreGraphics.CGSize
+  open func width(for view: UIKit.UIView, items: CoreGraphics.CGFloat = 1, gaps: CoreGraphics.CGFloat? = nil) -> CoreGraphics.CGFloat
+  open func height(for view: UIKit.UIView, items: CoreGraphics.CGFloat = 1, gaps: CoreGraphics.CGFloat? = nil) -> CoreGraphics.CGFloat
+  @objc deinit
+}
+public struct Device {
+  public static let isIpad: Swift.Bool
+  public static let isIphone: Swift.Bool
+  public static let isRetina: Swift.Bool
+  public static let screenWidth: CoreGraphics.CGFloat
+  public static let screenHeight: CoreGraphics.CGFloat
+  public static let screenMaxLength: CoreGraphics.CGFloat
+  public static let screenMinLength: CoreGraphics.CGFloat
+  public static let ratio: CoreGraphics.CGFloat
+  public static let isIphone4OrLess: Swift.Bool
+  public static let isIphone5OrLess: Swift.Bool
+  public static let isIphone6OrLess: Swift.Bool
+  public static let isIphone5: Swift.Bool
+  public static let isIphone6: Swift.Bool
+  public static let isIphone6P: Swift.Bool
+  public static let isIphoneX: Swift.Bool
+  public static let isIphoneXOrAbove: Swift.Bool
+  public static var hasTopNotch: Swift.Bool {
+    get
+  }
+}
+extension NACoreUI.UIGradienDirection : Swift.Equatable {}
+extension NACoreUI.UIGradienDirection : Swift.Hashable {}
+extension NACoreUI.UIGradienDirection : Swift.RawRepresentable {}
+extension UIKit.UIImage.ImageFormat : Swift.Equatable {}
+extension UIKit.UIImage.ImageFormat : Swift.Hashable {}
+extension NACoreUI.CellAction : Swift.Equatable {}
+extension NACoreUI.CellAction : Swift.Hashable {}

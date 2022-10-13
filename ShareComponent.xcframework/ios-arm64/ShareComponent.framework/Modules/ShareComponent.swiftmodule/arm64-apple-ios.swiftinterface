@@ -1,0 +1,70 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShareComponent
+import AVFoundation
+import Carbon
+import ImageIO
+import MobileCoreServices
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NANetworkPlatform
+import NARealmPlatform
+import NASocketPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxRelay
+import RxSwift
+@_exported import ShareComponent
+import Social
+import Swift
+import UIKit
+import _Concurrency
+public protocol ShareComponentProtocol {
+  func initialize()
+  func initVC(attachments: [Foundation.NSItemProvider], requestSuccess: RxSwift.PublishSubject<Swift.Void>, requestFailed: RxSwift.PublishSubject<NADomain.NAError>) -> UIKit.UIViewController
+}
+public class ShareComponentImpl : ShareComponent.ShareComponentProtocol {
+  public init(enviroment: NetAloLite.EnvironmentType? = nil, appGroupId: Swift.String? = nil)
+  public func initialize()
+  public func initVC(attachments: [Foundation.NSItemProvider], requestSuccess: RxSwift.PublishSubject<Swift.Void>, requestFailed: RxSwift.PublishSubject<NADomain.NAError>) -> UIKit.UIViewController
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class ShareCollectionViewCellVM : NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+    public let name: RxCocoa.Driver<Swift.String?>
+    public let avartar: RxCocoa.Driver<(path: Swift.String?, name: Swift.String?)>
+  }
+  public func transform(input: ShareComponent.ShareCollectionViewCellVM.Input) -> ShareComponent.ShareCollectionViewCellVM.Output
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class ShareCollectionViewCell : UIKit.UICollectionViewCell, NACoreUI.NibLoadable {
+  @_Concurrency.MainActor(unsafe) final public var disposeBag: RxSwift.DisposeBag
+  @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) final public func config(output: ShareComponent.ShareCollectionViewCellVM.Output, isSelected: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) final public func reset()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+open class ShareViewComponent : Carbon.IdentifiableComponent {
+  final public let data: NADomain.NAGroup
+  final public let selectedGroup: RxRelay.BehaviorRelay<NADomain.NAGroup?>
+  final public let isSelected: Swift.Bool
+  public init(data: NADomain.NAGroup, selectedGroup: RxRelay.BehaviorRelay<NADomain.NAGroup?>, isSelected: Swift.Bool = false)
+  public var id: NADomain.NAGroup {
+    get
+  }
+  public func renderContent() -> ShareComponent.ShareCollectionViewCell
+  public func render(in content: ShareComponent.ShareCollectionViewCell)
+  public func contentDidEndDisplay(_ content: ShareComponent.ShareCollectionViewCell)
+  public typealias Content = ShareComponent.ShareCollectionViewCell
+  public typealias ID = NADomain.NAGroup
+  @objc deinit
+}

@@ -1,0 +1,165 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ListContactComponent
+import Carbon
+import Foundation
+@_exported import ListContactComponent
+import MessageUI
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxGesture
+import RxSwift
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class LocalContactDetailVC : NetAloCoreComponent.NABaseVC, NACoreUI.BindableType, MessageUI.MFMessageComposeViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) public var viewModel: ListContactComponent.LocalContactDetailVM!
+  @_Concurrency.MainActor(unsafe) public var eventProfileHeaderPublisher: RxSwift.PublishSubject<NetAloCoreComponent.ProfileHeaderComponent.Event>
+  @_Concurrency.MainActor(unsafe) public var eventSettingPublisher: RxSwift.PublishSubject<Swift.String>
+  @_Concurrency.MainActor(unsafe) public var eventAvatarPublisher: RxSwift.PublishSubject<Swift.Void>
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func bindViewModel()
+  @_Concurrency.MainActor(unsafe) @objc public func messageComposeViewController(_ controller: MessageUI.MFMessageComposeViewController, didFinishWith result: MessageUI.MessageComposeResult)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  public typealias ViewModelType = ListContactComponent.LocalContactDetailVM
+  @objc deinit
+}
+extension ListContactComponent.LocalContactDetailVC {
+  @_Concurrency.MainActor(unsafe) public static func instantiate() -> ListContactComponent.LocalContactDetailVC
+}
+extension ListContactComponent.LocalContactDetailVC {
+  @_Concurrency.MainActor(unsafe) public func initMFMessageComposeVC(phones: [Swift.String]) -> MessageUI.MFMessageComposeViewController
+}
+public enum ListContactRoute : XCoordinator.Route {
+  case main
+  case inviteFriend([NADomain.NAContact])
+  case alert(NetAloCoreComponent.NAAlertVM)
+  case localContactDetail(NADomain.NALocalContact)
+  case sendSMS([NADomain.NALocalContact])
+  case dismiss
+}
+public class ListContactCoordinator : XCoordinator.NavigationCoordinator<ListContactComponent.ListContactRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<ListContactComponent.ListContactComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil)
+  override public func prepareTransition(for route: ListContactComponent.ListContactRoute) -> XCoordinator.NavigationTransition
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = ListContactComponent.ListContactComponentManager.Event
+  @objc deinit
+}
+public class LocalContactDetailVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
+  public init(_ localContact: NADomain.NALocalContact)
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public struct DataRender {
+  }
+  public enum Event {
+    case dismiss
+    case invited(NADomain.NALocalContact)
+  }
+  public var eventPublisher: RxSwift.PublishSubject<ListContactComponent.LocalContactDetailVM.Event>
+  public func transform(input: ListContactComponent.LocalContactDetailVM.Input) -> ListContactComponent.LocalContactDetailVM.Output
+  @objc deinit
+}
+public class InviteFriendVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public enum Event {
+    case detail(with: NADomain.NAContact)
+    case didReachMaxMembers
+    case sendSMS([NADomain.NALocalContact])
+    case localContactDetail(NADomain.NALocalContact)
+    case close
+  }
+  public init(registerContacts: [NADomain.NAContact])
+  public var eventPublisher: RxSwift.PublishSubject<ListContactComponent.InviteFriendVM.Event>
+  public func transform(input: ListContactComponent.InviteFriendVM.Input) -> ListContactComponent.InviteFriendVM.Output
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class InviteFriendVC : NetAloCoreComponent.NABaseVC, NACoreUI.BindableType, MessageUI.MFMessageComposeViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) public var viewModel: ListContactComponent.InviteFriendVM!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) public func bindViewModel()
+  @_Concurrency.MainActor(unsafe) public func initMFMessageComposeVC(phones: [Swift.String]) -> MessageUI.MFMessageComposeViewController
+  @_Concurrency.MainActor(unsafe) @objc public func messageComposeViewController(_ controller: MessageUI.MFMessageComposeViewController, didFinishWith result: MessageUI.MessageComposeResult)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  public typealias ViewModelType = ListContactComponent.InviteFriendVM
+  @objc deinit
+}
+extension ListContactComponent.InviteFriendVC {
+  @_Concurrency.MainActor(unsafe) public static func instantiate() -> ListContactComponent.InviteFriendVC
+}
+@_inheritsConvenienceInitializers public class ListContactVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
+  public struct Input {
+    public let initialLoad: RxSwift.Observable<Swift.Void>
+    public let refresh: RxSwift.Observable<Swift.Void>
+    public let loadMore: RxSwift.Observable<Swift.Void>
+    public let sortContactTriger: RxSwift.PublishSubject<NADomain.ContactSortType>
+    public let headerInviteFriend: RxSwift.Observable<Swift.Void>
+    public let itemSelected: RxSwift.Observable<NetAloCoreComponent.ContactItemComponent.Event>
+    public init(initialLoad: RxSwift.Observable<Swift.Void>, refresh: RxSwift.Observable<Swift.Void>, loadMore: RxSwift.Observable<Swift.Void>, sortContactTriger: RxSwift.PublishSubject<NADomain.ContactSortType>, headerInviteFriend: RxSwift.Observable<Swift.Void>, itemSelected: RxSwift.Observable<NetAloCoreComponent.ContactItemComponent.Event>)
+  }
+  public struct Output {
+    public let contacts: RxCocoa.Driver<([NetAloCoreComponent.AlphabeticalDataModel<NADomain.NAContact>]?, [NADomain.NAContact]?)>
+    public let loading: RxCocoa.Driver<Swift.Bool>
+  }
+  public enum Event : Swift.Equatable {
+    case search
+    case createContact
+    case addContactSuccess
+    case inviteFriend([NADomain.NAContact])
+    case selectContact(NADomain.NAContact)
+    case voiceCall(NADomain.NAContact)
+    case videoCall(NADomain.NAContact)
+    public static func == (a: ListContactComponent.ListContactVM.Event, b: ListContactComponent.ListContactVM.Event) -> Swift.Bool
+  }
+  public var eventPublisher: RxSwift.PublishSubject<ListContactComponent.ListContactVM.Event>
+  public func transform(input: ListContactComponent.ListContactVM.Input) -> ListContactComponent.ListContactVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class ListContactComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case createContact
+    case search
+    case inviteFriend
+    case selectContact(NADomain.NAContact)
+    case videoCall(NADomain.NAContact)
+    case voiceCall(NADomain.NAContact)
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?)
+  }
+  public struct Output {
+    public let rootCoodinator: ListContactComponent.ListContactCoordinator
+    public let eventObservable: RxSwift.Observable<ListContactComponent.ListContactComponentManager.Event>
+  }
+  public func transform(input: ListContactComponent.ListContactComponentManager.Input) -> ListContactComponent.ListContactComponentManager.Output
+  @objc deinit
+}

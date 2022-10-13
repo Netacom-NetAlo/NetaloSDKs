@@ -1,0 +1,83 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AddContactComponent
+@_exported import AddContactComponent
+import MessageUI
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxGesture
+import RxSwift
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+open class AddContactComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case showChat(contact: NADomain.NAContact)
+    case releaseIfNeed
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, contact: NADomain.NAContact? = nil, addFromScreenType: AddContactComponent.AddContactFromScreen)
+  }
+  public struct Output {
+    public let rootCoodinator: AddContactComponent.AddContactCoordinator
+    public let eventObservable: RxSwift.Observable<AddContactComponent.AddContactComponentManager.Event>
+  }
+  public func transform(input: AddContactComponent.AddContactComponentManager.Input) -> AddContactComponent.AddContactComponentManager.Output
+  @objc deinit
+}
+public enum AddContactRoute : XCoordinator.Route {
+  case main(NADomain.NAContact?, AddContactComponent.AddContactFromScreen)
+  case dismiss
+  case addContactCompleted(contact: NADomain.NAContact, addFromScreenType: AddContactComponent.AddContactFromScreen)
+  case alert(alertVM: NetAloCoreComponent.NAAlertVM)
+  case sendSMS
+  case releaseIfNeed
+  case editContact(NADomain.NAContact)
+}
+public enum AddContactFromScreen {
+  case listContact
+  case chat
+  case contactDetail
+  case search
+  case nomal
+  public static func == (a: AddContactComponent.AddContactFromScreen, b: AddContactComponent.AddContactFromScreen) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class AddContactCoordinator : XCoordinator.NavigationCoordinator<AddContactComponent.AddContactRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<AddContactComponent.AddContactComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil, contact: NADomain.NAContact? = nil, addFromScreenType: AddContactComponent.AddContactFromScreen = .nomal)
+  override public var viewController: UIKit.UIViewController! {
+    get
+  }
+  override public func prepareTransition(for route: AddContactComponent.AddContactRoute) -> XCoordinator.NavigationTransition
+  @objc deinit
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = AddContactComponent.AddContactComponentManager.Event
+}
+@_hasMissingDesignatedInitializers public class InputValidateBuilder {
+  final public let userName: RxRelay.BehaviorRelay<Swift.String>
+  final public let phoneNumber: RxRelay.BehaviorRelay<Swift.String>
+  public func build() -> RxSwift.Observable<(Swift.String, Swift.String)>
+  public func checkValidate() -> RxSwift.Observable<Swift.Bool>
+  @objc deinit
+}
+extension AddContactComponent.AddContactFromScreen : Swift.Equatable {}
+extension AddContactComponent.AddContactFromScreen : Swift.Hashable {}

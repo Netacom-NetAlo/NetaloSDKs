@@ -1,0 +1,66 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BackgroundPickerComponent
+@_exported import BackgroundPickerComponent
+import Carbon
+import MobileCoreServices
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxRelay
+import RxSwift
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+public enum BackgroundPickerRoute : XCoordinator.Route {
+  case main
+  case dismiss
+  public static func == (a: BackgroundPickerComponent.BackgroundPickerRoute, b: BackgroundPickerComponent.BackgroundPickerRoute) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class BackgroundPickerCoordinator : XCoordinator.ViewCoordinator<BackgroundPickerComponent.BackgroundPickerRoute>, NACoreUtils.EventPublisherType {
+  public var eventPublisher: RxSwift.PublishSubject<BackgroundPickerComponent.BackgroundPickerComponentManager.Event>
+  @objc deinit
+  public init(navigation: UIKit.UINavigationController? = nil, onDismiss: (() -> Swift.Void)?, group: NADomain.NAGroup)
+  override public func prepareTransition(for route: BackgroundPickerComponent.BackgroundPickerRoute) -> XCoordinator.ViewTransition
+  public typealias Event = BackgroundPickerComponent.BackgroundPickerComponentManager.Event
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BackgroundFlowLayoutAdapter : Carbon.UICollectionViewFlowLayoutAdapter {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForFooterInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, insetForSectionAt section: Swift.Int) -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreGraphics.CGFloat
+  override public init(data: [Carbon.Section] = super)
+  @objc deinit
+}
+open class BackgroundPickerComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case releaseIfNeeded
+    case backgroundSelected(NADomain.NAGroupBackground)
+    case didChangeBackground(NADomain.NAGroupBackground)
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, onDismiss: (() -> Swift.Void)?, group: NADomain.NAGroup)
+  }
+  public struct Output {
+    public let rootCoodinator: BackgroundPickerComponent.BackgroundPickerCoordinator
+    public let eventObservable: RxSwift.Observable<BackgroundPickerComponent.BackgroundPickerComponentManager.Event>
+  }
+  public func transform(input: BackgroundPickerComponent.BackgroundPickerComponentManager.Input) -> BackgroundPickerComponent.BackgroundPickerComponentManager.Output
+  @objc deinit
+}
+extension BackgroundPickerComponent.BackgroundPickerRoute : Swift.Equatable {}
+extension BackgroundPickerComponent.BackgroundPickerRoute : Swift.Hashable {}

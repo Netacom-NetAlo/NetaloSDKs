@@ -1,0 +1,253 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RxGesture
+import CoreGraphics/*.CGPoint*/
+import Dispatch
+import Foundation
+import ObjectiveC
+import RxCocoa
+@_exported import RxGesture
+import RxSwift
+import Swift
+import UIKit.UIGestureRecognizerSubclass
+import UIKit
+import _Concurrency
+@available(iOS 13.0, *)
+public typealias HoverConfiguration = RxGesture.Configuration<UIKit.UIHoverGestureRecognizer>
+@available(iOS 13.0, *)
+public typealias HoverControlEvent = RxCocoa.ControlEvent<UIKit.UIHoverGestureRecognizer>
+@available(iOS 13.0, *)
+public typealias HoverObservable = RxSwift.Observable<UIKit.UIHoverGestureRecognizer>
+@available(iOS 13.0, *)
+extension RxGesture.Factory where Gesture == RxGesture.RxGestureRecognizer {
+  public static func hover(configuration: RxGesture.HoverConfiguration? = nil) -> RxGesture.AnyFactory
+}
+@available(iOS 13.0, *)
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func hoverGesture(configuration: RxGesture.HoverConfiguration? = nil) -> RxGesture.HoverControlEvent
+}
+public typealias TapConfiguration = RxGesture.Configuration<UIKit.UITapGestureRecognizer>
+public typealias TapControlEvent = RxCocoa.ControlEvent<UIKit.UITapGestureRecognizer>
+public typealias TapObservable = RxSwift.Observable<UIKit.UITapGestureRecognizer>
+extension RxGesture.Factory where Gesture == RxGesture.RxGestureRecognizer {
+  public static func tap(configuration: RxGesture.TapConfiguration? = nil) -> RxGesture.AnyFactory
+}
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func tapGesture(configuration: RxGesture.TapConfiguration? = nil) -> RxGesture.TapControlEvent
+}
+public typealias LongPressConfiguration = RxGesture.Configuration<UIKit.UILongPressGestureRecognizer>
+public typealias LongPressControlEvent = RxCocoa.ControlEvent<UIKit.UILongPressGestureRecognizer>
+public typealias LongPressObservable = RxSwift.Observable<UIKit.UILongPressGestureRecognizer>
+extension RxGesture.Factory where Gesture == RxGesture.RxGestureRecognizer {
+  public static func longPress(configuration: RxGesture.LongPressConfiguration? = nil) -> RxGesture.AnyFactory
+}
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func longPressGesture(configuration: RxGesture.LongPressConfiguration? = nil) -> RxGesture.LongPressControlEvent
+}
+public typealias PanConfiguration = RxGesture.Configuration<UIKit.UIPanGestureRecognizer>
+public typealias PanControlEvent = RxCocoa.ControlEvent<UIKit.UIPanGestureRecognizer>
+public typealias PanObservable = RxSwift.Observable<UIKit.UIPanGestureRecognizer>
+extension RxGesture.Factory where Gesture == RxGesture.RxGestureRecognizer {
+  public static func pan(configuration: RxGesture.PanConfiguration? = nil) -> RxGesture.AnyFactory
+}
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func panGesture(configuration: RxGesture.PanConfiguration? = nil) -> RxGesture.PanControlEvent
+}
+extension RxSwift.ObservableType where Self.Element : UIKit.UIPanGestureRecognizer {
+  public func asTranslation(in view: RxGesture.TargetView = .view) -> RxSwift.Observable<(translation: CoreGraphics.CGPoint, velocity: CoreGraphics.CGPoint)>
+}
+public typealias Configuration<Gesture> = (Gesture, RxGesture.GenericRxGestureRecognizerDelegate<Gesture>) -> Swift.Void where Gesture : UIKit.UIGestureRecognizer
+public struct Factory<Gesture> where Gesture : UIKit.UIGestureRecognizer {
+  public let gesture: Gesture
+  public init(_ configuration: RxGesture.Configuration<Gesture>?)
+}
+public typealias AnyFactory = RxGesture.Factory<RxGesture.RxGestureRecognizer>
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TouchDownGestureRecognizer : UIKit.UIGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(target: Any?, action: ObjectiveC.Selector?)
+  @_Concurrency.MainActor(unsafe) public var minimumTouchDuration: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var isTouchIgnoringEnabled: Swift.Bool
+  @nonobjc @_Concurrency.MainActor(unsafe) public var touches: Swift.Set<UIKit.UITouch> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func reset()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func ignore(_ touch: UIKit.UITouch, for event: UIKit.UIEvent)
+  @objc deinit
+}
+public typealias TouchDownConfiguration = RxGesture.Configuration<RxGesture.TouchDownGestureRecognizer>
+public typealias TouchDownControlEvent = RxCocoa.ControlEvent<RxGesture.TouchDownGestureRecognizer>
+public typealias TouchDownObservable = RxSwift.Observable<RxGesture.TouchDownGestureRecognizer>
+extension RxGesture.Factory where Gesture == RxGesture.RxGestureRecognizer {
+  public static func touchDown(configuration: RxGesture.TouchDownConfiguration? = nil) -> RxGesture.AnyFactory
+}
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func touchDownGesture(configuration: RxGesture.TouchDownConfiguration? = nil) -> RxGesture.TouchDownControlEvent
+}
+extension RxSwift.ObservableType where Self.Element : RxGesture.TouchDownGestureRecognizer {
+  public func asTouches() -> RxSwift.Observable<Swift.Set<UIKit.UITouch>>
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ForceTouchGestureRecognizer : UIKit.UIGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) public var force: CoreGraphics.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var maximumPossibleForce: CoreGraphics.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var absoluteFractionCompleted: CoreGraphics.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var minimumFractionCompletedRequired: CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) public var maximumFractionCompletedRequired: CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) public var fractionCompleted: CoreGraphics.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(target: Any?, action: ObjectiveC.Selector?)
+  @objc deinit
+}
+public typealias ForceTouchConfiguration = RxGesture.Configuration<RxGesture.ForceTouchGestureRecognizer>
+public typealias ForceTouchControlEvent = RxCocoa.ControlEvent<RxGesture.ForceTouchGestureRecognizer>
+public typealias ForceTouchObservable = RxSwift.Observable<RxGesture.ForceTouchGestureRecognizer>
+extension RxGesture.Factory where Gesture == RxGesture.RxGestureRecognizer {
+  public static func forceTouch(configuration: RxGesture.ForceTouchConfiguration? = nil) -> RxGesture.AnyFactory
+}
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func forceTouchGesture(configuration: RxGesture.ForceTouchConfiguration? = nil) -> RxGesture.ForceTouchControlEvent
+}
+extension RxSwift.ObservableType where Self.Element : RxGesture.ForceTouchGestureRecognizer {
+  public func asForce() -> RxSwift.Observable<CoreGraphics.CGFloat>
+  public func when(fractionCompletedExceeds threshold: CoreGraphics.CGFloat) -> RxSwift.Observable<Self.Element>
+}
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func anyGesture(_ factories: (RxGesture.AnyFactory, when: RxGesture.RxGestureRecognizerState)...) -> RxCocoa.ControlEvent<RxGesture.RxGestureRecognizer>
+  public func anyGesture(_ factories: RxGesture.AnyFactory...) -> RxCocoa.ControlEvent<RxGesture.RxGestureRecognizer>
+  public func gesture<G>(_ factory: RxGesture.Factory<G>) -> RxCocoa.ControlEvent<G> where G : UIKit.UIGestureRecognizer
+  public func gesture<G>(_ gesture: G) -> RxCocoa.ControlEvent<G> where G : UIKit.UIGestureRecognizer
+}
+public typealias ScreenEdgePanConfiguration = RxGesture.Configuration<UIKit.UIScreenEdgePanGestureRecognizer>
+public typealias ScreenEdgePanControlEvent = RxCocoa.ControlEvent<UIKit.UIScreenEdgePanGestureRecognizer>
+public typealias ScreenEdgePanObservable = RxSwift.Observable<UIKit.UIScreenEdgePanGestureRecognizer>
+extension RxGesture.Factory where Gesture == RxGesture.RxGestureRecognizer {
+  public static func screenEdgePan(configuration: RxGesture.ScreenEdgePanConfiguration? = nil) -> RxGesture.AnyFactory
+}
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func screenEdgePanGesture(configuration: RxGesture.ScreenEdgePanConfiguration? = nil) -> RxGesture.ScreenEdgePanControlEvent
+}
+public struct TransformGestureRecognizers {
+  public let panGesture: UIKit.UIPanGestureRecognizer
+  public let rotationGesture: UIKit.UIRotationGestureRecognizer
+  public let pinchGesture: UIKit.UIPinchGestureRecognizer
+}
+public struct TransformVelocity {
+}
+public typealias TransformControlEvent = RxCocoa.ControlEvent<RxGesture.TransformGestureRecognizers>
+public typealias TransformObservable = RxSwift.Observable<RxGesture.TransformGestureRecognizers>
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func transformGestures() -> RxGesture.TransformControlEvent
+}
+extension RxSwift.ObservableType where Self.Element == RxGesture.TransformGestureRecognizers {
+  public func when(_ states: RxGesture.RxGestureRecognizerState...) -> RxSwift.Observable<Self.Element>
+  public func asTransform(in view: RxGesture.TargetView = .view) -> RxSwift.Observable<(transform: CoreGraphics.CGAffineTransform, velocity: RxGesture.TransformVelocity)>
+}
+public typealias RxGestureTouch = UIKit.UITouch
+public typealias RxGestureRecognizer = UIKit.UIGestureRecognizer
+public typealias RxGestureRecognizerState = UIKit.UIGestureRecognizer.State
+public typealias RxGestureRecognizerDelegate = UIKit.UIGestureRecognizerDelegate
+public typealias RxGestureView = UIKit.UIView
+public typealias RxGesturePoint = CoreGraphics.CGPoint
+public enum TargetView {
+  case view
+  case superview
+  case window
+  case this(RxGesture.RxGestureView)
+  public func targetView(for gestureRecognizer: RxGesture.RxGestureRecognizer) -> RxGesture.RxGestureView?
+}
+public enum SwipeDirection {
+  case right, left, up, down
+  public static func == (a: RxGesture.SwipeDirection, b: RxGesture.SwipeDirection) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias SwipeConfiguration = RxGesture.Configuration<UIKit.UISwipeGestureRecognizer>
+public typealias SwipeControlEvent = RxCocoa.ControlEvent<UIKit.UISwipeGestureRecognizer>
+public typealias SwipeObservable = RxSwift.Observable<UIKit.UISwipeGestureRecognizer>
+extension RxGesture.Factory where Gesture == RxGesture.RxGestureRecognizer {
+  public static func swipe(direction: RxGesture.SwipeDirection, configuration: RxGesture.SwipeConfiguration? = nil) -> RxGesture.AnyFactory
+}
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func swipeGesture(_ directions: Swift.Set<RxGesture.SwipeDirection>, configuration: RxGesture.SwipeConfiguration? = nil) -> RxGesture.SwipeControlEvent
+  public func swipeGesture(_ directions: RxGesture.SwipeDirection..., configuration: RxGesture.SwipeConfiguration? = nil) -> RxGesture.SwipeControlEvent
+}
+public struct GestureRecognizerDelegatePolicy<PolicyInput> {
+  public typealias PolicyBody = (PolicyInput) -> Swift.Bool
+  public static func custom(_ policy: @escaping RxGesture.GestureRecognizerDelegatePolicy<PolicyInput>.PolicyBody) -> RxGesture.GestureRecognizerDelegatePolicy<PolicyInput>
+  public static var always: RxGesture.GestureRecognizerDelegatePolicy<PolicyInput> {
+    get
+  }
+  public static var never: RxGesture.GestureRecognizerDelegatePolicy<PolicyInput> {
+    get
+  }
+  public func isPolicyPassing(with args: PolicyInput) -> Swift.Bool
+}
+public func || <PolicyInput>(lhs: RxGesture.GestureRecognizerDelegatePolicy<PolicyInput>, rhs: RxGesture.GestureRecognizerDelegatePolicy<PolicyInput>) -> RxGesture.GestureRecognizerDelegatePolicy<PolicyInput>
+public func && <PolicyInput>(lhs: RxGesture.GestureRecognizerDelegatePolicy<PolicyInput>, rhs: RxGesture.GestureRecognizerDelegatePolicy<PolicyInput>) -> RxGesture.GestureRecognizerDelegatePolicy<PolicyInput>
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class GenericRxGestureRecognizerDelegate<Gesture> : ObjectiveC.NSObject, RxGesture.RxGestureRecognizerDelegate where Gesture : UIKit.UIGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) final public var beginPolicy: RxGesture.GestureRecognizerDelegatePolicy<Gesture>
+  @_Concurrency.MainActor(unsafe) final public var touchReceptionPolicy: RxGesture.GestureRecognizerDelegatePolicy<(Gesture, RxGesture.RxGestureTouch)>
+  @_Concurrency.MainActor(unsafe) final public var selfFailureRequirementPolicy: RxGesture.GestureRecognizerDelegatePolicy<(Gesture, RxGesture.RxGestureRecognizer)>
+  @_Concurrency.MainActor(unsafe) final public var otherFailureRequirementPolicy: RxGesture.GestureRecognizerDelegatePolicy<(Gesture, RxGesture.RxGestureRecognizer)>
+  @_Concurrency.MainActor(unsafe) final public var simultaneousRecognitionPolicy: RxGesture.GestureRecognizerDelegatePolicy<(Gesture, RxGesture.RxGestureRecognizer)>
+  @_Concurrency.MainActor(unsafe) final public var pressReceptionPolicy: RxGesture.GestureRecognizerDelegatePolicy<(Gesture, UIKit.UIPress)> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc final public func gestureRecognizerShouldBegin(_ gestureRecognizer: RxGesture.RxGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc final public func gestureRecognizer(_ gestureRecognizer: RxGesture.RxGestureRecognizer, shouldReceive touch: RxGesture.RxGestureTouch) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc final public func gestureRecognizer(_ gestureRecognizer: RxGesture.RxGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: RxGesture.RxGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc final public func gestureRecognizer(_ gestureRecognizer: RxGesture.RxGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: RxGesture.RxGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc final public func gestureRecognizer(_ gestureRecognizer: RxGesture.RxGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: RxGesture.RxGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc final public func gestureRecognizer(_ gestureRecognizer: RxGesture.RxGestureRecognizer, shouldReceive press: UIKit.UIPress) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+public typealias LocationInView = (RxGesture.RxGestureView) -> CoreGraphics.CGPoint
+extension RxSwift.ObservableType where Self.Element : UIKit.UIGestureRecognizer {
+  public func when(_ states: RxGesture.RxGestureRecognizerState...) -> RxSwift.Observable<Self.Element>
+  public func asLocation(in view: RxGesture.TargetView = .view) -> RxSwift.Observable<RxGesture.RxGesturePoint>
+  public func asLocationInView() -> RxSwift.Observable<RxGesture.LocationInView>
+}
+public typealias PinchConfiguration = RxGesture.Configuration<UIKit.UIPinchGestureRecognizer>
+public typealias PinchControlEvent = RxCocoa.ControlEvent<UIKit.UIPinchGestureRecognizer>
+public typealias PinchObservable = RxSwift.Observable<UIKit.UIPinchGestureRecognizer>
+extension RxGesture.Factory where Gesture == RxGesture.RxGestureRecognizer {
+  public static func pinch(configuration: RxGesture.PinchConfiguration? = nil) -> RxGesture.AnyFactory
+}
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func pinchGesture(configuration: RxGesture.PinchConfiguration? = nil) -> RxGesture.PinchControlEvent
+}
+extension RxSwift.ObservableType where Self.Element : UIKit.UIPinchGestureRecognizer {
+  public func asScale() -> RxSwift.Observable<(scale: CoreGraphics.CGFloat, velocity: CoreGraphics.CGFloat)>
+}
+public typealias RotationConfiguration = RxGesture.Configuration<UIKit.UIRotationGestureRecognizer>
+public typealias RotationControlEvent = RxCocoa.ControlEvent<UIKit.UIRotationGestureRecognizer>
+public typealias RotationObservable = RxSwift.Observable<UIKit.UIRotationGestureRecognizer>
+extension RxGesture.Factory where Gesture == RxGesture.RxGestureRecognizer {
+  public static func rotation(configuration: RxGesture.RotationConfiguration? = nil) -> RxGesture.AnyFactory
+}
+extension RxSwift.Reactive where Base : UIKit.UIView {
+  public func rotationGesture(configuration: RxGesture.RotationConfiguration? = nil) -> RxGesture.RotationControlEvent
+}
+extension RxSwift.ObservableType where Self.Element : UIKit.UIRotationGestureRecognizer {
+  public func asRotation() -> RxSwift.Observable<(rotation: CoreGraphics.CGFloat, velocity: CoreGraphics.CGFloat)>
+}
+extension RxGesture.SwipeDirection : Swift.Equatable {}
+extension RxGesture.SwipeDirection : Swift.Hashable {}

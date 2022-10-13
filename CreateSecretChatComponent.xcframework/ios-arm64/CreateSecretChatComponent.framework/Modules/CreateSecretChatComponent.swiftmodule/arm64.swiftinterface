@@ -1,0 +1,56 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CreateSecretChatComponent
+@_exported import CreateSecretChatComponent
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxSwift
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+public enum CreateSecretChatRoute : XCoordinator.Route {
+  case main
+  case releaseIfNeeded
+  case alert(NetAloCoreComponent.NAAlertVM)
+  case dismiss
+}
+public class CreateSecretChatCoordinator : XCoordinator.NavigationCoordinator<CreateSecretChatComponent.CreateSecretChatRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<CreateSecretChatComponent.CreateSecretChatComponentManager.Event>
+  @objc deinit
+  public init(navigation: UIKit.UINavigationController? = nil)
+  override public func prepareTransition(for route: CreateSecretChatComponent.CreateSecretChatRoute) -> XCoordinator.NavigationTransition
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = CreateSecretChatComponent.CreateSecretChatComponentManager.Event
+}
+open class CreateSecretChatComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case showSecretChat(group: NADomain.NAGroup)
+    case close
+    case releaseIfNeeded
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?)
+  }
+  public struct Output {
+    public let rootCoodinator: CreateSecretChatComponent.CreateSecretChatCoordinator
+    public let eventObservable: RxSwift.Observable<CreateSecretChatComponent.CreateSecretChatComponentManager.Event>
+  }
+  public func transform(input: CreateSecretChatComponent.CreateSecretChatComponentManager.Input) -> CreateSecretChatComponent.CreateSecretChatComponentManager.Output
+  @objc deinit
+}

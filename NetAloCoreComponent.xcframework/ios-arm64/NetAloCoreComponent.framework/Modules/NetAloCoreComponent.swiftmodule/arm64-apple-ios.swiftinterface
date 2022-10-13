@@ -1,0 +1,3665 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NetAloCoreComponent
+import AVFoundation
+import AVKit
+import AppTrackingTransparency
+import Carbon
+import Contacts
+import CoreGraphics
+import CoreLocation
+import Foundation
+import Kingfisher
+import Lottie
+import MapKit
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NANetworkPlatform
+import NARealmPlatform
+import NATheme
+@_exported import NetAloCoreComponent
+import NetAloLite
+import Network
+import Photos
+import Resolver
+import RxCocoa
+import RxGesture
+import RxRelay
+import RxSwift
+import Swift
+import UIKit
+import UserNotifications
+import XCoordinator
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NoConnectionView : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class LastMessageVM : NACoreUtils.ViewModelType {
+  public enum DisplayState {
+    case reply
+    case forward
+    case pin
+    case normal
+    public static func == (a: NetAloCoreComponent.LastMessageVM.DisplayState, b: NetAloCoreComponent.LastMessageVM.DisplayState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct Input {
+    public init(message: NADomain.NAMessage, group: NADomain.NAGroup, displayName: RxSwift.Observable<Swift.String?>, users: RxSwift.Observable<[NADomain.NAUser]>, displayState: NetAloCoreComponent.LastMessageVM.DisplayState = .normal)
+    public let message: NADomain.NAMessage
+    public let group: NADomain.NAGroup
+    public let displayName: RxSwift.Observable<Swift.String?>
+    public let users: RxSwift.Observable<[NADomain.NAUser]>
+    public let displayState: NetAloCoreComponent.LastMessageVM.DisplayState
+  }
+  public struct Output {
+    public let content: RxSwift.Observable<Swift.String?>
+    public let timeAgo: RxSwift.Observable<Swift.String>
+    public let senderName: RxSwift.Observable<Swift.String?>
+    public let status: RxSwift.Observable<NADomain.NAMessageStatus>
+    public let isMissedCall: Swift.Bool
+    public let isFromCurrentUser: Swift.Bool
+    public let previewImageUrl: Swift.String?
+  }
+  public func transform(input: NetAloCoreComponent.LastMessageVM.Input) -> NetAloCoreComponent.LastMessageVM.Output
+  @objc deinit
+}
+extension Swift.String {
+  public func subString(offsetBy: Swift.Int) -> Swift.String
+  public func getShortName() -> Swift.String
+  public var folded: Swift.String {
+    get
+  }
+  public func imageWithText(backgroundColor: UIKit.UIColor) -> UIKit.UIImage?
+  public func getColor() -> UIKit.UIColor
+  public static let locationWhenInUseUsageDescription: Swift.String
+  public static let locationAlwaysUsageDescription: Swift.String
+  public static let microphoneUsageDescription: Swift.String
+  public static let speechRecognitionUsageDescription: Swift.String
+  public static let photoLibraryUsageDescription: Swift.String
+  public static let cameraUsageDescription: Swift.String
+  public static let mediaLibraryUsageDescription: Swift.String
+  public static let siriUsageDescription: Swift.String
+  public static let trackUsageDescription: Swift.String
+}
+extension Resolver.MyResolver {
+  public static func regisCurrentChatUIComponents()
+  public static func regisComponents()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SearchHeaderCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.SearchHeaderVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class GroupDetailHeaderVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.GroupDetailHeaderVM.Input) -> NetAloCoreComponent.GroupDetailHeaderVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class SettingGroupComponent : Carbon.IdentifiableComponent {
+  public var id: Swift.String {
+    get
+  }
+  public init(setting: NetAloCoreComponent.NASetting, tapGesture: RxSwift.PublishSubject<Swift.String>)
+  public var eventPublisher: RxSwift.PublishSubject<Swift.String>
+  public var setting: NetAloCoreComponent.NASetting
+  public func renderContent() -> NetAloCoreComponent.SettingGroupCell
+  public func render(in content: NetAloCoreComponent.SettingGroupCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.SettingGroupCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.SettingGroupCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+extension NADomain.NAContact : NetAloCoreComponent.SortByDate, NetAloCoreComponent.SortByName {
+  public func getDate() -> Foundation.Date?
+}
+extension NADomain.NAContact : Swift.Hashable {
+  public static func == (lhs: NADomain.NAContact, rhs: NADomain.NAContact) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+open class NABaseComponent<View, ViewModel, Data> : Carbon.IdentifiableComponent where View : UIKit.UIView, View : NACoreUI.NibLoadable, Data : Swift.Hashable {
+  @Resolver.LazyInjected @_projectedValueProperty($vm) public var vm: ViewModel {
+    get
+    set
+    _modify
+  }
+  public var $vm: Resolver.LazyInjected<ViewModel> {
+    get
+    set
+  }
+  public var disposeBag: RxSwift.DisposeBag
+  public var data: Data
+  public init(data: Data)
+  public var id: Data {
+    get
+  }
+  public func renderContent() -> View
+  public func render(in content: View)
+  public func contentDidEndDisplay(_ content: View)
+  @discardableResult
+  open func reset() -> RxSwift.Observable<(data: Data, text: NALocalization.NAText, theme: NATheme.ThemeMode)>
+  open func config(content: View, data: Data, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+  public typealias Content = View
+  public typealias ID = Data
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class KCCircularTimer : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var currentValue: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var maximumValue: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var borderFactor: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var circleFactor: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var insetFactor: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var progressColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var circleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var circleAlpha: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var font: UIKit.UIFont {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var fontName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var fontSize: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var clockwise: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var showNumber: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var decimalPlaces: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var lineCap: CoreGraphics.CGLineCap {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func animate(from start: Swift.Double, to end: Swift.Double, duration: Swift.Double? = nil, isRemovedOnCompletion: Swift.Bool? = true, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func stopAnimation()
+  @_Concurrency.MainActor(unsafe) public func pauseAnimation()
+  @_Concurrency.MainActor(unsafe) public func resumeAnimation()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public class var layerClass: Swift.AnyClass {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tintColorDidChange()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UserCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public var btnDeleteTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.UserVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class ForwardGroupComponent : Carbon.IdentifiableComponent {
+  public enum Event {
+    case sendTap(NADomain.NAGroup)
+  }
+  public init(group: NADomain.NAGroup, tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ForwardGroupComponent.Event>)
+  public var id: NADomain.NAGroup {
+    get
+  }
+  public var group: NADomain.NAGroup
+  public var tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ForwardGroupComponent.Event>
+  public func renderContent() -> NetAloCoreComponent.ForwardCell
+  public func render(in content: NetAloCoreComponent.ForwardCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.ForwardCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.ForwardCell
+  public typealias ID = NADomain.NAGroup
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NAAudioRecorderView : NetAloCoreComponent.NABaseView {
+  public enum Event {
+    case didStop
+    case didCancel
+    case didSend(url: Foundation.URL, duration: Swift.Double)
+  }
+  @_Concurrency.MainActor(unsafe) public var separateView: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var btnStopRecord: UIKit.UIButton {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var btnCancel: UIKit.UIButton {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var btnSend: UIKit.UIButton {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var lbLimit: UIKit.UILabel {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var isRecording: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.NAAudioRecorderView.Event>
+  @_Concurrency.MainActor(unsafe) public var chatColors: NATheme.ChatColors {
+    get
+    set
+  }
+  @Resolver.LazyInjected @_projectedValueProperty($audioRecorder) @_Concurrency.MainActor(unsafe) public var audioRecorder: NetAloCoreComponent.NAAudioRecorder {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $audioRecorder: Resolver.LazyInjected<NetAloCoreComponent.NAAudioRecorder> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreGraphics.CGRect, chatColor: NATheme.ChatColors)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func checkRecordPermission() -> RxSwift.Observable<Swift.Bool>
+  @_Concurrency.MainActor(unsafe) public func resetUI()
+  @_Concurrency.MainActor(unsafe) public func startRecoring()
+  @_Concurrency.MainActor(unsafe) public func stopRecording()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AccountReferralCodeCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class GroupMemberVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
+  public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.GroupMemberVM.Event>
+  public var hideSwipedPublisher: RxSwift.PublishSubject<Swift.Void>
+  public var resetSwipedPublisher: RxSwift.PublishSubject<Swift.Void>
+  public enum Event {
+    case select(NADomain.NAUser)
+    case remove(NADomain.NAUser)
+    case hideAllSwipeItems
+  }
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.GroupMemberVM.Input) -> NetAloCoreComponent.GroupMemberVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension NADomain.NAMessage : Swift.Hashable {
+  public static func == (lhs: NADomain.NAMessage, rhs: NADomain.NAMessage) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension NADomain.NAMessageStatus {
+  public var image: UIKit.UIImage? {
+    get
+  }
+  public func tintColor(for theme: NATheme.ThemeMode) -> UIKit.UIColor
+}
+public struct VideoAsset {
+  public init()
+  public init(localURL: Foundation.URL, thumbnail: UIKit.UIImage, duration: Swift.UInt, width: Swift.UInt, height: Swift.UInt)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NASearchBar : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public var placeholder: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var placeholderColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var searchTextTrigger: RxSwift.Observable<Swift.String> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func updateTheme()
+  @_Concurrency.MainActor(unsafe) public func setFontFormat(_ fontFormat: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ImageCell : NetAloCoreComponent.NABaseCollectionViewCell {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc override dynamic public func awakeFromNib()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func configEmptyCell()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.ImageCellVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers open class ForwardGroupVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+    public let displayName: RxCocoa.Driver<Swift.String?>
+    public var avartar: RxCocoa.Driver<(path: Swift.String?, name: Swift.String?)>
+    public let isSecret: Swift.Bool
+  }
+  public func transform(input: NetAloCoreComponent.ForwardGroupVM.Input) -> NetAloCoreComponent.ForwardGroupVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ContactCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.ContactVM.Output, displayType: NetAloCoreComponent.ContactListView.ContactDisplayType, isSelected: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func toggleCellSelection(isSelected: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.LocalContactVM.Output, displayType: NetAloCoreComponent.ContactListView.ContactDisplayType, isSelected: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.MoveMemberVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class ImageUploadComponent : Carbon.IdentifiableComponent {
+  public init(selectType: NetAloCoreComponent.ImageUploadComponent.SelectType, tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ImageUploadComponent.SelectType>)
+  public enum SelectType {
+    case camera
+    case image(UIKit.UIImage)
+  }
+  public var selectType: NetAloCoreComponent.ImageUploadComponent.SelectType
+  public var tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ImageUploadComponent.SelectType>
+  public var id: UIKit.UIImage {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.ImageUploadCell
+  public func render(in content: NetAloCoreComponent.ImageUploadCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.ImageUploadCell
+  public typealias ID = UIKit.UIImage
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AlbumCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.AlbumVM.Output, isSelected: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func toggleCellSelection(isSelected: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TopicModeViewCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public var switchThemeMode: (() -> ())?
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AnnotationView : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func setAvatarImage(user: NADomain.NAUser)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class LocalContactVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.LocalContactVM.Input) -> NetAloCoreComponent.LocalContactVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class RecentContactVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.RecentContactVM.Input) -> NetAloCoreComponent.RecentContactVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class AccountSettingComponent : Carbon.IdentifiableComponent {
+  public var data: NetAloCoreComponent.NASetting
+  public var tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.SettingType?>
+  public init(data: NetAloCoreComponent.NASetting, tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.SettingType?>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.AccountSettingCell
+  public func render(in content: NetAloCoreComponent.AccountSettingCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.AccountSettingCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ForwardCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) override open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.ForwardContactVM.Output)
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.ForwardGroupVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class TopicTitleComponent : Carbon.IdentifiableComponent {
+  public init()
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.TopicTitleCell
+  public func render(in content: NetAloCoreComponent.TopicTitleCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.TopicTitleCell)
+  public typealias Content = NetAloCoreComponent.TopicTitleCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MediaLibraryVideoController : AVKit.AVPlayerViewController, AVFAudio.AVAudioPlayerDelegate {
+  @_Concurrency.MainActor(unsafe) open var state: NACoreUtils.PlayerState
+  @_Concurrency.MainActor(unsafe) open var isFullscreen: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var playFullscreenPressed: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public func playVideo(_ video: NADomain.NAVideo)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension NetAloCoreComponent.MediaLibraryVideoController : AVKit.AVPlayerViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func playerViewController(_ playerViewController: AVKit.AVPlayerViewController, willEndFullScreenPresentationWithAnimationCoordinator coordinator: UIKit.UIViewControllerTransitionCoordinator)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class InviteFriendCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func config(displayName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum AlertType {
+  case none
+  case disbandGroup
+  case disbandChannel
+  case wrongOTP
+  case expireOTP
+  case requestVideo
+  case sendRequest
+  case blockUser(Swift.String)
+  case unblockUser(Swift.String)
+  case cannotBlockUser
+  case deleteContact(Swift.String)
+  case sendEmail
+  case logout
+  case chattedBefore
+  case requestPhotosAccess(_: Swift.String? = nil)
+  case referral(Swift.Bool)
+  case confirmUnpinAllMessages
+  case locationRequest(_: Swift.String)
+  case optionForceUpdate
+  case forceUpdate
+  case requestRecordPermission
+  case ok(title: Swift.String = "", subTitle: Swift.String)
+  case cancel(subTitle: Swift.String)
+  case resetQRCode
+  case resetQRCodeSuccess
+  case leaveGroup
+  case moveMember
+  case moveMemberSuccess
+  case groupCallEnded(Swift.Bool)
+  case joinGroup(title: Swift.String, subtitle: Swift.String)
+  case copyGroupLinkFaied(Swift.String)
+  case sendAudioFailed
+  case confirmUnpin
+  case editContactFailed
+  case deleteContactFailed
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NAAlertVC : NetAloCoreComponent.NABaseVC, NACoreUI.BindableType {
+  @_Concurrency.MainActor(unsafe) public var viewModel: NetAloCoreComponent.NAAlertVM!
+  @_Concurrency.MainActor(unsafe) public func bindViewModel()
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  public typealias ViewModelType = NetAloCoreComponent.NAAlertVM
+  @objc deinit
+}
+extension NetAloCoreComponent.NAAlertVC {
+  @_Concurrency.MainActor(unsafe) public static func instance() -> NetAloCoreComponent.NAAlertVC
+}
+@objc @_inheritsConvenienceInitializers public class NANotificationViewAppearance : ObjectiveC.NSObject {
+  @Resolver.LazyInjected @_projectedValueProperty($themeManager) public var themeManager: NATheme.NAThemeServiceProtocol {
+    get
+    set
+    _modify
+  }
+  public var $themeManager: Resolver.LazyInjected<NATheme.NAThemeServiceProtocol> {
+    get
+    set
+  }
+  public static let defaultAppearance: NetAloCoreComponent.NANotificationViewAppearance
+  public var animationDuration: Swift.Double
+  public var appearingDuration: Swift.Double
+  public var titleTextColor: UIKit.UIColor
+  public var messageTextColor: UIKit.UIColor
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class FilterContactComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.FilterContactCell, NetAloCoreComponent.NABaseVM, NADomain.ContactSortType> {
+  public var eventPublisher: RxSwift.PublishSubject<Swift.Void>
+  public init(sortContactType: NADomain.ContactSortType, tapGesture: RxSwift.PublishSubject<Swift.Void>)
+  override public func config(content: NetAloCoreComponent.FilterContactCell, data: NADomain.ContactSortType, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+open class ImageLibraryComponent : Carbon.IdentifiableComponent {
+  public var id: NADomain.NAMediaLibraryModel {
+    get
+  }
+  public init(data: NADomain.NAMediaLibraryModel, selectedTrigger: RxSwift.PublishSubject<NADomain.NAMediaLibraryModel>)
+  public var selectedMedia: RxSwift.PublishSubject<NADomain.NAMediaLibraryModel>
+  public var data: NADomain.NAMediaLibraryModel
+  public func renderContent() -> NetAloCoreComponent.ImageLibraryCell
+  public func render(in content: NetAloCoreComponent.ImageLibraryCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.ImageLibraryCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.ImageLibraryCell
+  public typealias ID = NADomain.NAMediaLibraryModel
+  @objc deinit
+}
+open class SearchResultComponent : Carbon.IdentifiableComponent {
+  public init(data: NetAloCoreComponent.SearchDefaultType, selectTrigger: RxSwift.PublishSubject<NetAloCoreComponent.SearchListView.Event>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.SearchResultCell
+  public func render(in content: NetAloCoreComponent.SearchResultCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.SearchResultCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.SearchResultCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ScrolldownButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public static let scrollDownButtonWidth: CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) public func setTheme(_ theme: NATheme.ThemeMode)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class RecentContactCollectionVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.RecentContactCollectionVM.Input) -> NetAloCoreComponent.RecentContactCollectionVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct AlphabeticalDataModel<T> {
+  public var letter: Swift.String
+  public var data: [T]
+}
+open class BlockContactComponent : Carbon.IdentifiableComponent {
+  public init(data: (blockContact: NADomain.NABlockContact, contact: NADomain.NAContact), unBlocktrigger: RxSwift.PublishSubject<(blockContact: NADomain.NABlockContact, contact: NADomain.NAContact)>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.BlockContactCell
+  public func render(in content: NetAloCoreComponent.BlockContactCell)
+  public func contentWillDisplay(_ content: NetAloCoreComponent.BlockContactCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.BlockContactCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.BlockContactCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+open class MoveMemberComponent : Carbon.IdentifiableComponent {
+  public var data: NADomain.NAGroup
+  final public let trigger: RxSwift.PublishSubject<(NADomain.NAGroup)>
+  public init(data: NADomain.NAGroup, trigger: RxSwift.PublishSubject<(NADomain.NAGroup)>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.ContactCell
+  public func render(in content: NetAloCoreComponent.ContactCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.ContactCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.ContactCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MediaLibraryHeaderView : NetAloCoreComponent.NABaseView {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var stackTitleView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var lineView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var indicatorView: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) final public let didIndexChanged: RxRelay.BehaviorRelay<Swift.Int>
+  @_Concurrency.MainActor(unsafe) public var progress: Swift.Double {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var currentPage: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func configure(_ titles: [Swift.String])
+  @_Concurrency.MainActor(unsafe) public func reloadData()
+  @_Concurrency.MainActor(unsafe) public func update(for progress: Swift.Double)
+  @_Concurrency.MainActor(unsafe) public func unSelected()
+  @_Concurrency.MainActor(unsafe) public func selected()
+  @_Concurrency.MainActor(unsafe) public func updateIndicatorViewConstraints()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum HistoryCallStaus {
+  case success(NetAloCoreComponent.HistoryCallDirecion, NetAloCoreComponent.HistoryCallMediaType)
+  case missed(NetAloCoreComponent.HistoryCallDirecion, NetAloCoreComponent.HistoryCallMediaType)
+  public var title: Swift.String {
+    get
+  }
+  public func title(with text: NALocalization.NAText) -> Swift.String
+  public func subTitle(with text: NALocalization.NAText) -> Swift.String
+  public var imageType: UIKit.UIImage? {
+    get
+  }
+  public var isMissCall: Swift.Bool {
+    get
+  }
+  public var isSuccessCall: Swift.Bool {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+}
+public enum HistoryCallDirecion : Swift.String {
+  case incoming
+  case outgoing
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum HistoryCallMediaType : Swift.String {
+  case video
+  case voice
+  public var icon: UIKit.UIImage {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class HistoryCallVM : NACoreUtils.ViewModelType {
+  public init()
+  public struct Input {
+    public init(call: NADomain.NACall)
+  }
+  public struct Output {
+    public let name: RxSwift.Observable<Swift.String?>
+    public let avatar: RxSwift.Observable<(path: Swift.String?, name: Swift.String?)>
+    public let callDate: Swift.String
+    public let callStatus: NetAloCoreComponent.HistoryCallStaus
+    public let duration: Swift.String
+    public let mediaType: Swift.Int
+    public let targetUser: RxSwift.Observable<NADomain.NAContact?>
+    public let date: Swift.String
+  }
+  public func transform(input: NetAloCoreComponent.HistoryCallVM.Input) -> NetAloCoreComponent.HistoryCallVM.Output
+  @objc deinit
+}
+extension NetAloCoreComponent.HistoryCallVM {
+  public func getDuration(by call: NADomain.NACall) -> Swift.Int
+  public func getCallStatus(call: NADomain.NACall) -> NetAloCoreComponent.HistoryCallStaus
+}
+public enum PermissionStatus {
+  case authorized
+  case denied
+  case disabled
+  case notDetermined
+  public static func == (a: NetAloCoreComponent.PermissionStatus, b: NetAloCoreComponent.PermissionStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct EmptyTextComponent : Carbon.IdentifiableComponent {
+  public var type: NADomain.MediaType
+  public var id: NADomain.MediaType {
+    get
+  }
+  public init(type: NADomain.MediaType)
+  public func renderContent() -> NetAloCoreComponent.EmptyTextContent
+  public func render(in content: NetAloCoreComponent.EmptyTextContent)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.EmptyTextContent
+  public typealias ID = NADomain.MediaType
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class EmptyTextContent : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override final public func initialize()
+  @_Concurrency.MainActor(unsafe) override final public func themeChanged()
+  @_Concurrency.MainActor(unsafe) final public func setTitle(type: NADomain.MediaType)
+  @_Concurrency.MainActor(unsafe) final public func setTitle(_ empty: Swift.String = "")
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum NAProgressHUDStyle {
+  case success
+  case failed
+  case loading
+  public static func == (a: NetAloCoreComponent.NAProgressHUDStyle, b: NetAloCoreComponent.NAProgressHUDStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class NAProgressHUDView : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public var loadingIndicator: UIKit.UIActivityIndicatorView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var duration: Swift.Double
+  @_Concurrency.MainActor(unsafe) public init(message: Swift.String, style: NetAloCoreComponent.NAProgressHUDStyle)
+  @_Concurrency.MainActor(unsafe) public init(message: Swift.String, icon: UIKit.UIImage)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func present()
+  @_Concurrency.MainActor(unsafe) public func update(message: Swift.String, style: NetAloCoreComponent.NAProgressHUDStyle)
+  @objc @_Concurrency.MainActor(unsafe) public func dismiss()
+  @objc deinit
+}
+public struct NAStickerGroup {
+  public var id: Swift.String
+  public var listStickers: [NADomain.NAStickerItem]
+  public init(id: Swift.String, listStickers: [NADomain.NAStickerItem])
+}
+open class StickerGroupItemComponent : Carbon.IdentifiableComponent {
+  public init(stickerGroup: NetAloCoreComponent.NAStickerGroup, tapGesture: RxSwift.PublishSubject<NADomain.NAStickerItem>)
+  public var id: Swift.String {
+    get
+  }
+  public var stickerGroup: NetAloCoreComponent.NAStickerGroup
+  public var tapGesture: RxSwift.PublishSubject<NADomain.NAStickerItem>
+  public func renderContent() -> NetAloCoreComponent.StickerListView
+  public func render(in content: NetAloCoreComponent.StickerListView)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.StickerListView)
+  public func contentWillDisplay(_ content: NetAloCoreComponent.StickerListView)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public func updateItems(_ items: [NADomain.NAStickerItem])
+  public typealias Content = NetAloCoreComponent.StickerListView
+  public typealias ID = Swift.String
+  @objc deinit
+}
+public class CountryVM : NACoreUtils.ViewModelType {
+  public init()
+  public struct Input {
+    public init(countryCode: NADomain.NACountryCode)
+  }
+  public struct Output {
+    public let name: Swift.String
+    public let countryCode: Swift.String
+  }
+  public func transform(input: NetAloCoreComponent.CountryVM.Input) -> NetAloCoreComponent.CountryVM.Output
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TopicTitleCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum Descriptor : Swift.String {
+  case code128
+  case pdf417
+  case aztec
+  case qr
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol BarcodeGenerator {
+  func generate(from string: Swift.String, descriptor: NetAloCoreComponent.Descriptor, size: CoreGraphics.CGSize) -> UIKit.UIImage?
+}
+@_hasMissingDesignatedInitializers public class BarcodeGeneratorImpl : NetAloCoreComponent.BarcodeGenerator {
+  public func generate(from string: Swift.String, descriptor: NetAloCoreComponent.Descriptor, size: CoreGraphics.CGSize) -> UIKit.UIImage?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProfileHeaderCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func setTheme()
+  @_Concurrency.MainActor(unsafe) public func setUIForCell(user: NADomain.NAUser, blocked: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setCustomProfileUI(user: NADomain.NAUser, blocked: Swift.Bool, isFriend: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setCallEnable(isVideoCallEnable: Swift.Bool, isVoiceCallEnable: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol SortByName {
+  var displayName: Swift.String { get }
+}
+public protocol SortByDate {
+  func getDate() -> Foundation.Date?
+}
+public struct Stack<T> {
+  public init(_ item: T)
+  public init(_ items: [T])
+}
+extension NetAloCoreComponent.Stack where T : NetAloCoreComponent.SortByName {
+  public func sorted(completion: (([NetAloCoreComponent.AlphabeticalDataModel<T>]) -> ()))
+}
+extension NetAloCoreComponent.Stack where T : NetAloCoreComponent.SortByDate {
+  public func sorted() -> [T]
+}
+open class MoveMemberVM : NACoreUtils.ViewModelType {
+  public init()
+  public struct Input {
+    public init(item: NADomain.NAGroup)
+  }
+  public struct Output {
+    public let members: RxSwift.Observable<Swift.Int>
+    public let displayName: RxSwift.Observable<Swift.String?>
+    public var avartar: RxCocoa.Driver<(path: Swift.String?, name: Swift.String?)>
+  }
+  public func transform(input: NetAloCoreComponent.MoveMemberVM.Input) -> NetAloCoreComponent.MoveMemberVM.Output
+  @objc deinit
+}
+open class GroupMemberComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.GroupMemberCell, NetAloCoreComponent.GroupMemberVM, NADomain.NAUser> {
+  public init(data: NADomain.NAUser, group: NADomain.NAGroup? = nil, isCurrentUserWithAuthority: Swift.Bool = false, hideSwipedPublisher: RxSwift.PublishSubject<Swift.Void>, eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.GroupMemberVM.Event>)
+  override public func config(content: NetAloCoreComponent.GroupMemberCell, data: NADomain.NAUser, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+open class StickerItemComponent : Carbon.IdentifiableComponent {
+  public init(sticker: NADomain.NAStickerItem, tapGesture: RxSwift.PublishSubject<NADomain.NAStickerItem>)
+  public var id: Swift.String {
+    get
+  }
+  public var sticker: NADomain.NAStickerItem
+  public var tapGesture: RxSwift.PublishSubject<NADomain.NAStickerItem>
+  public func renderContent() -> NetAloCoreComponent.StickerCell
+  public func render(in content: NetAloCoreComponent.StickerCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.StickerCell)
+  public func contentWillDisplay(_ content: NetAloCoreComponent.StickerCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.StickerCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class NAMediaManager : ObjectiveC.NSObject {
+  public var photoLibraryChangeEvent: RxSwift.PublishSubject<Photos.PHChange>
+  public var imageManager: Photos.PHCachingImageManager
+  public var disposeBag: RxSwift.DisposeBag
+  public var defaultFetchOptions: Photos.PHFetchOptions {
+    get
+    set
+  }
+  public var defaultImageRequestOptions: Photos.PHImageRequestOptions {
+    get
+    set
+  }
+  public var defaultVideoRequestOptions: Photos.PHVideoRequestOptions {
+    get
+    set
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers open class GroupOwnerVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
+  public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.GroupOwnerVM.Event>
+  public enum Event {
+    case nomal
+    case newGroupOwner(NADomain.NAUser)
+  }
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.GroupOwnerVM.Input) -> NetAloCoreComponent.GroupOwnerVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum SDKEventType {
+  case checkUserIsFriend(Swift.Int64)
+  case enableCallAction(NetAloLite.FeatureConfig.ChatConfig)
+  case didCloseSDK
+  case updateBadge(Swift.Int)
+  case pressedCall(NADomain.CallType)
+  case pressedUrl(Swift.String)
+  case mediaURL(imageUrls: [Foundation.URL], videoUrls: [Foundation.URL])
+  case showListGroup
+  case showChat(NADomain.NAContact)
+  case showVNDDemo
+  case showGroupChat(NADomain.NAGroup)
+  case showMedia(NetAloLite.MultiImagePickerConfig)
+  case releaseSDK
+}
+public protocol SDKEventRepo {
+  var event: RxSwift.PublishSubject<NetAloCoreComponent.SDKEventType> { get set }
+}
+public protocol CurrentChatUIRepo : NetAloLite.CurrentChatRepo {
+  func sendMessage(to groupId: Swift.String, with images: [UIKit.UIImage], destroyPeriod: Swift.Double) -> RxSwift.Single<NADomain.NAMessage>
+  func sendMessage(to groupId: Swift.String, with audio: NADomain.NAAudio, destroyPeriod: Swift.Double) -> RxSwift.Single<NADomain.NAMessage>
+  func sendMessage(to groupId: Swift.String, with video: NetAloCoreComponent.VideoAsset, destroyPeriod: Swift.Double) -> RxSwift.Single<NADomain.NAMessage>
+  func sendMessage(to groupId: Swift.String, with location: NADomain.NALocation, image: UIKit.UIImage, destroyPeriod: Swift.Double) -> RxSwift.Single<NADomain.NAMessage>
+  func sendMessage(to groupId: Swift.String, with liveLocation: NADomain.NALiveLocation, image: UIKit.UIImage, destroyPeriod: Swift.Double) -> RxSwift.Single<NADomain.NAMessage>
+  func starRetry(with groupId: Swift.String)
+  func retry(message: NADomain.NAMessage)
+  func clearUnread(with groupId: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NavigationChatHeader : NetAloCoreComponent.NABaseView, NACoreUtils.EventPublisherType {
+  public enum Event {
+    case leftTriggered
+    case audioCallTriggered
+    case videoCallTriggered
+    case titleTrigger
+    case editPinnedMessages
+    case dismissTriggered
+    public static func == (a: NetAloCoreComponent.NavigationChatHeader.Event, b: NetAloCoreComponent.NavigationChatHeader.Event) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) final public let eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.NavigationChatHeader.Event>
+  public enum State {
+    case leftImage(UIKit.UIImage)
+    case titleAndImage(title: Swift.String, imagePath: Swift.String?)
+    case subtitle(Swift.String?)
+    case isAudioCallEnable(Swift.Bool)
+    case isVideoCallEnable(Swift.Bool)
+    case hideSeparatorView(Swift.Bool)
+    case hideAccessory(Swift.Bool)
+    case listPinnedMessages
+  }
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var vListPinHeader: NetAloCoreComponent.NavigationHeaderView!
+  @_Concurrency.MainActor(unsafe) public var chatColors: NATheme.ChatColors {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func set(states: [NetAloCoreComponent.NavigationChatHeader.State])
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class ProfileHeaderComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.ProfileHeaderCell, NetAloCoreComponent.NABaseVM, NADomain.NAUser> {
+  public enum Event {
+    case chat(user: NADomain.NAUser)
+    case voiceCall(user: NADomain.NAUser)
+    case videoCall(user: NADomain.NAUser)
+  }
+  public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.ProfileHeaderComponent.Event>
+  public var blocked: Swift.Bool
+  public var isFriend: Swift.Bool
+  public init(user: NADomain.NAUser, blocked: Swift.Bool = true, isFriend: Swift.Bool = true, tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ProfileHeaderComponent.Event>)
+  override public func config(content: NetAloCoreComponent.ProfileHeaderCell, data: NADomain.NAUser, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class GPSInfoView : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func setData(address: Swift.String, time: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct GroupHistoryCall {
+  public init(isMissCall: Swift.Bool, call: [NADomain.NACall], uins: [Swift.String])
+  public let isMissCall: Swift.Bool
+  public let call: [NADomain.NACall]
+  public let uins: [Swift.String]
+}
+extension NetAloCoreComponent.GroupHistoryCall : Swift.Hashable {
+  public static func == (lhs: NetAloCoreComponent.GroupHistoryCall, rhs: NetAloCoreComponent.GroupHistoryCall) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension NADomain.NAMessageKind {
+  indirect public enum Output {
+    case unknown
+    case firstMessage(text: Swift.String, highlightText: Swift.String)
+    case text(Swift.String)
+    case images([NADomain.NAImage])
+    case call(NetAloCoreComponent.HistoryCallVM.Output)
+    case reply(text: Swift.String, message: NetAloCoreComponent.MessageVM.Output, mentions: [Swift.String : Swift.String])
+    case forward(text: Swift.String, message: NetAloCoreComponent.MessageVM.Output, mentions: [Swift.String : Swift.String])
+    case audio(audio: NADomain.NAAudio, text: Swift.String)
+    case groupUpdate(type: NADomain.NAGroupUpdateType, content: Swift.String)
+    case video(NADomain.NAVideo)
+    case leaveGroup(Swift.String)
+    case mention(text: Swift.String, mentions: [Swift.String : Swift.String])
+    case website(url: Swift.String, text: Swift.String?, mentions: [Swift.String : Swift.String])
+    case deleted(Swift.String)
+    case file(NADomain.NAFile)
+    case sticker(NADomain.NASticker.Output)
+    case screenshot(text: Swift.String, highlightText: Swift.String)
+    case location(NADomain.NALocation)
+    case liveLocation(NADomain.NALiveLocation)
+    case groupCall(NetAloCoreComponent.HistoryGroupCallVM.Output)
+    public func replaceMentionMarks() -> NADomain.NAMessageKind.Output
+  }
+}
+@_hasMissingDesignatedInitializers open class NAAlertSnackBar {
+  public static var isPresented: Swift.Bool {
+    get
+  }
+  public static func showSnackBar(message: Swift.String, duration: NetAloCoreComponent.TTGSnackbarDuration = .middle)
+  public static func dismissAll()
+  @objc deinit
+}
+public typealias SearchHeaderTyple = (title: Swift.String, isHiddenButton: Swift.Bool)
+open class SearchHeaderComponent : Carbon.IdentifiableComponent {
+  public init(data: NetAloCoreComponent.SearchHeaderTyple, deleteAllTrigger: RxSwift.PublishSubject<NetAloCoreComponent.SearchListView.Event>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.SearchHeaderCell
+  public func render(in content: NetAloCoreComponent.SearchHeaderCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.SearchHeaderCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.SearchHeaderCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class StickerStoreItemVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public enum Event {
+    case delete(NADomain.NAStickerInfo)
+    case add(NADomain.NAStickerInfo)
+    case hideAllSwipeItems
+  }
+  public var isForYou: Swift.Bool
+  public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.StickerStoreItemVM.Event>
+  public var hideSwipedPublisher: RxSwift.PublishSubject<Swift.Void>
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.StickerStoreItemVM.Input) -> NetAloCoreComponent.StickerStoreItemVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum PermissionType {
+  case contacts
+  case camera
+  case microPhone
+  case photos
+  case notifications(UserNotifications.UNAuthorizationOptions)
+  case trackUsage
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ItemActionCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func setUIForCell(itemAction: NetAloCoreComponent.ItemActionComponent.ItemAction)
+  @_Concurrency.MainActor(unsafe) override open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class StickerCategoryCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.StickerCategoryVM.Output)
+  @_Concurrency.MainActor(unsafe) public func toggleCellSelection(_ isSelected: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class ForwardContactComponent : Carbon.IdentifiableComponent {
+  public enum Event {
+    case contentTap(NADomain.NAContact)
+    case sendTap(NADomain.NAContact)
+  }
+  public init(contact: NADomain.NAContact, tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ForwardContactComponent.Event>)
+  public var id: NADomain.NAContact {
+    get
+  }
+  public var contact: NADomain.NAContact
+  public var tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ForwardContactComponent.Event>
+  public func renderContent() -> NetAloCoreComponent.ForwardCell
+  public func render(in content: NetAloCoreComponent.ForwardCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.ForwardCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.ForwardCell
+  public typealias ID = NADomain.NAContact
+  @objc deinit
+}
+open class EditGroupDescriptionComponent : Carbon.IdentifiableComponent {
+  public init(group: NADomain.NAGroup, textEvent: RxSwift.PublishSubject<Swift.String>)
+  public var id: NADomain.NAGroup {
+    get
+  }
+  public var group: NADomain.NAGroup
+  public var textEvent: RxSwift.PublishSubject<Swift.String>
+  public func renderContent() -> NetAloCoreComponent.EditGroupDescriptionCell
+  public func render(in content: NetAloCoreComponent.EditGroupDescriptionCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.EditGroupDescriptionCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.EditGroupDescriptionCell
+  public typealias ID = NADomain.NAGroup
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class FooterAccoutCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func configure(_ data: NetAloCoreComponent.NABuildVersion)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NABaseView : UIKit.UIView, NACoreUI.NibLoadable {
+  @Resolver.LazyInjected @_projectedValueProperty($themeManager) @_Concurrency.MainActor(unsafe) public var themeManager: NATheme.NAThemeServiceProtocol {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $themeManager: Resolver.LazyInjected<NATheme.NAThemeServiceProtocol> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var text: NALocalization.NAText {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var theme: NATheme.ThemeMode {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var themeService: NATheme.NAThemeServiceProtocol {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var disposeBag: RxSwift.DisposeBag
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) open func themeChanged()
+  @_Concurrency.MainActor(unsafe) open func initialize()
+  @_Concurrency.MainActor(unsafe) open func reset()
+  @_Concurrency.MainActor(unsafe) public func nibSetup()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TopicColorViewCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func config(data: [NATheme.ThemePrimaryColor])
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct NASetting {
+  public let id: Swift.String, name: Swift.String
+  public var image: UIKit.UIImage?
+  public let type: NetAloCoreComponent.SettingPosition
+  public let actionType: NetAloCoreComponent.ActionSettingType
+  public var info: Swift.String?
+  public init(name: Swift.String, type: NetAloCoreComponent.SettingPosition, id: NetAloCoreComponent.SettingType, image: UIKit.UIImage? = nil, info: Swift.String? = nil)
+  public init(actionType: NetAloCoreComponent.ActionSettingType, actionTitle: Swift.String, image: UIKit.UIImage?)
+}
+public struct NAReferralCode {
+  public let title: Swift.String
+  public let image: UIKit.UIImage?
+  public let subTitle: Swift.String
+  public init(title: Swift.String, image: UIKit.UIImage?, subTitle: Swift.String)
+}
+extension NetAloCoreComponent.NASetting : Swift.Hashable {
+  public static func == (lhs: NetAloCoreComponent.NASetting, rhs: NetAloCoreComponent.NASetting) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public enum SettingType : Swift.String {
+  case blockList
+  case notification
+  case topic
+  case language
+  case question
+  case rule
+  case support
+  case logout
+  case blockUser
+  case unblockUser
+  case addContact
+  case searchInConversation
+  case createGroup
+  case shareContact
+  case startSecretChat
+  case startNormalChat
+  case turnOnNotification
+  case turnOffNotification
+  case changeBackground
+  case addSubcriber
+  case shareChannelLink
+  case shareGroupLink
+  case addMember
+  case groupQRCode
+  case leaveGroup
+  case selectNewOwner
+  case moveMember
+  case adminList
+  case disbandChannel
+  case disbandGroup
+  case revokeLink
+  case copyLink
+  case showLink
+  case createGroupLink
+  case forward
+  case share
+  case deleteContact
+  case reply
+  case copy
+  case delete
+  case unpin
+  case pin
+  case invitedToUseTheAppNow
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SettingPosition {
+  case top
+  case bottom
+  case center
+  case single
+  public static func == (a: NetAloCoreComponent.SettingPosition, b: NetAloCoreComponent.SettingPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ActionSettingType {
+  case reply
+  case copy
+  case forward
+  case share
+  case delete
+  case unpin
+  case pin
+  case edit
+  case none
+  public static func == (a: NetAloCoreComponent.ActionSettingType, b: NetAloCoreComponent.ActionSettingType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+open class EmptyComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.EmptyCell, NetAloCoreComponent.EmptyVM, NetAloCoreComponent.EmptyItem> {
+  final public let trigger: RxSwift.PublishSubject<(NetAloCoreComponent.EmptyItem?)>
+  public init(data: NetAloCoreComponent.EmptyItem, trigger: RxSwift.PublishSubject<(NetAloCoreComponent.EmptyItem?)>)
+  override public func config(content: NetAloCoreComponent.EmptyCell, data: NetAloCoreComponent.EmptyItem, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GroupCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) final public let hideAllRightButtonsTriggered: RxSwift.PublishSubject<Swift.Void>
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) public func hideSwipedCell()
+  @_Concurrency.MainActor(unsafe) public func hideAllSwipedCells()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NetAloCoreComponent.GroupCell : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+public struct Header : Carbon.Component {
+  public var title: Swift.String
+  public var fontFormat: Swift.String
+  public var height: CoreGraphics.CGFloat
+  public var headerType: NetAloCoreComponent.HeaderContent.HeaderType
+  public init(_ title: Swift.String, headerType: NetAloCoreComponent.HeaderContent.HeaderType = .default, fontFormat: Swift.String = "G-DB-14", height: CoreGraphics.CGFloat = 32)
+  public func renderContent() -> NetAloCoreComponent.HeaderContent
+  public func render(in content: NetAloCoreComponent.HeaderContent)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.HeaderContent
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class HeaderContent : NetAloCoreComponent.NABaseView {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) final public var titleLabel: UIKit.UILabel!
+  public enum HeaderType {
+    case `default`, editGroup, locationPicker
+    public static func == (a: NetAloCoreComponent.HeaderContent.HeaderType, b: NetAloCoreComponent.HeaderContent.HeaderType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) final public var headerType: NetAloCoreComponent.HeaderContent.HeaderType
+  @_Concurrency.MainActor(unsafe) override final public func themeChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class TopicColorComponent : Carbon.IdentifiableComponent {
+  public var id: Swift.String {
+    get
+  }
+  public init(data: [NATheme.ThemePrimaryColor])
+  public func renderContent() -> NetAloCoreComponent.TopicColorViewCell
+  public func render(in content: NetAloCoreComponent.TopicColorViewCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.TopicColorViewCell)
+  public typealias Content = NetAloCoreComponent.TopicColorViewCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class SearchResultsVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public var text: NALocalization.NAText {
+    get
+  }
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.SearchResultsVM.Input) -> NetAloCoreComponent.SearchResultsVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class SettingComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.SettingCell, NetAloCoreComponent.NABaseVM, NetAloCoreComponent.NASetting> {
+  public var eventPublisher: RxSwift.PublishSubject<Swift.String>
+  public init(setting: NetAloCoreComponent.NASetting, tapGesture: RxSwift.PublishSubject<Swift.String>)
+  override public func config(content: NetAloCoreComponent.SettingCell, data: NetAloCoreComponent.NASetting, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+public struct PhotoAssetCollection : Swift.Equatable {
+  public var localIdentifier: Swift.String {
+    get
+  }
+  public var assetCollection: Photos.PHAssetCollection
+  public var fetchResult: Photos.PHFetchResult<Photos.PHAsset>
+  public var thumbnail: UIKit.UIImage?
+  public var title: Swift.String {
+    get
+  }
+  public var count: Swift.Int {
+    get
+  }
+  public var assetsInFetchResult: [Photos.PHAsset] {
+    get
+  }
+  public init(collection: Photos.PHAssetCollection, fetchResult: Photos.PHFetchResult<Photos.PHAsset>)
+  public static func == (lhs: NetAloCoreComponent.PhotoAssetCollection, rhs: NetAloCoreComponent.PhotoAssetCollection) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers open class GroupVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+    public init(group: NADomain.NAGroup)
+    public let group: NADomain.NAGroup
+  }
+  public struct Output {
+    public let name: RxSwift.Observable<Swift.String?>
+    public let avartar: RxSwift.Observable<(path: Swift.String?, name: Swift.String?)>
+    public let isOnline: RxSwift.Observable<Swift.Bool>
+    public let isSecret: Swift.Bool
+    public let isMuted: Swift.Bool
+    public let isPinned: Swift.Bool
+    public let lastMessage: NetAloCoreComponent.LastMessageVM.Output?
+    public let unreadCount: RxSwift.Observable<Swift.Int>
+    public let users: RxSwift.Observable<[NADomain.NAUser]>
+    public let membersCountOrStatus: RxSwift.Observable<Swift.String>
+    public let background: RxSwift.Observable<NADomain.NAGroupBackground>
+  }
+  public func transform(input: NetAloCoreComponent.GroupVM.Input) -> NetAloCoreComponent.GroupVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension NADomain.NALocalContact : NetAloCoreComponent.SortByName {
+}
+public class HistoryGroupCallVM : NACoreUtils.ViewModelType {
+  public init()
+  public struct Input {
+    public init(call: NADomain.NAGroupCall)
+  }
+  public struct Output {
+    public let duration: Swift.String
+    public let callType: NADomain.CallType
+    public let joinedUsers: RxSwift.Observable<[NADomain.NAUser]>
+    public let avatars: RxSwift.Observable<[(path: Swift.String?, name: Swift.String)]>
+    public let call: NADomain.NAGroupCall
+  }
+  public func transform(input: NetAloCoreComponent.HistoryGroupCallVM.Input) -> NetAloCoreComponent.HistoryGroupCallVM.Output
+  @objc deinit
+}
+open class AlbumItemComponent : Carbon.IdentifiableComponent {
+  public init(collection: NetAloCoreComponent.PhotoAssetCollection, tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.PhotoAssetCollection>, isSelected: Swift.Bool = false)
+  public var id: Swift.String {
+    get
+  }
+  public var collection: NetAloCoreComponent.PhotoAssetCollection
+  public var tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.PhotoAssetCollection>
+  public var isSelected: Swift.Bool
+  public func renderContent() -> NetAloCoreComponent.AlbumCell
+  public func render(in content: NetAloCoreComponent.AlbumCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.AlbumCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.AlbumCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+open class AccountReferralCodeComponet : Carbon.IdentifiableComponent {
+  public init(data: NetAloCoreComponent.NAReferralCode, selectedTrigger: RxSwift.PublishSubject<Swift.Void>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.AccountReferralCodeCell
+  public func render(in content: NetAloCoreComponent.AccountReferralCodeCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.AccountReferralCodeCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.AccountReferralCodeCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AccountSettingCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.AccountSettingVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TopicModeBaseOnSystemViewCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class UserItemComponent : Carbon.IdentifiableComponent {
+  public init(contact: NADomain.NAContact, btnDeleteTrigger: RxSwift.PublishSubject<NADomain.NAContact>)
+  public var id: NADomain.NAContact {
+    get
+  }
+  public var contact: NADomain.NAContact
+  public var btnDeleteTrigger: RxSwift.PublishSubject<NADomain.NAContact>
+  public func renderContent() -> NetAloCoreComponent.UserCell
+  public func render(in content: NetAloCoreComponent.UserCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.UserCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.UserCell
+  public typealias ID = NADomain.NAContact
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ContactListView : NetAloCoreComponent.NABaseView {
+  public enum ContactDisplayType {
+    case contactList
+    case createPublicChat
+    case createGroupChat
+    case inviteFriend
+    case createSecretChat
+    case listAdmin
+    case selectAddAdmin
+    public static func == (a: NetAloCoreComponent.ContactListView.ContactDisplayType, b: NetAloCoreComponent.ContactListView.ContactDisplayType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ContactRender {
+    case contactList(_: [NetAloCoreComponent.ItemActionComponent.ItemAction] = [], ([NetAloCoreComponent.AlphabeticalDataModel<NADomain.NAContact>], [NADomain.NAContact]), isShowSection: Swift.Bool)
+    case createPublicChat([NetAloCoreComponent.ItemActionComponent.ItemAction], [NetAloCoreComponent.AlphabeticalDataModel<NADomain.NAContact>])
+    case createSecretChat([NetAloCoreComponent.ItemActionComponent.ItemAction], [NetAloCoreComponent.AlphabeticalDataModel<NADomain.NAContact>])
+    case createGroupChat([NetAloCoreComponent.ItemActionComponent.ItemAction], [NetAloCoreComponent.AlphabeticalDataModel<NADomain.NAContact>], [NADomain.NAContact], _: NetAloCoreComponent.ContactListView.ContactDisplayType = .createGroupChat)
+    case inviteFriend([NetAloCoreComponent.ItemActionComponent.ItemAction], [NetAloCoreComponent.AlphabeticalDataModel<NADomain.NALocalContact>], [NADomain.NALocalContact])
+    case listAdmin([NetAloCoreComponent.ItemActionComponent.ItemAction], [NADomain.NAContact], [NADomain.NAContact])
+  }
+  @_Concurrency.MainActor(unsafe) public var addContactTrigger: RxSwift.Observable<NetAloCoreComponent.EmptyItem?> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var headerSelectTrigger: RxSwift.Observable<Swift.String> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var eventContactPublisher: RxSwift.PublishSubject<NetAloCoreComponent.ContactItemComponent.Event>
+  @_Concurrency.MainActor(unsafe) public var eventLocalContactPublisher: RxSwift.PublishSubject<NetAloCoreComponent.LocalContactItemComponent.Event>
+  @_Concurrency.MainActor(unsafe) public var refreshTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var loadmoreTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var allowsMultipleSelection: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func startRefreshContact()
+  @_Concurrency.MainActor(unsafe) public func endRefreshContact()
+  @_Concurrency.MainActor(unsafe) public func scrollToTop()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func render(_ data: NetAloCoreComponent.ContactListView.ContactRender)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum NATrackingEventType : Swift.Int {
+  case install
+  case open
+  case login
+  case register
+  case quickplay
+  case payment
+  case rtcStatistics
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct NATrackingEventParam {
+}
+public protocol InternalTracking {
+  func config(appId: Swift.String, appKey: Swift.String)
+  func track(event: NetAloCoreComponent.NATrackingEventType, params: Swift.Dictionary<Swift.String, Any>?)
+  func trackAppLaunch()
+}
+@objc @_inheritsConvenienceInitializers open class StickerCategoryVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.StickerCategoryVM.Input) -> NetAloCoreComponent.StickerCategoryVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class TopicModeViewComponent : Carbon.IdentifiableComponent {
+  public init()
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.TopicModeViewCell
+  public func render(in content: NetAloCoreComponent.TopicModeViewCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.TopicModeViewCell)
+  public typealias Content = NetAloCoreComponent.TopicModeViewCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+extension NetAloCoreComponent.NANotificationView {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public class func show(data: NetAloCoreComponent.NANotificationData?, onTap: (() -> Swift.Void)? = nil, onDidDismiss: (() -> Swift.Void)? = nil) -> NetAloCoreComponent.NANotificationView?
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class NANotificationView : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func show(onComplete: (() -> Swift.Void)?)
+  @_Concurrency.MainActor(unsafe) public func applyTheme()
+  @_Concurrency.MainActor(unsafe) public func dismiss(animated: Swift.Bool, onComplete: (() -> Swift.Void)?)
+  @objc deinit
+}
+extension NetAloCoreComponent.NANotificationView : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+extension NetAloCoreComponent.NAMediaManager {
+  open func checkPhotoLibraryPermission() -> RxSwift.Observable<Swift.Bool>
+  open func checkCameraPermission() -> RxSwift.Observable<Swift.Bool>
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GroupDetailHeaderView : NetAloCoreComponent.NABaseView {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var btnAvatar: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var ivAvatar: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var lbTitle: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var lbSubtitle: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var ivAvatar_top: UIKit.NSLayoutConstraint!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var lbDescription: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) final public let isUserData: Swift.Bool
+  @_Concurrency.MainActor(unsafe) final public let isConversationData: Swift.Bool
+  @_Concurrency.MainActor(unsafe) override open func initialize()
+  @_Concurrency.MainActor(unsafe) public func setTheme()
+  @_Concurrency.MainActor(unsafe) public func config(with output: NetAloCoreComponent.GroupDetailHeaderVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum LivePhotoDownloadEvent {
+  case progress(progress: Swift.Double, info: [Swift.AnyHashable : Any]?)
+  case complete(livePhoto: Photos.PHLivePhoto, info: [Swift.AnyHashable : Any]?)
+}
+public enum VideoDownloadEvent {
+  case progress(progress: Swift.Double, info: [Swift.AnyHashable : Any]?)
+  case complete(playerItem: AVFoundation.AVPlayerItem, info: [Swift.AnyHashable : Any]?)
+}
+public enum AVAssetDownloadEvent {
+  case progress(progress: Swift.Double, info: [Swift.AnyHashable : Any]?)
+  case complete(asset: AVFoundation.AVAsset, info: [Swift.AnyHashable : Any]?)
+}
+public enum CloudPhotoDownLoadEvent {
+  case progress(progress: Swift.Double, info: [Swift.AnyHashable : Any]?)
+  case complete(image: UIKit.UIImage, info: [Swift.AnyHashable : Any]?)
+}
+extension NetAloCoreComponent.NAMediaManager {
+  open func fetchCollections(assetCollectionTypes: [Photos.PHAssetCollectionSubtype], thumbnailImageSize: CoreGraphics.CGSize, options: Photos.PHFetchOptions? = nil) -> RxSwift.Observable<[NetAloCoreComponent.PhotoAssetCollection]>
+  open func image(for asset: Photos.PHAsset, size: CoreGraphics.CGSize = CGSize(width: 720, height: 1280), options: Photos.PHImageRequestOptions? = nil) -> RxSwift.Observable<UIKit.UIImage>
+  open func requestImage(for asset: Photos.PHAsset) -> RxSwift.Observable<UIKit.UIImage>
+  open func livePhoto(for asset: Photos.PHAsset, size: CoreGraphics.CGSize = CGSize(width: 720, height: 1280)) -> RxSwift.Observable<NetAloCoreComponent.LivePhotoDownloadEvent>
+  open func video(for asset: Photos.PHAsset, size: CoreGraphics.CGSize = CGSize(width: 720, height: 1280)) -> RxSwift.Observable<AVFoundation.AVPlayerItem>
+  open func videoAsset(for asset: Photos.PHAsset, size: CoreGraphics.CGSize = CGSize(width: 720, height: 1280), progressHandler: ((Swift.Double?) -> Swift.Void)? = nil) -> RxSwift.Observable<NetAloCoreComponent.VideoAsset>
+  open func avAsset(for asset: Photos.PHAsset, size: CoreGraphics.CGSize = CGSize(width: 720, height: 1280)) -> RxSwift.Observable<AVFoundation.AVAsset>
+  open func cloudImage(for asset: Photos.PHAsset, size: CoreGraphics.CGSize = PHImageManagerMaximumSize) -> RxSwift.Observable<NetAloCoreComponent.CloudPhotoDownLoadEvent>
+  open func fullResolutionImage(for asset: Photos.PHAsset) -> RxSwift.Observable<UIKit.UIImage>
+}
+@objc @_inheritsConvenienceInitializers public class MyAnnotation : ObjectiveC.NSObject, MapKit.MKAnnotation {
+  @objc dynamic public var coordinate: CoreLocation.CLLocationCoordinate2D
+  @objc public var title: Swift.String?
+  @objc public var subtitle: Swift.String?
+  public var image: UIKit.UIImage?
+  public var colour: UIKit.UIColor?
+  public var courseDegrees: Swift.Double!
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension XCoordinator.Transition {
+  public static func doNext(_ fun: @escaping () -> Swift.Void) -> XCoordinator.Transition<RootViewController>
+}
+open class ItemActionComponent : Carbon.IdentifiableComponent {
+  public struct ItemAction {
+    public enum ItemActionType {
+      case normal(UIKit.UIImage, Swift.String)
+      case add(UIKit.UIImage, Swift.String)
+      case inviteFriend(UIKit.UIImage)
+      case createGroup(UIKit.UIImage)
+      case createChannel(UIKit.UIImage)
+      case createSecretChat(UIKit.UIImage)
+    }
+    public init(id: Swift.String, type: NetAloCoreComponent.ItemActionComponent.ItemAction.ItemActionType)
+  }
+  public var id: Swift.String?
+  public init(itemAction: NetAloCoreComponent.ItemActionComponent.ItemAction, tapGesture: RxSwift.PublishSubject<Swift.String>)
+  public var tapGesture: RxSwift.PublishSubject<Swift.String>
+  public var itemAction: NetAloCoreComponent.ItemActionComponent.ItemAction
+  public func renderContent() -> NetAloCoreComponent.ItemActionCell
+  public func render(in content: NetAloCoreComponent.ItemActionCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.ItemActionCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.ItemActionCell
+  public typealias ID = Swift.String?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class EditGroupDescriptionCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public var limitCharacters: Swift.Int
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func setUIForCell(group: NADomain.NAGroup)
+  @_Concurrency.MainActor(unsafe) public func setLimitCharacterLable(text: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NADomain.NASticker {
+  public struct Output {
+    public let localPath: Foundation.URL?
+    public let stickerItem: NADomain.NAStickerItem?
+  }
+}
+extension UIKit.UIImage {
+  public static func fromGradient(_ gradient: QuartzCore.CAGradientLayer, frame: CoreGraphics.CGRect, cornerRadius: CoreGraphics.CGFloat = 0) -> UIKit.UIImage?
+  public static func fromColor(color: UIKit.UIColor, size: CoreGraphics.CGSize) -> UIKit.UIImage
+  public func resizeImage(newWidth: CoreGraphics.CGFloat) -> UIKit.UIImage
+  public func resizeImage(toFit size: CoreGraphics.CGSize) -> UIKit.UIImage
+  public func reduce(size: CoreGraphics.CGFloat) -> UIKit.UIImage
+  public func reduceWithImageIO(size: CoreGraphics.CGFloat) -> UIKit.UIImage
+}
+extension UIKit.UIImage {
+  public func putToCache(path: Swift.String, isPermanent: Swift.Bool = false)
+  public func putToCache(key: Swift.String, isPermanent: Swift.Bool = false)
+}
+extension UIKit.UIImage {
+  public func combineWith(image: UIKit.UIImage) -> UIKit.UIImage
+}
+extension Swift.Array where Element == Swift.String {
+  public func collageImagePaths() -> RxSwift.Single<[UIKit.UIImage]>
+}
+extension Swift.String {
+  public func collageImage() -> RxSwift.Single<UIKit.UIImage?>
+}
+open class StickerCategoryItemComponent : Carbon.IdentifiableComponent {
+  public init(category: NADomain.NAStickerCategory, tapGesture: RxSwift.PublishSubject<NADomain.NAStickerCategory>)
+  public var id: Swift.String {
+    get
+  }
+  public var category: NADomain.NAStickerCategory
+  public var tapGesture: RxSwift.PublishSubject<NADomain.NAStickerCategory>
+  public var isSelected: Swift.Bool {
+    get
+    set
+  }
+  public func renderContent() -> NetAloCoreComponent.StickerCategoryCell
+  public func render(in content: NetAloCoreComponent.StickerCategoryCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.StickerCategoryCell)
+  public func contentWillDisplay(_ content: NetAloCoreComponent.StickerCategoryCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.StickerCategoryCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+public protocol MapKitRepo {
+  var mapKitRegionWillChangeAnimated: RxSwift.Observable<Swift.Void> { get }
+  var imgUserAnnotation: RxRelay.BehaviorRelay<UIKit.UIImage?> { get }
+  func setupMapView(_ mapView: MapKit.MKMapView)
+  func setDelegate()
+  func showUserLocation(_ status: Swift.Bool)
+  func centerAnnotationLocation(_ location: CoreLocation.CLLocation)
+  func addAnnotation(coordinate: CoreLocation.CLLocationCoordinate2D)
+  func removeAllAnnotations()
+  func setMoveAnnotaion(from sourceCoordinate: CoreLocation.CLLocationCoordinate2D, to destinationCoordinate: CoreLocation.CLLocationCoordinate2D)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MapkitRepoImpl : ObjectiveC.NSObject, NetAloCoreComponent.MapKitRepo {
+  public var mapKitRegionWillChangeAnimated: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  public var imgUserAnnotation: RxRelay.BehaviorRelay<UIKit.UIImage?>
+  public func setupMapView(_ mapView: MapKit.MKMapView)
+  public func setDelegate()
+  public func showUserLocation(_ status: Swift.Bool)
+  public func centerAnnotationLocation(_ location: CoreLocation.CLLocation)
+  public func addAnnotation(coordinate: CoreLocation.CLLocationCoordinate2D)
+  public func removeAllAnnotations()
+  @objc deinit
+}
+extension NetAloCoreComponent.MapkitRepoImpl : MapKit.MKMapViewDelegate {
+  @objc dynamic public func mapView(_ mapView: MapKit.MKMapView, viewFor annotation: MapKit.MKAnnotation) -> MapKit.MKAnnotationView?
+  @objc dynamic public func mapView(_ mapView: MapKit.MKMapView, regionWillChangeAnimated animated: Swift.Bool)
+  @objc dynamic public func mapView(_ mapView: MapKit.MKMapView, didAdd views: [MapKit.MKAnnotationView])
+}
+extension NetAloCoreComponent.MapkitRepoImpl {
+  public func setMoveAnnotaion(from sourceCoordinate: CoreLocation.CLLocationCoordinate2D, to destinationCoordinate: CoreLocation.CLLocationCoordinate2D)
+}
+@objc @_inheritsConvenienceInitializers open class MessageVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+    public init(message: NADomain.NAMessage, group: NADomain.NAGroup, users: [NADomain.NAUser])
+    public let message: NADomain.NAMessage
+    public let group: NADomain.NAGroup
+    public let users: [NADomain.NAUser]
+  }
+  public struct Output {
+    public let isMissedCall: Swift.Bool
+    public let isFromCurrentUser: Swift.Bool
+    public let status: NADomain.NAMessageStatus
+    public let _sender: NADomain.NAUser
+    public let messageId: Swift.String
+    public let sentDate: Foundation.Date
+    public let _kind: NADomain.NAMessageKind.Output
+    public let groupType: NADomain.NAGroup.GroupType
+    public let mentionedUsers: [NADomain.NAUser]
+    public let message: NADomain.NAMessage
+  }
+  public func transform(input: NetAloCoreComponent.MessageVM.Input) -> NetAloCoreComponent.MessageVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func setSticker(url: Foundation.URL?, name: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func setImage(path: Swift.String?, placeHolder: UIKit.UIImage? = nil, expiration: Kingfisher.StorageExpiration? = nil)
+  @_Concurrency.MainActor(unsafe) public func setImage(path: Swift.String?, name: Swift.String = "", expiration: Kingfisher.StorageExpiration? = nil)
+  @_Concurrency.MainActor(unsafe) public func setImageAndDownsampling(_ urlString: Swift.String, placeholder: UIKit.UIImage? = nil)
+  @_Concurrency.MainActor(unsafe) public func setImage(url: Foundation.URL?, placeHolder: UIKit.UIImage? = nil, expiration: Kingfisher.StorageExpiration? = nil)
+  @_Concurrency.MainActor(unsafe) public func cancelImageDownloadTask()
+}
+extension RxSwift.Reactive where Base : UIKit.UIImageView {
+  public var pathOrName: RxSwift.Binder<(Swift.String?, Swift.String)> {
+    get
+  }
+  public var pathOrPlaceHolder: RxSwift.Binder<(Swift.String?, UIKit.UIImage?, Kingfisher.StorageExpiration?)> {
+    get
+  }
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func getImageFrameInImageView() -> CoreGraphics.CGRect
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class FileLibraryCell : NetAloCoreComponent.NABaseView {
+  @Resolver.LazyInjected @_projectedValueProperty($themeSerice) @_Concurrency.MainActor(unsafe) public var themeSerice: NATheme.NAThemeServiceProtocol {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $themeSerice: Resolver.LazyInjected<NATheme.NAThemeServiceProtocol> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func configure(_ data: NADomain.NAMediaLibraryModel)
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class ContactVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.ContactVM.Input) -> NetAloCoreComponent.ContactVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class ImagePickerComponent {
+  public init(photoAsset: NetAloCoreComponent.PhotoAsset, isEmpty: Swift.Bool = false)
+  public var id: Swift.String {
+    get
+  }
+  public var photoAsset: NetAloCoreComponent.PhotoAsset
+  public var isEmpty: Swift.Bool
+  public func config(in cell: NetAloCoreComponent.ImageCell)
+  public func updateSelection(isSelected: Swift.Bool, selectedOrder: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NavigationHeaderView : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public var leftTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var rightTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func loadingLeftIndicator(show: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setTitleHeader(text: Swift.String, fontFormat: Swift.String = "Q-B-20")
+  @_Concurrency.MainActor(unsafe) public func setSubtitleHeader(text: Swift.String, fontFormat: Swift.String = "R-R-14")
+  @_Concurrency.MainActor(unsafe) public func setLeftTitleButton(title: Swift.String, fontFormat: Swift.String = "R-R-14")
+  @_Concurrency.MainActor(unsafe) public func setLeftButton(isHidden: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setRightButton(isHidden: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func enableRightButton(_ isEnable: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setRightButton(isEnabled: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setStyleButtonRight(background: UIKit.UIColor, titleColor: UIKit.UIColor, height: CoreGraphics.CGFloat, borderRadius: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func setRightTitleButton(title: Swift.String, fontFormat: Swift.String = "R-R-14")
+  @_Concurrency.MainActor(unsafe) public func setSubtitleTextColor(_ color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func setTitleColor(_ color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func setBackgroundColor(_ color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func hideSeparateView(_ isHidden: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func setLeftButtonColor(_ color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func setTheme(titleColor: UIKit.UIColor, leftButtonColor: UIKit.UIColor, rightButtonColor: UIKit.UIColor, bgColor: UIKit.UIColor = .clear)
+  @_Concurrency.MainActor(unsafe) public func setIconButton(leftIcon: UIKit.UIImage?, rightIcon: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum GroupDetailHeaderType : Swift.Hashable {
+  public static func == (lhs: NetAloCoreComponent.GroupDetailHeaderType, rhs: NetAloCoreComponent.GroupDetailHeaderType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  case `default`(user: NADomain.NAUser, isExpand: Swift.Bool)
+  case userInContact(user: NADomain.NAUser, isUserInContact: Swift.Bool)
+  case group(NADomain.NAGroup)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+open class GroupDetailHeaderComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.GroupDetailHeaderView, NetAloCoreComponent.GroupDetailHeaderVM, NetAloCoreComponent.GroupDetailHeaderType> {
+  final public let tapAvatarTrigger: RxSwift.PublishSubject<Swift.Void>
+  public init(data: NetAloCoreComponent.GroupDetailHeaderType, tapAvatarTrigger: RxSwift.PublishSubject<Swift.Void>)
+  override public func config(content: NetAloCoreComponent.GroupDetailHeaderView, data: NetAloCoreComponent.GroupDetailHeaderType, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class HistoryCallBodyCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func setTheme()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.HistoryCallVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class BackgroundItemComponent : Carbon.IdentifiableComponent {
+  public init(background: NADomain.NAGroupBackground, tapGesture: RxSwift.PublishSubject<NADomain.NAGroupBackground>)
+  public var id: Swift.String {
+    get
+  }
+  public var background: NADomain.NAGroupBackground
+  public var tapGesture: RxSwift.PublishSubject<NADomain.NAGroupBackground>
+  public var isSelected: Swift.Bool {
+    get
+    set
+  }
+  public func renderContent() -> NetAloCoreComponent.BackgroundCell
+  public func render(in content: NetAloCoreComponent.BackgroundCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.BackgroundCell)
+  public func contentWillDisplay(_ content: NetAloCoreComponent.BackgroundCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.BackgroundCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NAActionSheet : NetAloCoreComponent.NABaseVC {
+  @_Concurrency.MainActor(unsafe) public func development(controller: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) public func withOk(controller: UIKit.UIViewController, title: Swift.String, message: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func withOk(controller: UIKit.UIViewController, title: Swift.String, message: Swift.String, ok: @escaping () -> ())
+  @_Concurrency.MainActor(unsafe) public func withOkCancel(controller: UIKit.UIViewController, title: Swift.String, message: Swift.String, ok: @escaping () -> ())
+  @_Concurrency.MainActor(unsafe) public func withInputNumber(controller: UIKit.UIViewController, title: Swift.String, content: Swift.String?, ok: @escaping (Swift.String) -> ())
+  @_Concurrency.MainActor(unsafe) public func withInputField(controller: UIKit.UIViewController, title: Swift.String, content: Swift.String? = nil, placeholder: Swift.String?, keyboardType: UIKit.UIKeyboardType? = .default, ok: @escaping (Swift.String) -> ())
+  @_Concurrency.MainActor(unsafe) public func actionSheet(controller: UIKit.UIViewController, title: Swift.String? = nil, message: Swift.String? = nil, actions: [UIKit.UIAlertAction])
+  @_Concurrency.MainActor(unsafe) public func actionSheet(title: Swift.String? = nil, message: Swift.String? = nil, actions: [UIKit.UIAlertAction], customTheme: Swift.Bool = false) -> UIKit.UIAlertController
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ForwardListView : NetAloCoreComponent.NABaseView {
+  public enum ForwardDisplayType {
+    case contactList
+    case groupList
+    public static func == (a: NetAloCoreComponent.ForwardListView.ForwardDisplayType, b: NetAloCoreComponent.ForwardListView.ForwardDisplayType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ForwardRender {
+    case forwardContact([NetAloCoreComponent.AlphabeticalDataModel<NADomain.NAContact>])
+    case forwardGroup([NADomain.NAGroup])
+  }
+  @_Concurrency.MainActor(unsafe) public var eventContactPublisher: RxSwift.PublishSubject<NetAloCoreComponent.ForwardContactComponent.Event>
+  @_Concurrency.MainActor(unsafe) public var eventGroupPublisher: RxSwift.PublishSubject<NetAloCoreComponent.ForwardGroupComponent.Event>
+  @_Concurrency.MainActor(unsafe) public var refreshTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var loadmoreTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var allowsMultipleSelection: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func startRefreshContact()
+  @_Concurrency.MainActor(unsafe) public func endRefreshContact()
+  @_Concurrency.MainActor(unsafe) public func scrollToTop()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func render(_ data: NetAloCoreComponent.ForwardListView.ForwardRender)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NADomain.NAUser {
+  public func displayName(forceName: Swift.Bool) -> Swift.String
+}
+@objc public class NAAlertVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+    public init(tapOutSide: RxSwift.Observable<Swift.Void>, actionFirst: RxCocoa.Signal<Swift.Void>, actionSecond: RxCocoa.Signal<Swift.Void>)
+  }
+  public struct Output {
+  }
+  public struct Action {
+    public var didActionFirst: RxSwift.Observable<Swift.Void> {
+      get
+    }
+    public var didActionSecond: RxSwift.Observable<Swift.Void> {
+      get
+    }
+    public var didActionDismiss: RxSwift.Observable<Swift.Void> {
+      get
+    }
+  }
+  final public let action: NetAloCoreComponent.NAAlertVM.Action
+  public init(_ alertType: NetAloCoreComponent.AlertType)
+  public func transform(input: NetAloCoreComponent.NAAlertVM.Input) -> NetAloCoreComponent.NAAlertVM.Output
+  @objc deinit
+}
+open class MediaDetailCellComponent : Carbon.IdentifiableComponent {
+  public var id: NADomain.NAMediaLibraryModel {
+    get
+  }
+  public init(data: NADomain.NAMediaLibraryModel, eventTrigger: RxSwift.PublishSubject<NetAloCoreComponent.MediaDetailCellVM.Event>)
+  public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.MediaDetailCellVM.Event>
+  public var data: NADomain.NAMediaLibraryModel
+  public func renderContent() -> NetAloCoreComponent.MediaDetailCell
+  public func render(in content: NetAloCoreComponent.MediaDetailCell)
+  public var isZoomed: Swift.Bool {
+    get
+  }
+  public var imageData: Foundation.Data? {
+    get
+  }
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.MediaDetailCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.MediaDetailCell
+  public typealias ID = NADomain.NAMediaLibraryModel
+  @objc deinit
+}
+extension NADomain.NAGroup : Swift.Hashable {
+  public static func == (lhs: NADomain.NAGroup, rhs: NADomain.NAGroup) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MapActionCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func setTheme()
+  @_Concurrency.MainActor(unsafe) public func setupUIForCell(actionItem: NetAloLite.MapActionItem)
+  @_Concurrency.MainActor(unsafe) public func setCountTimer(liveLocation: NADomain.NALiveLocation)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class StickerGroupVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.StickerGroupVM.Input) -> NetAloCoreComponent.StickerGroupVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct Spacing : Carbon.Component {
+  public var height: CoreGraphics.CGFloat
+  public init(_ height: CoreGraphics.CGFloat)
+  public func renderContent() -> UIKit.UIView
+  public func render(in content: UIKit.UIView)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = UIKit.UIView
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class ContactHeaderView : UIKit.UIView, NACoreUI.NibLoadable {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var vContent: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var ivAvatar: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var lbTitle: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var lbSubtitle: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var ivAvatar_top: UIKit.NSLayoutConstraint!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var lbDescription: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) final public let isUserData: Swift.Bool
+  @_Concurrency.MainActor(unsafe) final public let isConversationData: Swift.Bool
+  @_Concurrency.MainActor(unsafe) final public let refreshThemeTrigger: RxSwift.PublishSubject<Swift.Void>
+  @_Concurrency.MainActor(unsafe) public var theme: NATheme.ThemeMode {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func awakeFromNib()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class BlockContactVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.BlockContactVM.Input) -> NetAloCoreComponent.BlockContactVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class FileLibraryComponent : Carbon.IdentifiableComponent {
+  public var id: NADomain.NAMediaLibraryModel {
+    get
+  }
+  public init(data: NADomain.NAMediaLibraryModel, selectedTrigger: RxSwift.PublishSubject<NADomain.NAMediaLibraryModel>)
+  public var selectedMedia: RxSwift.PublishSubject<NADomain.NAMediaLibraryModel>
+  public var data: NADomain.NAMediaLibraryModel
+  public func renderContent() -> NetAloCoreComponent.FileLibraryCell
+  public func render(in content: NetAloCoreComponent.FileLibraryCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.FileLibraryCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.FileLibraryCell
+  public typealias ID = NADomain.NAMediaLibraryModel
+  @objc deinit
+}
+public protocol AttachmentsDownloader {
+  func downloadAttachments(for message: NADomain.NAMessage) -> RxSwift.Observable<Foundation.URL?>
+  func downloadAttachments(for mediaLibraryModel: NADomain.NAMediaLibraryModel) -> RxSwift.Observable<Foundation.URL?>
+  func downloadImage(url: Foundation.URL, for message: NADomain.NAMessage) -> RxSwift.Observable<Foundation.URL?>
+}
+@objc @_inheritsConvenienceInitializers open class AttachmentsDownloaderImp : ObjectiveC.NSObject, NetAloCoreComponent.AttachmentsDownloader {
+  public func downloadAttachments(for message: NADomain.NAMessage) -> RxSwift.Observable<Foundation.URL?>
+  public func downloadAttachments(for mediaLibraryModel: NADomain.NAMediaLibraryModel) -> RxSwift.Observable<Foundation.URL?>
+  public func downloadImage(url: Foundation.URL, for message: NADomain.NAMessage) -> RxSwift.Observable<Foundation.URL?>
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SearchResultCell : NetAloCoreComponent.NABaseTableViewCell {
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func resetContent()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.SearchResultsVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class StickerVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.StickerVM.Input) -> NetAloCoreComponent.StickerVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PermissionSet {
+  final public let permissions: Swift.Set<NetAloCoreComponent.Permission>
+  convenience public init(_ permissions: [NetAloCoreComponent.Permission] = [Permission(type: .microPhone),
+                                                           Permission(type: .trackUsage)])
+  public func request() -> RxSwift.Single<[(NetAloCoreComponent.PermissionType, NetAloCoreComponent.PermissionStatus)]>
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BackgroundCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) override open func initialize()
+  @_Concurrency.MainActor(unsafe) override open func reset()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.BackgroundVM.Output)
+  @_Concurrency.MainActor(unsafe) public func toggleSelection(_ isSelected: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class AlbumVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.AlbumVM.Input) -> NetAloCoreComponent.AlbumVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class RecentContactCollectionComponent : Carbon.IdentifiableComponent {
+  public init(data: [NADomain.NAContact], selectedTrigger: RxSwift.PublishSubject<NetAloCoreComponent.SearchListView.Event>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.RecentContactCollectionCell
+  public func render(in content: NetAloCoreComponent.RecentContactCollectionCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.RecentContactCollectionCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.RecentContactCollectionCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+public enum FormatDate {
+  case fullDate
+  case date
+  public static func == (a: NetAloCoreComponent.FormatDate, b: NetAloCoreComponent.FormatDate) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol TimeFormatter {
+  func timeAndFullDate(interval: Swift.Int) -> Swift.String
+  func fullDateAndTime(interval: Swift.Int) -> Swift.String
+  func fullCurrentDateTime() -> Swift.String
+  func fullDate(interval: Swift.Int) -> Swift.String
+  func date(interval: Swift.Int) -> Swift.String
+  func time(interval: Swift.Int) -> Swift.String
+  func toCurrencyFrom(number: Swift.Double) -> Swift.String
+  func getTimeStringFrom(interval: Swift.Int) -> Swift.String
+  func weekAndFullDate(interval: Swift.Int) -> Swift.String
+  func week(interval: Swift.Int) -> Swift.String
+  func timeAgo(from interval: Foundation.TimeInterval, format: NetAloCoreComponent.FormatDate) -> Swift.String
+  func onlineStatusTimeAgo(from interval: Foundation.TimeInterval) -> Swift.String
+  func getTime(interval: Swift.Int) -> Swift.String
+}
+@_hasMissingDesignatedInitializers public class TimeFormaterImpl : NetAloCoreComponent.TimeFormatter {
+  public func timeAndFullDate(interval: Swift.Int) -> Swift.String
+  public func fullDateAndTime(interval: Swift.Int) -> Swift.String
+  public func fullDate(interval: Swift.Int) -> Swift.String
+  public func date(interval: Swift.Int) -> Swift.String
+  public func time(interval: Swift.Int) -> Swift.String
+  public func toCurrencyFrom(number: Swift.Double) -> Swift.String
+  public func getTimeStringFrom(interval: Swift.Int) -> Swift.String
+  public func getTime(interval: Swift.Int) -> Swift.String
+  public func weekAndFullDate(interval: Swift.Int) -> Swift.String
+  public func fullCurrentDateTime() -> Swift.String
+  public func week(interval: Swift.Int) -> Swift.String
+  public func distanceTime(from interval: Foundation.TimeInterval) -> [Swift.Int]
+  public func timeAgo(from interval: Foundation.TimeInterval, format: NetAloCoreComponent.FormatDate = .fullDate) -> Swift.String
+  public func onlineStatusTimeAgo(from interval: Foundation.TimeInterval) -> Swift.String
+  @objc deinit
+}
+open class ContactItemComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.ContactCell, NetAloCoreComponent.ContactVM, NADomain.NAContact> {
+  public enum Event {
+    case contentTap(NADomain.NAContact)
+    case selectionTap(NADomain.NAContact)
+    case videoCall(NADomain.NAContact)
+    case voiceCall(NADomain.NAContact)
+    case forwardMessage(NADomain.NAContact)
+  }
+  public var displayType: NetAloCoreComponent.ContactListView.ContactDisplayType
+  public var tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ContactItemComponent.Event>
+  public var isSelected: Swift.Bool
+  public init(displayType: NetAloCoreComponent.ContactListView.ContactDisplayType, contact: NADomain.NAContact, tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ContactItemComponent.Event>, isSelected: Swift.Bool = false)
+  override public func config(content: NetAloCoreComponent.ContactCell, data: NADomain.NAContact, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class ImageCellVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public var image: RxRelay.BehaviorRelay<UIKit.UIImage?>
+  public var isSelected: RxSwift.PublishSubject<Swift.Bool>
+  public var selectedOrder: RxSwift.PublishSubject<Swift.Int>
+  @objc deinit
+  public func transform(input: NetAloCoreComponent.ImageCellVM.Input) -> NetAloCoreComponent.ImageCellVM.Output
+  @objc override dynamic public init()
+}
+open class SearchSeeMoreComponent : Carbon.IdentifiableComponent {
+  public init(title: Swift.String = "", isShowFull: Swift.Bool = false, selectedTrigger: RxSwift.PublishSubject<NetAloCoreComponent.SearchListView.Event>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.SearchSeeMoreCell
+  public func render(in content: NetAloCoreComponent.SearchSeeMoreCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.SearchSeeMoreCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.SearchSeeMoreCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class LeftIconButtonView : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public var buttonTrigger: RxSwift.Observable<Swift.Bool> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var contentTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func setTitleButton(title: Swift.String, fontFormat: Swift.String = "R-R-16")
+  @_Concurrency.MainActor(unsafe) public func setThemeColor(textColor: UIKit.UIColor, image: UIKit.UIImage)
+  @_Concurrency.MainActor(unsafe) public func setSelectedButton(isSelected: Swift.Bool, iconSelected: UIKit.UIImage, iconDeSelected: UIKit.UIImage)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GroupMemberCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) final public let hideAllRightButtonsTriggered: RxSwift.PublishSubject<Swift.Void>
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) override open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.GroupMemberVM.Output)
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.GroupOwnerVM.Output, isSelected: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func toggleCellSelection(isSelected: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NetAloCoreComponent.GroupMemberCell : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+extension NetAloCoreComponent.NAMediaManager {
+  open func startCaching(assets: [Photos.PHAsset], targetSize: CoreGraphics.CGSize, contentMode: Photos.PHImageContentMode, options: Photos.PHImageRequestOptions?)
+  open func stopCaching(assets: [Photos.PHAsset], targetSize: CoreGraphics.CGSize, contentMode: Photos.PHImageContentMode, options: Photos.PHImageRequestOptions?)
+  open func stopCachingForAllAssets()
+  open func cancel(imageRequest requestID: Photos.PHImageRequestID)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CountryCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.CountryVM.Output)
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class GroupComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.GroupCell, NetAloCoreComponent.GroupVM, NADomain.NAGroup> {
+  public init(data: NADomain.NAGroup, trigger: RxSwift.PublishSubject<(data: NADomain.NAGroup, action: NetAloCoreComponent.GroupComponent.Action)>, hideSwipe: RxSwift.Observable<Swift.Void>)
+  public enum Action {
+    case select
+    case delete
+    case hide
+    case others
+    case hideAllSwipeItems
+    public static func == (a: NetAloCoreComponent.GroupComponent.Action, b: NetAloCoreComponent.GroupComponent.Action) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  final public let trigger: RxSwift.PublishSubject<(data: NADomain.NAGroup, action: NetAloCoreComponent.GroupComponent.Action)>
+  final public let hideSwipe: RxSwift.Observable<Swift.Void>
+  override open func config(content: NetAloCoreComponent.GroupCell, data: NADomain.NAGroup, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  @objc deinit
+}
+open class MapActionItemComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.MapActionCell, NetAloCoreComponent.NABaseVM, NetAloLite.MapActionItem> {
+  public var eventPublisher: RxSwift.PublishSubject<NetAloLite.MapActionItem>
+  public var isEnable: RxSwift.Observable<Swift.Bool>
+  public var liveLocation: NADomain.NALiveLocation?
+  public init(mapAction: NetAloLite.MapActionItem, liveLocation: NADomain.NALiveLocation? = nil, tapGesture: RxSwift.PublishSubject<NetAloLite.MapActionItem>, isEnable: RxSwift.Observable<Swift.Bool>)
+  override public func config(content: NetAloCoreComponent.MapActionCell, data: NetAloLite.MapActionItem, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UserGroupHeaderOrFooterCell : NetAloCoreComponent.NABaseView {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var lbTitle: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NavigationHeader : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public var leftTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var rightTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func setTitleHeader(text: Swift.String, fontFormat: Swift.String = "Q-B-20")
+  @_Concurrency.MainActor(unsafe) public func setLeftTitleButton(title: Swift.String, fontFormat: Swift.String = "Q-B-18")
+  @_Concurrency.MainActor(unsafe) public func setRightTitleButton(title: Swift.String, fontFormat: Swift.String = "Q-B-18")
+  @_Concurrency.MainActor(unsafe) public func setTheme(titleColor: UIKit.UIColor, leftButtonColor: UIKit.UIColor = .clear, rightButtonColor: UIKit.UIColor = .clear, bgColor: UIKit.UIColor = .clear)
+  @_Concurrency.MainActor(unsafe) public func setIconButton(leftIcon: UIKit.UIImage?, rightIcon: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) public func setLeftButton(isHidden: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setRightButton(isHidden: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func constraint(to view: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Photos.PHAsset {
+  public func getURL() -> RxSwift.Observable<Foundation.URL?>
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SettingGroupCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func setUIForCell(setting: NetAloCoreComponent.NASetting)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class GroupListView : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) final public let refreshControl: UIKit.UIRefreshControl
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var tableView: UIKit.UITableView!
+  @_Concurrency.MainActor(unsafe) public var refreshTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var loadmoreTrigger: RxSwift.Observable<Swift.Void> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public let newConversationTrigger: RxSwift.PublishSubject<NetAloCoreComponent.EmptyItem?>
+  @_Concurrency.MainActor(unsafe) final public let hideSwipeCellTrigger: RxSwift.PublishSubject<Swift.Void>
+  @_Concurrency.MainActor(unsafe) final public let groupItemTrigger: RxSwift.PublishSubject<(data: NADomain.NAGroup, action: NetAloCoreComponent.GroupComponent.Action)>
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func startRefreshData()
+  @_Concurrency.MainActor(unsafe) public func endRefreshData()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func render(groups: [NADomain.NAGroup])
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum NotificationParam {
+  case message(NADomain.NAMessage)
+}
+public protocol NotificationPesentableCoordinator {
+  func canPresent(notication: NetAloCoreComponent.NotificationParam) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BlockContactCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.BlockContactVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class LocalContactItemComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.ContactCell, NetAloCoreComponent.LocalContactVM, NADomain.NALocalContact> {
+  public enum Event {
+    case contentTap(NADomain.NALocalContact)
+    case selectionTap(NADomain.NALocalContact)
+  }
+  public init(displayType: NetAloCoreComponent.ContactListView.ContactDisplayType, localContact: NADomain.NALocalContact, tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.LocalContactItemComponent.Event>, isSelected: Swift.Bool = false)
+  override public func config(content: NetAloCoreComponent.ContactCell, data: NADomain.NALocalContact, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class StickerFlowLayoutAdapter : Carbon.UICollectionViewFlowLayoutAdapter {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForFooterInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, insetForSectionAt section: Swift.Int) -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreGraphics.CGFloat
+  override public init(data: [Carbon.Section] = super)
+  @objc deinit
+}
+public struct MentionModel {
+  public var data: Any?
+  public var id: Swift.String
+  public var text: Swift.String
+  public var range: Foundation.NSRange
+  public init(data: Any?, id: Swift.String = "", text: Swift.String, range: Foundation.NSRange = NSRange(location: 0, length: 0))
+}
+public protocol MentionDelegate : AnyObject {
+  func textView(_ textView: NetAloCoreComponent.ChatTextView, didChangeMentionableList mentionableList: [NetAloCoreComponent.MentionModel])
+  func textView(_ textView: NetAloCoreComponent.ChatTextView, didChangeMentionedList mentionedList: [NetAloCoreComponent.MentionModel])
+}
+public protocol ChatTextViewDelegate : AnyObject {
+  func textViewDidBeginEditing(_ textView: NetAloCoreComponent.ChatTextView)
+  func textViewDidEndEditing(_ textView: NetAloCoreComponent.ChatTextView)
+  func textViewDidChange(_ textView: NetAloCoreComponent.ChatTextView)
+  @discardableResult
+  func textView(_ textView: NetAloCoreComponent.ChatTextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class ChatTextView : UIKit.UITextView {
+  @_Concurrency.MainActor(unsafe) weak public var mentionDelegate: NetAloCoreComponent.MentionDelegate?
+  @_Concurrency.MainActor(unsafe) weak public var textViewDelegate: NetAloCoreComponent.ChatTextViewDelegate?
+  @_Concurrency.MainActor(unsafe) final public let placeholderLabel: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) open var normalTextColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) open var mentionTextColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public var mentioningEnabled: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var mentionableList: [NetAloCoreComponent.MentionModel]
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var placeholder: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var placeholderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var placeholderFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var text: Swift.String! {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var attributedText: Foundation.NSAttributedString! {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textContainerInset: UIKit.UIEdgeInsets {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect, textContainer: UIKit.NSTextContainer?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func updateMentionedList(model: NetAloCoreComponent.MentionModel)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func clearMentionedList()
+  @objc deinit
+}
+extension NetAloCoreComponent.ChatTextView : UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewShouldBeginEditing(_ textView: UIKit.UITextView) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewShouldEndEditing(_ textView: UIKit.UITextView) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewDidChange(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewDidChangeSelection(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+}
+open class StickerStoreItemComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.StickerStoreItemCell, NetAloCoreComponent.StickerStoreItemVM, NADomain.NAStickerInfo> {
+  public init(sticker: NADomain.NAStickerInfo, isForYou: Swift.Bool, eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.StickerStoreItemVM.Event>, hideSwipedPublisher: RxSwift.PublishSubject<Swift.Void>)
+  override public func config(content: NetAloCoreComponent.StickerStoreItemCell, data: NADomain.NAStickerInfo, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+open class TopicModeBaseOnSystemComponent : Carbon.IdentifiableComponent {
+  public init()
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.TopicModeBaseOnSystemViewCell
+  public func render(in content: NetAloCoreComponent.TopicModeBaseOnSystemViewCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.TopicModeBaseOnSystemViewCell)
+  public typealias Content = NetAloCoreComponent.TopicModeBaseOnSystemViewCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+public enum UserGroupHeaderOrFooterType {
+  case header
+  case footer
+  public static func == (a: NetAloCoreComponent.UserGroupHeaderOrFooterType, b: NetAloCoreComponent.UserGroupHeaderOrFooterType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+open class UserGroupHeaderOrFooterComponet : Carbon.IdentifiableComponent {
+  public init(_ type: NetAloCoreComponent.UserGroupHeaderOrFooterType = .header, data: Swift.String, isChannel: Swift.Bool = false, selectedTrigger: RxSwift.PublishSubject<Swift.Void>? = nil)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.UserGroupHeaderOrFooterCell
+  public func render(in content: NetAloCoreComponent.UserGroupHeaderOrFooterCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.UserGroupHeaderOrFooterCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.UserGroupHeaderOrFooterCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+public struct HeaderShareLink : Carbon.Component {
+  public var title: Swift.String
+  public var bgColor: UIKit.UIColor
+  public var textColor: UIKit.UIColor
+  public var fontFormat: Swift.String
+  public var height: Swift.Int
+  public init(_ title: Swift.String, bgColor: UIKit.UIColor, textColor: UIKit.UIColor, fontFormat: Swift.String = "R-R-12", height: Swift.Int = 50)
+  public func renderContent() -> NetAloCoreComponent.HeaderContent
+  public func render(in content: NetAloCoreComponent.HeaderContent)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.HeaderContent
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RecentContactCollectionCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func renderSection(data: [NADomain.NAContact], selectedTrigger: RxSwift.PublishSubject<NetAloCoreComponent.SearchListView.Event>)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public enum TTGSnackbarDuration : Swift.Int {
+  case short = 1
+  case middle = 3
+  case long = 5
+  case forever = 2147483647
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum TTGSnackbarAnimationType : Swift.Int {
+  case fadeInFadeOut
+  case slideFromBottomToTop
+  case slideFromBottomBackToBottom
+  case slideFromLeftToRight
+  case slideFromRightToLeft
+  case slideFromTopToBottom
+  case slideFromTopBackToTop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIColor {
+  @objc dynamic open class var ttgDefaultText: UIKit.UIColor {
+    @objc get
+  }
+  @objc dynamic open class var ttgDefaultBackground: UIKit.UIColor {
+    @objc get
+  }
+  @objc dynamic open class var ttgDefaultShadow: UIKit.UIColor {
+    @objc get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TTGSnackbar : NetAloCoreComponent.NABaseView {
+  @objc @_Concurrency.MainActor(unsafe) public static var snackbarDefaultFrame: CoreGraphics.CGRect
+  @objc @_Concurrency.MainActor(unsafe) public static var snackbarMinHeight: CoreGraphics.CGFloat
+  public typealias TTGActionBlock = (_ snackbar: NetAloCoreComponent.TTGSnackbar) -> Swift.Void
+  public typealias TTGDismissBlock = (_ snackbar: NetAloCoreComponent.TTGSnackbar) -> Swift.Void
+  public typealias TTGSwipeBlock = (_ snackbar: NetAloCoreComponent.TTGSnackbar, _ direction: UIKit.UISwipeGestureRecognizer.Direction) -> Swift.Void
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var onTapBlock: NetAloCoreComponent.TTGSnackbar.TTGActionBlock?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var onSwipeBlock: NetAloCoreComponent.TTGSnackbar.TTGSwipeBlock?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var shouldDismissOnSwipe: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var shouldActivateLeftAndRightMarginOnCustomContentView: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var shouldHonorSafeAreaLayoutGuides: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionBlock: NetAloCoreComponent.TTGSnackbar.TTGActionBlock?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionBlock: NetAloCoreComponent.TTGSnackbar.TTGActionBlock?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var dismissBlock: NetAloCoreComponent.TTGSnackbar.TTGDismissBlock?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var duration: NetAloCoreComponent.TTGSnackbarDuration
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var animationType: NetAloCoreComponent.TTGSnackbarAnimationType
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var animationDuration: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var _cornerRadius: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var _borderColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var _borderWidth: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var topMargin: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var bottomMargin: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var leftMargin: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var rightMargin: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var contentInset: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var messageContentInset: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var messageLabel: NetAloCoreComponent.TTGSnackbarLabel! {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var message: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var messageTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var messageTextFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var messageTextAlign: UIKit.NSTextAlignment {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionButton: UIKit.UIButton! {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionText: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionIcon: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionButton: UIKit.UIButton! {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionText: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionIcon: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionTextFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var secondActionTextFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionMaxWidth: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionTextNumberOfLines: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var iconImageView: UIKit.UIImageView! {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var icon: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var iconContentMode: UIKit.UIView.ContentMode {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var iconBackgroundColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var iconTintColor: UIKit.UIColor! {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var iconImageViewWidth: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var containerView: UIKit.UIView?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var customContentView: UIKit.UIView?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var separateViewBackgroundColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var activityIndicatorView: UIKit.UIActivityIndicatorView! {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var activityIndicatorViewStyle: UIKit.UIActivityIndicatorView.Style {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var activityIndicatorViewColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var animationSpringWithDamping: CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var animationInitialSpringVelocity: CoreGraphics.CGFloat
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc dynamic public init()
+  @objc @_Concurrency.MainActor(unsafe) public init(message: Swift.String, duration: NetAloCoreComponent.TTGSnackbarDuration)
+  @_Concurrency.MainActor(unsafe) public init(customContentView: UIKit.UIView, duration: NetAloCoreComponent.TTGSnackbarDuration)
+  @_Concurrency.MainActor(unsafe) public init(message: Swift.String, duration: NetAloCoreComponent.TTGSnackbarDuration, actionText: Swift.String, actionBlock: @escaping NetAloCoreComponent.TTGSnackbar.TTGActionBlock)
+  @_Concurrency.MainActor(unsafe) public init(message: Swift.String, duration: NetAloCoreComponent.TTGSnackbarDuration, actionText: Swift.String, messageFont: UIKit.UIFont, actionTextFont: UIKit.UIFont, actionBlock: @escaping NetAloCoreComponent.TTGSnackbar.TTGActionBlock)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+}
+extension NetAloCoreComponent.TTGSnackbar {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setUpDefaultUI(icon: UIKit.UIImage?, iconTintColor: UIKit.UIColor)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setThemes()
+}
+extension NetAloCoreComponent.TTGSnackbar {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func show()
+}
+extension NetAloCoreComponent.TTGSnackbar {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func dismiss()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TTGSnackbarLabel : UIKit.UILabel {
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var contentInset: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func drawText(in rect: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class FilterContactCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func setUIForCell(title: Swift.String, image: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public class NANotificationData : ObjectiveC.NSObject {
+  public var imageURL: Swift.String?
+  public var title: Swift.String?
+  public var message: Swift.String?
+  public init(imageURL: Swift.String?, title: Swift.String?, message: Swift.String?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers open class HistoryCallBodyComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.HistoryCallBodyCell, NetAloCoreComponent.HistoryCallVM, NADomain.NACall> {
+  override public init(data: NADomain.NACall)
+  override public func config(content: NetAloCoreComponent.HistoryCallBodyCell, data: NADomain.NACall, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MediaDetailCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public var longPressTrigger: RxSwift.PublishSubject<Swift.Void>
+  @_Concurrency.MainActor(unsafe) public var singleTapImageTrigger: RxSwift.PublishSubject<Swift.Void>
+  @_Concurrency.MainActor(unsafe) public var doubleTapImageTrigger: RxSwift.PublishSubject<Swift.Void>
+  @_Concurrency.MainActor(unsafe) public var errorTrigger: RxSwift.PublishSubject<Swift.Error?>
+  @_Concurrency.MainActor(unsafe) public var loadingIndicator: UIKit.UIActivityIndicatorView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.MediaDetailCellVM.Output)
+  @_Concurrency.MainActor(unsafe) public func showLoading()
+  @_Concurrency.MainActor(unsafe) public func hideLoading()
+  @_Concurrency.MainActor(unsafe) public func writeToPhotoAlbum()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NetAloCoreComponent.MediaDetailCell : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidZoom(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func viewForZooming(in scrollView: UIKit.UIScrollView) -> UIKit.UIView?
+}
+open class InviteFriendComponent : Carbon.IdentifiableComponent {
+  public init(data: NADomain.NALocalContact, invitePublisher: RxSwift.PublishSubject<NADomain.NALocalContact>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.InviteFriendCell
+  public func render(in content: NetAloCoreComponent.InviteFriendCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.InviteFriendCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.InviteFriendCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class StickerListView : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public var stickerSelectTrigger: RxSwift.Observable<NADomain.NAStickerItem> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func renderList(_ data: [NADomain.NAStickerItem])
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum NAAudioRecorderState {
+  case finish
+  case failed(Swift.String)
+  case recording
+  case ready
+  case error(Swift.Error)
+}
+public enum NAAudioRecorderEvent {
+  case didUpdateState(NetAloCoreComponent.NAAudioRecorderState)
+  case didUpdateCurrentTime(Foundation.TimeInterval)
+  case didFinishRecording(url: Foundation.URL, duration: Swift.Double)
+}
+open class MessageOptionsComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.SettingCell, NetAloCoreComponent.NABaseVM, NetAloCoreComponent.NASetting> {
+  public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.ActionSettingType>
+  public init(setting: NetAloCoreComponent.NASetting, tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ActionSettingType>)
+  override public func config(content: NetAloCoreComponent.SettingCell, data: NetAloCoreComponent.NASetting, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+open class RecentContactComponent : Carbon.IdentifiableComponent {
+  public init(data: NADomain.NAContact, selectedTrigger: RxSwift.PublishSubject<NetAloCoreComponent.SearchListView.Event>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.RecentContactCell
+  public func render(in content: NetAloCoreComponent.RecentContactCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.RecentContactCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.RecentContactCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class UserVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.UserVM.Input) -> NetAloCoreComponent.UserVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension NetAloCoreComponent.NAMediaManager : Photos.PHPhotoLibraryChangeObserver {
+  @objc dynamic open func photoLibraryDidChange(_ changeInstance: Photos.PHChange)
+}
+public enum PerformChangesEvent {
+  case completion(success: Swift.Bool)
+}
+extension NetAloCoreComponent.NAMediaManager {
+  open func performChanges(changeBlock: @escaping () -> Swift.Void) -> RxSwift.Observable<NetAloCoreComponent.PerformChangesEvent>
+  open func addChangeObserver()
+  open func removeChangeObserver()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class EmptyCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.EmptyVM.Output)
+  @_Concurrency.MainActor(unsafe) public func hideAddButton(type: NetAloCoreComponent.EmptyItemType)
+  @_Concurrency.MainActor(unsafe) public func setTheme()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct NABuildVersion {
+  public let releaseVersion: Swift.String
+  public let buildVersion: Swift.String
+  public init(_buildVersion: Swift.String, _releaseVersion: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers open class NABaseVM : ObjectiveC.NSObject {
+  public var disposeBag: RxSwift.DisposeBag
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func removeChild()
+}
+@objc @_inheritsConvenienceInitializers open class SearchHeaderVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.SearchHeaderVM.Input) -> NetAloCoreComponent.SearchHeaderVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol NAAudioRecorder {
+  var fileName: Swift.String { get set }
+  var limitRecordingTime: Swift.Double { get set }
+  var isRecording: Swift.Bool { get set }
+  var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.NAAudioRecorderEvent> { get }
+  func startRecording()
+  func stopRecording()
+  func checkRecordPermission() -> RxSwift.Observable<Swift.Bool>
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class NAAudioRecorderImpl : ObjectiveC.NSObject, NetAloCoreComponent.NAAudioRecorder {
+  public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.NAAudioRecorderEvent>
+  public var isRecording: Swift.Bool
+  public var fileName: Swift.String
+  public var url: Foundation.URL?
+  public var limitRecordingTime: Swift.Double
+  public func startRecording()
+  public func stopRecording()
+  public func checkRecordPermission() -> RxSwift.Observable<Swift.Bool>
+  @objc deinit
+}
+extension NetAloCoreComponent.NAAudioRecorderImpl : AVFAudio.AVAudioRecorderDelegate {
+  @objc dynamic public func audioRecorderDidFinishRecording(_ recorder: AVFAudio.AVAudioRecorder, successfully flag: Swift.Bool)
+  @objc dynamic public func audioRecorderEncodeErrorDidOccur(_ recorder: AVFAudio.AVAudioRecorder, error: Swift.Error?)
+}
+@_hasMissingDesignatedInitializers open class NAProgressHUD {
+  public static var presentingAlert: NetAloCoreComponent.NAProgressHUDView?
+  public static func present(message: Swift.String, style: NetAloCoreComponent.NAProgressHUDStyle)
+  public static func present(message: Swift.String, icon: UIKit.UIImage)
+  public static func updateAlert(message: Swift.String, style: NetAloCoreComponent.NAProgressHUDStyle)
+  public static func dismissPresentedAlert()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class StickerStoreItemCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) final public let hideAllRightButtonsTriggered: RxSwift.PublishSubject<Swift.Void>
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) override open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.StickerStoreItemVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NetAloCoreComponent.StickerStoreItemCell : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class EventNames {
+  public static let call: Swift.String
+  public static let message: Swift.String
+  public static let login: Swift.String
+  public static let register: Swift.String
+  public static let error: Swift.String
+  public static let allowContact: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class EventParams {
+  public static let callStatus: Swift.String
+  public static let calltype: Swift.String
+  public static let fromClass: Swift.String
+  public static let payload: Swift.String
+  public static let userId: Swift.String
+  public static let contactNumber: Swift.String
+  @objc deinit
+}
+public protocol AnalyticsProvider : UIKit.UIApplicationDelegate {
+  func configure()
+  func trackEvent(name: Swift.String, params: [Swift.String : Any])
+}
+public protocol AnalyticsManager : NetAloCoreComponent.AnalyticsProvider {
+  var analytics: [NetAloCoreComponent.AnalyticsProvider] { get set }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ImageUploadCell : UIKit.UIView, NACoreUI.NibLoadable {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc override dynamic public func awakeFromNib()
+  @objc deinit
+}
+public struct FooterAccoutComponent : Carbon.IdentifiableComponent {
+  public init(data: NetAloCoreComponent.NABuildVersion)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.FooterAccoutCell
+  public func render(in content: NetAloCoreComponent.FooterAccoutCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.FooterAccoutCell
+  public typealias ID = Swift.String
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SettingCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func setTheme()
+  @_Concurrency.MainActor(unsafe) public func setUIForCell(setting: NetAloCoreComponent.NASetting)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PinMessageView : NetAloCoreComponent.NABaseView, NACoreUtils.EventPublisherType {
+  public enum Event {
+    case tap
+    public static func == (a: NetAloCoreComponent.PinMessageView.Event, b: NetAloCoreComponent.PinMessageView.Event) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.PinMessageView.Event>
+  @_Concurrency.MainActor(unsafe) override open func initialize()
+  @_Concurrency.MainActor(unsafe) override open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func config(_ output: NetAloCoreComponent.LastMessageVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class HistoryCallComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.HistoryCallCell, NetAloCoreComponent.HistoryCallVM, NetAloCoreComponent.GroupHistoryCall> {
+  public enum Action {
+    case contentTap
+    case showLogs
+    case delete
+    case hideAllSwipeItems
+    public static func == (a: NetAloCoreComponent.HistoryCallComponent.Action, b: NetAloCoreComponent.HistoryCallComponent.Action) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  final public let hideSwipe: RxSwift.Observable<Swift.Void>
+  final public let trigger: RxSwift.PublishSubject<(data: NetAloCoreComponent.GroupHistoryCall, action: NetAloCoreComponent.HistoryCallComponent.Action)>
+  public init(data: NetAloCoreComponent.GroupHistoryCall, trigger: RxSwift.PublishSubject<(data: NetAloCoreComponent.GroupHistoryCall, action: NetAloCoreComponent.HistoryCallComponent.Action)>, hideSwipe: RxSwift.Observable<Swift.Void>)
+  override public func config(content: NetAloCoreComponent.HistoryCallCell, data: NetAloCoreComponent.GroupHistoryCall, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UIBaseTableViewComponentCell : UIKit.UITableViewCell, Carbon.ComponentRenderable {
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NABaseCollectionViewCell : UIKit.UICollectionViewCell {
+  @Resolver.LazyInjected @_projectedValueProperty($themeManager) @_Concurrency.MainActor(unsafe) public var themeManager: NATheme.NAThemeServiceProtocol {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $themeManager: Resolver.LazyInjected<NATheme.NAThemeServiceProtocol> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var text: NALocalization.NAText {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var theme: NATheme.ThemeMode {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var themeService: NATheme.NAThemeServiceProtocol {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var disposeBag: RxSwift.DisposeBag
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) open func themeChanged()
+  @_Concurrency.MainActor(unsafe) open func initialize()
+  @_Concurrency.MainActor(unsafe) open func reset()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NABaseTableViewCell : NetAloCoreComponent.UIBaseTableViewComponentCell, NACoreUI.NibLoadable {
+  @Resolver.LazyInjected @_projectedValueProperty($themeManager) @_Concurrency.MainActor(unsafe) public var themeManager: NATheme.NAThemeServiceProtocol {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $themeManager: Resolver.LazyInjected<NATheme.NAThemeServiceProtocol> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var text: NALocalization.NAText {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var theme: NATheme.ThemeMode {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var themeService: NATheme.NAThemeServiceProtocol {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var disposeBag: RxSwift.DisposeBag
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) open func themeChanged()
+  @_Concurrency.MainActor(unsafe) open func initialize()
+  @_Concurrency.MainActor(unsafe) open func reset()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class MediaDetailCellVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
+  public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.MediaDetailCellVM.Event>
+  public enum Event {
+    case longPress(NADomain.NAMediaLibraryModel?)
+    case save
+    case playVideo(NADomain.NAMediaLibraryModel)
+    case tapImage(NADomain.NAMediaLibraryModel)
+    case imageData(Foundation.Data)
+    case error(Swift.Error?)
+  }
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.MediaDetailCellVM.Input) -> NetAloCoreComponent.MediaDetailCellVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum EmptyItemType {
+  case call
+  case group
+  case contact
+  case mediaType
+  public static func == (a: NetAloCoreComponent.EmptyItemType, b: NetAloCoreComponent.EmptyItemType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct EmptyItem {
+  public var title: Swift.String
+  public var actionTitle: Swift.String
+  public var type: NetAloCoreComponent.EmptyItemType
+  public init(title: Swift.String, actionTitle: Swift.String, type: NetAloCoreComponent.EmptyItemType)
+}
+extension NetAloCoreComponent.EmptyItem : Swift.Hashable {
+  public static func == (lhs: NetAloCoreComponent.EmptyItem, rhs: NetAloCoreComponent.EmptyItem) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+open class EmptyVM : NACoreUtils.ViewModelType {
+  public init()
+  public struct Input {
+    public init(item: NetAloCoreComponent.EmptyItem)
+  }
+  public struct Output {
+    public let item: NetAloCoreComponent.EmptyItem
+  }
+  public func transform(input: NetAloCoreComponent.EmptyVM.Input) -> NetAloCoreComponent.EmptyVM.Output
+  @objc deinit
+}
+open class GroupOwnerComponent : Carbon.IdentifiableComponent {
+  public init(data: NADomain.NAUser, group: NADomain.NAGroup? = nil, isSelected: Swift.Bool = false, eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.GroupOwnerVM.Event>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.GroupMemberCell
+  public func render(in content: NetAloCoreComponent.GroupMemberCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.GroupMemberCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.GroupMemberCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+public struct Footer : Carbon.Component {
+  public var text: Swift.String
+  public init(_ text: Swift.String)
+  public func renderContent() -> NetAloCoreComponent.FooterContent
+  public func render(in content: NetAloCoreComponent.FooterContent)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.FooterContent
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class FooterContent : UIKit.UIView, NACoreUI.NibLoadable {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class StickerCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.StickerVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class InputBar : NetAloCoreComponent.NABaseView, NACoreUtils.EventPublisherType, NetAloCoreComponent.ChatTextViewDelegate, NetAloCoreComponent.MentionDelegate {
+  public enum Event {
+    case beginEditing
+    case endEditing
+    case didChangeText(Swift.String)
+    case shouldChange(text: Swift.String)
+    case send(text: Swift.String)
+    case pickerTrigger(isSelected: Swift.Bool)
+    case audioRecordTrigger
+    case stickerTrigger
+    case keyboardTrigger
+    case likeTrigger
+    case timerTrigger
+    case closeReply
+    case didChangeMentionedList([NetAloCoreComponent.MentionModel])
+    case didChangeMentionableList([NetAloCoreComponent.MentionModel])
+  }
+  @_Concurrency.MainActor(unsafe) public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.InputBar.Event>
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var tvMain: NetAloCoreComponent.ChatTextView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var btnEmoji: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) public var chatColors: NATheme.ChatColors {
+    get
+    set
+  }
+  public enum State {
+    case reply(NetAloCoreComponent.LastMessageVM.Output)
+    case forward(NetAloCoreComponent.LastMessageVM.Output)
+    case timer(Swift.Double?)
+    case none
+  }
+  @_Concurrency.MainActor(unsafe) override open func initialize()
+  @_Concurrency.MainActor(unsafe) override open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func config(_ state: NetAloCoreComponent.InputBar.State)
+  @_Concurrency.MainActor(unsafe) public func set(text: Swift.String?)
+  @_Concurrency.MainActor(unsafe) public func initState()
+  @_Concurrency.MainActor(unsafe) public func textViewDidBeginEditing(_ textView: NetAloCoreComponent.ChatTextView)
+  @_Concurrency.MainActor(unsafe) public func textViewDidEndEditing(_ textView: NetAloCoreComponent.ChatTextView)
+  @_Concurrency.MainActor(unsafe) public func textViewDidChange(_ textView: NetAloCoreComponent.ChatTextView)
+  @_Concurrency.MainActor(unsafe) public func textView(_ textView: NetAloCoreComponent.ChatTextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func textView(_ textView: NetAloCoreComponent.ChatTextView, didChangeMentionedList mentionedList: [NetAloCoreComponent.MentionModel])
+  @_Concurrency.MainActor(unsafe) public func textView(_ textView: NetAloCoreComponent.ChatTextView, didChangeMentionableList mentionableList: [NetAloCoreComponent.MentionModel])
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class ForwardContactVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.ForwardContactVM.Input) -> NetAloCoreComponent.ForwardContactVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class BackgroundVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.BackgroundVM.Input) -> NetAloCoreComponent.BackgroundVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NABaseVC : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
+  @Resolver.LazyInjected @_projectedValueProperty($localService) @_Concurrency.MainActor(unsafe) public var localService: NALocalization.NALocalizationProtocol {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $localService: Resolver.LazyInjected<NALocalization.NALocalizationProtocol> {
+    get
+    set
+  }
+  @Resolver.LazyInjected @_projectedValueProperty($themeManager) @_Concurrency.MainActor(unsafe) public var themeManager: NATheme.NAThemeServiceProtocol {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $themeManager: Resolver.LazyInjected<NATheme.NAThemeServiceProtocol> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var topSafeArea: CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) public var statusBarHeight: CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) public var bottomSafeArea: CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) public var tapToHideKeyboardEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var topBarHeight: CoreGraphics.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public let disposeBag: RxSwift.DisposeBag
+  @_Concurrency.MainActor(unsafe) public var text: NALocalization.NAText {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var theme: NATheme.ThemeMode {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var themeService: NATheme.NAThemeServiceProtocol {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var localizeService: NALocalization.NALocalizationProtocol {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var isDarkMode: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadView()
+  @_Concurrency.MainActor(unsafe) open func localizeChanged()
+  @_Concurrency.MainActor(unsafe) open func themeChanged()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public func registerApplicationDidBecomeActive()
+  @_Concurrency.MainActor(unsafe) public func registerApplicationWillEnterForeground()
+  @_Concurrency.MainActor(unsafe) open func applicationWillEnterForeground()
+  @_Concurrency.MainActor(unsafe) open func applicationDidBecomeActive()
+  @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RecentContactCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.RecentContactVM.Output)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc open class Permission : ObjectiveC.NSObject {
+  public init(type: NetAloCoreComponent.PermissionType)
+  final public let type: NetAloCoreComponent.PermissionType
+  open var status: NetAloCoreComponent.PermissionStatus {
+    get
+  }
+  open func request() -> RxSwift.Single<NetAloCoreComponent.PermissionStatus>
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class HistoryCallCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) final public let hideAllRightButtonsTriggered: RxSwift.PublishSubject<Swift.Void>
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) public func hideAllSwipedCells()
+  @_Concurrency.MainActor(unsafe) public func hideSwipedCell()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NetAloCoreComponent.HistoryCallCell : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+public enum PanDirection : Swift.Int {
+  case up, down, left, right
+  public var isVertical: Swift.Bool {
+    get
+  }
+  public var isHorizontal: Swift.Bool {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIPanGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) public var direction: NetAloCoreComponent.PanDirection? {
+    get
+  }
+}
+public enum AssetType {
+  case camera
+  case photo
+  case video
+  case livePhoto
+  public static func == (a: NetAloCoreComponent.AssetType, b: NetAloCoreComponent.AssetType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct PhotoAsset : Swift.Equatable {
+  public var localIdentifier: Swift.String {
+    get
+  }
+  public var asset: Photos.PHAsset
+  public var isSelected: Swift.Bool
+  public var selectedOrder: Swift.Int
+  public var playerItem: AVFoundation.AVPlayerItem?
+  public var livePhoto: Photos.PHLivePhoto?
+  public var duration: Foundation.TimeInterval?
+  public var type: NetAloCoreComponent.AssetType {
+    get
+  }
+  public var disposeBag: RxSwift.DisposeBag
+  public var originalFileName: Swift.String? {
+    get
+  }
+  public init(asset: Photos.PHAsset)
+  public static func == (lhs: NetAloCoreComponent.PhotoAsset, rhs: NetAloCoreComponent.PhotoAsset) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AlbumListView : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public var collectionSelectTrigger: RxSwift.Observable<NetAloCoreComponent.PhotoAssetCollection> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func renderList(collectionList: [NetAloCoreComponent.PhotoAssetCollection], selectedCollection: NetAloCoreComponent.PhotoAssetCollection?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class CountryComponent : Carbon.IdentifiableComponent {
+  public var data: NADomain.NACountryCode
+  final public let trigger: RxSwift.PublishSubject<(NADomain.NACountryCode)>
+  public init(data: NADomain.NACountryCode, trigger: RxSwift.PublishSubject<(NADomain.NACountryCode)>)
+  public var id: Swift.String {
+    get
+  }
+  public func renderContent() -> NetAloCoreComponent.CountryCell
+  public func render(in content: NetAloCoreComponent.CountryCell)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.CountryCell)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.CountryCell
+  public typealias ID = Swift.String
+  @objc deinit
+}
+public struct EmptySearchTextComponent : Carbon.IdentifiableComponent {
+  public var id: Swift.String {
+    get
+  }
+  public init(emptyStr: Swift.String)
+  public func renderContent() -> NetAloCoreComponent.EmptyTextContent
+  public func render(in content: NetAloCoreComponent.EmptyTextContent)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public typealias Content = NetAloCoreComponent.EmptyTextContent
+  public typealias ID = Swift.String
+}
+public enum SearchDefaultType {
+  case contact(searchText: Swift.String = "", contact: NADomain.NAContact, isShowLineView: Swift.Bool = true)
+  case group(searchText: Swift.String = "", group: NADomain.NAGroup)
+}
+public typealias SearchDefaultResult = ([NADomain.NAContact], [NetAloCoreComponent.SearchDefaultType])
+public typealias SearchResult = (contacts: [NADomain.NAContact], groups: [NADomain.NAGroup])
+public enum SearchType {
+  case invite
+  case add
+  case save
+  public static func == (a: NetAloCoreComponent.SearchType, b: NetAloCoreComponent.SearchType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SearchRender {
+  case firstLoad(NetAloCoreComponent.SearchDefaultResult)
+  case search(contacts: [NetAloCoreComponent.SearchDefaultType], groups: [NetAloCoreComponent.SearchDefaultType], isShowFull: Swift.Bool = false)
+  case other(NADomain.NALocalContact, type: NetAloCoreComponent.SearchType)
+  case none(Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SearchListView : NetAloCoreComponent.NABaseView, NACoreUtils.EventPublisherType {
+  @_Concurrency.MainActor(unsafe) final public let eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.SearchListView.Event>
+  public enum Event {
+    case headerClearAll
+    case loadMore
+    case showFull
+    case refresh
+    case contact(NADomain.NAContact)
+    case group(NADomain.NAGroup)
+    case add(NADomain.NAContact)
+    case invite(NADomain.NALocalContact)
+  }
+  @_Concurrency.MainActor(unsafe) final public let deletePublisher: RxSwift.PublishSubject<Swift.Void>
+  @_Concurrency.MainActor(unsafe) final public let addPublisher: RxSwift.PublishSubject<Swift.String>
+  @_Concurrency.MainActor(unsafe) final public let invitePublisher: RxSwift.PublishSubject<NADomain.NALocalContact>
+  @_Concurrency.MainActor(unsafe) final public let savePublisher: RxSwift.PublishSubject<Swift.String>
+  @_Concurrency.MainActor(unsafe) public var isRefreshing: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) public func startRefreshData()
+  @_Concurrency.MainActor(unsafe) public func endRefreshData()
+  @_Concurrency.MainActor(unsafe) public func scrollToTop()
+  @_Concurrency.MainActor(unsafe) override public func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func render(_ data: NetAloCoreComponent.SearchRender)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NetAloLite.EventRepo {
+  public var displaySocketState: RxCocoa.Driver<Swift.Bool> {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SearchSeeMoreCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) public func config(data: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class AccountSettingVM : NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public func transform(input: NetAloCoreComponent.AccountSettingVM.Input) -> NetAloCoreComponent.AccountSettingVM.Output
+  @objc deinit
+}
+open class MediaLibraryHeaderComponent : Carbon.IdentifiableComponent {
+  public var id: [Swift.String] {
+    get
+  }
+  public init(data: [Swift.String], selectedTrigger: RxSwift.PublishSubject<Swift.Int>)
+  public var selectedIndex: RxSwift.PublishSubject<Swift.Int>
+  public var data: [Swift.String]
+  public func renderContent() -> NetAloCoreComponent.MediaLibraryHeaderView
+  public func render(in content: NetAloCoreComponent.MediaLibraryHeaderView)
+  public func contentDidEndDisplay(_ content: NetAloCoreComponent.MediaLibraryHeaderView)
+  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
+  public func shouldRender(next: NetAloCoreComponent.MediaLibraryHeaderComponent, in content: NetAloCoreComponent.MediaLibraryHeaderView) -> Swift.Bool
+  public typealias Content = NetAloCoreComponent.MediaLibraryHeaderView
+  public typealias ID = [Swift.String]
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ImageLibraryCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func configure(_ data: NADomain.NAMediaLibraryModel)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NetAloCoreComponent.LastMessageVM.DisplayState : Swift.Equatable {}
+extension NetAloCoreComponent.LastMessageVM.DisplayState : Swift.Hashable {}
+extension NetAloCoreComponent.HistoryCallDirecion : Swift.Equatable {}
+extension NetAloCoreComponent.HistoryCallDirecion : Swift.Hashable {}
+extension NetAloCoreComponent.HistoryCallDirecion : Swift.RawRepresentable {}
+extension NetAloCoreComponent.HistoryCallMediaType : Swift.Equatable {}
+extension NetAloCoreComponent.HistoryCallMediaType : Swift.Hashable {}
+extension NetAloCoreComponent.HistoryCallMediaType : Swift.RawRepresentable {}
+extension NetAloCoreComponent.PermissionStatus : Swift.Equatable {}
+extension NetAloCoreComponent.PermissionStatus : Swift.Hashable {}
+extension NetAloCoreComponent.NAProgressHUDStyle : Swift.Equatable {}
+extension NetAloCoreComponent.NAProgressHUDStyle : Swift.Hashable {}
+extension NetAloCoreComponent.Descriptor : Swift.Equatable {}
+extension NetAloCoreComponent.Descriptor : Swift.Hashable {}
+extension NetAloCoreComponent.Descriptor : Swift.RawRepresentable {}
+extension NetAloCoreComponent.NavigationChatHeader.Event : Swift.Equatable {}
+extension NetAloCoreComponent.NavigationChatHeader.Event : Swift.Hashable {}
+extension NetAloCoreComponent.SettingType : Swift.Equatable {}
+extension NetAloCoreComponent.SettingType : Swift.Hashable {}
+extension NetAloCoreComponent.SettingType : Swift.RawRepresentable {}
+extension NetAloCoreComponent.SettingPosition : Swift.Equatable {}
+extension NetAloCoreComponent.SettingPosition : Swift.Hashable {}
+extension NetAloCoreComponent.ActionSettingType : Swift.Equatable {}
+extension NetAloCoreComponent.ActionSettingType : Swift.Hashable {}
+extension NetAloCoreComponent.HeaderContent.HeaderType : Swift.Equatable {}
+extension NetAloCoreComponent.HeaderContent.HeaderType : Swift.Hashable {}
+extension NetAloCoreComponent.ContactListView.ContactDisplayType : Swift.Equatable {}
+extension NetAloCoreComponent.ContactListView.ContactDisplayType : Swift.Hashable {}
+extension NetAloCoreComponent.NATrackingEventType : Swift.Equatable {}
+extension NetAloCoreComponent.NATrackingEventType : Swift.Hashable {}
+extension NetAloCoreComponent.NATrackingEventType : Swift.RawRepresentable {}
+extension NetAloCoreComponent.ForwardListView.ForwardDisplayType : Swift.Equatable {}
+extension NetAloCoreComponent.ForwardListView.ForwardDisplayType : Swift.Hashable {}
+extension NetAloCoreComponent.FormatDate : Swift.Equatable {}
+extension NetAloCoreComponent.FormatDate : Swift.Hashable {}
+extension NetAloCoreComponent.GroupComponent.Action : Swift.Equatable {}
+extension NetAloCoreComponent.GroupComponent.Action : Swift.Hashable {}
+extension NetAloCoreComponent.UserGroupHeaderOrFooterType : Swift.Equatable {}
+extension NetAloCoreComponent.UserGroupHeaderOrFooterType : Swift.Hashable {}
+extension NetAloCoreComponent.TTGSnackbarDuration : Swift.Equatable {}
+extension NetAloCoreComponent.TTGSnackbarDuration : Swift.Hashable {}
+extension NetAloCoreComponent.TTGSnackbarDuration : Swift.RawRepresentable {}
+extension NetAloCoreComponent.TTGSnackbarAnimationType : Swift.Equatable {}
+extension NetAloCoreComponent.TTGSnackbarAnimationType : Swift.Hashable {}
+extension NetAloCoreComponent.TTGSnackbarAnimationType : Swift.RawRepresentable {}
+extension NetAloCoreComponent.PinMessageView.Event : Swift.Equatable {}
+extension NetAloCoreComponent.PinMessageView.Event : Swift.Hashable {}
+extension NetAloCoreComponent.HistoryCallComponent.Action : Swift.Equatable {}
+extension NetAloCoreComponent.HistoryCallComponent.Action : Swift.Hashable {}
+extension NetAloCoreComponent.EmptyItemType : Swift.Equatable {}
+extension NetAloCoreComponent.EmptyItemType : Swift.Hashable {}
+extension NetAloCoreComponent.PanDirection : Swift.Equatable {}
+extension NetAloCoreComponent.PanDirection : Swift.Hashable {}
+extension NetAloCoreComponent.PanDirection : Swift.RawRepresentable {}
+extension NetAloCoreComponent.AssetType : Swift.Equatable {}
+extension NetAloCoreComponent.AssetType : Swift.Hashable {}
+extension NetAloCoreComponent.SearchType : Swift.Equatable {}
+extension NetAloCoreComponent.SearchType : Swift.Hashable {}

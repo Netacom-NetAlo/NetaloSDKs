@@ -1,0 +1,78 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NewGroupComponent
+import Carbon
+import MediaPickerComponent
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NANetworkPlatform
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+@_exported import NewGroupComponent
+import Resolver
+import RxCocoa
+import RxSwift
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+public enum CreateGroupViewType {
+  case createGroupChat(_: [NADomain.NAContact])
+  case createChannel
+  case addMembers(group: NADomain.NAGroup)
+}
+open class NewGroupComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case showChatWithContact(_: NADomain.NAContact)
+    case showChatWithGroup(_: NADomain.NAGroup)
+    case createSecretChat
+    case createGroupChat(groupType: NADomain.NADefines.GroupType)
+    case close
+    case releaseIfNeeded
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, viewType: NewGroupComponent.CreateGroupViewType? = nil)
+  }
+  public struct Output {
+    public let rootCoodinator: NewGroupComponent.NewGroupCoordinator
+    public let eventObservable: RxSwift.Observable<NewGroupComponent.NewGroupComponentManager.Event>
+  }
+  public func transform(input: NewGroupComponent.NewGroupComponentManager.Input) -> NewGroupComponent.NewGroupComponentManager.Output
+  @objc deinit
+}
+public enum NewGroupRoute : XCoordinator.Route {
+  case main
+  case createGroupChat(_: [NADomain.NAContact])
+  case createChannel
+  case releaseIfNeeded
+  case alert(NetAloCoreComponent.NAAlertVM)
+  case dismiss
+  case dismissAll
+  case openImagePicker(delegate: UIKit.UIViewController)
+  case addMembers(group: NADomain.NAGroup)
+  case dismissToRoot(() -> ())
+  case releaseImagePicker
+}
+public class NewGroupCoordinator : XCoordinator.NavigationCoordinator<NewGroupComponent.NewGroupRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<NewGroupComponent.NewGroupComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil, viewType: NewGroupComponent.CreateGroupViewType? = nil)
+  @objc deinit
+  override public func prepareTransition(for route: NewGroupComponent.NewGroupRoute) -> XCoordinator.NavigationTransition
+  override public var viewController: UIKit.UIViewController! {
+    get
+  }
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public func setImage(images: [UIKit.UIImage])
+  public typealias Event = NewGroupComponent.NewGroupComponentManager.Event
+}

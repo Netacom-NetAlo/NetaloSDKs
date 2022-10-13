@@ -1,0 +1,354 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NATheme
+import NACoreUI
+@_exported import NATheme
+import RxRelay
+import RxSwift
+import Swift
+import UIKit
+import _Concurrency
+@available(*, deprecated, renamed: "ImageAsset.Image", message: "This typealias will be removed in SwiftGen 7.0")
+public typealias AssetImageTypeAlias = NATheme.ImageAsset.Image
+public enum Asset {
+  public static let alertFailedIcon: NATheme.ImageAsset
+  public static let alertSuccessedIcon: NATheme.ImageAsset
+  public static let callLockIcon: NATheme.ImageAsset
+  public static let conversationAudioIcon: NATheme.ImageAsset
+  public static let conversationPhotoIcon: NATheme.ImageAsset
+  public static let conversationVideoIcon: NATheme.ImageAsset
+  public static let conversationVideoIconIn: NATheme.ImageAsset
+  public static let conversationVideoIconOut: NATheme.ImageAsset
+  public static let emptyCallImageBlue: NATheme.ImageAsset
+  public static let emptyCallImageOrange: NATheme.ImageAsset
+  public static let emptyCallImagePurple: NATheme.ImageAsset
+  public static let emptyCallImageDustyOrange: NATheme.ImageAsset
+  public static let emptyContactImageBlue: NATheme.ImageAsset
+  public static let emptyContactImageOrange: NATheme.ImageAsset
+  public static let emptyContactImagePurple: NATheme.ImageAsset
+  public static let emptyContactImageDustyOrange: NATheme.ImageAsset
+  public static let emptyMessageImageBlue: NATheme.ImageAsset
+  public static let emptyMessageImageOrange: NATheme.ImageAsset
+  public static let emptyMessageImagePurple: NATheme.ImageAsset
+  public static let emptyMessageImageDustyOrange: NATheme.ImageAsset
+  public static let imagePickerGradientBotBackground: NATheme.ImageAsset
+  public static let imagePickerGradientTopBackground: NATheme.ImageAsset
+  public static let navBarBackgroundBlueLight: NATheme.ImageAsset
+  public static let navBarBackgroundPurpleLight: NATheme.ImageAsset
+  public static let navBarBackgroundDustyOrangeLight: NATheme.ImageAsset
+  public static let navBarBackgroundDark: NATheme.ImageAsset
+  public static let navBarBackgroundOrangeLight: NATheme.ImageAsset
+  public static let addIcon: NATheme.ImageAsset
+  public static let audioCallIcon: NATheme.ImageAsset
+  public static let audioCallIconBlack: NATheme.ImageAsset
+  public static let avatarPlaceholderImage: NATheme.ImageAsset
+  public static let backIcon: NATheme.ImageAsset
+  public static let backIconBlack: NATheme.ImageAsset
+  public static let cameraIcon: NATheme.ImageAsset
+  public static let checkIcon: NATheme.ImageAsset
+  public static let checkboxIcon: NATheme.ImageAsset
+  public static let checkboxIconSelected: NATheme.ImageAsset
+  public static let closeIcon: NATheme.ImageAsset
+  public static let copyIcon: NATheme.ImageAsset
+  public static let deleteIcon: NATheme.ImageAsset
+  public static let editIcon: NATheme.ImageAsset
+  public static let faqIcon: NATheme.ImageAsset
+  public static let forwardIcon: NATheme.ImageAsset
+  public static let forwardIconFilled: NATheme.ImageAsset
+  public static let hideIcon: NATheme.ImageAsset
+  public static let icAttachments: NATheme.ImageAsset
+  public static let cameraIconWhite: NATheme.ImageAsset
+  public static let icCloseWhite: NATheme.ImageAsset
+  public static let icCreateGroup: NATheme.ImageAsset
+  public static let icCreateGroupOrange: NATheme.ImageAsset
+  public static let icDownload: NATheme.ImageAsset
+  public static let icEmoji: NATheme.ImageAsset
+  public static let icFile: NATheme.ImageAsset
+  public static let pauseIcon: NATheme.ImageAsset
+  public static let pinIcon: NATheme.ImageAsset
+  public static let playIcon: NATheme.ImageAsset
+  public static let likeIcon: NATheme.ImageAsset
+  public static let unpinIcon: NATheme.ImageAsset
+  public static let icCall: NATheme.ImageAsset
+  public static let icCallIn: NATheme.ImageAsset
+  public static let icCallOut: NATheme.ImageAsset
+  public static let icCameraActive: NATheme.ImageAsset
+  public static let icCameraInactive: NATheme.ImageAsset
+  public static let clear_icon: NATheme.ImageAsset
+  public static let icHangupNormal: NATheme.ImageAsset
+  public static let icInfo: NATheme.ImageAsset
+  public static let icKeyboard: NATheme.ImageAsset
+  public static let icMatchPlaceholder: NATheme.ImageAsset
+  public static let icMicActive: NATheme.ImageAsset
+  public static let icMicInactive: NATheme.ImageAsset
+  public static let icMissCallIn: NATheme.ImageAsset
+  public static let icMissCallOut: NATheme.ImageAsset
+  public static let icMissVideoIn: NATheme.ImageAsset
+  public static let icMissVideoOut: NATheme.ImageAsset
+  public static let option_icon: NATheme.ImageAsset
+  public static let icRecent: NATheme.ImageAsset
+  public static let icReload: NATheme.ImageAsset
+  public static let icSend: NATheme.ImageAsset
+  public static let icSpeakerActive: NATheme.ImageAsset
+  public static let icSpeakerInactive: NATheme.ImageAsset
+  public static let icTimer: NATheme.ImageAsset
+  public static let iconBasicDown: NATheme.ImageAsset
+  public static let iconArrowDown: NATheme.ImageAsset
+  public static let iconSwitchCamera: NATheme.ImageAsset
+  public static let imgTopBlack: NATheme.ImageAsset
+  public static let informationCircleIcon: NATheme.ImageAsset
+  public static let inputAudioIcon: NATheme.ImageAsset
+  public static let inviteFriendIcon: NATheme.ImageAsset
+  public static let inviteFriendIconFilled: NATheme.ImageAsset
+  public static let languageIcon: NATheme.ImageAsset
+  public static let lockIcon: NATheme.ImageAsset
+  public static let lockIconFilled: NATheme.ImageAsset
+  public static let logoutIcon: NATheme.ImageAsset
+  public static let messageReadIcon: NATheme.ImageAsset
+  public static let messageUnreadIcon: NATheme.ImageAsset
+  public static let muteVideo: NATheme.ImageAsset
+  public static let newChatIcon: NATheme.ImageAsset
+  public static let chatPlus: NATheme.ImageAsset
+  public static let nextIcon: NATheme.ImageAsset
+  public static let nextIconBlack: NATheme.ImageAsset
+  public static let notificationIcon: NATheme.ImageAsset
+  public static let changeBackgroundIcon: NATheme.ImageAsset
+  public static let notificationMutedIcon: NATheme.ImageAsset
+  public static let placeholderImage: NATheme.ImageAsset
+  public static let receivedIcon: NATheme.ImageAsset
+  public static let replyIcon: NATheme.ImageAsset
+  public static let replyIconFilled: NATheme.ImageAsset
+  public static let searchIcon: NATheme.ImageAsset
+  public static let sentIcon: NATheme.ImageAsset
+  public static let shareIcon: NATheme.ImageAsset
+  public static let shareIcon24: NATheme.ImageAsset
+  public static let smallLogo: NATheme.ImageAsset
+  public static let supportIcon: NATheme.ImageAsset
+  public static let termIcon: NATheme.ImageAsset
+  public static let topicIcon: NATheme.ImageAsset
+  public static let unmuteVideo: NATheme.ImageAsset
+  public static let userIcon: NATheme.ImageAsset
+  public static let usersIcon: NATheme.ImageAsset
+  public static let videoCallIcon: NATheme.ImageAsset
+  public static let warningIcon: NATheme.ImageAsset
+  public static let replaceHappiness: NATheme.ImageAsset
+  public static let icPlus: NATheme.ImageAsset
+  public static let referralCodeBlueImage: NATheme.ImageAsset
+  public static let referralCodeOrangeImage: NATheme.ImageAsset
+  public static let referralScreenImage: NATheme.ImageAsset
+  public static let videoCallIconSmall: NATheme.ImageAsset
+  public static let audioCallIconSmall: NATheme.ImageAsset
+  public static let callkitIcon: NATheme.ImageAsset
+  public static let blockIcon: NATheme.ImageAsset
+  public static let icPin: NATheme.ImageAsset
+  public static let icUnpin: NATheme.ImageAsset
+  public static let icSortMessage: NATheme.ImageAsset
+  public static let icChannel: NATheme.ImageAsset
+  public static let logo_VietNam: NATheme.ImageAsset
+  public static let iconListPin: NATheme.ImageAsset
+  public static let clear_icon_not_alpha: NATheme.ImageAsset
+  public static let sticker_store_menu: NATheme.ImageAsset
+  public static let imgShareCurrentLocation: NATheme.ImageAsset
+  public static let imgShareLiveLocation: NATheme.ImageAsset
+  public static let imgCurrentLocation: NATheme.ImageAsset
+  public static let imgArrowDownLocation: NATheme.ImageAsset
+  public static let imgUnselectCenterLocation: NATheme.ImageAsset
+  public static let imgSelectCenterLocation: NATheme.ImageAsset
+  public static let imgQrCode: NATheme.ImageAsset
+  public static let imgUnSelectGpsLocation: NATheme.ImageAsset
+  public static let emptyPicture: NATheme.ImageAsset
+  public static let icAddStickers: NATheme.ImageAsset
+  public static let icShowText: NATheme.ImageAsset
+  public static let icHideText: NATheme.ImageAsset
+  public static let login_logo: NATheme.ImageAsset
+  public static let login_logo_dark: NATheme.ImageAsset
+}
+public struct ImageAsset {
+  public var name: Swift.String {
+    get
+  }
+  public typealias Image = UIKit.UIImage
+  public var image: NATheme.ImageAsset.Image {
+    get
+  }
+}
+extension UIKit.UIImage {
+  @available(macOS, deprecated, message: "This initializer is unsafe on macOS, please use the ImageAsset.image property")
+  convenience public init!(asset: NATheme.ImageAsset)
+}
+public let kThemeChangeNotification: Swift.String
+public enum ThemeMode : Swift.Equatable {
+  case light(NATheme.PrimaryColor)
+  case dark(NATheme.PrimaryColor)
+  case system(NATheme.PrimaryColor)
+  public var colors: NATheme.Colors {
+    get
+  }
+  public var chatColors: NATheme.ChatColors {
+    get
+  }
+  public var secretChatColors: NATheme.ChatColors {
+    get
+  }
+  public var assets: NATheme.Assets {
+    get
+  }
+  public static func == (lhs: NATheme.ThemeMode, rhs: NATheme.ThemeMode) -> Swift.Bool
+}
+final public class ThemePrimaryColor {
+  final public let color: NATheme.PrimaryColor
+  final public var isChecked: Swift.Bool
+  public init(color: NATheme.PrimaryColor)
+  @objc deinit
+}
+public enum PrimaryColor {
+  case dustyOrange
+  case purple
+  case blue
+  case orange
+  case custom(primaryColor: Swift.String, colors: NATheme.Colors, chatColors: NATheme.ChatColors, assets: NATheme.Assets)
+  public var hexCode: Swift.String {
+    get
+  }
+  public init(rawValue: Swift.String, colors: NATheme.Colors? = nil, chatColors: NATheme.ChatColors? = nil, assets: NATheme.Assets? = nil)
+}
+public protocol Colors {
+  var primary: UIKit.UIColor { get }
+  var secondary: UIKit.UIColor { get }
+  var tertiary: UIKit.UIColor { get }
+  var quarter: UIKit.UIColor { get }
+  var primaryIcon: UIKit.UIColor { get }
+  var primaryBackground: UIKit.UIColor { get }
+  var secondaryBackground: UIKit.UIColor { get }
+  var systemGroupedBackground: UIKit.UIColor { get }
+  var searchView: UIKit.UIColor { get }
+  var popoverViewHeaderTitle: UIKit.UIColor { get }
+  var systemText: UIKit.UIColor { get }
+  var primaryText: UIKit.UIColor { get }
+  var secondaryText: UIKit.UIColor { get }
+  var tertiaryText: UIKit.UIColor { get }
+  var systemBlue: UIKit.UIColor { get }
+  var systemGray: UIKit.UIColor { get }
+  var darkGray: UIKit.UIColor { get }
+  var lightGray: UIKit.UIColor { get }
+  var separator: UIKit.UIColor { get }
+  var placeHolder: UIKit.UIColor { get }
+  var systemRed: UIKit.UIColor { get }
+  var disabled: UIKit.UIColor { get }
+  var groupItemBackground: UIKit.UIColor { get }
+  var tabBarSeparator: UIKit.UIColor { get }
+}
+public protocol ChatColors {
+  var background: UIKit.UIColor { get }
+  var primary: UIKit.UIColor { get }
+  var separator: UIKit.UIColor { get }
+  var headerTitle: UIKit.UIColor { get }
+  var headerSubTitle: UIKit.UIColor { get }
+  var receiverTextBackground: UIKit.UIColor { get }
+  var receiverText: UIKit.UIColor { get }
+  var receiverForwardText: UIKit.UIColor { get }
+  var receiverTimerText: UIKit.UIColor { get }
+  var senderTextBackground: UIKit.UIColor { get }
+  var senderText: UIKit.UIColor { get }
+  var senderForwardText: UIKit.UIColor { get }
+  var senderTimerText: UIKit.UIColor { get }
+  var replyForwardedBackground: UIKit.UIColor { get }
+  var replyForwardedBorder: UIKit.UIColor { get }
+  var replyForwardedText: UIKit.UIColor { get }
+  var replyForwardedIcon: UIKit.UIColor { get }
+  var replyForwardedSubIcon: UIKit.UIColor { get }
+  var deletedMessageBackground: UIKit.UIColor { get }
+  var deletedMessageBorder: UIKit.UIColor { get }
+  var deletedMessageText: UIKit.UIColor { get }
+  var senderMediaBackground: UIKit.UIColor { get }
+  var senderMediaText: UIKit.UIColor { get }
+  var senderMediaSubText: UIKit.UIColor { get }
+  var senderMediaIcon: UIKit.UIColor { get }
+  var senderMediaIconBackground: UIKit.UIColor { get }
+  var receiverMediaBackground: UIKit.UIColor { get }
+  var receiverMediaText: UIKit.UIColor { get }
+  var receiverMediaSubText: UIKit.UIColor { get }
+  var receiverMediaIcon: UIKit.UIColor { get }
+  var receiverMediaIconBackground: UIKit.UIColor { get }
+  var chatBoxText: UIKit.UIColor { get }
+  var chatBoxPlaceholder: UIKit.UIColor { get }
+  var chatBoxBackground: UIKit.UIColor { get }
+  var selectionBackground: UIKit.UIColor { get }
+  var selectionItemBackground: UIKit.UIColor { get }
+  var selectionItemHighlightedText: UIKit.UIColor { get }
+  var selectionItemNormalText: UIKit.UIColor { get }
+  var imagePickerPrimary: UIKit.UIColor { get }
+  var buttonCancelBackground: UIKit.UIColor { get }
+  var buttonCancelTitle: UIKit.UIColor { get }
+  var buttonSendBackground: UIKit.UIColor { get }
+  var buttonSendTitle: UIKit.UIColor { get }
+  var progressViewTint: UIKit.UIColor { get }
+  var senderName: [UIKit.UIColor] { get }
+}
+public protocol Assets {
+  var navBarBackground: UIKit.UIImage? { get }
+  var emptyMessage: UIKit.UIImage? { get }
+  var emptyCall: UIKit.UIImage? { get }
+  var emptyContact: UIKit.UIImage? { get }
+  var icCreateGroup: UIKit.UIImage? { get }
+  var icPlayAudio: UIKit.UIImage? { get }
+  var icPauseAudio: UIKit.UIImage? { get }
+  var referralCodeImage: UIKit.UIImage? { get }
+}
+public enum StatusBarStyle {
+  case isAlwayLight
+  case isDependent(NATheme.ThemeMode)
+  public var style: UIKit.UIStatusBarStyle {
+    get
+  }
+}
+public enum ThemeProvider {
+  case dark
+  case light
+  case system
+  public static func == (a: NATheme.ThemeProvider, b: NATheme.ThemeProvider) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol NAThemeServiceProtocol {
+  var themeMode: NATheme.ThemeMode { get }
+  var observableChangeTheme: RxRelay.BehaviorRelay<NATheme.ThemeMode> { get }
+  func setTheme(_ themeMode: NATheme.ThemeMode)
+  func setTheme(_ themeModeProvider: NATheme.ThemeProvider)
+  func setPrimaryColor(_ primaryColor: NATheme.PrimaryColor)
+  func getChatColors(isSecret: Swift.Bool) -> NATheme.ChatColors
+  func getThemeModeBaseOnSystem() -> Swift.Bool
+  func setThemeModeBaseOnSystem(isBased: Swift.Bool)
+  func setupAlertViewControllerStyle(_ alertViewController: UIKit.UIAlertController)
+  func isDarkMode() -> Swift.Bool
+  var primaryColors: [NATheme.ThemePrimaryColor] { get }
+  var keyboardType: UIKit.UIKeyboardAppearance { get }
+}
+final public class NAThemeServiceImpl : NATheme.NAThemeServiceProtocol {
+  final public var primaryColors: [NATheme.ThemePrimaryColor]
+  final public var keyboardType: UIKit.UIKeyboardAppearance {
+    get
+  }
+  final public var observableChangeTheme: RxRelay.BehaviorRelay<NATheme.ThemeMode> {
+    get
+  }
+  final public var themeMode: NATheme.ThemeMode
+  public init(themeMode: NATheme.ThemeMode = .light(.purple), themePrimaryColor: [NATheme.ThemePrimaryColor] = [
+                    ThemePrimaryColor(color: .dustyOrange),
+                    ThemePrimaryColor(color: .purple)])
+  final public func setTheme(_ themeMode: NATheme.ThemeMode)
+  final public func setTheme(_ themeModeProvider: NATheme.ThemeProvider)
+  final public func setupAlertViewControllerStyle(_ alertViewController: UIKit.UIAlertController)
+  final public func getThemeMode() -> NATheme.ThemeMode
+  final public func setPrimaryColor(_ primaryColor: NATheme.PrimaryColor)
+  final public func getChatColors(isSecret: Swift.Bool) -> NATheme.ChatColors
+  final public func getPrimaryColors() -> [NATheme.ThemePrimaryColor]
+  final public func isDarkMode() -> Swift.Bool
+  final public func getThemeModeBaseOnSystem() -> Swift.Bool
+  final public func setThemeModeBaseOnSystem(isBased: Swift.Bool)
+  @objc deinit
+}
+extension NATheme.ThemeProvider : Swift.Equatable {}
+extension NATheme.ThemeProvider : Swift.Hashable {}

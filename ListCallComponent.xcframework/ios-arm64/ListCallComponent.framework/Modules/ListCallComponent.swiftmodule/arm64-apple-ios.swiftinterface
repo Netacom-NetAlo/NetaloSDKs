@@ -1,0 +1,65 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ListCallComponent
+import Carbon
+import Foundation
+@_exported import ListCallComponent
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxGesture
+import RxSwift
+import Swift
+import UIKit.UIImage
+import UIKit
+import XCoordinator
+import _Concurrency
+open class ListCallComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case newCall
+    case showChat(with: NADomain.NAContact)
+    case voice(with: NADomain.NAContact)
+    case video(with: NADomain.NAContact)
+    case showLogs(with: NetAloCoreComponent.GroupHistoryCall, group: NADomain.NAGroup)
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?)
+  }
+  public struct Output {
+    public let rootCoodinator: ListCallComponent.ListCallCoordinator
+    public let eventObservable: RxSwift.Observable<ListCallComponent.ListCallComponentManager.Event>
+  }
+  public func transform(input: ListCallComponent.ListCallComponentManager.Input) -> ListCallComponent.ListCallComponentManager.Output
+  @objc deinit
+}
+public enum ListCallRoute : XCoordinator.Route {
+  case listCall
+  case newCall
+  case dismiss
+  case showChat(contact: NADomain.NAContact)
+  case voiceCall(contact: NADomain.NAContact)
+  case videoCall(contact: NADomain.NAContact)
+  case alert(NetAloCoreComponent.NAAlertVM)
+}
+public class ListCallCoordinator : XCoordinator.NavigationCoordinator<ListCallComponent.ListCallRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<ListCallComponent.ListCallComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController?)
+  override public func prepareTransition(for route: ListCallComponent.ListCallRoute) -> XCoordinator.NavigationTransition
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = ListCallComponent.ListCallComponentManager.Event
+  @objc deinit
+}

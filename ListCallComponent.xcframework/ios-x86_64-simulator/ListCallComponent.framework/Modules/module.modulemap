@@ -1,0 +1,11 @@
+framework module ListCallComponent {
+  umbrella header "ListCallComponent.h"
+
+  export *
+  module * { export * }
+}
+
+module ListCallComponent.Swift {
+    header "ListCallComponent-Swift.h"
+    requires objc
+}

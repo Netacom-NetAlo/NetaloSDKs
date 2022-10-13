@@ -1,0 +1,11 @@
+framework module NATheme {
+  umbrella header "NATheme.h"
+
+  export *
+  module * { export * }
+}
+
+module NATheme.Swift {
+    header "NATheme-Swift.h"
+    requires objc
+}

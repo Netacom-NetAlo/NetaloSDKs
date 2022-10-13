@@ -1,0 +1,11 @@
+framework module ForwardMessageComponent {
+  umbrella header "ForwardMessageComponent.h"
+
+  export *
+  module * { export * }
+}
+
+module ForwardMessageComponent.Swift {
+    header "ForwardMessageComponent-Swift.h"
+    requires objc
+}

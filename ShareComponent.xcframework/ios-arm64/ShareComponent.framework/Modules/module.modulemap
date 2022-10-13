@@ -1,0 +1,11 @@
+framework module ShareComponent {
+  umbrella header "ShareComponent.h"
+
+  export *
+  module * { export * }
+}
+
+module ShareComponent.Swift {
+    header "ShareComponent-Swift.h"
+    requires objc
+}

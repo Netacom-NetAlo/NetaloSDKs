@@ -1,0 +1,70 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MediaDetailComponent
+import AVKit
+import Carbon
+import Kingfisher
+@_exported import MediaDetailComponent
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Photos
+import Resolver
+import RxCocoa
+import RxSwift
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+public enum MediaDetailType {
+  case chat(current: NADomain.NAMediaLibraryModel, list: [NADomain.NAMediaLibraryModel]?)
+  case other(current: NADomain.NAMediaLibraryModel)
+}
+public enum MediaDetailRoute : XCoordinator.Route {
+  case main(MediaDetailComponent.MediaDetailType)
+  case other(NADomain.NAMediaLibraryModel)
+  case all(NADomain.NAMediaLibraryModel)
+  case progressHUD(Swift.String, Swift.Bool)
+  case alert(alertVM: NetAloCoreComponent.NAAlertVM)
+  case playVideo(NADomain.NAVideo)
+  case actionSheet([UIKit.UIAlertAction])
+  case shareVideo(NADomain.NAMediaLibraryModel)
+  case shareImage(Foundation.Data?)
+  case pop
+  case dismiss
+}
+public class MediaDetailCoordinator : XCoordinator.NavigationCoordinator<MediaDetailComponent.MediaDetailRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<MediaDetailComponent.MediaDetailComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil, data: MediaDetailComponent.MediaDetailType)
+  override public func prepareTransition(for route: MediaDetailComponent.MediaDetailRoute) -> XCoordinator.NavigationTransition
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = MediaDetailComponent.MediaDetailComponentManager.Event
+  @objc deinit
+}
+open class MediaDetailComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case releaseIfNeeded
+    case forwardImage(NADomain.NAMediaLibraryModel, Foundation.Data?)
+    case forwardVideo(NADomain.NAMediaLibraryModel)
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, mediaLibrary: NADomain.NAMediaLibraryModel, isPresentFromChat: Swift.Bool = false)
+  }
+  public struct Output {
+    public let rootCoodinator: MediaDetailComponent.MediaDetailCoordinator
+    public let eventObservable: RxSwift.Observable<MediaDetailComponent.MediaDetailComponentManager.Event>
+  }
+  public func transform(input: MediaDetailComponent.MediaDetailComponentManager.Input) -> MediaDetailComponent.MediaDetailComponentManager.Output
+  @objc deinit
+}

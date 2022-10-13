@@ -1,0 +1,11 @@
+framework module GroupDetailComponent {
+  umbrella header "GroupDetailComponent.h"
+
+  export *
+  module * { export * }
+}
+
+module GroupDetailComponent.Swift {
+    header "GroupDetailComponent-Swift.h"
+    requires objc
+}

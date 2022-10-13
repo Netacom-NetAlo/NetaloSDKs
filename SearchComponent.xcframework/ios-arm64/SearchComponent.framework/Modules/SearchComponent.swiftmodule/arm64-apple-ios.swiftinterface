@@ -1,0 +1,68 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SearchComponent
+import Carbon
+import MessageUI
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxSwift
+@_exported import SearchComponent
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+public enum SearchRoute : XCoordinator.Route {
+  case main
+  case releaseIfNeeded
+  case dismiss
+  case close
+  case sendSMS
+  public static func == (a: SearchComponent.SearchRoute, b: SearchComponent.SearchRoute) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class SearchCoordinator : XCoordinator.NavigationCoordinator<SearchComponent.SearchRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<SearchComponent.SearchComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController? = nil)
+  override public func prepareTransition(for route: SearchComponent.SearchRoute) -> XCoordinator.NavigationTransition
+  @objc deinit
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = SearchComponent.SearchComponentManager.Event
+}
+open class SearchComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case close
+    case releaseIfNeeded
+    case selectedContact(NADomain.NAContact)
+    case selectedGroup(NADomain.NAGroup)
+    case selectedInvite(NADomain.NALocalContact)
+    case addContact(NADomain.NAContact)
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?)
+  }
+  public struct Output {
+    public let rootCoodinator: SearchComponent.SearchCoordinator
+    public let eventObservable: RxSwift.Observable<SearchComponent.SearchComponentManager.Event>
+  }
+  public func transform(input: SearchComponent.SearchComponentManager.Input) -> SearchComponent.SearchComponentManager.Output
+  @objc deinit
+}
+extension SearchComponent.SearchRoute : Swift.Equatable {}
+extension SearchComponent.SearchRoute : Swift.Hashable {}

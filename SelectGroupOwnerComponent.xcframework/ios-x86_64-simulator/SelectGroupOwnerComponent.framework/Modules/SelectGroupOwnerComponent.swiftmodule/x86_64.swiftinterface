@@ -1,0 +1,70 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SelectGroupOwnerComponent
+import Carbon
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxSwift
+@_exported import SelectGroupOwnerComponent
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+open class SelectGroupOwnerComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case close
+    case finishChangeOwner
+    case confirmLeave
+    case releaseIfNeeded
+    public static func == (a: SelectGroupOwnerComponent.SelectGroupOwnerComponentManager.Event, b: SelectGroupOwnerComponent.SelectGroupOwnerComponentManager.Event) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, group: NADomain.NAGroup, type: NADomain.SelectType, isLeaveGroup: Swift.Bool = false, isGroupDetail: Swift.Bool)
+  }
+  public struct Output {
+    public let rootCoodinator: SelectGroupOwnerComponent.SelectGroupOwnerCoordinator
+    public let eventObservable: RxSwift.Observable<SelectGroupOwnerComponent.SelectGroupOwnerComponentManager.Event>
+  }
+  public func transform(input: SelectGroupOwnerComponent.SelectGroupOwnerComponentManager.Input) -> SelectGroupOwnerComponent.SelectGroupOwnerComponentManager.Output
+  @objc deinit
+}
+public enum SelectGroupOwnerRoute : XCoordinator.Route {
+  case main
+  case dismiss
+  case releaseIfNeeded
+  public static func == (a: SelectGroupOwnerComponent.SelectGroupOwnerRoute, b: SelectGroupOwnerComponent.SelectGroupOwnerRoute) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class SelectGroupOwnerCoordinator : XCoordinator.NavigationCoordinator<SelectGroupOwnerComponent.SelectGroupOwnerRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<SelectGroupOwnerComponent.SelectGroupOwnerComponentManager.Event>
+  public init(navigation: UIKit.UINavigationController?, group: NADomain.NAGroup, type: NADomain.SelectType, isLeaveGroup: Swift.Bool = false, isGroupDetail: Swift.Bool)
+  override public func prepareTransition(for route: SelectGroupOwnerComponent.SelectGroupOwnerRoute) -> XCoordinator.NavigationTransition
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = SelectGroupOwnerComponent.SelectGroupOwnerComponentManager.Event
+  @objc deinit
+}
+extension SelectGroupOwnerComponent.SelectGroupOwnerComponentManager.Event : Swift.Equatable {}
+extension SelectGroupOwnerComponent.SelectGroupOwnerComponentManager.Event : Swift.Hashable {}
+extension SelectGroupOwnerComponent.SelectGroupOwnerRoute : Swift.Equatable {}
+extension SelectGroupOwnerComponent.SelectGroupOwnerRoute : Swift.Hashable {}

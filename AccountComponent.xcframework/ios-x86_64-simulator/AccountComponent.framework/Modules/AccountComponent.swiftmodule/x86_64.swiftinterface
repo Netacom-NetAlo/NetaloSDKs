@@ -1,0 +1,72 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AccountComponent
+@_exported import AccountComponent
+import Carbon
+import Foundation
+import MediaPickerComponent
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NANetworkPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxSwift
+import Swift
+import UIKit
+import XCoordinator
+import _Concurrency
+open class AccountComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case logout
+    case showTerm
+    case showFAQ
+    public static func == (a: AccountComponent.AccountComponentManager.Event, b: AccountComponent.AccountComponentManager.Event) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?)
+  }
+  public struct Output {
+    public let rootCoodinator: AccountComponent.AccountCoordinator
+    public let eventObservable: RxSwift.Observable<AccountComponent.AccountComponentManager.Event>
+  }
+  public func transform(input: AccountComponent.AccountComponentManager.Input) -> AccountComponent.AccountComponentManager.Output
+  @objc deinit
+}
+public enum AccountRoute : XCoordinator.Route {
+  case main
+  case editProfile
+  case alert(alertVM: NetAloCoreComponent.NAAlertVM)
+  case theme
+  case blockList
+  case referral
+  case dismiss
+  case pop
+  case openImagePicker
+  case releaseImagePicker
+}
+@_hasMissingDesignatedInitializers public class AccountCoordinator : XCoordinator.NavigationCoordinator<AccountComponent.AccountRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<AccountComponent.AccountComponentManager.Event>
+  @objc deinit
+  override public func prepareTransition(for route: AccountComponent.AccountRoute) -> XCoordinator.NavigationTransition
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public func setImage(images: [UIKit.UIImage])
+  public typealias Event = AccountComponent.AccountComponentManager.Event
+}
+extension AccountComponent.AccountComponentManager.Event : Swift.Equatable {}
+extension AccountComponent.AccountComponentManager.Event : Swift.Hashable {}

@@ -1,0 +1,87 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AuthorizationComponent
+@_exported import AuthorizationComponent
+import Carbon
+import Foundation
+import MediaPickerComponent
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NANetworkPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Photos
+import Resolver
+import RxCocoa
+import RxGesture
+import RxSwift
+import Swift
+import UIKit.UIImage
+import UIKit
+import WebViewComponent
+import XCoordinator
+import _Concurrency
+public enum AuthRoute : XCoordinator.Route {
+  case inputPhoneNumber
+  case confirmOTP(phoneNumber: Swift.String, token: Swift.String)
+  case updateProfile(user: NADomain.NAUser, token: Swift.String)
+  case uploadImage(AuthorizationComponent.ImageUploadVM)
+  case complete
+  case pop
+  case dismiss
+  case alert(alertVM: NetAloCoreComponent.NAAlertVM)
+  case showListCountry
+  case showTermOfUse
+  case openImagePicker
+  case releaseIfNeeded
+}
+public class AuthCoordinator : XCoordinator.NavigationCoordinator<AuthorizationComponent.AuthRoute> {
+  public struct Action {
+    public var didFinishLoginFlowTrigger: RxSwift.Observable<()> {
+      get
+    }
+  }
+  final public let action: AuthorizationComponent.AuthCoordinator.Action
+  public init(navigation: UIKit.UINavigationController?)
+  @objc deinit
+  override public func prepareTransition(for route: AuthorizationComponent.AuthRoute) -> XCoordinator.NavigationTransition
+}
+@_inheritsConvenienceInitializers public class ImageUploadVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType {
+  public struct Input {
+  }
+  public struct Output {
+  }
+  public struct Action {
+    public var didCancelUploadImage: RxSwift.Observable<Swift.Void> {
+      get
+    }
+    public var didShowAllImage: RxSwift.Observable<Swift.Void> {
+      get
+    }
+    public var didShowCamera: RxSwift.Observable<Swift.Void> {
+      get
+    }
+    public var didSelectedImage: RxSwift.Observable<UIKit.UIImage> {
+      get
+    }
+  }
+  final public let action: AuthorizationComponent.ImageUploadVM.Action
+  public func transform(input: AuthorizationComponent.ImageUploadVM.Input) -> AuthorizationComponent.ImageUploadVM.Output
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class AuthorizationComponentManager : NACoreUtils.ViewModelType {
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?)
+  }
+  public struct Output {
+    public let rootCoodinator: AuthorizationComponent.AuthCoordinator
+    public let didAuthorizeSuccess: RxSwift.Observable<NADomain.NAUser>
+  }
+  public func transform(input: AuthorizationComponent.AuthorizationComponentManager.Input) -> AuthorizationComponent.AuthorizationComponentManager.Output
+  @objc deinit
+}

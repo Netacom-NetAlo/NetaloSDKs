@@ -1,0 +1,63 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DocumentViewerComponent
+@_exported import DocumentViewerComponent
+import MobileCoreServices
+import NACoreUI
+import NACoreUtils
+import NADomain
+import NALocalization
+import NARealmPlatform
+import NATheme
+import NetAloCoreComponent
+import NetAloLite
+import Resolver
+import RxCocoa
+import RxRelay
+import RxSwift
+import Swift
+import UIKit
+import WebKit
+import XCoordinator
+import _Concurrency
+open class DocumentViewerComponentManager : NACoreUtils.ViewModelType {
+  public enum Event {
+    case releaseIfNeeded
+    public static func == (a: DocumentViewerComponent.DocumentViewerComponentManager.Event, b: DocumentViewerComponent.DocumentViewerComponentManager.Event) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+  public struct Input {
+    public init(navigation: UIKit.UINavigationController?, file: NADomain.NAFile)
+  }
+  public struct Output {
+    public let rootCoodinator: DocumentViewerComponent.DocumentViewerCoordinator
+    public let eventObservable: RxSwift.Observable<DocumentViewerComponent.DocumentViewerComponentManager.Event>
+  }
+  public func transform(input: DocumentViewerComponent.DocumentViewerComponentManager.Input) -> DocumentViewerComponent.DocumentViewerComponentManager.Output
+  @objc deinit
+}
+public enum DocumentViewerRoute : XCoordinator.Route {
+  case main
+  case pop
+  case shareFile(Foundation.URL)
+}
+public class DocumentViewerCoordinator : XCoordinator.NavigationCoordinator<DocumentViewerComponent.DocumentViewerRoute>, NACoreUtils.EventPublisherType, NACoreUI.NavigatableCoordinator {
+  public var eventPublisher: RxSwift.PublishSubject<DocumentViewerComponent.DocumentViewerComponentManager.Event>
+  @objc deinit
+  public init(navigation: UIKit.UINavigationController? = nil, file: NADomain.NAFile)
+  override public func prepareTransition(for route: DocumentViewerComponent.DocumentViewerRoute) -> XCoordinator.NavigationTransition
+  public var rootVC: UIKit.UINavigationController {
+    get
+  }
+  public var lastChild: NACoreUI.NavigatableCoordinator? {
+    get
+  }
+  public func dismissAllChildren()
+  public typealias Event = DocumentViewerComponent.DocumentViewerComponentManager.Event
+}
+extension DocumentViewerComponent.DocumentViewerComponentManager.Event : Swift.Equatable {}
+extension DocumentViewerComponent.DocumentViewerComponentManager.Event : Swift.Hashable {}
