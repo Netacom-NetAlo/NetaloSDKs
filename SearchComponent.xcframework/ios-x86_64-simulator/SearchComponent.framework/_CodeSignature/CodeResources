@@ -14,53 +14,45 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UuGXJIiwjrFoIEt/Szo2/NauFRg=
+		fCk94wD21cgCBOs/b55P29cD7EU=
 		</data>
 		<key>Modules/SearchComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zcPgj175uJ+ZWgNmQMcGtKaTOn8=
+		1pBTQbeDrsBNN/Nq2i2T4Ej0mfw=
 		</data>
 		<key>Modules/SearchComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AVdrplQj6ZhZ30oTGpg87MwbQO8=
+		WEZtdXl3TShn6hdt5QC9Ne5xnBs=
 		</data>
 		<key>Modules/SearchComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		smOx8EiV6iqYw4zlmHODeq//sQE=
+		Mr1bfx0IrpwCZj2XXtih803Nc40=
 		</data>
 		<key>Modules/SearchComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		zcPgj175uJ+ZWgNmQMcGtKaTOn8=
+		1pBTQbeDrsBNN/Nq2i2T4Ej0mfw=
 		</data>
 		<key>Modules/SearchComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		AVdrplQj6ZhZ30oTGpg87MwbQO8=
+		WEZtdXl3TShn6hdt5QC9Ne5xnBs=
 		</data>
 		<key>Modules/SearchComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		smOx8EiV6iqYw4zlmHODeq//sQE=
+		Mr1bfx0IrpwCZj2XXtih803Nc40=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		MS/Gn558p2Nvy0UwitbHpMqTUJ4=
 		</data>
-		<key>SearchVC.nib/objects-11.0+.nib</key>
+		<key>SearchVC.nib</key>
 		<data>
 		oPOWUl1VzeDwKXJwUjAm2bsOpHg=
-		</data>
-		<key>SearchVC.nib/runtime.nib</key>
-		<data>
-		VoJvkiD7mlZaGKIqck0P0ZodH5s=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/SearchComponent-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yYsNDkaAtuiplG2/dsCFPT1o9qk=
-			</data>
 			<key>hash2</key>
 			<data>
 			q6S9MCprWIn6cLzzqnuH2ytLWMpMP8eLTCucd+NeOmM=
@@ -68,10 +60,6 @@
 		</dict>
 		<key>Headers/SearchComponent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			X6XgNYXzsLwHG2EetZiCH/bJGZ4=
-			</data>
 			<key>hash2</key>
 			<data>
 			pPaJl+OudejLa7i/SlvAUOLUDsrAJ6eChbuVBO3g0Qk=
@@ -79,101 +67,58 @@
 		</dict>
 		<key>Modules/SearchComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zcPgj175uJ+ZWgNmQMcGtKaTOn8=
-			</data>
 			<key>hash2</key>
 			<data>
-			pZg/ACyrrLR9JQNqgsSYIGxEvh2SbmbQ5Y1d1TAnacc=
+			6mORucEsQET4bb0Tbf0LFrvbdbr07SuYbo8BOt2/IEo=
 			</data>
 		</dict>
 		<key>Modules/SearchComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AVdrplQj6ZhZ30oTGpg87MwbQO8=
-			</data>
 			<key>hash2</key>
 			<data>
-			2c1mE22oxpPTMy6g09ViPoscw705qDeO5rZpfnsJR6I=
+			qy7oSmAhqX/7LqsROQOrd9htBIiYoO8wMlwUvHsLMro=
 			</data>
 		</dict>
 		<key>Modules/SearchComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			smOx8EiV6iqYw4zlmHODeq//sQE=
-			</data>
 			<key>hash2</key>
 			<data>
-			MUVLfzsIwmxIwLw0x6L1nJjEkpI/Fvg/PokiS4EFc/M=
+			VS6Kl8G4/GWEuh/UN8kWq1gSccsqQyYWoiB5S7nTdZE=
 			</data>
 		</dict>
 		<key>Modules/SearchComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zcPgj175uJ+ZWgNmQMcGtKaTOn8=
-			</data>
 			<key>hash2</key>
 			<data>
-			pZg/ACyrrLR9JQNqgsSYIGxEvh2SbmbQ5Y1d1TAnacc=
+			6mORucEsQET4bb0Tbf0LFrvbdbr07SuYbo8BOt2/IEo=
 			</data>
 		</dict>
 		<key>Modules/SearchComponent.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AVdrplQj6ZhZ30oTGpg87MwbQO8=
-			</data>
 			<key>hash2</key>
 			<data>
-			2c1mE22oxpPTMy6g09ViPoscw705qDeO5rZpfnsJR6I=
+			qy7oSmAhqX/7LqsROQOrd9htBIiYoO8wMlwUvHsLMro=
 			</data>
 		</dict>
 		<key>Modules/SearchComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			smOx8EiV6iqYw4zlmHODeq//sQE=
-			</data>
 			<key>hash2</key>
 			<data>
-			MUVLfzsIwmxIwLw0x6L1nJjEkpI/Fvg/PokiS4EFc/M=
+			VS6Kl8G4/GWEuh/UN8kWq1gSccsqQyYWoiB5S7nTdZE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MS/Gn558p2Nvy0UwitbHpMqTUJ4=
-			</data>
 			<key>hash2</key>
 			<data>
 			gCbHcBFecMc3LBhPyvwXfLm5PE4Cu0AVqHdH2c5ehpI=
 			</data>
 		</dict>
-		<key>SearchVC.nib/objects-11.0+.nib</key>
+		<key>SearchVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oPOWUl1VzeDwKXJwUjAm2bsOpHg=
-			</data>
 			<key>hash2</key>
 			<data>
 			49H/67dW9yUVNe7oHF8mxcwRgDrIAnRjnppLAjOt+tA=
-			</data>
-		</dict>
-		<key>SearchVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VoJvkiD7mlZaGKIqck0P0ZodH5s=
-			</data>
-			<key>hash2</key>
-			<data>
-			9Gl38qBYYwxV3+v3Ie05N3XM/j/wyYeFTK/JFjArTyU=
 			</data>
 		</dict>
 	</dict>

@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>DocumentViewerVC.nib/objects-11.0+.nib</key>
+		<key>DocumentViewerVC.nib</key>
 		<data>
 		/bDn93yBGi8acRZTdD+J8Wo0Nk8=
-		</data>
-		<key>DocumentViewerVC.nib/runtime.nib</key>
-		<data>
-		WvCect/IXougPq9YotjGohR2BKQ=
 		</data>
 		<key>Headers/DocumentViewerComponent-Swift.h</key>
 		<data>
@@ -22,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6tqhRjOpNhDsfuHnBciGYa1lYTI=
+		Y/2EC+/+yPmqJlTYIz4mCABoGD0=
 		</data>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xV4AI5xdY3bkooODsunV+ZrqiUU=
+		KqQU0dByqhgvE00RQcqcdW2HD+w=
 		</data>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wxSaG51hOYwWnzkSaSl6KduA878=
+		8s8dpxDJJHL1JLPpELm64Q0ioak=
 		</data>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		y5gSSJl06AKj8atLRrRDTVJwt4Y=
+		KzSnfJsNco8IpQogQXwDDWss9Do=
 		</data>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		xV4AI5xdY3bkooODsunV+ZrqiUU=
+		KqQU0dByqhgvE00RQcqcdW2HD+w=
 		</data>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		wxSaG51hOYwWnzkSaSl6KduA878=
+		8s8dpxDJJHL1JLPpELm64Q0ioak=
 		</data>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		y5gSSJl06AKj8atLRrRDTVJwt4Y=
+		KzSnfJsNco8IpQogQXwDDWss9Do=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,34 +51,15 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>DocumentViewerVC.nib/objects-11.0+.nib</key>
+		<key>DocumentViewerVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/bDn93yBGi8acRZTdD+J8Wo0Nk8=
-			</data>
 			<key>hash2</key>
 			<data>
 			WXHuIX2xrhyjsLGxU5IXq1LbWs4yAK1hPu3n6m5WiUw=
 			</data>
 		</dict>
-		<key>DocumentViewerVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WvCect/IXougPq9YotjGohR2BKQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			rze+N+PUAg+647bL2S1KKDQNjMN4M2nyvAc6BuffVak=
-			</data>
-		</dict>
 		<key>Headers/DocumentViewerComponent-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Dv9eyYkcwlKAF28yKzI82A6IcXs=
-			</data>
 			<key>hash2</key>
 			<data>
 			QNgj9o5gG674FL8zrO6aAoAay/x8/2uVpnT51cW52k4=
@@ -90,10 +67,6 @@
 		</dict>
 		<key>Headers/DocumentViewerComponent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zVuDjzYef05BvElQvM+ZditqLac=
-			</data>
 			<key>hash2</key>
 			<data>
 			BZ5HPSD587OArghprrub0oXQFO+5sRaoZW9sNOT4Mgo=
@@ -101,76 +74,48 @@
 		</dict>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xV4AI5xdY3bkooODsunV+ZrqiUU=
-			</data>
 			<key>hash2</key>
 			<data>
-			sboE3R/F/umfxKupJJLzlHAuYj2K9pa4YoM9EaKTs2c=
+			jkJL3qHQQwDfqHATWdy5yIqmXTNeqh690qaC2IJepdI=
 			</data>
 		</dict>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wxSaG51hOYwWnzkSaSl6KduA878=
-			</data>
 			<key>hash2</key>
 			<data>
-			i29xS/BFAy6V17c20kxowUht8i8ATuYrNdE7Qu7X6Ys=
+			AKguewqw1a/Uc7wxlZvyRXydcIHWYM0CWgUDF/1z+KM=
 			</data>
 		</dict>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			y5gSSJl06AKj8atLRrRDTVJwt4Y=
-			</data>
 			<key>hash2</key>
 			<data>
-			jjQYzNA6FbZAVAYhwLq0sv5djb9KHfsXT/JvoPG6+lY=
+			K47y157HL0/MhdbIhGHqEZuymgYanXMKZSIQS+fWQQ0=
 			</data>
 		</dict>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xV4AI5xdY3bkooODsunV+ZrqiUU=
-			</data>
 			<key>hash2</key>
 			<data>
-			sboE3R/F/umfxKupJJLzlHAuYj2K9pa4YoM9EaKTs2c=
+			jkJL3qHQQwDfqHATWdy5yIqmXTNeqh690qaC2IJepdI=
 			</data>
 		</dict>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wxSaG51hOYwWnzkSaSl6KduA878=
-			</data>
 			<key>hash2</key>
 			<data>
-			i29xS/BFAy6V17c20kxowUht8i8ATuYrNdE7Qu7X6Ys=
+			AKguewqw1a/Uc7wxlZvyRXydcIHWYM0CWgUDF/1z+KM=
 			</data>
 		</dict>
 		<key>Modules/DocumentViewerComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			y5gSSJl06AKj8atLRrRDTVJwt4Y=
-			</data>
 			<key>hash2</key>
 			<data>
-			jjQYzNA6FbZAVAYhwLq0sv5djb9KHfsXT/JvoPG6+lY=
+			K47y157HL0/MhdbIhGHqEZuymgYanXMKZSIQS+fWQQ0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ijoQd1MvEmSG3nMMt00/gwrHY0A=
-			</data>
 			<key>hash2</key>
 			<data>
 			sxi7xf/AySUyMpm3Iy5LTMxUPzYGWQIjk8d+U6lsm7Y=

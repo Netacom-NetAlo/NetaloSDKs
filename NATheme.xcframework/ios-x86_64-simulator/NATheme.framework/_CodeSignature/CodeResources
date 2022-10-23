@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		0VvxQBUHMm7PUlR/k4mH8gpkKe8=
+		V6yLltUXcycpGCWTDZDZ+ONEKPM=
 		</data>
 		<key>Headers/NATheme-Swift.h</key>
 		<data>
@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sbCUq6k1POCc+7+RqKX4oL/0fO8=
+		64t72bUxnb+qhai/g+FIysuAY3I=
 		</data>
 		<key>Modules/NATheme.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		u+rkBi8rPci8ttjuFCICOp2Vj6Q=
+		+5jw1ddaamREr4Lr/4sQHMkTVN0=
 		</data>
 		<key>Modules/NATheme.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0SSCtjQsAkwbgXjszheeeghpLrA=
+		l9JL8yTaPJ0OuFWp4zYbq5WwonM=
 		</data>
 		<key>Modules/NATheme.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CUQ2Jp7to2WBXUV0I3R5yueUUrY=
+		GtlkWr86YWG4jtH0Bm4JP6bnHeM=
 		</data>
 		<key>Modules/NATheme.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		u+rkBi8rPci8ttjuFCICOp2Vj6Q=
+		+5jw1ddaamREr4Lr/4sQHMkTVN0=
 		</data>
 		<key>Modules/NATheme.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		0SSCtjQsAkwbgXjszheeeghpLrA=
+		l9JL8yTaPJ0OuFWp4zYbq5WwonM=
 		</data>
 		<key>Modules/NATheme.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		CUQ2Jp7to2WBXUV0I3R5yueUUrY=
+		GtlkWr86YWG4jtH0Bm4JP6bnHeM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -53,21 +53,13 @@
 	<dict>
 		<key>Assets.car</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0VvxQBUHMm7PUlR/k4mH8gpkKe8=
-			</data>
 			<key>hash2</key>
 			<data>
-			bajzGYpUIlEXVUsxeLsFXRquZ3CwzrIxhNm9ymWTwrs=
+			cnTbbSiyKiLg1QPziyiczkcbXWL9cgK0tcyDuUYX3Ts=
 			</data>
 		</dict>
 		<key>Headers/NATheme-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VI/YHIYYg2cckC4pSX+2WMGYXvo=
-			</data>
 			<key>hash2</key>
 			<data>
 			VIpd3AUqBkWli5W8CXan+XPBkeYJNYjIyygU3Slxy10=
@@ -75,10 +67,6 @@
 		</dict>
 		<key>Headers/NATheme.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			09eUp4ODQHJNb7BKZlIqN33O6ko=
-			</data>
 			<key>hash2</key>
 			<data>
 			PtF3VoXEfEg+WwCs2dTfUH+tnqN6RZDRA26tDT0mOVA=
@@ -86,76 +74,48 @@
 		</dict>
 		<key>Modules/NATheme.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			u+rkBi8rPci8ttjuFCICOp2Vj6Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			yKgFQarEtI7n4iXWXJfGkpewUWV46j6wJXSHp2S5SZs=
+			YfHHvNIaHsDbhwYi2ra8+40V2X6KyFJz535z8Sqz90s=
 			</data>
 		</dict>
 		<key>Modules/NATheme.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0SSCtjQsAkwbgXjszheeeghpLrA=
-			</data>
 			<key>hash2</key>
 			<data>
-			vwiEQQxppjoa7PRcja9VAnfddCnWqMwfxMnEnAxZgyw=
+			is6B24hh6sLctisGoDxsS8tglqCjek7WlXc2F7n0VMs=
 			</data>
 		</dict>
 		<key>Modules/NATheme.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CUQ2Jp7to2WBXUV0I3R5yueUUrY=
-			</data>
 			<key>hash2</key>
 			<data>
-			eqHECwg+68DYEysv+BWzN1x669QE2fmCmRj18qkOXpI=
+			yHavnq7GmF1JCfgR8ztHxvxyoIvUaPhDmhBb0gcDEYU=
 			</data>
 		</dict>
 		<key>Modules/NATheme.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			u+rkBi8rPci8ttjuFCICOp2Vj6Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			yKgFQarEtI7n4iXWXJfGkpewUWV46j6wJXSHp2S5SZs=
+			YfHHvNIaHsDbhwYi2ra8+40V2X6KyFJz535z8Sqz90s=
 			</data>
 		</dict>
 		<key>Modules/NATheme.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0SSCtjQsAkwbgXjszheeeghpLrA=
-			</data>
 			<key>hash2</key>
 			<data>
-			vwiEQQxppjoa7PRcja9VAnfddCnWqMwfxMnEnAxZgyw=
+			is6B24hh6sLctisGoDxsS8tglqCjek7WlXc2F7n0VMs=
 			</data>
 		</dict>
 		<key>Modules/NATheme.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CUQ2Jp7to2WBXUV0I3R5yueUUrY=
-			</data>
 			<key>hash2</key>
 			<data>
-			eqHECwg+68DYEysv+BWzN1x669QE2fmCmRj18qkOXpI=
+			yHavnq7GmF1JCfgR8ztHxvxyoIvUaPhDmhBb0gcDEYU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			G8zuUwzm+4cKiiq90f1lhtlsY6A=
-			</data>
 			<key>hash2</key>
 			<data>
 			1HhNJhThI+ScUN55b8EMoE5sVWQY1qddpbKJbshJRXo=

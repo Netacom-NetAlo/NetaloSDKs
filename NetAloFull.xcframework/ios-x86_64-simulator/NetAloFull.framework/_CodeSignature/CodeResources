@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RHjeOc1ETx8lX/93YOPOreUXzF0=
+		9Onn/MHIjS781PwuA0ol3EdDNFo=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		viwI8V6+tbJlc9OH2+32svBmwgo=
+		kadj1RGouYQyaPKTCWKkjO4XgyI=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		S2o6zfL8pfEKnbS2qkAZWOoSmYo=
+		mEoIi6RSvvzfihd4bQ7UHNsRBsU=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NI+Joh4gsfCu/Ciu1Lj4iZENgQE=
+		jgFE81RQoiGSg1G+BD2GoVatKww=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		viwI8V6+tbJlc9OH2+32svBmwgo=
+		kadj1RGouYQyaPKTCWKkjO4XgyI=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		S2o6zfL8pfEKnbS2qkAZWOoSmYo=
+		mEoIi6RSvvzfihd4bQ7UHNsRBsU=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		NI+Joh4gsfCu/Ciu1Lj4iZENgQE=
+		jgFE81RQoiGSg1G+BD2GoVatKww=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -52,13 +52,9 @@
 		<data>
 		K062mw4WNhNqU6O9spE5GbdDOWE=
 		</data>
-		<key>VNDDemoVC.nib/objects-11.0+.nib</key>
+		<key>VNDDemoVC.nib</key>
 		<data>
 		xZfE4556J/ew16sGJjTm+zGMJes=
-		</data>
-		<key>VNDDemoVC.nib/runtime.nib</key>
-		<data>
-		jvpaUIChrq21njBw5tGxQ0IxZpM=
 		</data>
 		<key>a1Tako.zip</key>
 		<data>
@@ -77,10 +73,6 @@
 	<dict>
 		<key>Cuckoo.zip</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GG+8cOpUEnVKWgc2rbxoN/Dx/mk=
-			</data>
 			<key>hash2</key>
 			<data>
 			Cinx3ERPIRvE1dyUPK43+b4W9sK70/1xGtoY2mn/Vjg=
@@ -88,10 +80,6 @@
 		</dict>
 		<key>Headers/NetAloFull-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fdy6J+yDgzMHPDh8PzX8ttRplhw=
-			</data>
 			<key>hash2</key>
 			<data>
 			slFe5H41ueOE7itjGJ4BKkgXyiVjbXdQoojwH6jTE5o=
@@ -99,10 +87,6 @@
 		</dict>
 		<key>Headers/NetAloFull.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Hv4UVZH30/Nsw8LXaWZvshYCvKI=
-			</data>
 			<key>hash2</key>
 			<data>
 			li7Nx3/mHzdFnV3DZ+2Lq0R20VN4LgJHetQHUoPmQoA=
@@ -110,76 +94,48 @@
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			viwI8V6+tbJlc9OH2+32svBmwgo=
-			</data>
 			<key>hash2</key>
 			<data>
-			XkYSDFYeAgjY8Lw8S75Z2UfBFADHiG/QYLkDUxrLKGU=
+			gucK6bngtwZ52LG9VEPYbN95Pi4Iocg0WAWo8vLWXmM=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			S2o6zfL8pfEKnbS2qkAZWOoSmYo=
-			</data>
 			<key>hash2</key>
 			<data>
-			MrlxeQAO3NBNNsJPx/LPcGNcIAkXW8qfZ8k5Tiec3Pw=
+			JzUc2C/UeN4ZHc53BhqO2oPn4TKG6isUJK1LWO7ADpA=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NI+Joh4gsfCu/Ciu1Lj4iZENgQE=
-			</data>
 			<key>hash2</key>
 			<data>
-			b/TuWNhIYxEnlOTVBH+fT1QTVexua3EchpEfgsTFf3k=
+			niVvaa0xSyS2Irzw0+kd+QaYo04iNLL89Eu7/gdbkfQ=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			viwI8V6+tbJlc9OH2+32svBmwgo=
-			</data>
 			<key>hash2</key>
 			<data>
-			XkYSDFYeAgjY8Lw8S75Z2UfBFADHiG/QYLkDUxrLKGU=
+			gucK6bngtwZ52LG9VEPYbN95Pi4Iocg0WAWo8vLWXmM=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			S2o6zfL8pfEKnbS2qkAZWOoSmYo=
-			</data>
 			<key>hash2</key>
 			<data>
-			MrlxeQAO3NBNNsJPx/LPcGNcIAkXW8qfZ8k5Tiec3Pw=
+			JzUc2C/UeN4ZHc53BhqO2oPn4TKG6isUJK1LWO7ADpA=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NI+Joh4gsfCu/Ciu1Lj4iZENgQE=
-			</data>
 			<key>hash2</key>
 			<data>
-			b/TuWNhIYxEnlOTVBH+fT1QTVexua3EchpEfgsTFf3k=
+			niVvaa0xSyS2Irzw0+kd+QaYo04iNLL89Eu7/gdbkfQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3KWgArIJHIHgGsA9/lO/brQ2Z64=
-			</data>
 			<key>hash2</key>
 			<data>
 			CrtD/1p3+j5uaNobwRXlEvGHt7fMzMdXmT07Zx9hj1I=
@@ -187,43 +143,20 @@
 		</dict>
 		<key>Starly.zip</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			K062mw4WNhNqU6O9spE5GbdDOWE=
-			</data>
 			<key>hash2</key>
 			<data>
 			c6VaNJCw8/AvTFv8xrU0VimSQDRRed71XrAeUudJ9Oo=
 			</data>
 		</dict>
-		<key>VNDDemoVC.nib/objects-11.0+.nib</key>
+		<key>VNDDemoVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xZfE4556J/ew16sGJjTm+zGMJes=
-			</data>
 			<key>hash2</key>
 			<data>
 			oXah1lyzboPlYCUx80YYDdHkF9CO1yJHfJLuXldYa5E=
 			</data>
 		</dict>
-		<key>VNDDemoVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jvpaUIChrq21njBw5tGxQ0IxZpM=
-			</data>
-			<key>hash2</key>
-			<data>
-			2fFwCrEcCqe+rVIrBbuYRL9v6W7FDqKPoE1nEdsG5bE=
-			</data>
-		</dict>
 		<key>a1Tako.zip</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qzW4tWFW42/VptCHzdh0IwaAifo=
-			</data>
 			<key>hash2</key>
 			<data>
 			J1VyHuObItmopA130J9Ol/Q4Cc+7txsQU1lOy/gj5v4=
@@ -231,10 +164,6 @@
 		</dict>
 		<key>audio_incoming.mp3</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qTeaoAD2IL4O8FVb0i43dNr8kkU=
-			</data>
 			<key>hash2</key>
 			<data>
 			Nl46GTgze8l+n+bt3pPaY6YvHOtOjaAljsxja7R9p4E=
@@ -242,10 +171,6 @@
 		</dict>
 		<key>audio_outgoing.mp3</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qTeaoAD2IL4O8FVb0i43dNr8kkU=
-			</data>
 			<key>hash2</key>
 			<data>
 			Nl46GTgze8l+n+bt3pPaY6YvHOtOjaAljsxja7R9p4E=
