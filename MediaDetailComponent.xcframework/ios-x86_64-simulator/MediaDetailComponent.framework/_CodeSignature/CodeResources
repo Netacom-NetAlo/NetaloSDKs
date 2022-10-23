@@ -12,45 +12,41 @@
 		<data>
 		b0+4kTqK+RMHqcJz8TLPKykkYMU=
 		</data>
-		<key>ImageOptionsVC.nib/objects-11.0+.nib</key>
+		<key>ImageOptionsVC.nib</key>
 		<data>
 		NGNb52LZ6hgXJUJ9e/yXTamw+H0=
 		</data>
-		<key>ImageOptionsVC.nib/runtime.nib</key>
-		<data>
-		818XQwWur6jYYYJchGqWiaRNDyA=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		eyETAc8cw/AAL3mxEwDT59mtqLs=
+		B/HM8ZZqkaYUtXWFt9sW2SsJD4Y=
 		</data>
 		<key>MediaDetailVC.nib</key>
 		<data>
-		ck88zBTCZlL+t1Z0hcGPYuCR89w=
+		pYZL8L0KqnYNOL7yeL4omVX/VIY=
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		I48S4xHFgttkoDFrl13I393UekQ=
+		dBimPE3hGm1/++8Zl3YCKtZM7sM=
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ENXwOSYgP2xfuJJkDDCyWW4lhY0=
+		hHu7cxg4cWT4GsZBabj4HL/DbGQ=
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jV7fi+7mairsa+Lj5aiaWlT47ik=
+		upe5bll0JVg7WjK6n8SQtYwXPzU=
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		I48S4xHFgttkoDFrl13I393UekQ=
+		dBimPE3hGm1/++8Zl3YCKtZM7sM=
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		ENXwOSYgP2xfuJJkDDCyWW4lhY0=
+		hHu7cxg4cWT4GsZBabj4HL/DbGQ=
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		jV7fi+7mairsa+Lj5aiaWlT47ik=
+		upe5bll0JVg7WjK6n8SQtYwXPzU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,10 +57,6 @@
 	<dict>
 		<key>Headers/MediaDetailComponent-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			C67whOWwc/jdQS5ujcsBieBeL5E=
-			</data>
 			<key>hash2</key>
 			<data>
 			JkTFKu48+7sYhTLEK0PwBEgJFmtFxr7VSIIGVSmBsus=
@@ -72,120 +64,69 @@
 		</dict>
 		<key>Headers/MediaDetailComponent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			b0+4kTqK+RMHqcJz8TLPKykkYMU=
-			</data>
 			<key>hash2</key>
 			<data>
 			tsSahRoo2U0bqrEzQyhBoaF2/A6LtGFWyIZrhKDp3OM=
 			</data>
 		</dict>
-		<key>ImageOptionsVC.nib/objects-11.0+.nib</key>
+		<key>ImageOptionsVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NGNb52LZ6hgXJUJ9e/yXTamw+H0=
-			</data>
 			<key>hash2</key>
 			<data>
 			jFMbnhwKV8UsgZa+Q0+jPXT+VChH98WF4pmAr/knACY=
 			</data>
 		</dict>
-		<key>ImageOptionsVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			818XQwWur6jYYYJchGqWiaRNDyA=
-			</data>
-			<key>hash2</key>
-			<data>
-			bIjFw3ySgkW5LwyBjjVGC+QaUk5Iue6fv9/2HpwY/9Y=
-			</data>
-		</dict>
 		<key>MediaDetailVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ck88zBTCZlL+t1Z0hcGPYuCR89w=
-			</data>
 			<key>hash2</key>
 			<data>
-			4r4/47U5GcI0opGsi9WN51VZaIoOf3cmXHgqIZNAGTE=
+			66smpWMAMtxUuQmyI1ei17IctxoLfs+W3mg1KXu9wVI=
 			</data>
 		</dict>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			I48S4xHFgttkoDFrl13I393UekQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			pxgw0KYAbSFELUnjXQklYFyDjdNjnbZNeO47U9Zd8+Y=
+			tvQ1N2nmxD2BPLbSptGI4iwH8d+F4w7dd4V0ZIvN2Ok=
 			</data>
 		</dict>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ENXwOSYgP2xfuJJkDDCyWW4lhY0=
-			</data>
 			<key>hash2</key>
 			<data>
-			/BZFDkWyse8m+Zfr04Tsg7RTsuH41TKxy3DPGkoCLhk=
+			1AENhmF8Om8kMXyzGqid78Rp75NtfhR3gXXF8dyO7kc=
 			</data>
 		</dict>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jV7fi+7mairsa+Lj5aiaWlT47ik=
-			</data>
 			<key>hash2</key>
 			<data>
-			gDLgq1Qu/0jlDKQapyHrjL5x28uJ4E465HHV5acVQK4=
+			4OHk5IOAZPmAmJfq+Ykvgihf5mTN/IC3G3ztTPlyVlQ=
 			</data>
 		</dict>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			I48S4xHFgttkoDFrl13I393UekQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			pxgw0KYAbSFELUnjXQklYFyDjdNjnbZNeO47U9Zd8+Y=
+			tvQ1N2nmxD2BPLbSptGI4iwH8d+F4w7dd4V0ZIvN2Ok=
 			</data>
 		</dict>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ENXwOSYgP2xfuJJkDDCyWW4lhY0=
-			</data>
 			<key>hash2</key>
 			<data>
-			/BZFDkWyse8m+Zfr04Tsg7RTsuH41TKxy3DPGkoCLhk=
+			1AENhmF8Om8kMXyzGqid78Rp75NtfhR3gXXF8dyO7kc=
 			</data>
 		</dict>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jV7fi+7mairsa+Lj5aiaWlT47ik=
-			</data>
 			<key>hash2</key>
 			<data>
-			gDLgq1Qu/0jlDKQapyHrjL5x28uJ4E465HHV5acVQK4=
+			4OHk5IOAZPmAmJfq+Ykvgihf5mTN/IC3G3ztTPlyVlQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oPXX3cIlzue2CXgVwP6qe0wJkGY=
-			</data>
 			<key>hash2</key>
 			<data>
 			JPC1iQunGhVhdwSceOWv/ZXhnJILU0FiVjCtKV4BBp0=

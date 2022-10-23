@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FY8JzTEc2FN7qu/qqMb+3inkNok=
+		06rVR5CCJJl/mbuQDjM0bS2YDTQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -21,10 +21,6 @@
 	<dict>
 		<key>Headers/EditContactComponent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1s4i8dt1BbtP+8S2sKsdlHV1YxE=
-			</data>
 			<key>hash2</key>
 			<data>
 			NfqDtEU337VWW0dr4Nf/+V0KD64rCQ3yy/CJgKp2+oQ=
@@ -32,10 +28,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WA80Yv+kvYvoFsP9Hc2KCXueMiI=
-			</data>
 			<key>hash2</key>
 			<data>
 			kPv/qVwPC03TKnrjUw/TWm9BUtMBk/esRWp6cp6Wn8A=

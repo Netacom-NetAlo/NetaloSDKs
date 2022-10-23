@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mLnkUCB+o6x7mKXCsMTYUiZDNLg=
+		tDQrNOPiH+ESdOju2tXvJg7mtJc=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KQ3WkkWrokLxpwtejpuKACTw6AY=
+		HeEuu6gd1rkjONsqYRqnCMJOHvw=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KYr5l5pvXl43DATryDj9AIyuumE=
+		GiDge9LQdG0bfQkUTDElp4CDMjs=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HOLuRMnAatRXq1q3gCsRKWQfSCw=
+		ZxVGTzKQOVV14RonzXnRQuThYLg=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		KQ3WkkWrokLxpwtejpuKACTw6AY=
+		HeEuu6gd1rkjONsqYRqnCMJOHvw=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		KYr5l5pvXl43DATryDj9AIyuumE=
+		GiDge9LQdG0bfQkUTDElp4CDMjs=
 		</data>
 		<key>Modules/ShareComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		HOLuRMnAatRXq1q3gCsRKWQfSCw=
+		ZxVGTzKQOVV14RonzXnRQuThYLg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -52,23 +52,15 @@
 		<data>
 		Oc3HG3Fv1dgRUV/oGwSreYpW7w0=
 		</data>
-		<key>ShareViewController.nib/objects-11.0+.nib</key>
+		<key>ShareViewController.nib</key>
 		<data>
 		R8hwBqsu6iWelDIxEzCyKgHpusg=
-		</data>
-		<key>ShareViewController.nib/runtime.nib</key>
-		<data>
-		NRjHHHU90Qhqga7TcwJic65A1wg=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/ShareComponent-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			e29HllCvqEf92eoguGGmbkL/0CA=
-			</data>
 			<key>hash2</key>
 			<data>
 			uyBFMd/9SwtYzcFPJT8OkFQSRgkFBTPlDb8HAYJ8YSo=
@@ -76,10 +68,6 @@
 		</dict>
 		<key>Headers/ShareComponent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pUV8kgr0S6ovmbOLeHuP2wUu8Lw=
-			</data>
 			<key>hash2</key>
 			<data>
 			gsuLz5Sczbz4CD215+g7zMbpV0AwmTmrTCrx2X7Wd4g=
@@ -87,76 +75,48 @@
 		</dict>
 		<key>Modules/ShareComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KQ3WkkWrokLxpwtejpuKACTw6AY=
-			</data>
 			<key>hash2</key>
 			<data>
-			ZvfvTV769Dzf65CfUaeAg78iB7oULscSj+dGtnr/c1U=
+			YiqwlSDiW9ankf5apbDQHf7wooZl3rWDaQ6UM92sIiY=
 			</data>
 		</dict>
 		<key>Modules/ShareComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KYr5l5pvXl43DATryDj9AIyuumE=
-			</data>
 			<key>hash2</key>
 			<data>
-			vTZJISPuRFZDqLfPWaC2aSnAtHBKNXXewDwwLfr5w1s=
+			Uw4yqtJu07kOTA8kvpkbEse+EsRA8exdzNAFLaDhOHo=
 			</data>
 		</dict>
 		<key>Modules/ShareComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HOLuRMnAatRXq1q3gCsRKWQfSCw=
-			</data>
 			<key>hash2</key>
 			<data>
-			7xzKsONNGDL4kbFuwwpxX6adcWWs0dvPWIcwiYpTDdA=
+			KFprbCKgs0NlAbtOX4XoSlpik/b6mo/DP5sMYh5j7cA=
 			</data>
 		</dict>
 		<key>Modules/ShareComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KQ3WkkWrokLxpwtejpuKACTw6AY=
-			</data>
 			<key>hash2</key>
 			<data>
-			ZvfvTV769Dzf65CfUaeAg78iB7oULscSj+dGtnr/c1U=
+			YiqwlSDiW9ankf5apbDQHf7wooZl3rWDaQ6UM92sIiY=
 			</data>
 		</dict>
 		<key>Modules/ShareComponent.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KYr5l5pvXl43DATryDj9AIyuumE=
-			</data>
 			<key>hash2</key>
 			<data>
-			vTZJISPuRFZDqLfPWaC2aSnAtHBKNXXewDwwLfr5w1s=
+			Uw4yqtJu07kOTA8kvpkbEse+EsRA8exdzNAFLaDhOHo=
 			</data>
 		</dict>
 		<key>Modules/ShareComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HOLuRMnAatRXq1q3gCsRKWQfSCw=
-			</data>
 			<key>hash2</key>
 			<data>
-			7xzKsONNGDL4kbFuwwpxX6adcWWs0dvPWIcwiYpTDdA=
+			KFprbCKgs0NlAbtOX4XoSlpik/b6mo/DP5sMYh5j7cA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lzUCSsKD+9/DJgdNoq8H7Vs3H2g=
-			</data>
 			<key>hash2</key>
 			<data>
 			kYvp6nIoedeRLHjXoLHqXxCiJWt3nl18X7kg7mj70E0=
@@ -164,10 +124,6 @@
 		</dict>
 		<key>ShareCollectionViewCell.nib/objects-12.3+.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Fx4QVn3fGxHIyIvy9xClF+7z3n4=
-			</data>
 			<key>hash2</key>
 			<data>
 			ANsucuJeieySASCw6VFQUx78xCvMWxAbA5nmcLzJxDw=
@@ -175,35 +131,16 @@
 		</dict>
 		<key>ShareCollectionViewCell.nib/runtime.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Oc3HG3Fv1dgRUV/oGwSreYpW7w0=
-			</data>
 			<key>hash2</key>
 			<data>
 			dujVWwEw0s41IxAl07WcuVJK+TN29Mawk1zXXiJXo8o=
 			</data>
 		</dict>
-		<key>ShareViewController.nib/objects-11.0+.nib</key>
+		<key>ShareViewController.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			R8hwBqsu6iWelDIxEzCyKgHpusg=
-			</data>
 			<key>hash2</key>
 			<data>
 			ExwcmDL6g8AG4rpFbqziHSG8MPsLFX+iDNA49gmW7AU=
-			</data>
-		</dict>
-		<key>ShareViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NRjHHHU90Qhqga7TcwJic65A1wg=
-			</data>
-			<key>hash2</key>
-			<data>
-			VvDpKz2j0AjXyIrYo15BtHJgUR3ZA4IuoZc+dDr8Yp0=
 			</data>
 		</dict>
 	</dict>

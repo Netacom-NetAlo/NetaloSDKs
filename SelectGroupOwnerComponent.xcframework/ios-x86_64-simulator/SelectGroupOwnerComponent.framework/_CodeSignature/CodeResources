@@ -14,53 +14,45 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PzJIsYZn7lDN/9fpvwzGebpSojM=
+		+7PatM0qEDlNyVtgYVo2P44olsI=
 		</data>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ncgOFMY/pVotRnVgKiZGQNbZl8c=
+		1ZMxxlA5v47KvDi7H/U4M8Ac9og=
 		</data>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3qBvw0tfEQGhDP/89F0IL64r4ec=
+		5u4kZ8rl5VXDBVAAXFDCYV+Xzn8=
 		</data>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QyC8n1nOi6wTdP3q2q+vg6eYcWc=
+		a74W/0IFr8mDp+HGMvnvhMcMgac=
 		</data>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		ncgOFMY/pVotRnVgKiZGQNbZl8c=
+		1ZMxxlA5v47KvDi7H/U4M8Ac9og=
 		</data>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		3qBvw0tfEQGhDP/89F0IL64r4ec=
+		5u4kZ8rl5VXDBVAAXFDCYV+Xzn8=
 		</data>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		QyC8n1nOi6wTdP3q2q+vg6eYcWc=
+		a74W/0IFr8mDp+HGMvnvhMcMgac=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		u3Fq3W/jcQDKzMSMwlQNA8T/C1Y=
 		</data>
-		<key>SelectGroupOwnerVC.nib/objects-11.0+.nib</key>
+		<key>SelectGroupOwnerVC.nib</key>
 		<data>
 		5slo8BokFr0IAAp05uacA1MiRoc=
-		</data>
-		<key>SelectGroupOwnerVC.nib/runtime.nib</key>
-		<data>
-		YEyNH913C0x0k7CpVaE+2gIF9g0=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/SelectGroupOwnerComponent-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kNmv7J0Z7fL/lzNPcTrKnz10U4s=
-			</data>
 			<key>hash2</key>
 			<data>
 			R8WxgqL71b96sgBN3dujtqU1eKKbci5PIbkiFmirIyk=
@@ -68,10 +60,6 @@
 		</dict>
 		<key>Headers/SelectGroupOwnerComponent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CGA9Fw0TyClhlbxNMRgFMPsD3Y8=
-			</data>
 			<key>hash2</key>
 			<data>
 			DHLFrLC21En7+oPCzUF6h6EoEaoHiHXCFMmuxQ5pBmA=
@@ -79,101 +67,58 @@
 		</dict>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ncgOFMY/pVotRnVgKiZGQNbZl8c=
-			</data>
 			<key>hash2</key>
 			<data>
-			4cwiaOGBMfZdff+dfnn0F6iZTkOvVVglOwEiZP5/0kE=
+			IXKkNHyzhIzQK7OAOCZqgEqPaDNUexpChaBFd8xz+f4=
 			</data>
 		</dict>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3qBvw0tfEQGhDP/89F0IL64r4ec=
-			</data>
 			<key>hash2</key>
 			<data>
-			lARdvt9DyFoRrlC3rWJks8dDqVbn0LXqR2o/KY0EQjk=
+			qX9dPz/VD3ZBSj7IUOAVhZneMJItASnPk/SoxXIA5/E=
 			</data>
 		</dict>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QyC8n1nOi6wTdP3q2q+vg6eYcWc=
-			</data>
 			<key>hash2</key>
 			<data>
-			ANFQQqdwgXMDLWL0o/AA2ZLhW/fbF2DJsDzn/E0jZxk=
+			7pfh7iBshvBosk8xNDH7OM8TK0QFmvL/nkD08BwEgG0=
 			</data>
 		</dict>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ncgOFMY/pVotRnVgKiZGQNbZl8c=
-			</data>
 			<key>hash2</key>
 			<data>
-			4cwiaOGBMfZdff+dfnn0F6iZTkOvVVglOwEiZP5/0kE=
+			IXKkNHyzhIzQK7OAOCZqgEqPaDNUexpChaBFd8xz+f4=
 			</data>
 		</dict>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3qBvw0tfEQGhDP/89F0IL64r4ec=
-			</data>
 			<key>hash2</key>
 			<data>
-			lARdvt9DyFoRrlC3rWJks8dDqVbn0LXqR2o/KY0EQjk=
+			qX9dPz/VD3ZBSj7IUOAVhZneMJItASnPk/SoxXIA5/E=
 			</data>
 		</dict>
 		<key>Modules/SelectGroupOwnerComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QyC8n1nOi6wTdP3q2q+vg6eYcWc=
-			</data>
 			<key>hash2</key>
 			<data>
-			ANFQQqdwgXMDLWL0o/AA2ZLhW/fbF2DJsDzn/E0jZxk=
+			7pfh7iBshvBosk8xNDH7OM8TK0QFmvL/nkD08BwEgG0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			u3Fq3W/jcQDKzMSMwlQNA8T/C1Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			4Cp/KXw4J9ZTASWd0laRIYfwWA97ZH1QUvuAtilaOr8=
 			</data>
 		</dict>
-		<key>SelectGroupOwnerVC.nib/objects-11.0+.nib</key>
+		<key>SelectGroupOwnerVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5slo8BokFr0IAAp05uacA1MiRoc=
-			</data>
 			<key>hash2</key>
 			<data>
 			IVz3dxNl2aSxVVlkpegayrqS0EMww14dUfPADhPFrgk=
-			</data>
-		</dict>
-		<key>SelectGroupOwnerVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YEyNH913C0x0k7CpVaE+2gIF9g0=
-			</data>
-			<key>hash2</key>
-			<data>
-			7PgBsO6NUB6vjF5FqXiZO+Un3mrdfD+VKZtowk2HJg4=
 			</data>
 		</dict>
 	</dict>

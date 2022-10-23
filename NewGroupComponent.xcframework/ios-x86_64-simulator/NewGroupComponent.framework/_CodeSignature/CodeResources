@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>CreateGroupChatVC.nib/objects-11.0+.nib</key>
+		<key>CreateGroupChatVC.nib</key>
 		<data>
 		DUg1Ur7L8aDpjy71PQGc06eBZbQ=
-		</data>
-		<key>CreateGroupChatVC.nib/runtime.nib</key>
-		<data>
-		K/ZliRh7K/dSpOEZtMoRKe6yabs=
 		</data>
 		<key>Headers/NewGroupComponent-Swift.h</key>
 		<data>
@@ -22,75 +18,52 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AxmeFxkDtlquAHSfDtZGwsO5qVk=
+		22EmDVcL2+lMF1Yh2bO4wTITuLU=
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		inpRn4FQc2QQcjeVmM9y8z2Om3s=
+		kG0kCfpeCBTaXuoIvaUnNvdtGyU=
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yMYc8NTrJkJveFJphrK5cBQKhdI=
+		bkckyE5IayX2yM8+zTo1P/qQ9+E=
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DUa+VfIJDAQd/SHgRB0IXgWcLvg=
+		mNzlZZqBjUeHerXtcLd2grII9fE=
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		inpRn4FQc2QQcjeVmM9y8z2Om3s=
+		kG0kCfpeCBTaXuoIvaUnNvdtGyU=
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		yMYc8NTrJkJveFJphrK5cBQKhdI=
+		bkckyE5IayX2yM8+zTo1P/qQ9+E=
 		</data>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		DUa+VfIJDAQd/SHgRB0IXgWcLvg=
+		mNzlZZqBjUeHerXtcLd2grII9fE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		7Puc+ip3DUhTAqx5aDdq3X3do6w=
 		</data>
-		<key>NewGroupVC.nib/objects-11.0+.nib</key>
+		<key>NewGroupVC.nib</key>
 		<data>
 		vXJELy+rzPO5fnan121BUAH8Cp8=
-		</data>
-		<key>NewGroupVC.nib/runtime.nib</key>
-		<data>
-		kK06JV40aRpPZ3BOpdHu/BA1NnQ=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>CreateGroupChatVC.nib/objects-11.0+.nib</key>
+		<key>CreateGroupChatVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DUg1Ur7L8aDpjy71PQGc06eBZbQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			osGSGqm0+/odLcKmROVEUrBWODcnJyNZdI8cOlG0NOA=
 			</data>
 		</dict>
-		<key>CreateGroupChatVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			K/ZliRh7K/dSpOEZtMoRKe6yabs=
-			</data>
-			<key>hash2</key>
-			<data>
-			JO+bdHXHvj7AnDzBQFMGw0KSLJYbOH+EAQ8DsioeKJY=
-			</data>
-		</dict>
 		<key>Headers/NewGroupComponent-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3AJiY8aMcz7eBn430OTx+8H3V8w=
-			</data>
 			<key>hash2</key>
 			<data>
 			ASEPI7qo2Zv0IJWpCZyTALYoOWUcBKc29VaWrLI6Aq4=
@@ -98,10 +71,6 @@
 		</dict>
 		<key>Headers/NewGroupComponent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8GbWE9JcEccUIAd+/SpUmrJJ93M=
-			</data>
 			<key>hash2</key>
 			<data>
 			x8c16N22ucNtPOvLGBEIjdvH1W/hqtydzWIZAl21IAo=
@@ -109,101 +78,58 @@
 		</dict>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			inpRn4FQc2QQcjeVmM9y8z2Om3s=
-			</data>
 			<key>hash2</key>
 			<data>
-			P8lTdnHHdcU4lTwu7nB1M4p+5GuVVsEel9llwK8v0qA=
+			ad3SS/HTBrzKLK8RU05drOp2MCLcgymfymFcjepddp8=
 			</data>
 		</dict>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yMYc8NTrJkJveFJphrK5cBQKhdI=
-			</data>
 			<key>hash2</key>
 			<data>
-			QtzUc/kSapg7YFNir6cPD55clko0uoJSvXx3ZDBalGs=
+			okfJlleiWkNOIIBGwyVS7VknjH/gyw23oUhJ6ZtHrwQ=
 			</data>
 		</dict>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DUa+VfIJDAQd/SHgRB0IXgWcLvg=
-			</data>
 			<key>hash2</key>
 			<data>
-			XdymFooHSi8s7JQ5A1LMLywKCP6VOHtANdUAw4B43lQ=
+			ofIKdTP0Q5ZneSH+zCBBwbTqeuP63vQ3Fb5Th4wsrdg=
 			</data>
 		</dict>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			inpRn4FQc2QQcjeVmM9y8z2Om3s=
-			</data>
 			<key>hash2</key>
 			<data>
-			P8lTdnHHdcU4lTwu7nB1M4p+5GuVVsEel9llwK8v0qA=
+			ad3SS/HTBrzKLK8RU05drOp2MCLcgymfymFcjepddp8=
 			</data>
 		</dict>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yMYc8NTrJkJveFJphrK5cBQKhdI=
-			</data>
 			<key>hash2</key>
 			<data>
-			QtzUc/kSapg7YFNir6cPD55clko0uoJSvXx3ZDBalGs=
+			okfJlleiWkNOIIBGwyVS7VknjH/gyw23oUhJ6ZtHrwQ=
 			</data>
 		</dict>
 		<key>Modules/NewGroupComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DUa+VfIJDAQd/SHgRB0IXgWcLvg=
-			</data>
 			<key>hash2</key>
 			<data>
-			XdymFooHSi8s7JQ5A1LMLywKCP6VOHtANdUAw4B43lQ=
+			ofIKdTP0Q5ZneSH+zCBBwbTqeuP63vQ3Fb5Th4wsrdg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7Puc+ip3DUhTAqx5aDdq3X3do6w=
-			</data>
 			<key>hash2</key>
 			<data>
 			ntZHVRbGCBpCokFZWqgsUBifUSAVv2zobV2V/W6RVy8=
 			</data>
 		</dict>
-		<key>NewGroupVC.nib/objects-11.0+.nib</key>
+		<key>NewGroupVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vXJELy+rzPO5fnan121BUAH8Cp8=
-			</data>
 			<key>hash2</key>
 			<data>
 			cyuhvFAflz7FLYPKhzu6E3r3v0Ukarzi0IEHfgjyzSc=
-			</data>
-		</dict>
-		<key>NewGroupVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kK06JV40aRpPZ3BOpdHu/BA1NnQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			xzVsDDBPrjC/BIsaHNdbzcCbgfUi7RKUNV07/OoD0C4=
 			</data>
 		</dict>
 	</dict>

@@ -63,7 +63,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-    spec.platform     = :ios, "10.0"
+    spec.platform     = :ios, "12.0"
     
       spec.pod_target_xcconfig = {
         "SWIFT_VERSION" => "4.2",
@@ -136,9 +136,9 @@ Pod::Spec.new do |spec|
 
   # spec.requires_arc = true
 
-    spec.dependency 'Kingfisher', '6.1.1'
+    spec.dependency 'Kingfisher', '7.3.2'
     spec.dependency 'XCoordinator', '~> 2.0'
-    spec.dependency 'lottie-ios', '3.2.3'  
+    spec.dependency 'lottie-ios', '3.3.0'  
     
     spec.vendored_frameworks = "ForwardMessageComponent.xcframework", "SelectGroupOwnerComponent.xcframework", "DocumentViewerComponent.xcframework", "ShareComponent.xcframework", "EditContactComponent.xcframework", "BackgroundPickerComponent.xcframework", "LocationPickerComponent.xcframework", "StickerPickerComponent.xcframework", "MediaDetailComponent.xcframework", "SearchComponent.xcframework", "CallComponent.xcframework", "ChatComponent.xcframework", "MediaPickerComponent.xcframework", "ContactDetailComponent.xcframework", "GroupDetailComponent.xcframework", "CreateSecretChatComponent.xcframework", "AddContactComponent.xcframework", "WebViewComponent.xcframework", "NewGroupComponent.xcframework", "AccountComponent.xcframework", "ListContactComponent.xcframework", "ListCallComponent.xcframework", "ListGroupComponent.xcframework", "AuthorizationComponent.xcframework", "NetAloCoreComponent.xcframework", "NATheme.xcframework",  "NetAloFull.xcframework", "NACoreUI.xcframework", "NACoreUtils.xcframework", "RxGesture.xcframework", "Carbon.xcframework", "DifferenceKit.xcframework"
 

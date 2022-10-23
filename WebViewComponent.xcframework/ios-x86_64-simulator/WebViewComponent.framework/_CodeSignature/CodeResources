@@ -14,53 +14,45 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XoGiWS0MxTMfDXYD/I76Y6A+tSM=
+		zzIih/cI46TFOwGLiGFfEQ3gVuU=
 		</data>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vov4kbvnsrFkpaDPWgryMNlXGmY=
+		nmjEjLg6WLMA8zILLh+LyUYnu/k=
 		</data>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6WQzJAz4337COdbZ7dU609X6R4Q=
+		Gd7V/vXPKBQLAwO5F4oCngj4R34=
 		</data>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+GrJ04gj+r4iOHKUysp559WubI4=
+		FhvhUKEeEWSKgCey2KHTlvInQF0=
 		</data>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		vov4kbvnsrFkpaDPWgryMNlXGmY=
+		nmjEjLg6WLMA8zILLh+LyUYnu/k=
 		</data>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		6WQzJAz4337COdbZ7dU609X6R4Q=
+		Gd7V/vXPKBQLAwO5F4oCngj4R34=
 		</data>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		+GrJ04gj+r4iOHKUysp559WubI4=
+		FhvhUKEeEWSKgCey2KHTlvInQF0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		jLTLZhZIFjGMKpGakqEZwJ2kKv0=
 		</data>
-		<key>WebViewVC.nib/objects-11.0+.nib</key>
+		<key>WebViewVC.nib</key>
 		<data>
 		LvgEG8LFvpO3Z616kvX1UEZrWFo=
-		</data>
-		<key>WebViewVC.nib/runtime.nib</key>
-		<data>
-		n1PvlTalpkRCqEnuz30mk3zTFH8=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/WebViewComponent-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7Qjj0Lz4dW0Q9SqBp1W68CA6hPc=
-			</data>
 			<key>hash2</key>
 			<data>
 			a8OfIbHHOOQkW9lM8f6mV+OPckEgVSWfIc4eID5EeXE=
@@ -68,10 +60,6 @@
 		</dict>
 		<key>Headers/WebViewComponent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JgrtXfqVXnXhUhD30l/9DavrSgk=
-			</data>
 			<key>hash2</key>
 			<data>
 			hzl1i1mIP+AxpNZ0wlmu5OnTAVBQBGmXLszubAQEZXw=
@@ -79,101 +67,58 @@
 		</dict>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vov4kbvnsrFkpaDPWgryMNlXGmY=
-			</data>
 			<key>hash2</key>
 			<data>
-			gzKhZSH3cb0RUYJguG8RSTf+weQj8t8hAClWitK/5ac=
+			VYrM5V8zYB9I1+sGdRqRYUYUuzIdZ+1w2gvzYaUVIdM=
 			</data>
 		</dict>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6WQzJAz4337COdbZ7dU609X6R4Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			xIeX6GtUO7OqebP3FUHOJNhhuLck81B82hacIbbirGk=
+			hKkGtdI8Okd1gga2Se5iZp58VU9ulpl7MCYQtnvlMxs=
 			</data>
 		</dict>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+GrJ04gj+r4iOHKUysp559WubI4=
-			</data>
 			<key>hash2</key>
 			<data>
-			wS2QhIbWKsEsIMoJGvqfhbsIeqQ8DE+j/Ij+KMYXaG4=
+			g1xYMsa9Az2LPp3i2ATtVAp55U1x8t2Qj5CKVzCM9uc=
 			</data>
 		</dict>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vov4kbvnsrFkpaDPWgryMNlXGmY=
-			</data>
 			<key>hash2</key>
 			<data>
-			gzKhZSH3cb0RUYJguG8RSTf+weQj8t8hAClWitK/5ac=
+			VYrM5V8zYB9I1+sGdRqRYUYUuzIdZ+1w2gvzYaUVIdM=
 			</data>
 		</dict>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6WQzJAz4337COdbZ7dU609X6R4Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			xIeX6GtUO7OqebP3FUHOJNhhuLck81B82hacIbbirGk=
+			hKkGtdI8Okd1gga2Se5iZp58VU9ulpl7MCYQtnvlMxs=
 			</data>
 		</dict>
 		<key>Modules/WebViewComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+GrJ04gj+r4iOHKUysp559WubI4=
-			</data>
 			<key>hash2</key>
 			<data>
-			wS2QhIbWKsEsIMoJGvqfhbsIeqQ8DE+j/Ij+KMYXaG4=
+			g1xYMsa9Az2LPp3i2ATtVAp55U1x8t2Qj5CKVzCM9uc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jLTLZhZIFjGMKpGakqEZwJ2kKv0=
-			</data>
 			<key>hash2</key>
 			<data>
 			n7z/f4Dtgl2ImcmYNlfPBBE9Re5YpW5ahTPN62ZB9xY=
 			</data>
 		</dict>
-		<key>WebViewVC.nib/objects-11.0+.nib</key>
+		<key>WebViewVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LvgEG8LFvpO3Z616kvX1UEZrWFo=
-			</data>
 			<key>hash2</key>
 			<data>
 			8YPkqsrVbQDIZFmAcmTL5bXmMFv5RWz1lonbix/+SJM=
-			</data>
-		</dict>
-		<key>WebViewVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			n1PvlTalpkRCqEnuz30mk3zTFH8=
-			</data>
-			<key>hash2</key>
-			<data>
-			EVJBpRbQRo0Il8ySYD0GFe5sbitMFCu46yoIG0tZaPE=
 			</data>
 		</dict>
 	</dict>

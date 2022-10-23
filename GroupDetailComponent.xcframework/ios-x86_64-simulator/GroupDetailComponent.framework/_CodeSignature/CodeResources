@@ -4,37 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AddAdminVC.nib/objects-11.0+.nib</key>
+		<key>AddAdminVC.nib</key>
 		<data>
 		Q3xQ9LypcrDJdwRC6qI76Ko1qjk=
 		</data>
-		<key>AddAdminVC.nib/runtime.nib</key>
-		<data>
-		RoFrVc7gPgAGb6ly7RN285ChBgs=
-		</data>
-		<key>EditGroupVC.nib/objects-11.0+.nib</key>
+		<key>EditGroupVC.nib</key>
 		<data>
 		fY7+ZURNslrwS6yLS68gevSXyYs=
 		</data>
-		<key>EditGroupVC.nib/runtime.nib</key>
-		<data>
-		+n7TkRhFWVNCFYigZ7mqJoC6iVY=
-		</data>
-		<key>GroupDetailVC.nib/objects-11.0+.nib</key>
+		<key>GroupDetailVC.nib</key>
 		<data>
 		OBWIvQ2U5XXZ5W3pcIbIz0Q9+uk=
 		</data>
-		<key>GroupDetailVC.nib/runtime.nib</key>
-		<data>
-		nxpdU4bjOTJclKqrxu5U0DXXYvM=
-		</data>
-		<key>GroupMemberListVC.nib/objects-11.0+.nib</key>
+		<key>GroupMemberListVC.nib</key>
 		<data>
 		SLwQ7we7e1whSb0VF2vfMGfJqy4=
-		</data>
-		<key>GroupMemberListVC.nib/runtime.nib</key>
-		<data>
-		MCgtj+yqi69hcQ2qLYJRxtviv1I=
 		</data>
 		<key>Headers/GroupDetailComponent-Swift.h</key>
 		<data>
@@ -46,149 +30,77 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nQqeE4qf8gK4XqbKX5lPUPCQWv4=
+		9tsHuIsLhRa9692bJgTw107Ebdg=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		d2dK1WA3PMv71A0AVYnU76niM3A=
+		K/LqwgSFRJXuwolCz6qpNAfkWuo=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Oh0kva9659e9MKWDLpUjYOElgKM=
+		qGqlfLlppjeoV/BdMyagnlWKyFc=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		D6MzKdDAgQMpFdnqsk+ha9buw+o=
+		DLwRFAxBFkwNdEGWjwC+iRftkFs=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		d2dK1WA3PMv71A0AVYnU76niM3A=
+		K/LqwgSFRJXuwolCz6qpNAfkWuo=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		Oh0kva9659e9MKWDLpUjYOElgKM=
+		qGqlfLlppjeoV/BdMyagnlWKyFc=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		D6MzKdDAgQMpFdnqsk+ha9buw+o=
+		DLwRFAxBFkwNdEGWjwC+iRftkFs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		yX8pzJBcQKYvN4s2366D4i4pmEc=
 		</data>
-		<key>MoveMemberVC.nib/objects-11.0+.nib</key>
+		<key>MoveMemberVC.nib</key>
 		<data>
 		DzhYX89Ece75nR1ylbucZ3IDVOc=
 		</data>
-		<key>MoveMemberVC.nib/runtime.nib</key>
-		<data>
-		mpzkazAbtM+bgOCuwIHceE/8B2E=
-		</data>
-		<key>QRCodeVC.nib/objects-11.0+.nib</key>
+		<key>QRCodeVC.nib</key>
 		<data>
 		m9lYNg0AkS/xrZx7x/MsW3aFbSQ=
-		</data>
-		<key>QRCodeVC.nib/runtime.nib</key>
-		<data>
-		Gg34Y0rqpULsijc2S6wWaG8zQsM=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AddAdminVC.nib/objects-11.0+.nib</key>
+		<key>AddAdminVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Q3xQ9LypcrDJdwRC6qI76Ko1qjk=
-			</data>
 			<key>hash2</key>
 			<data>
 			uCN7bH5V2syH9ANdZ3HIfe5GL/s1yCKCYKvMgNKeWM8=
 			</data>
 		</dict>
-		<key>AddAdminVC.nib/runtime.nib</key>
+		<key>EditGroupVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RoFrVc7gPgAGb6ly7RN285ChBgs=
-			</data>
-			<key>hash2</key>
-			<data>
-			gkcBSjvB8Pr1jf9EUbDs+fWfuNA68UZd2Bnb2YoMD7I=
-			</data>
-		</dict>
-		<key>EditGroupVC.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fY7+ZURNslrwS6yLS68gevSXyYs=
-			</data>
 			<key>hash2</key>
 			<data>
 			EDQnk9TByGAk5+fLvGLuOmvuPDt0LuMkxFmaFWa+qG8=
 			</data>
 		</dict>
-		<key>EditGroupVC.nib/runtime.nib</key>
+		<key>GroupDetailVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+n7TkRhFWVNCFYigZ7mqJoC6iVY=
-			</data>
-			<key>hash2</key>
-			<data>
-			qa/vtliYsOPZoATsw4c4CRIixhCZlrnPmhv1A7oi+Vk=
-			</data>
-		</dict>
-		<key>GroupDetailVC.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OBWIvQ2U5XXZ5W3pcIbIz0Q9+uk=
-			</data>
 			<key>hash2</key>
 			<data>
 			5auo9o2yZvlhuRnKJh07+Po5NmSqdSsG7E4bFflUhtY=
 			</data>
 		</dict>
-		<key>GroupDetailVC.nib/runtime.nib</key>
+		<key>GroupMemberListVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nxpdU4bjOTJclKqrxu5U0DXXYvM=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ezekf6yw2FMpkembK0rmrJ9CrkM5vWWS1q+KzhhE04E=
-			</data>
-		</dict>
-		<key>GroupMemberListVC.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SLwQ7we7e1whSb0VF2vfMGfJqy4=
-			</data>
 			<key>hash2</key>
 			<data>
 			tu1f7CvriazNGNAlCuDckzU8xp0bbqC00iA58YpAsmc=
 			</data>
 		</dict>
-		<key>GroupMemberListVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MCgtj+yqi69hcQ2qLYJRxtviv1I=
-			</data>
-			<key>hash2</key>
-			<data>
-			vRrgAaE4MEwZ2zcTG4WKVTpu7KE3ibzmFmzSMA6VrxI=
-			</data>
-		</dict>
 		<key>Headers/GroupDetailComponent-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AC9NorKhWx5mlbf0M95dyyhWpXU=
-			</data>
 			<key>hash2</key>
 			<data>
 			ROJkyBl4b2V5vU/dUVlDgI1f8CsELRdwy/zPtb3Pue4=
@@ -196,10 +108,6 @@
 		</dict>
 		<key>Headers/GroupDetailComponent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OQnxCdc1g9IiEpwwnskkCIAwO+s=
-			</data>
 			<key>hash2</key>
 			<data>
 			1PRkHOYlf5FFFONfEKFRGxGM0315AiF/TwwfprglQsE=
@@ -207,123 +115,65 @@
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			d2dK1WA3PMv71A0AVYnU76niM3A=
-			</data>
 			<key>hash2</key>
 			<data>
-			sxKtcXK5OWk28SGH/5tGeDRuwzQJKlvbLuWcf/SHBt4=
+			1DlmGd8hEfEaJZXVm5jQQmicAGHdTJtm+DTaRKEi6/4=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Oh0kva9659e9MKWDLpUjYOElgKM=
-			</data>
 			<key>hash2</key>
 			<data>
-			1Zs4VN0OJCT0ZpfJRzFwokEzPjhONyjE56cbQhiO4Nw=
+			Gez3ZXqdj8JIbq2g3mSt2qxbU2zRgu66wYGjEHDXMkQ=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			D6MzKdDAgQMpFdnqsk+ha9buw+o=
-			</data>
 			<key>hash2</key>
 			<data>
-			PZfO2+S500xcMLCKWQU5i63qwvNuGOtee1aUbC0lCm8=
+			my6L0ho/C7TZEU+awXpblgwXshaxHr9ypTvZMgM/MMA=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			d2dK1WA3PMv71A0AVYnU76niM3A=
-			</data>
 			<key>hash2</key>
 			<data>
-			sxKtcXK5OWk28SGH/5tGeDRuwzQJKlvbLuWcf/SHBt4=
+			1DlmGd8hEfEaJZXVm5jQQmicAGHdTJtm+DTaRKEi6/4=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Oh0kva9659e9MKWDLpUjYOElgKM=
-			</data>
 			<key>hash2</key>
 			<data>
-			1Zs4VN0OJCT0ZpfJRzFwokEzPjhONyjE56cbQhiO4Nw=
+			Gez3ZXqdj8JIbq2g3mSt2qxbU2zRgu66wYGjEHDXMkQ=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			D6MzKdDAgQMpFdnqsk+ha9buw+o=
-			</data>
 			<key>hash2</key>
 			<data>
-			PZfO2+S500xcMLCKWQU5i63qwvNuGOtee1aUbC0lCm8=
+			my6L0ho/C7TZEU+awXpblgwXshaxHr9ypTvZMgM/MMA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yX8pzJBcQKYvN4s2366D4i4pmEc=
-			</data>
 			<key>hash2</key>
 			<data>
 			qBWBSNSstLCm1RJ5d27tonvGxBxIgqVU1KhRyd/MJ30=
 			</data>
 		</dict>
-		<key>MoveMemberVC.nib/objects-11.0+.nib</key>
+		<key>MoveMemberVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DzhYX89Ece75nR1ylbucZ3IDVOc=
-			</data>
 			<key>hash2</key>
 			<data>
 			vkgrqYfrS9+4/vLuw3udYJTLAzL1ZjtjML216KsgBNM=
 			</data>
 		</dict>
-		<key>MoveMemberVC.nib/runtime.nib</key>
+		<key>QRCodeVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mpzkazAbtM+bgOCuwIHceE/8B2E=
-			</data>
-			<key>hash2</key>
-			<data>
-			hUdUmUzdCxWXSvI8QsPPSr8/fMdKDLmLNcPwoKwkHPk=
-			</data>
-		</dict>
-		<key>QRCodeVC.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			m9lYNg0AkS/xrZx7x/MsW3aFbSQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			0CNHzjL7mN8QjfT4dX8GIdTojQ+v3LogLfbzvE9lnA8=
-			</data>
-		</dict>
-		<key>QRCodeVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Gg34Y0rqpULsijc2S6wWaG8zQsM=
-			</data>
-			<key>hash2</key>
-			<data>
-			/7WPrsoRjeEGnhnBYbbzB8/gTJ07OB2mbJa3gCsbjQ8=
 			</data>
 		</dict>
 	</dict>

@@ -14,39 +14,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xdiQpql7zpjKfqJi3g+qMCn8GFI=
+		Ny58IWpSQAhBxsvhSKdMfYB8+WM=
 		</data>
-		<key>LocationPickerVC.nib/objects-11.0+.nib</key>
+		<key>LocationPickerVC.nib</key>
 		<data>
 		pLsCYfFDUSq3udv96tRWYcSLKQQ=
 		</data>
-		<key>LocationPickerVC.nib/runtime.nib</key>
-		<data>
-		tSCZjvru4lAQn5Hp57wj6VbvoXY=
-		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		TBbyX49SIs/TpOkkRQWjkEXtlAY=
+		FJzvsGfGxHg4Fgvm2eGaoNvh/nQ=
 		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7jmEmq98KAFjub6fvMwaPmpGULk=
+		u1+XSIicmUcuv13fxLf8zHzxPeU=
 		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Zzzb30RVcrepcPwb1tCOPEkXEPg=
+		OnIZeSlU+OZicfDtKgl7/2JKxfk=
 		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		TBbyX49SIs/TpOkkRQWjkEXtlAY=
+		FJzvsGfGxHg4Fgvm2eGaoNvh/nQ=
 		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		7jmEmq98KAFjub6fvMwaPmpGULk=
+		u1+XSIicmUcuv13fxLf8zHzxPeU=
 		</data>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Zzzb30RVcrepcPwb1tCOPEkXEPg=
+		OnIZeSlU+OZicfDtKgl7/2JKxfk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -57,10 +53,6 @@
 	<dict>
 		<key>Headers/LocationPickerComponent-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			I/D3JfT9J67HxFu6Z0AhJd2KJus=
-			</data>
 			<key>hash2</key>
 			<data>
 			4hocyWEKj6ZamPxEN3W1rQeb2CafgUwz0mxNz/hzazk=
@@ -68,109 +60,62 @@
 		</dict>
 		<key>Headers/LocationPickerComponent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			r101cvFzInvs+1K0rlcOTUo6LT4=
-			</data>
 			<key>hash2</key>
 			<data>
 			F5MtPXuQz40lGFabw/D5/HsGRqVuDnuHNCuoL9zCgxU=
 			</data>
 		</dict>
-		<key>LocationPickerVC.nib/objects-11.0+.nib</key>
+		<key>LocationPickerVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pLsCYfFDUSq3udv96tRWYcSLKQQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			X3nBKy7f/zvft3SIuyzdkqoa1g+UdqLFh8M33cPG1z8=
 			</data>
 		</dict>
-		<key>LocationPickerVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tSCZjvru4lAQn5Hp57wj6VbvoXY=
-			</data>
-			<key>hash2</key>
-			<data>
-			m/VxL0ZkFuDuI1ajrZVydRwkGtgWGdreX+qZXjE8mfk=
-			</data>
-		</dict>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TBbyX49SIs/TpOkkRQWjkEXtlAY=
-			</data>
 			<key>hash2</key>
 			<data>
-			xGbEAq5Hy0itoAc4ntEEru4OebUZU4bMbl5nKBcGOSw=
+			EJM3plu1HvlCgtH1BKUY6oP7upWbXkfV/LukexsbyY8=
 			</data>
 		</dict>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7jmEmq98KAFjub6fvMwaPmpGULk=
-			</data>
 			<key>hash2</key>
 			<data>
-			Ka54lR+KTRWfC5HzeCGUqLnZBQXLTWtc9mfWQ1PjFHw=
+			v0YPisVNB1/LRQfu2dz5isKEN5r1JXRceFn7CPbE5uM=
 			</data>
 		</dict>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Zzzb30RVcrepcPwb1tCOPEkXEPg=
-			</data>
 			<key>hash2</key>
 			<data>
-			BwkBcxEFA6vepczLup4vpu6xe/ATa2k1CjkFwCkrin0=
+			DCBa3G/aB3pwWpMNzvUqpiehysl97/SCMm+WfS2piZE=
 			</data>
 		</dict>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TBbyX49SIs/TpOkkRQWjkEXtlAY=
-			</data>
 			<key>hash2</key>
 			<data>
-			xGbEAq5Hy0itoAc4ntEEru4OebUZU4bMbl5nKBcGOSw=
+			EJM3plu1HvlCgtH1BKUY6oP7upWbXkfV/LukexsbyY8=
 			</data>
 		</dict>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7jmEmq98KAFjub6fvMwaPmpGULk=
-			</data>
 			<key>hash2</key>
 			<data>
-			Ka54lR+KTRWfC5HzeCGUqLnZBQXLTWtc9mfWQ1PjFHw=
+			v0YPisVNB1/LRQfu2dz5isKEN5r1JXRceFn7CPbE5uM=
 			</data>
 		</dict>
 		<key>Modules/LocationPickerComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Zzzb30RVcrepcPwb1tCOPEkXEPg=
-			</data>
 			<key>hash2</key>
 			<data>
-			BwkBcxEFA6vepczLup4vpu6xe/ATa2k1CjkFwCkrin0=
+			DCBa3G/aB3pwWpMNzvUqpiehysl97/SCMm+WfS2piZE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0qm0S8uaI9pgq3E12DHxjjRQIwY=
-			</data>
 			<key>hash2</key>
 			<data>
 			12fwpp4YCw4uw/0MhonXSu1uUxJN8nFv0sk9a9k8wk0=

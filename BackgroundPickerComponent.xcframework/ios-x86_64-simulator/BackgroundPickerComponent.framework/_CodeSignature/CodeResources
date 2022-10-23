@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>BackgroundPickerVC.nib/objects-11.0+.nib</key>
+		<key>BackgroundPickerVC.nib</key>
 		<data>
 		xVkoTRF1z2Ryrqk1IOShFPSLAF0=
-		</data>
-		<key>BackgroundPickerVC.nib/runtime.nib</key>
-		<data>
-		y7LPkxCr/H3fl+y3Dh59Hdtzamc=
 		</data>
 		<key>Headers/BackgroundPickerComponent-Swift.h</key>
 		<data>
@@ -22,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Uk/lwqLE/NvX777WLqvoc+bH94c=
+		OOMEY+PalCVraE3KE22jIACekRQ=
 		</data>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Q4s658flAuNc56TKIGnHFm03s8k=
+		Ut1S2/KacqlOfP0TzWdj7frblQ8=
 		</data>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Gh6uzg6PWExeveMPR1twh3UTe8s=
+		j2AWXXCwk3NUy3oz7qrHANcwEo0=
 		</data>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IQDXrxC18izR4AKMUDPGllN1B6Q=
+		xJby0FF4l0goCqb8TpkCVs07w/o=
 		</data>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		Q4s658flAuNc56TKIGnHFm03s8k=
+		Ut1S2/KacqlOfP0TzWdj7frblQ8=
 		</data>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		Gh6uzg6PWExeveMPR1twh3UTe8s=
+		j2AWXXCwk3NUy3oz7qrHANcwEo0=
 		</data>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		IQDXrxC18izR4AKMUDPGllN1B6Q=
+		xJby0FF4l0goCqb8TpkCVs07w/o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,34 +51,15 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>BackgroundPickerVC.nib/objects-11.0+.nib</key>
+		<key>BackgroundPickerVC.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xVkoTRF1z2Ryrqk1IOShFPSLAF0=
-			</data>
 			<key>hash2</key>
 			<data>
 			rRmjr/3HpzRY3T5aNVpa9kNURZxwtqV/4J68U/EFyhs=
 			</data>
 		</dict>
-		<key>BackgroundPickerVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			y7LPkxCr/H3fl+y3Dh59Hdtzamc=
-			</data>
-			<key>hash2</key>
-			<data>
-			UAYgR5ASIRtD7WTBWRCLddWayYAITdIMVO2fiVBpH+w=
-			</data>
-		</dict>
 		<key>Headers/BackgroundPickerComponent-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Enfprza3RhkWducPfBvLqoLtyAg=
-			</data>
 			<key>hash2</key>
 			<data>
 			cRafF7Fg+Y9B+/6l2EMBP/6Su0pc2s6agt9BByK1ARU=
@@ -90,10 +67,6 @@
 		</dict>
 		<key>Headers/BackgroundPickerComponent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			o2IlDQe0HmCOiPaN9rqB43Dr/0E=
-			</data>
 			<key>hash2</key>
 			<data>
 			gLPhVkHQ6YE2VQaOJMhvNAclhAkRmFp/zseCqEaBWZE=
@@ -101,76 +74,48 @@
 		</dict>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Q4s658flAuNc56TKIGnHFm03s8k=
-			</data>
 			<key>hash2</key>
 			<data>
-			1zmhTC9JWv3RKmZLhIFyq2+1e4eWQ6K74vtdqlMHnUA=
+			pmrNK3GlZqm/AKLcqd6llPvnPLRCY48kcv6d5YECWVg=
 			</data>
 		</dict>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Gh6uzg6PWExeveMPR1twh3UTe8s=
-			</data>
 			<key>hash2</key>
 			<data>
-			OkGQJ55M68kXPZV357gc4jQrI6KvQzOQoomsV8KHzaU=
+			JrWpPwlnsx/im6Qw+FHOg5+pr9WO+ltgAbVDro9FDs4=
 			</data>
 		</dict>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IQDXrxC18izR4AKMUDPGllN1B6Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			2y0lf4xLr0zHP15dpdGfz6zvNkPxmlmVCb5v+KfTf0E=
+			oQ7e5omzDwlQYje6vzmnRJI/aHuweQtvusSaAz6cp90=
 			</data>
 		</dict>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Q4s658flAuNc56TKIGnHFm03s8k=
-			</data>
 			<key>hash2</key>
 			<data>
-			1zmhTC9JWv3RKmZLhIFyq2+1e4eWQ6K74vtdqlMHnUA=
+			pmrNK3GlZqm/AKLcqd6llPvnPLRCY48kcv6d5YECWVg=
 			</data>
 		</dict>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Gh6uzg6PWExeveMPR1twh3UTe8s=
-			</data>
 			<key>hash2</key>
 			<data>
-			OkGQJ55M68kXPZV357gc4jQrI6KvQzOQoomsV8KHzaU=
+			JrWpPwlnsx/im6Qw+FHOg5+pr9WO+ltgAbVDro9FDs4=
 			</data>
 		</dict>
 		<key>Modules/BackgroundPickerComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IQDXrxC18izR4AKMUDPGllN1B6Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			2y0lf4xLr0zHP15dpdGfz6zvNkPxmlmVCb5v+KfTf0E=
+			oQ7e5omzDwlQYje6vzmnRJI/aHuweQtvusSaAz6cp90=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Gg1nk4WKxxuKKWU/UqrWJxIB2sA=
-			</data>
 			<key>hash2</key>
 			<data>
 			srksZ4v3MzV1VdX/QuiAbf700bC39vZ5UZFwRpZc/gk=
