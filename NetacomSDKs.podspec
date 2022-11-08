@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NetacomSDKs"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
     spec.summary      = "NetacomSDKs is a SDK support for CallSDK, ChatSDK, UISDK"
 
   # This description is used to generate tags and improve search results.
@@ -140,7 +140,7 @@ Pod::Spec.new do |spec|
     spec.dependency 'XCoordinator', '~> 2.0'
     spec.dependency 'lottie-ios', '3.3.0'  
     
-    spec.vendored_frameworks = "ForwardMessageComponent.xcframework", "SelectGroupOwnerComponent.xcframework", "DocumentViewerComponent.xcframework", "ShareComponent.xcframework", "EditContactComponent.xcframework", "BackgroundPickerComponent.xcframework", "LocationPickerComponent.xcframework", "StickerPickerComponent.xcframework", "MediaDetailComponent.xcframework", "SearchComponent.xcframework", "CallComponent.xcframework", "ChatComponent.xcframework", "MediaPickerComponent.xcframework", "ContactDetailComponent.xcframework", "GroupDetailComponent.xcframework", "CreateSecretChatComponent.xcframework", "AddContactComponent.xcframework", "WebViewComponent.xcframework", "NewGroupComponent.xcframework", "AccountComponent.xcframework", "ListContactComponent.xcframework", "ListCallComponent.xcframework", "ListGroupComponent.xcframework", "AuthorizationComponent.xcframework", "NetAloCoreComponent.xcframework", "NATheme.xcframework",  "NetAloFull.xcframework", "NACoreUI.xcframework", "NACoreUtils.xcframework", "RxGesture.xcframework", "Carbon.xcframework", "DifferenceKit.xcframework"
+    spec.vendored_frameworks = "ForwardMessageComponent.xcframework", "SelectGroupOwnerComponent.xcframework", "DocumentViewerComponent.xcframework", "ShareComponent.xcframework", "EditContactComponent.xcframework", "BackgroundPickerComponent.xcframework", "LocationPickerComponent.xcframework", "StickerPickerComponent.xcframework", "MediaDetailComponent.xcframework", "SearchComponent.xcframework", "CallComponent.xcframework", "ChatComponent.xcframework", "MediaPickerComponent.xcframework", "ContactDetailComponent.xcframework", "GroupDetailComponent.xcframework", "CreateSecretChatComponent.xcframework", "AddContactComponent.xcframework", "WebViewComponent.xcframework", "NewGroupComponent.xcframework", "AccountComponent.xcframework", "ListContactComponent.xcframework", "ListCallComponent.xcframework", "ListGroupComponent.xcframework", "AuthorizationComponent.xcframework", "NetAloCoreComponent.xcframework", "NATheme.xcframework",  "NetAloFull.xcframework", "NACoreUI.xcframework", "NACoreUtils.xcframework", "RxGesture.xcframework", "Carbon.xcframework", "DifferenceKit.xcframework", "SwiftLinkPreview.xcframework"
 
     spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }

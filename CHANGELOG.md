@@ -1,3 +1,14 @@
+#V11
+
+- [Fix] - Check call existed.
+- [Fix] - Race condition connect and disconnect socket when to show group chat
+
+
+#V10
+
+- Update version Kingfisher, lottie
+
+
 #V9
 
 - Update XCFramework

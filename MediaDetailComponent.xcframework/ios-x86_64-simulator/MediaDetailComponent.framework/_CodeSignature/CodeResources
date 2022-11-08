@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		B/HM8ZZqkaYUtXWFt9sW2SsJD4Y=
+		AUnMH7KXzD0ifh2iEWzjBHXMQck=
 		</data>
 		<key>MediaDetailVC.nib</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		upe5bll0JVg7WjK6n8SQtYwXPzU=
+		udMVkFUSiatKwQOythMih07hyx4=
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		upe5bll0JVg7WjK6n8SQtYwXPzU=
+		udMVkFUSiatKwQOythMih07hyx4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -101,7 +101,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4OHk5IOAZPmAmJfq+Ykvgihf5mTN/IC3G3ztTPlyVlQ=
+			v/DNs6KYcxBa0eOIrJ+ZoMMpJGVoTgRoSVSsIPfq/Q0=
 			</data>
 		</dict>
 		<key>Modules/MediaDetailComponent.swiftmodule/x86_64.swiftdoc</key>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4OHk5IOAZPmAmJfq+Ykvgihf5mTN/IC3G3ztTPlyVlQ=
+			v/DNs6KYcxBa0eOIrJ+ZoMMpJGVoTgRoSVSsIPfq/Q0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
