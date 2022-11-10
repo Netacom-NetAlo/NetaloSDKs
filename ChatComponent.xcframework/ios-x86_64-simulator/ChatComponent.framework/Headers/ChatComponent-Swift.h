@@ -191,6 +191,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import AVFAudio;
 @import AVKit;
 @import CoreGraphics;
+@import Dispatch;
+@import Foundation;
 @import MessageKit;
 @import ObjectiveC;
 #endif
@@ -241,6 +243,12 @@ SWIFT_CLASS("_TtC13ChatComponent15CallMessageCell")
 - (void)prepareForReuse;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13ChatComponent11Cancellable")
+@interface Cancellable : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -322,6 +330,25 @@ SWIFT_CLASS("_TtC13ChatComponent24ShareLocationMessageCell")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+@class NSURLSession;
+
+SWIFT_CLASS("_TtC13ChatComponent16SwiftLinkPreview")
+@interface SwiftLinkPreview : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSession:(NSURLSession * _Nullable)session workQueue:(dispatch_queue_t _Nullable)workQueue responseQueue:(dispatch_queue_t _Nullable)responseQueue disableInMemoryCache:(BOOL)disableInMemoryCache cacheInvalidationTimeout:(NSTimeInterval)cacheInvalidationTimeout cacheCleanupInterval:(NSTimeInterval)cacheCleanupInterval OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSURLSessionTask;
+@class NSHTTPURLResponse;
+@class NSURLRequest;
+
+@interface SwiftLinkPreview (SWIFT_EXTENSION(ChatComponent)) <NSURLSessionDataDelegate>
+- (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task willPerformHTTPRedirection:(NSHTTPURLResponse * _Nonnull)response newRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURLRequest * _Nullable))completionHandler;
+@end
+
+
+
 
 
 
