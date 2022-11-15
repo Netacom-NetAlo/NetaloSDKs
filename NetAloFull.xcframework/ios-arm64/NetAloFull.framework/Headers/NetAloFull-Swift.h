@@ -308,13 +308,38 @@ SWIFT_CLASS("_TtC10NetAloFull16NetAloUserHolder")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+enum NetaloEnviroment : NSInteger;
 
 SWIFT_CLASS("_TtC10NetAloFull19NetaloConfiguration")
 @interface NetaloConfiguration : NSObject
-- (nonnull instancetype)initWithEnviroment:(NSInteger)enviroment appId:(int64_t)appId appKey:(NSString * _Nonnull)appKey accountKey:(NSString * _Nonnull)accountKey appGroupIdentifier:(NSString * _Nonnull)appGroupIdentifier storeUrl:(NSString * _Nonnull)storeUrl forceUpdateProfile:(BOOL)forceUpdateProfile allowCustomUsername:(BOOL)allowCustomUsername allowCustomProfile:(BOOL)allowCustomProfile allowCustomAlert:(BOOL)allowCustomAlert allowAddContact:(BOOL)allowAddContact allowBlockContact:(BOOL)allowBlockContact allowSetUserProfileUrl:(BOOL)allowSetUserProfileUrl allowEnableLocationFeature:(BOOL)allowEnableLocationFeature allowTrackingUsingSDK:(BOOL)allowTrackingUsingSDK isHiddenEditProfile:(BOOL)isHiddenEditProfile allowAddNewContact:(BOOL)allowAddNewContact allowEditContact:(BOOL)allowEditContact isVideoCallEnable:(BOOL)isVideoCallEnable isVoiceCallEnable:(BOOL)isVoiceCallEnable isHiddenSecretChat:(BOOL)isHiddenSecretChat isSyncDataInApp:(BOOL)isSyncDataInApp allowReferralCode:(BOOL)allowReferralCode searchByLike:(BOOL)searchByLike allowReplaceCountrycode:(BOOL)allowReplaceCountrycode isSyncContactInApp:(BOOL)isSyncContactInApp permissions:(NSArray<NSNumber *> * _Nonnull)permissions;
+@property (nonatomic) enum NetaloEnviroment enviroment;
+@property (nonatomic) int64_t appId;
+@property (nonatomic, copy) NSString * _Nonnull appKey;
+@property (nonatomic, copy) NSString * _Nonnull accountKey;
+@property (nonatomic, copy) NSString * _Nonnull appGroupIdentifier;
+@property (nonatomic, copy) NSURL * _Nonnull storeUrl;
+@property (nonatomic) BOOL isLoggingEnable;
+@property (nonatomic, copy) NSString * _Nonnull userProfileUrl;
+- (nonnull instancetype)initWithEnviroment:(NSInteger)enviroment appId:(int64_t)appId appKey:(NSString * _Nonnull)appKey accountKey:(NSString * _Nonnull)accountKey appGroupIdentifier:(NSString * _Nonnull)appGroupIdentifier storeUrl:(NSString * _Nonnull)storeUrl forceUpdateProfile:(BOOL)forceUpdateProfile allowCustomUsername:(BOOL)allowCustomUsername allowCustomProfile:(BOOL)allowCustomProfile allowCustomAlert:(BOOL)allowCustomAlert allowAddContact:(BOOL)allowAddContact allowBlockContact:(BOOL)allowBlockContact allowSetUserProfileUrl:(BOOL)allowSetUserProfileUrl allowEnableLocationFeature:(BOOL)allowEnableLocationFeature allowTrackingUsingSDK:(BOOL)allowTrackingUsingSDK isHiddenEditProfile:(BOOL)isHiddenEditProfile allowAddNewContact:(BOOL)allowAddNewContact allowEditContact:(BOOL)allowEditContact isVideoCallEnable:(BOOL)isVideoCallEnable isVoiceCallEnable:(BOOL)isVoiceCallEnable isHiddenSecretChat:(BOOL)isHiddenSecretChat isSyncDataInApp:(BOOL)isSyncDataInApp allowReferralCode:(BOOL)allowReferralCode searchByLike:(BOOL)searchByLike allowReplaceCountrycode:(BOOL)allowReplaceCountrycode isSyncContactInApp:(BOOL)isSyncContactInApp permissions:(NSArray<NSNumber *> * _Nonnull)permissions userProfileUrl:(NSString * _Nonnull)userProfileUrl isLoggingEnable:(BOOL)isLoggingEnable;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+SWIFT_CLASS("_TtC10NetAloFull23NetaloConfigurationObjc")
+@interface NetaloConfigurationObjc : NSObject
+@property (nonatomic, strong) NetaloConfiguration * _Nonnull netaloConfiguration;
+- (nonnull instancetype)initWithEnviroment:(NSInteger)enviroment appId:(int64_t)appId appKey:(NSString * _Nonnull)appKey accountKey:(NSString * _Nonnull)accountKey appGroupIdentifier:(NSString * _Nonnull)appGroupIdentifier storeUrl:(NSString * _Nonnull)storeUrl forceUpdateProfile:(BOOL)forceUpdateProfile allowCustomUsername:(BOOL)allowCustomUsername allowCustomProfile:(BOOL)allowCustomProfile allowCustomAlert:(BOOL)allowCustomAlert allowAddContact:(BOOL)allowAddContact allowBlockContact:(BOOL)allowBlockContact allowSetUserProfileUrl:(BOOL)allowSetUserProfileUrl allowEnableLocationFeature:(BOOL)allowEnableLocationFeature allowTrackingUsingSDK:(BOOL)allowTrackingUsingSDK isHiddenEditProfile:(BOOL)isHiddenEditProfile allowAddNewContact:(BOOL)allowAddNewContact allowEditContact:(BOOL)allowEditContact isVideoCallEnable:(BOOL)isVideoCallEnable isVoiceCallEnable:(BOOL)isVoiceCallEnable isHiddenSecretChat:(BOOL)isHiddenSecretChat isSyncDataInApp:(BOOL)isSyncDataInApp allowReferralCode:(BOOL)allowReferralCode searchByLike:(BOOL)searchByLike allowReplaceCountrycode:(BOOL)allowReplaceCountrycode isSyncContactInApp:(BOOL)isSyncContactInApp permissions:(NSArray<NSNumber *> * _Nonnull)permissions userProfileUrl:(NSString * _Nonnull)userProfileUrl isLoggingEnable:(BOOL)isLoggingEnable OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, NetaloEnviroment, open) {
+  NetaloEnviromentDevelopment = 0,
+  NetaloEnviromentTesting = 1,
+  NetaloEnviromentProduction = 2,
+  NetaloEnviromentStaging = 3,
+};
 
 
 #if __has_attribute(external_source_symbol)

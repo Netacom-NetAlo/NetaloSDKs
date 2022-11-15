@@ -138,8 +138,8 @@ public struct StickerLocal {
   @objc public init(id: Swift.Int64, phoneNumber: Swift.String, email: Swift.String = "", fullName: Swift.String = "", avatarUrl: Swift.String = "", session: Swift.String = "")
   @objc deinit
 }
-public enum NetaloEnviroment : Swift.Int {
-  case development
+@objc public enum NetaloEnviroment : Swift.Int {
+  case development = 0
   case testing
   case production
   case staging
@@ -150,19 +150,24 @@ public enum NetaloEnviroment : Swift.Int {
   }
 }
 @objc public class NetaloConfiguration : ObjectiveC.NSObject {
-  public var enviroment: NetAloFull.NetaloEnviroment
-  public var appId: Swift.Int64
-  public var appKey: Swift.String
-  public var accountKey: Swift.String
-  public var appGroupIdentifier: Swift.String
-  public var storeUrl: Foundation.URL
-  public var isLoggingEnable: Swift.Bool
+  @objc public var enviroment: NetAloFull.NetaloEnviroment
+  @objc public var appId: Swift.Int64
+  @objc public var appKey: Swift.String
+  @objc public var accountKey: Swift.String
+  @objc public var appGroupIdentifier: Swift.String
+  @objc public var storeUrl: Foundation.URL
+  @objc public var isLoggingEnable: Swift.Bool
+  @objc public var userProfileUrl: Swift.String
   public var analytics: [NetAloCoreComponent.AnalyticsProvider]
-  public var featureConfig: NetAloLite.FeatureConfig
   public var permissions: [NetAloLite.SDKPermissionSet]
-  public var userProfileUrl: Swift.String
+  public var featureConfig: NetAloLite.FeatureConfig
   public init(enviroment: NetAloFull.NetaloEnviroment, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Foundation.URL, isLoggingEnable: Swift.Bool = false, analytics: [NetAloCoreComponent.AnalyticsProvider], featureConfig: NetAloLite.FeatureConfig, permissions: [NetAloLite.SDKPermissionSet], userProfileUrl: Swift.String = "")
-  @objc convenience public init(enviroment: Swift.Int, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Swift.String, forceUpdateProfile: Swift.Bool, allowCustomUsername: Swift.Bool, allowCustomProfile: Swift.Bool, allowCustomAlert: Swift.Bool, allowAddContact: Swift.Bool, allowBlockContact: Swift.Bool, allowSetUserProfileUrl: Swift.Bool, allowEnableLocationFeature: Swift.Bool, allowTrackingUsingSDK: Swift.Bool, isHiddenEditProfile: Swift.Bool, allowAddNewContact: Swift.Bool, allowEditContact: Swift.Bool, isVideoCallEnable: Swift.Bool, isVoiceCallEnable: Swift.Bool, isHiddenSecretChat: Swift.Bool, isSyncDataInApp: Swift.Bool, allowReferralCode: Swift.Bool, searchByLike: Swift.Bool, allowReplaceCountrycode: Swift.Bool, isSyncContactInApp: Swift.Bool, permissions: [Swift.Int])
+  @objc convenience public init(enviroment: Swift.Int, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Swift.String, forceUpdateProfile: Swift.Bool, allowCustomUsername: Swift.Bool, allowCustomProfile: Swift.Bool, allowCustomAlert: Swift.Bool, allowAddContact: Swift.Bool, allowBlockContact: Swift.Bool, allowSetUserProfileUrl: Swift.Bool, allowEnableLocationFeature: Swift.Bool, allowTrackingUsingSDK: Swift.Bool, isHiddenEditProfile: Swift.Bool, allowAddNewContact: Swift.Bool, allowEditContact: Swift.Bool, isVideoCallEnable: Swift.Bool, isVoiceCallEnable: Swift.Bool, isHiddenSecretChat: Swift.Bool, isSyncDataInApp: Swift.Bool, allowReferralCode: Swift.Bool, searchByLike: Swift.Bool, allowReplaceCountrycode: Swift.Bool, isSyncContactInApp: Swift.Bool, permissions: [Swift.Int], userProfileUrl: Swift.String = "", isLoggingEnable: Swift.Bool = false)
+  @objc deinit
+}
+@objc public class NetaloConfigurationObjc : ObjectiveC.NSObject {
+  @objc public var netaloConfiguration: NetAloFull.NetaloConfiguration
+  @objc public init(enviroment: Swift.Int, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Swift.String, forceUpdateProfile: Swift.Bool, allowCustomUsername: Swift.Bool, allowCustomProfile: Swift.Bool, allowCustomAlert: Swift.Bool, allowAddContact: Swift.Bool, allowBlockContact: Swift.Bool, allowSetUserProfileUrl: Swift.Bool, allowEnableLocationFeature: Swift.Bool, allowTrackingUsingSDK: Swift.Bool, isHiddenEditProfile: Swift.Bool, allowAddNewContact: Swift.Bool, allowEditContact: Swift.Bool, isVideoCallEnable: Swift.Bool, isVoiceCallEnable: Swift.Bool, isHiddenSecretChat: Swift.Bool, isSyncDataInApp: Swift.Bool, allowReferralCode: Swift.Bool, searchByLike: Swift.Bool, allowReplaceCountrycode: Swift.Bool, isSyncContactInApp: Swift.Bool, permissions: [Swift.Int], userProfileUrl: Swift.String = "", isLoggingEnable: Swift.Bool = false)
   @objc deinit
 }
 public enum SDKRoute : XCoordinator.Route {
