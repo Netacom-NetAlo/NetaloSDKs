@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/NATheme.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		l9JL8yTaPJ0OuFWp4zYbq5WwonM=
+		uYwvy5OXfrlJVyFlcK2agJidEDA=
 		</data>
 		<key>Modules/NATheme.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jDUag63aJBL54BlUbveFaZW8pok=
+		AfyBMfXHsMufrzH6iFduZKtPbKM=
 		</data>
 		<key>Modules/NATheme.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/NATheme.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		l9JL8yTaPJ0OuFWp4zYbq5WwonM=
+		uYwvy5OXfrlJVyFlcK2agJidEDA=
 		</data>
 		<key>Modules/NATheme.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		jDUag63aJBL54BlUbveFaZW8pok=
+		AfyBMfXHsMufrzH6iFduZKtPbKM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			is6B24hh6sLctisGoDxsS8tglqCjek7WlXc2F7n0VMs=
+			Lx5Sncvw1RMC6VmVZqSrQxijjioFwLrZjwvT+Ei92+U=
 			</data>
 		</dict>
 		<key>Modules/NATheme.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			012Je+S6wdkYzjzwCFvRGmJ21Idr3Pgr30/dbv2kTV0=
+			ILFX3vnAkwDYWZj8+Og+UZXJF69hIlVP9/aw1nZk2FQ=
 			</data>
 		</dict>
 		<key>Modules/NATheme.swiftmodule/x86_64.swiftdoc</key>
@@ -104,14 +104,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			is6B24hh6sLctisGoDxsS8tglqCjek7WlXc2F7n0VMs=
+			Lx5Sncvw1RMC6VmVZqSrQxijjioFwLrZjwvT+Ei92+U=
 			</data>
 		</dict>
 		<key>Modules/NATheme.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			012Je+S6wdkYzjzwCFvRGmJ21Idr3Pgr30/dbv2kTV0=
+			ILFX3vnAkwDYWZj8+Og+UZXJF69hIlVP9/aw1nZk2FQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

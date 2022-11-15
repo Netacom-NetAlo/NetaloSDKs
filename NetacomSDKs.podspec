@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NetacomSDKs"
-  spec.version      = "0.1.2"
-    spec.summary      = "NetacomSDKs is a SDK support for CallSDK, ChatSDK, UISDK"
+  spec.version      = "10.0.1"
+  spec.summary      = "NetacomSDKs is a SDK support for CallSDK, ChatSDK, UISDK"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?

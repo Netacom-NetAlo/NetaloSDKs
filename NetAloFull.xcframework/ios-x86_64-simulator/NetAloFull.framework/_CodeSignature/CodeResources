@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/NetAloFull-Swift.h</key>
 		<data>
-		fdy6J+yDgzMHPDh8PzX8ttRplhw=
+		Hw3Hoz66XSjrCsRK0a2Znlm4pLk=
 		</data>
 		<key>Headers/NetAloFull.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mEoIi6RSvvzfihd4bQ7UHNsRBsU=
+		nGoQLQSsdgvf7KnDvUGAoDbrTvc=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		o/EKhAEV0q06Qcr+avtVpPrGkKs=
+		1wI2Z3qVdC3m+oONdyizPAMqHSo=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		mEoIi6RSvvzfihd4bQ7UHNsRBsU=
+		nGoQLQSsdgvf7KnDvUGAoDbrTvc=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		o/EKhAEV0q06Qcr+avtVpPrGkKs=
+		1wI2Z3qVdC3m+oONdyizPAMqHSo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>VNDDemoVC.nib</key>
 		<data>
-		xZfE4556J/ew16sGJjTm+zGMJes=
+		ZHG3yBs8saoSyp+6Q6MwO0zlYkM=
 		</data>
 		<key>a1Tako.zip</key>
 		<data>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			slFe5H41ueOE7itjGJ4BKkgXyiVjbXdQoojwH6jTE5o=
+			vXk99GnUvMrRltKUbivm/jIhRpkfFOvBjvRBTFIVv2w=
 			</data>
 		</dict>
 		<key>Headers/NetAloFull.h</key>
@@ -103,14 +103,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JzUc2C/UeN4ZHc53BhqO2oPn4TKG6isUJK1LWO7ADpA=
+			YTc3ksdiMpE+AdHTFQvhzBAFG6wWxcTIomc2/YD0eL0=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Colf/SiX+8lJiDbaK1oN6wCbXe/urll6KQhKnSJa9W4=
+			hzVjSm2hwuZo2rSTs717bUhx8fPJL/IgxJuHw27mtJw=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftdoc</key>
@@ -124,14 +124,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JzUc2C/UeN4ZHc53BhqO2oPn4TKG6isUJK1LWO7ADpA=
+			YTc3ksdiMpE+AdHTFQvhzBAFG6wWxcTIomc2/YD0eL0=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Colf/SiX+8lJiDbaK1oN6wCbXe/urll6KQhKnSJa9W4=
+			hzVjSm2hwuZo2rSTs717bUhx8fPJL/IgxJuHw27mtJw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oXah1lyzboPlYCUx80YYDdHkF9CO1yJHfJLuXldYa5E=
+			Y1nAlqlkoN3mhKfvDk8QGDsMSm2sPcbcvw82EaUvCfY=
 			</data>
 		</dict>
 		<key>a1Tako.zip</key>

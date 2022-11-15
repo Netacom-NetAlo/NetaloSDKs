@@ -202,11 +202,11 @@
 		</data>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cDaqxXTAzNQxYutLj4LAwASO72M=
+		Xci0s2i7tt66cC33ucu/tHRYx0U=
 		</data>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QawYqTLJF8JiN9dDAmZ58qfJzwE=
+		pmuCkCVOsEVwQvOj4DSKeESUysw=
 		</data>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -214,11 +214,11 @@
 		</data>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		cDaqxXTAzNQxYutLj4LAwASO72M=
+		Xci0s2i7tt66cC33ucu/tHRYx0U=
 		</data>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		QawYqTLJF8JiN9dDAmZ58qfJzwE=
+		pmuCkCVOsEVwQvOj4DSKeESUysw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -238,7 +238,7 @@
 		</data>
 		<key>NavigationHeader.nib</key>
 		<data>
-		1YdV1crlGw84HjpdRtXBZHcdEkc=
+		FDuVDe26ZlT22oePt6NvotAJDVk=
 		</data>
 		<key>NavigationHeaderView.nib</key>
 		<data>
@@ -683,14 +683,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GIf8IT/QYrCxYuTvtaQn7JcizQ7mnboyirsIAIPd9ks=
+			R3DdYDgbSFcu+ajvpKqNsnxW2e9lG2ArF9DAjxbnPFU=
 			</data>
 		</dict>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m6mWepMo9JMxl2VdO9Qp7VVRAsJdOz39+wr4W9C2Ax8=
+			+U7wqx6ajeB2osIdQEL7nOW09Y2dvwdQbitVpoGaiGU=
 			</data>
 		</dict>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftdoc</key>
@@ -704,14 +704,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GIf8IT/QYrCxYuTvtaQn7JcizQ7mnboyirsIAIPd9ks=
+			R3DdYDgbSFcu+ajvpKqNsnxW2e9lG2ArF9DAjxbnPFU=
 			</data>
 		</dict>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m6mWepMo9JMxl2VdO9Qp7VVRAsJdOz39+wr4W9C2Ax8=
+			+U7wqx6ajeB2osIdQEL7nOW09Y2dvwdQbitVpoGaiGU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -746,7 +746,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lUi+cCiA/z4Ynum9NGiRZyV9F6W0RkMCXzb2sVRrgMA=
+			0Upc3/1kSctPwYyfQ80pTeWqeQkGNoMO4J7bpmiUBIQ=
 			</data>
 		</dict>
 		<key>NavigationHeaderView.nib</key>

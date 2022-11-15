@@ -335,9 +335,9 @@ final public class NAThemeServiceImpl : NATheme.NAThemeServiceProtocol {
     get
   }
   final public var themeMode: NATheme.ThemeMode
-  public init(themeMode: NATheme.ThemeMode = .light(.purple), themePrimaryColor: [NATheme.ThemePrimaryColor] = [
-                    ThemePrimaryColor(color: .dustyOrange),
-                    ThemePrimaryColor(color: .purple)])
+  public init(themeMode: NATheme.ThemeMode = .light(.blue), themePrimaryColor: [NATheme.ThemePrimaryColor] = [
+                    ThemePrimaryColor(color: .blue),
+                    ThemePrimaryColor(color: .dustyOrange)])
   final public func setTheme(_ themeMode: NATheme.ThemeMode)
   final public func setTheme(_ themeModeProvider: NATheme.ThemeProvider)
   final public func setupAlertViewControllerStyle(_ alertViewController: UIKit.UIAlertController)

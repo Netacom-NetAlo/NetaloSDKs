@@ -223,7 +223,7 @@ SWIFT_CLASS("_TtC10NetAloFull17NetAloFullManager")
 - (void)loginWithUser:(id <NetAloUser> _Nonnull)user;
 @property (nonatomic) BOOL isBuildForSDK;
 - (void)buildSDKModule;
-- (void)showListGroupWithCompletion:(void (^ _Nonnull)(NSError * _Nullable))completion;
+- (void)showListGroupWithCompletion:(void (^ _Nullable)(NSError * _Nullable))completion;
 - (void)showVNDemoVCWithCompletion:(void (^ _Nullable)(NSError * _Nullable))completion;
 - (void)showChatUserWith:(int64_t)contactId phone:(NSString * _Nullable)phone fullName:(NSString * _Nullable)fullName email:(NSString * _Nullable)email profileUrl:(NSString * _Nonnull)profileUrl completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
 - (void)showGroupChatWith:(NSString * _Nonnull)groupId completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
@@ -276,9 +276,6 @@ SWIFT_CLASS("_TtC10NetAloFull17NetAloFullManager")
 - (void)unblockUserWithBlockedID:(NSString * _Nonnull)blockedID completion:(void (^ _Nonnull)(BOOL))completion;
 - (void)sendMessageWithContent:(NSString * _Nonnull)content targetUserID:(NSString * _Nonnull)targetUserID completion:(void (^ _Nonnull)(BOOL))completion;
 - (void)isChattedWithTargetUserID:(NSString * _Nonnull)targetUserID completion:(void (^ _Nonnull)(BOOL))completion;
-- (void)addContactSDKWithTargetName:(NSString * _Nonnull)targetName targetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)deleteContactSDKWithTargetName:(NSString * _Nonnull)targetName targetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)requestAddContactSDKWithTargetName:(NSString * _Nonnull)targetName targetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)checkFriendWithTargetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)forceBroadCastUserStatusWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 @end
@@ -308,13 +305,37 @@ SWIFT_CLASS("_TtC10NetAloFull16NetAloUserHolder")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+enum NetaloEnviroment : NSInteger;
 
 SWIFT_CLASS("_TtC10NetAloFull19NetaloConfiguration")
 @interface NetaloConfiguration : NSObject
-- (nonnull instancetype)initWithEnviroment:(NSInteger)enviroment appId:(int64_t)appId appKey:(NSString * _Nonnull)appKey accountKey:(NSString * _Nonnull)accountKey appGroupIdentifier:(NSString * _Nonnull)appGroupIdentifier storeUrl:(NSString * _Nonnull)storeUrl forceUpdateProfile:(BOOL)forceUpdateProfile allowCustomUsername:(BOOL)allowCustomUsername allowCustomProfile:(BOOL)allowCustomProfile allowCustomAlert:(BOOL)allowCustomAlert allowAddContact:(BOOL)allowAddContact allowBlockContact:(BOOL)allowBlockContact allowSetUserProfileUrl:(BOOL)allowSetUserProfileUrl allowEnableLocationFeature:(BOOL)allowEnableLocationFeature allowTrackingUsingSDK:(BOOL)allowTrackingUsingSDK isHiddenEditProfile:(BOOL)isHiddenEditProfile allowAddNewContact:(BOOL)allowAddNewContact allowEditContact:(BOOL)allowEditContact isVideoCallEnable:(BOOL)isVideoCallEnable isVoiceCallEnable:(BOOL)isVoiceCallEnable isHiddenSecretChat:(BOOL)isHiddenSecretChat isSyncDataInApp:(BOOL)isSyncDataInApp allowReferralCode:(BOOL)allowReferralCode searchByLike:(BOOL)searchByLike allowReplaceCountrycode:(BOOL)allowReplaceCountrycode isSyncContactInApp:(BOOL)isSyncContactInApp permissions:(NSArray<NSNumber *> * _Nonnull)permissions;
+@property (nonatomic) enum NetaloEnviroment enviroment;
+@property (nonatomic) int64_t appId;
+@property (nonatomic, copy) NSString * _Nonnull appKey;
+@property (nonatomic, copy) NSString * _Nonnull accountKey;
+@property (nonatomic, copy) NSString * _Nonnull appGroupIdentifier;
+@property (nonatomic, copy) NSURL * _Nonnull storeUrl;
+@property (nonatomic, copy) NSString * _Nonnull userProfileUrl;
+@property (nonatomic, copy) NSString * _Nonnull deeplinkSchema;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+SWIFT_CLASS("_TtC10NetAloFull23NetaloConfigurationObjc")
+@interface NetaloConfigurationObjc : NSObject
+@property (nonatomic, strong) NetaloConfiguration * _Nonnull netaloConfiguration;
+- (nonnull instancetype)initWithEnviroment:(NSInteger)enviroment appId:(int64_t)appId appKey:(NSString * _Nonnull)appKey accountKey:(NSString * _Nonnull)accountKey appGroupIdentifier:(NSString * _Nonnull)appGroupIdentifier storeUrl:(NSString * _Nonnull)storeUrl forceUpdateProfile:(BOOL)forceUpdateProfile allowCustomUsername:(BOOL)allowCustomUsername allowCustomProfile:(BOOL)allowCustomProfile allowCustomAlert:(BOOL)allowCustomAlert allowAddContact:(BOOL)allowAddContact allowBlockContact:(BOOL)allowBlockContact allowSetUserProfileUrl:(BOOL)allowSetUserProfileUrl allowEnableLocationFeature:(BOOL)allowEnableLocationFeature allowTrackingUsingSDK:(BOOL)allowTrackingUsingSDK isHiddenEditProfile:(BOOL)isHiddenEditProfile allowAddNewContact:(BOOL)allowAddNewContact hideContactInfo:(BOOL)hideContactInfo allowCreateGroup:(BOOL)allowCreateGroup allowSearchContact:(BOOL)allowSearchContact isVideoCallEnable:(BOOL)isVideoCallEnable isVoiceCallEnable:(BOOL)isVoiceCallEnable isHiddenSecretChat:(BOOL)isHiddenSecretChat isSyncDataInApp:(BOOL)isSyncDataInApp allowReferralCode:(BOOL)allowReferralCode searchByLike:(BOOL)searchByLike allowReplaceCountrycode:(BOOL)allowReplaceCountrycode isSyncContactInApp:(BOOL)isSyncContactInApp permissions:(NSArray<NSNumber *> * _Nonnull)permissions userProfileUrl:(NSString * _Nonnull)userProfileUrl allowAddBundleId:(BOOL)allowAddBundleId deeplinkSchema:(NSString * _Nonnull)deeplinkSchema OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, NetaloEnviroment, open) {
+  NetaloEnviromentDevelopment = 0,
+  NetaloEnviromentTesting = 1,
+  NetaloEnviromentProduction = 2,
+  NetaloEnviromentStaging = 3,
+};
 
 
 #if __has_attribute(external_source_symbol)
