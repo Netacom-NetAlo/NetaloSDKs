@@ -162,12 +162,11 @@ public struct StickerLocal {
   public var permissions: [NetAloLite.SDKPermissionSet]
   public var featureConfig: NetAloLite.FeatureConfig
   public init(enviroment: NetAloFull.NetaloEnviroment, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Foundation.URL, isLoggingEnable: Swift.Bool = false, analytics: [NetAloCoreComponent.AnalyticsProvider], featureConfig: NetAloLite.FeatureConfig, permissions: [NetAloLite.SDKPermissionSet], userProfileUrl: Swift.String = "")
-  @objc convenience public init(enviroment: Swift.Int, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Swift.String, forceUpdateProfile: Swift.Bool, allowCustomUsername: Swift.Bool, allowCustomProfile: Swift.Bool, allowCustomAlert: Swift.Bool, allowAddContact: Swift.Bool, allowBlockContact: Swift.Bool, allowSetUserProfileUrl: Swift.Bool, allowEnableLocationFeature: Swift.Bool, allowTrackingUsingSDK: Swift.Bool, isHiddenEditProfile: Swift.Bool, allowAddNewContact: Swift.Bool, allowEditContact: Swift.Bool, isVideoCallEnable: Swift.Bool, isVoiceCallEnable: Swift.Bool, isHiddenSecretChat: Swift.Bool, isSyncDataInApp: Swift.Bool, allowReferralCode: Swift.Bool, searchByLike: Swift.Bool, allowReplaceCountrycode: Swift.Bool, isSyncContactInApp: Swift.Bool, permissions: [Swift.Int], userProfileUrl: Swift.String = "", isLoggingEnable: Swift.Bool = false)
   @objc deinit
 }
 @objc public class NetaloConfigurationObjc : ObjectiveC.NSObject {
   @objc public var netaloConfiguration: NetAloFull.NetaloConfiguration
-  @objc public init(enviroment: Swift.Int, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Swift.String, forceUpdateProfile: Swift.Bool, allowCustomUsername: Swift.Bool, allowCustomProfile: Swift.Bool, allowCustomAlert: Swift.Bool, allowAddContact: Swift.Bool, allowBlockContact: Swift.Bool, allowSetUserProfileUrl: Swift.Bool, allowEnableLocationFeature: Swift.Bool, allowTrackingUsingSDK: Swift.Bool, isHiddenEditProfile: Swift.Bool, allowAddNewContact: Swift.Bool, allowEditContact: Swift.Bool, isVideoCallEnable: Swift.Bool, isVoiceCallEnable: Swift.Bool, isHiddenSecretChat: Swift.Bool, isSyncDataInApp: Swift.Bool, allowReferralCode: Swift.Bool, searchByLike: Swift.Bool, allowReplaceCountrycode: Swift.Bool, isSyncContactInApp: Swift.Bool, permissions: [Swift.Int], userProfileUrl: Swift.String = "", isLoggingEnable: Swift.Bool = false)
+  @objc public init(enviroment: Swift.Int, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Swift.String, forceUpdateProfile: Swift.Bool, allowCustomUsername: Swift.Bool, allowCustomProfile: Swift.Bool, allowCustomAlert: Swift.Bool, allowAddContact: Swift.Bool, allowBlockContact: Swift.Bool, allowSetUserProfileUrl: Swift.Bool, allowEnableLocationFeature: Swift.Bool, allowTrackingUsingSDK: Swift.Bool, isHiddenEditProfile: Swift.Bool, allowAddNewContact: Swift.Bool, hideContactInfo: Swift.Bool, allowCreateGroup: Swift.Bool, allowSearchContact: Swift.Bool, isVideoCallEnable: Swift.Bool, isVoiceCallEnable: Swift.Bool, isHiddenSecretChat: Swift.Bool, isSyncDataInApp: Swift.Bool, allowReferralCode: Swift.Bool, searchByLike: Swift.Bool, allowReplaceCountrycode: Swift.Bool, isSyncContactInApp: Swift.Bool, permissions: [Swift.Int], userProfileUrl: Swift.String = "")
   @objc deinit
 }
 public enum SDKRoute : XCoordinator.Route {
@@ -259,7 +258,7 @@ open class VNDDemoComponent : NACoreUtils.ViewModelType {
   @objc final public var isBuildForSDK: Swift.Bool
   @objc final public func buildSDKModule()
   final public func buildVNDDemoSDK(scenes: [NetAloFull.NetAloFullManager.Scene]) -> [UIKit.UIViewController]
-  @objc final public func showListGroup(completion: @escaping (Swift.Error?) -> Swift.Void)
+  @objc final public func showListGroup(completion: ((Swift.Error?) -> Swift.Void)? = nil)
   @objc final public func showVNDemoVC(completion: ((Swift.Error?) -> Swift.Void)? = nil)
   final public func showMedia(pickerConfig: NetAloLite.MultiImagePickerConfig)
   @objc final public func showChatUser(with contactId: Swift.Int64, phone: Swift.String?, fullName: Swift.String?, email: Swift.String? = nil, profileUrl: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)

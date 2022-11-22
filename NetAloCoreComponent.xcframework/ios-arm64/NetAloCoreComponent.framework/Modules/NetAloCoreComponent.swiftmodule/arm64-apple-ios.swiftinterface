@@ -898,6 +898,7 @@ public protocol BarcodeGenerator {
   @_Concurrency.MainActor(unsafe) public func setUIForCell(user: NADomain.NAUser, blocked: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func setCustomProfileUI(user: NADomain.NAUser, blocked: Swift.Bool, isFriend: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func setCallEnable(isVideoCallEnable: Swift.Bool, isVoiceCallEnable: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setHideContactInfo()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
@@ -2400,7 +2401,7 @@ open class MapActionItemComponent : NetAloCoreComponent.NABaseComponent<NetAloCo
   @_Concurrency.MainActor(unsafe) public func setTitleHeader(text: Swift.String, fontFormat: Swift.String = "Q-B-20")
   @_Concurrency.MainActor(unsafe) public func setLeftTitleButton(title: Swift.String, fontFormat: Swift.String = "Q-B-18")
   @_Concurrency.MainActor(unsafe) public func setRightTitleButton(title: Swift.String, fontFormat: Swift.String = "Q-B-18")
-  @_Concurrency.MainActor(unsafe) public func setTheme(titleColor: UIKit.UIColor, leftButtonColor: UIKit.UIColor = .clear, rightButtonColor: UIKit.UIColor = .clear, bgColor: UIKit.UIColor = .clear)
+  @_Concurrency.MainActor(unsafe) public func setTheme(titleColor: UIKit.UIColor, leftButtonColor: UIKit.UIColor = .clear, rightButtonColor: UIKit.UIColor = .clear, bgColor: UIKit.UIColor = .clear, separateColor: UIKit.UIColor = .clear)
   @_Concurrency.MainActor(unsafe) public func setIconButton(leftIcon: UIKit.UIImage?, rightIcon: UIKit.UIImage?)
   @_Concurrency.MainActor(unsafe) public func setLeftButton(isHidden: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func setRightButton(isHidden: Swift.Bool)

@@ -1,3 +1,17 @@
+#V13
+
+- [Fix] Config to allow creating group/ search in VND-SDK
+- [Fix] Config edit contact profile
+- [Fix] Clean code.
+- [Imp] Update config for Reactnative
+- [Fix] Hide username + button call/chat in contact detail
+
+
+#V12
+
+- [Fix] - Config for ReactNative
+
+
 #V11
 
 - [Fix] - Check call existed.
