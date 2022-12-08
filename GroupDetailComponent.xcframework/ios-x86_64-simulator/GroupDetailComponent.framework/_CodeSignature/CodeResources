@@ -18,7 +18,7 @@
 		</data>
 		<key>GroupMemberListVC.nib</key>
 		<data>
-		SLwQ7we7e1whSb0VF2vfMGfJqy4=
+		F0JSe5h6QMVqCxXmLmSWyx/vkaE=
 		</data>
 		<key>Headers/GroupDetailComponent-Swift.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NZF/cqOBabcDSOX92IJYX4wEMkY=
+		CJxBINvcRDSL7aDI3+YIvpfExhI=
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		NZF/cqOBabcDSOX92IJYX4wEMkY=
+		CJxBINvcRDSL7aDI3+YIvpfExhI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -96,7 +96,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tu1f7CvriazNGNAlCuDckzU8xp0bbqC00iA58YpAsmc=
+			31uvpy/Yret2CxejUf5WFkaA/58aPEcxPLjLHh2ytqw=
 			</data>
 		</dict>
 		<key>Headers/GroupDetailComponent-Swift.h</key>
@@ -131,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8co8LvV6eIPGkxD5SbHuU7h730uZGNRwyDbbQdS0eV8=
+			qpa+9hhOtSPgpipgUnGKEFf8a5WqSJTCBuqjnsBQC60=
 			</data>
 		</dict>
 		<key>Modules/GroupDetailComponent.swiftmodule/x86_64.swiftdoc</key>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8co8LvV6eIPGkxD5SbHuU7h730uZGNRwyDbbQdS0eV8=
+			qpa+9hhOtSPgpipgUnGKEFf8a5WqSJTCBuqjnsBQC60=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

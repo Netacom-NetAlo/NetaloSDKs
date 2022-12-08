@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/NetAloFull-Swift.h</key>
 		<data>
-		m44G/ZQoLTc2nV32Z7dhULxGPzQ=
+		fmihjyThffZCuDcY+QEFSZ67Fhc=
 		</data>
 		<key>Headers/NetAloFull.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ONMGMhi3owCq+Is+Cvper+DWOx8=
+		+l0gM5XDNsfkq7m8GxoTfa7LHx0=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IiTWD+xbRxMoObK5nP2bkw4UxnE=
+		Ak6lu70IWNl0hekinAzqffwHDeg=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		ONMGMhi3owCq+Is+Cvper+DWOx8=
+		+l0gM5XDNsfkq7m8GxoTfa7LHx0=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		IiTWD+xbRxMoObK5nP2bkw4UxnE=
+		Ak6lu70IWNl0hekinAzqffwHDeg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j4GM1d17wQw5rJAKaNbyHcRCOw2MyvTI8ujoK9hFjUs=
+			RfrjPDJ7QkeZXuHZLYBF6vaWonjfZmhJygUxyOR/jEQ=
 			</data>
 		</dict>
 		<key>Headers/NetAloFull.h</key>
@@ -103,14 +103,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gt0LU6EJ988gQAD/qwH+MIMMmKn4pYaAe6s65dZydqU=
+			dtxKQqVitYdd9u874UEplbQfWazO8yV+BQhf11DpsN8=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			17QirpZiWBHVZ0TSMFNVPOVaia/49brw/fRVDfTDx/M=
+			SbHYQgoMAou1VaAJUR6KHpzumBbtmUP4Dwn7unLdaVM=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftdoc</key>
@@ -124,14 +124,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gt0LU6EJ988gQAD/qwH+MIMMmKn4pYaAe6s65dZydqU=
+			dtxKQqVitYdd9u874UEplbQfWazO8yV+BQhf11DpsN8=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			17QirpZiWBHVZ0TSMFNVPOVaia/49brw/fRVDfTDx/M=
+			SbHYQgoMAou1VaAJUR6KHpzumBbtmUP4Dwn7unLdaVM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

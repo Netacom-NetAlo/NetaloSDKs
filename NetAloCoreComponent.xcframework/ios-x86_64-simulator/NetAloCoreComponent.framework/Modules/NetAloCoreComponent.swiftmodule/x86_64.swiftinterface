@@ -250,22 +250,14 @@ open class NABaseComponent<View, ViewModel, Data> : Carbon.IdentifiableComponent
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
-open class ForwardGroupComponent : Carbon.IdentifiableComponent {
+open class ForwardGroupComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.ForwardCell, NetAloCoreComponent.ForwardGroupVM, NADomain.NAGroup> {
   public enum Event {
     case sendTap(NADomain.NAGroup)
   }
   public init(group: NADomain.NAGroup, tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ForwardGroupComponent.Event>)
-  public var id: NADomain.NAGroup {
-    get
-  }
-  public var group: NADomain.NAGroup
   public var tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ForwardGroupComponent.Event>
-  public func renderContent() -> NetAloCoreComponent.ForwardCell
-  public func render(in content: NetAloCoreComponent.ForwardCell)
-  public func contentDidEndDisplay(_ content: NetAloCoreComponent.ForwardCell)
-  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
-  public typealias Content = NetAloCoreComponent.ForwardCell
-  public typealias ID = NADomain.NAGroup
+  override open func config(content: NetAloCoreComponent.ForwardCell, data: NADomain.NAGroup, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NAAudioRecorderView : NetAloCoreComponent.NABaseView {
@@ -497,8 +489,6 @@ open class AccountSettingComponent : Carbon.IdentifiableComponent {
   @_Concurrency.MainActor(unsafe) override public func reset()
   @_Concurrency.MainActor(unsafe) override open func localizeChanged()
   @_Concurrency.MainActor(unsafe) override open func themeChanged()
-  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.ForwardContactVM.Output)
-  @_Concurrency.MainActor(unsafe) public func config(output: NetAloCoreComponent.ForwardGroupVM.Output)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
@@ -1177,23 +1167,15 @@ public enum PermissionType {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
-open class ForwardContactComponent : Carbon.IdentifiableComponent {
+open class ForwardContactComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.ForwardCell, NetAloCoreComponent.ForwardContactVM, NADomain.NAContact> {
   public enum Event {
     case contentTap(NADomain.NAContact)
     case sendTap(NADomain.NAContact)
   }
   public init(contact: NADomain.NAContact, tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ForwardContactComponent.Event>)
-  public var id: NADomain.NAContact {
-    get
-  }
-  public var contact: NADomain.NAContact
   public var tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.ForwardContactComponent.Event>
-  public func renderContent() -> NetAloCoreComponent.ForwardCell
-  public func render(in content: NetAloCoreComponent.ForwardCell)
-  public func contentDidEndDisplay(_ content: NetAloCoreComponent.ForwardCell)
-  public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
-  public typealias Content = NetAloCoreComponent.ForwardCell
-  public typealias ID = NADomain.NAContact
+  override open func config(content: NetAloCoreComponent.ForwardCell, data: NADomain.NAContact, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
   @objc deinit
 }
 open class EditGroupDescriptionComponent : Carbon.IdentifiableComponent {

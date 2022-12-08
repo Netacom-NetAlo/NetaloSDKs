@@ -562,7 +562,7 @@ extension UIKit.UIImageView {
 }
 extension UIKit.UIButton {
   @_Concurrency.MainActor(unsafe) public func increaseLineHeight(ratio: CoreGraphics.CGFloat)
-  @_Concurrency.MainActor(unsafe) public func alignImageAndTitleVertically(imageSize: CoreGraphics.CGSize, padding: CoreGraphics.CGFloat = 3.0)
+  @_Concurrency.MainActor(unsafe) public func alignImageAndTitleVertically(padding: CoreGraphics.CGFloat = 3.0)
   @_Concurrency.MainActor(unsafe) public func isUserInteraction(_ value: Swift.Bool, opacity: Swift.Float = 0.5)
 }
 extension UIKit.UIButton {

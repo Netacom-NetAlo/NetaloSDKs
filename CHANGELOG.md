@@ -1,3 +1,9 @@
+#V14
+
+- [Fix] Fix bugs
+- [Fix] Remove add member
+
+
 #V13
 
 - [Fix] Config to allow creating group/ search in VND-SDK
