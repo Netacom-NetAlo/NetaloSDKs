@@ -56,10 +56,6 @@
 		<data>
 		24ht0D2Z1eeENFUQHQDXGlcG5n0=
 		</data>
-		<key>MentionCell.nib</key>
-		<data>
-		zfKMr2IsyhPsnhTLD7FyqkOjdAQ=
-		</data>
 		<key>MessageOptionsVC.nib</key>
 		<data>
 		izeLOiHVXH4iymGX1+FFzc7zq0M=
@@ -70,11 +66,11 @@
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kP7o8Fs9MvwAzd/8R1vun64g4Ls=
+		QmMS9bvODPxHL/nWCXBQ4quR/Ok=
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		I2+QoKYrZZJVvwJGZQMPpns9W88=
+		y6zZHsP7QNLNLMIs3EbNFkwj6Ds=
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -82,11 +78,11 @@
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		kP7o8Fs9MvwAzd/8R1vun64g4Ls=
+		QmMS9bvODPxHL/nWCXBQ4quR/Ok=
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		I2+QoKYrZZJVvwJGZQMPpns9W88=
+		y6zZHsP7QNLNLMIs3EbNFkwj6Ds=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -203,13 +199,6 @@
 			hiQXUi0Zm7vTJUifyutsipUZyqQULQFZmuw+//IzM/A=
 			</data>
 		</dict>
-		<key>MentionCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XtJzK02S0UoNsHdQeCMwmihQY968N5QOxX9p5EKKVBQ=
-			</data>
-		</dict>
 		<key>MessageOptionsVC.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -228,14 +217,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wUNm2UL5EaOU27cX0dE5inqpK4kDt+KVjeKOdtLbk8w=
+			PnWHp9mw5zMKsIeP7Qeak6o7LrF6g2WvyFwbQo0qtbM=
 			</data>
 		</dict>
 		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tSwVV2njs/S3D+kWH61oP55Nf4hykfy+N07GuWBBaFc=
+			e2Zo7co55nFa8j5sy5fDqQ/2PqpJ85sVcYU8PwfDo9Q=
 			</data>
 		</dict>
 		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftdoc</key>
@@ -249,14 +238,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wUNm2UL5EaOU27cX0dE5inqpK4kDt+KVjeKOdtLbk8w=
+			PnWHp9mw5zMKsIeP7Qeak6o7LrF6g2WvyFwbQo0qtbM=
 			</data>
 		</dict>
 		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tSwVV2njs/S3D+kWH61oP55Nf4hykfy+N07GuWBBaFc=
+			e2Zo7co55nFa8j5sy5fDqQ/2PqpJ85sVcYU8PwfDo9Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

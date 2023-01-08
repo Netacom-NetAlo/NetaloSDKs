@@ -212,6 +212,12 @@ extension UIKit.UICollectionView {
   @_Concurrency.MainActor(unsafe) public func delete(itemsAt: [Foundation.IndexPath])
   @_Concurrency.MainActor(unsafe) public func isValid(indexPath: Foundation.IndexPath) -> Swift.Bool
 }
+extension UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) public func freeze()
+  @_Concurrency.MainActor(unsafe) public var isLastHalfItemVisible: Swift.Bool {
+    get
+  }
+}
 public let defaultAnimationDuration: Swift.Double
 extension CoreGraphics.CGFloat {
   public static let verySmall: CoreGraphics.CGFloat

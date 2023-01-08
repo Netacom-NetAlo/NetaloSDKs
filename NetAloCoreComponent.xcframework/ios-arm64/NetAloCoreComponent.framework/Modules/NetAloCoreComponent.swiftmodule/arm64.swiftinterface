@@ -470,6 +470,15 @@ open class ImageUploadComponent : Carbon.IdentifiableComponent {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MentionCell : NetAloCoreComponent.NABaseView {
+  @_Concurrency.MainActor(unsafe) override public func initialize()
+  @_Concurrency.MainActor(unsafe) override public func reset()
+  @_Concurrency.MainActor(unsafe) override open func themeChanged()
+  @_Concurrency.MainActor(unsafe) public func setupUIForCell(data: NADomain.NAUser)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
 open class AccountSettingComponent : Carbon.IdentifiableComponent {
   public var data: NetAloCoreComponent.NASetting
   public var tapGesture: RxSwift.PublishSubject<NetAloCoreComponent.SettingType?>
@@ -1451,6 +1460,7 @@ public struct PhotoAssetCollection : Swift.Equatable {
     public let isPinned: Swift.Bool
     public let lastMessage: NetAloCoreComponent.LastMessageVM.Output?
     public let unreadCount: RxSwift.Observable<Swift.Int>
+    public let unreadMentionCount: RxSwift.Observable<Swift.Int>
     public let users: RxSwift.Observable<[NADomain.NAUser]>
     public let membersCountOrStatus: RxSwift.Observable<Swift.String>
     public let background: RxSwift.Observable<NADomain.NAGroupBackground>
@@ -1839,11 +1849,12 @@ extension NetAloCoreComponent.MapkitRepoImpl {
   @objc deinit
 }
 extension UIKit.UIImageView {
-  @_Concurrency.MainActor(unsafe) public func setSticker(url: Foundation.URL?, name: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func setSticker(url: Foundation.URL?, name: Swift.String, placeholder: UIKit.UIImage? = nil)
   @_Concurrency.MainActor(unsafe) public func setImage(path: Swift.String?, placeHolder: UIKit.UIImage? = nil, expiration: Kingfisher.StorageExpiration? = nil)
   @_Concurrency.MainActor(unsafe) public func setImage(path: Swift.String?, name: Swift.String = "", expiration: Kingfisher.StorageExpiration? = nil)
   @_Concurrency.MainActor(unsafe) public func setImageAndDownsampling(_ urlString: Swift.String, placeholder: UIKit.UIImage? = nil)
   @_Concurrency.MainActor(unsafe) public func setImage(url: Foundation.URL?, placeHolder: UIKit.UIImage? = nil, expiration: Kingfisher.StorageExpiration? = nil)
+  @_Concurrency.MainActor(unsafe) public func setImageInShareExtension(path: Swift.String?, name: Swift.String = "", expiration: Kingfisher.StorageExpiration? = nil)
   @_Concurrency.MainActor(unsafe) public func cancelImageDownloadTask()
 }
 extension RxSwift.Reactive where Base : UIKit.UIImageView {
@@ -2088,6 +2099,13 @@ extension NADomain.NAGroup : Swift.Hashable {
   }
   public func transform(input: NetAloCoreComponent.StickerGroupVM.Input) -> NetAloCoreComponent.StickerGroupVM.Output
   @objc override dynamic public init()
+  @objc deinit
+}
+open class MentionComponent : NetAloCoreComponent.NABaseComponent<NetAloCoreComponent.MentionCell, NetAloCoreComponent.NABaseVM, NADomain.NAUser> {
+  final public let trigger: RxSwift.PublishSubject<NADomain.NAUser>
+  public init(data: NADomain.NAUser, trigger: RxSwift.PublishSubject<NADomain.NAUser>)
+  override public func config(content: NetAloCoreComponent.MentionCell, data: NADomain.NAUser, text: NALocalization.NAText, theme: NATheme.ThemeMode)
+  override public func referenceSize(in bounds: CoreGraphics.CGRect) -> CoreGraphics.CGSize?
   @objc deinit
 }
 public struct Spacing : Carbon.Component {
@@ -2840,7 +2858,6 @@ extension NetAloCoreComponent.TTGSnackbar {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MediaDetailCell : NetAloCoreComponent.NABaseView {
   @_Concurrency.MainActor(unsafe) public var longPressTrigger: RxSwift.PublishSubject<Swift.Void>
   @_Concurrency.MainActor(unsafe) public var singleTapImageTrigger: RxSwift.PublishSubject<Swift.Void>
-  @_Concurrency.MainActor(unsafe) public var doubleTapImageTrigger: RxSwift.PublishSubject<Swift.Void>
   @_Concurrency.MainActor(unsafe) public var errorTrigger: RxSwift.PublishSubject<Swift.Error?>
   @_Concurrency.MainActor(unsafe) public var loadingIndicator: UIKit.UIActivityIndicatorView {
     get
@@ -2858,7 +2875,6 @@ extension NetAloCoreComponent.TTGSnackbar {
   @objc deinit
 }
 extension NetAloCoreComponent.MediaDetailCell : UIKit.UIScrollViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidZoom(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func viewForZooming(in scrollView: UIKit.UIScrollView) -> UIKit.UIView?
 }
 open class InviteFriendComponent : Carbon.IdentifiableComponent {
@@ -2975,7 +2991,6 @@ public protocol NAAudioRecorder {
   var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.NAAudioRecorderEvent> { get }
   func startRecording()
   func stopRecording()
-  func checkRecordPermission() -> RxSwift.Observable<Swift.Bool>
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class NAAudioRecorderImpl : ObjectiveC.NSObject, NetAloCoreComponent.NAAudioRecorder {
   public var eventPublisher: RxSwift.PublishSubject<NetAloCoreComponent.NAAudioRecorderEvent>
@@ -2985,7 +3000,6 @@ public protocol NAAudioRecorder {
   public var limitRecordingTime: Swift.Double
   public func startRecording()
   public func stopRecording()
-  public func checkRecordPermission() -> RxSwift.Observable<Swift.Bool>
   @objc deinit
 }
 extension NetAloCoreComponent.NAAudioRecorderImpl : AVFAudio.AVAudioRecorderDelegate {

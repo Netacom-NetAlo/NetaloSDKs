@@ -376,6 +376,7 @@ SWIFT_CLASS("_TtC8NACoreUI21KMPlaceholderTextView")
 
 
 
+
 @interface UIView (SWIFT_EXTENSION(NACoreUI))
 @property (nonatomic) IBInspectable CGFloat cornerRadius;
 @property (nonatomic) IBInspectable CGFloat borderWidth;

@@ -739,7 +739,6 @@ SWIFT_CLASS("_TtC19NetAloCoreComponent15MediaDetailCell")
 @class UIScrollView;
 
 @interface MediaDetailCell (SWIFT_EXTENSION(NetAloCoreComponent)) <UIScrollViewDelegate>
-- (void)scrollViewDidZoom:(UIScrollView * _Nonnull)scrollView;
 - (UIView * _Nullable)viewForZoomingInScrollView:(UIScrollView * _Nonnull)scrollView SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -775,6 +774,13 @@ SWIFT_CLASS("_TtC19NetAloCoreComponent27MediaLibraryVideoController")
 
 @interface MediaLibraryVideoController (SWIFT_EXTENSION(NetAloCoreComponent)) <AVPlayerViewControllerDelegate>
 - (void)playerViewController:(AVPlayerViewController * _Nonnull)playerViewController willEndFullScreenPresentationWithAnimationCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
+@end
+
+
+SWIFT_CLASS("_TtC19NetAloCoreComponent11MentionCell")
+@interface MentionCell : NABaseView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -1281,16 +1287,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) CGFloat snackbarMinHeight;)
 
 
 
+@interface TTGSnackbar (SWIFT_EXTENSION(NetAloCoreComponent))
+/// Show the snackbar.
+- (void)show;
+@end
+
+
 
 @interface TTGSnackbar (SWIFT_EXTENSION(NetAloCoreComponent))
 - (void)setUpDefaultUIWithIcon:(UIImage * _Nullable)icon iconTintColor:(UIColor * _Nonnull)iconTintColor;
 - (void)setThemes;
-@end
-
-
-@interface TTGSnackbar (SWIFT_EXTENSION(NetAloCoreComponent))
-/// Show the snackbar.
-- (void)show;
 @end
 
 

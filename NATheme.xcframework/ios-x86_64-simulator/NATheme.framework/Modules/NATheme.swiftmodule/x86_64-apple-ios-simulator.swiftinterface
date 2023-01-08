@@ -148,6 +148,18 @@ public enum Asset {
   public static let iconListPin: NATheme.ImageAsset
   public static let clear_icon_not_alpha: NATheme.ImageAsset
   public static let sticker_store_menu: NATheme.ImageAsset
+  public static let icShowText: NATheme.ImageAsset
+  public static let icHideText: NATheme.ImageAsset
+  public static let login_logo: NATheme.ImageAsset
+  public static let login_logo_dark: NATheme.ImageAsset
+  public static let icMentionMarker: NATheme.ImageAsset
+  public static let icReactLike: NATheme.ImageAsset
+  public static let icReactLove: NATheme.ImageAsset
+  public static let icReactHaha: NATheme.ImageAsset
+  public static let icReactYay: NATheme.ImageAsset
+  public static let icReactSad: NATheme.ImageAsset
+  public static let icReactAngry: NATheme.ImageAsset
+  public static let icCountReact: NATheme.ImageAsset
   public static let imgShareCurrentLocation: NATheme.ImageAsset
   public static let imgShareLiveLocation: NATheme.ImageAsset
   public static let imgCurrentLocation: NATheme.ImageAsset
@@ -158,10 +170,11 @@ public enum Asset {
   public static let imgUnSelectGpsLocation: NATheme.ImageAsset
   public static let emptyPicture: NATheme.ImageAsset
   public static let icAddStickers: NATheme.ImageAsset
-  public static let icShowText: NATheme.ImageAsset
-  public static let icHideText: NATheme.ImageAsset
-  public static let login_logo: NATheme.ImageAsset
-  public static let login_logo_dark: NATheme.ImageAsset
+  public static let avtDeleteAccount: NATheme.ImageAsset
+  public static let iconCalendar: NATheme.ImageAsset
+  public static let iconPerson: NATheme.ImageAsset
+  public static let iconDown: NATheme.ImageAsset
+  public static let iconUp: NATheme.ImageAsset
 }
 public struct ImageAsset {
   public var name: Swift.String {

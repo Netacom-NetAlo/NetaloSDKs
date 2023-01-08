@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/NACoreUI-Swift.h</key>
 		<data>
-		vNhOb3Mxe0qKUDYyVMrUMfEeOCo=
+		q83vYzJqQhG5qiUdsuShIORMoJo=
 		</data>
 		<key>Headers/NACoreUI.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/NACoreUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		a7gJFE2JRZb5SEwQH+sJC+JCW8s=
+		/X6sD3bvlVoD5pbmjOLw+AAeEys=
 		</data>
 		<key>Modules/NACoreUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LGcBbT8Sb6f4AaQyrN+e/HCa6uI=
+		C43j6Ot4iTOQ7Np1ygRMUmda6Y4=
 		</data>
 		<key>Modules/NACoreUI.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/NACoreUI.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		a7gJFE2JRZb5SEwQH+sJC+JCW8s=
+		/X6sD3bvlVoD5pbmjOLw+AAeEys=
 		</data>
 		<key>Modules/NACoreUI.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		LGcBbT8Sb6f4AaQyrN+e/HCa6uI=
+		C43j6Ot4iTOQ7Np1ygRMUmda6Y4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h5/qIxvzNY94E4apgQSgTvoNQYg04H9W9yQCYzHC0BA=
+			2B7yjwnbaxoB3tuAAoxFMeefVmmHTkAuNH2M7+a2Aow=
 			</data>
 		</dict>
 		<key>Headers/NACoreUI.h</key>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0l/d4tgd7oVCiIkXc/+NVoviCrutFohKXKzoHopb0Og=
+			7o3iRYW8X6mVlhN2iZ1r/2t9rl2PBYamfSGn6L66O4w=
 			</data>
 		</dict>
 		<key>Modules/NACoreUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vx+qPtSSGlUj0GasmyW1/1zF+CLRHqDgSTc/wkPtZ3A=
+			80j8hdL2SiAUvqY3yAQf/yC0UDdG4MXhRQsfwXlZwp8=
 			</data>
 		</dict>
 		<key>Modules/NACoreUI.swiftmodule/x86_64.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0l/d4tgd7oVCiIkXc/+NVoviCrutFohKXKzoHopb0Og=
+			7o3iRYW8X6mVlhN2iZ1r/2t9rl2PBYamfSGn6L66O4w=
 			</data>
 		</dict>
 		<key>Modules/NACoreUI.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vx+qPtSSGlUj0GasmyW1/1zF+CLRHqDgSTc/wkPtZ3A=
+			80j8hdL2SiAUvqY3yAQf/yC0UDdG4MXhRQsfwXlZwp8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

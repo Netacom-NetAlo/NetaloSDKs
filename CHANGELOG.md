@@ -1,3 +1,21 @@
+#V15
+
+- [Fix] [SDK] -     Update test swiftUi _ Firebase message
+- [Fix] [ALO-4748]  Tag - Scroll lên xuống thì bị blank liên hệ trong list mention
+- [Fix] [ALO-4628]  Chat - Hiện tên user bị lặp trong message báo chuyển tiếp tin nhắn
+- [Fix] [ALO-4646]  Layer reply sticker
+- [Fix]             Freeze collection view
+- [Fix] [ALO-4859] - optimize zoom out/in image in DetailVC
+- [Fix] [ALO-4851] - Update behavior of scroll down button in list message
+- [Fix] [ALO-4781] - Change_inputBarHeight
+- [Fix]             get_group_with_noti
+- [Fix] [ALO-4768] - Maker mention in group
+- [Fix]             call closure completion
+- [Fix]             placeholder image
+- [Fix]             optimize load image
+- [Fix]             Update for using audio session
+
+
 #V14
 
 - [Fix] Fix bugs
