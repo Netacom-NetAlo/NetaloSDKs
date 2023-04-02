@@ -1,3 +1,11 @@
+
+
+#V16
+
+- [Fix] Optimize image flash when enter backgroud mode
+- [Fix] Publich munber unredCount
+
+
 #V15
 
 - [Fix] [SDK] -     Update test swiftUi _ Firebase message
