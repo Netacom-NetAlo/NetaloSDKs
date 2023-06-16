@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChatComponent
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChatComponent
 import AVFoundation
 import AVKit
 import Carbon
@@ -225,7 +225,7 @@ public protocol MentionMessageCellDelegate : AnyObject {
   func didTapMention(_ userId: Swift.String, messageIndex: Swift.Int)
   func didTapMentionAll()
 }
-@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MediaTypeCell : NetAloCoreComponent.NABaseView {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MediaTypeCell : NetAloCoreComponent.NABaseView {
   @_Concurrency.MainActor(unsafe) override public func initialize()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) public func selectCell()
@@ -596,7 +596,7 @@ extension ChatComponent.SwiftLinkPreview {
 extension ChatComponent.SwiftLinkPreview : Foundation.URLSessionDataDelegate {
   @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
 }
-@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MediaPicker : NetAloCoreComponent.NABaseView {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MediaPicker : NetAloCoreComponent.NABaseView {
   public enum MediaType : Swift.String {
     case imageAndVideo
     case document

@@ -194,6 +194,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Dispatch;
 @import Foundation;
 @import MessageKit;
+@import NetAloCoreComponent;
 @import ObjectiveC;
 #endif
 
@@ -297,6 +298,21 @@ SWIFT_CLASS("_TtC13ChatComponent20GroupCallMessageCell")
 SWIFT_CLASS("_TtC13ChatComponent23LiveLocationMessageCell")
 @interface LiveLocationMessageCell : BaseMessageContentCell
 - (void)prepareForReuse;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_RESILIENT_CLASS("_TtC13ChatComponent11MediaPicker")
+@interface MediaPicker : NABaseView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_RESILIENT_CLASS("_TtC13ChatComponent13MediaTypeCell")
+@interface MediaTypeCell : NABaseView
+- (void)layoutSubviews;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

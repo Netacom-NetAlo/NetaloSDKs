@@ -189,6 +189,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
+@import NetAloCoreComponent;
 @import ObjectiveC;
 @import UIKit;
 @import UserNotifications;
@@ -229,6 +230,7 @@ SWIFT_CLASS("_TtC10NetAloFull17NetAloFullManager")
 - (void)showGroupChatWith:(NSString * _Nonnull)groupId completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
 - (void)showCallUserWith:(int64_t)contactId phone:(NSString * _Nullable)phone fullName:(NSString * _Nullable)fullName email:(NSString * _Nullable)email profileUrl:(NSString * _Nonnull)profileUrl isVideoCall:(BOOL)isVideoCall completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
 - (void)setLanguageWithLanguage:(NSString * _Nonnull)language;
+- (void)didReceiveWithMessageJson:(NSString * _Nonnull)messageJson completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -339,6 +341,12 @@ typedef SWIFT_ENUM(NSInteger, NetaloEnviroment, open) {
   NetaloEnviromentProduction = 2,
   NetaloEnviromentStaging = 3,
 };
+
+
+SWIFT_RESILIENT_CLASS("_TtC10NetAloFull9RootSDKVM")
+@interface RootSDKVM : NABaseVM
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 #if __has_attribute(external_source_symbol)

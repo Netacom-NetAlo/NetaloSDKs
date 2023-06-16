@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NetAloFull
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NetAloFull
 import AccountComponent
 import AddContactComponent
 import AuthorizationComponent
@@ -191,7 +191,7 @@ public enum SDKRoute : XCoordinator.Route {
   public func dismissAllChildren()
   public typealias Event = NetAloFull.SDKComponent.Event
 }
-@_inheritsConvenienceInitializers public class RootSDKVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
+@objc @_inheritsConvenienceInitializers public class RootSDKVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
   public var eventPublisher: RxSwift.PublishSubject<NetAloFull.RootSDKVM.Event>
   public enum Event {
     case disConnectSocket
@@ -268,6 +268,7 @@ open class VNDDemoComponent : NACoreUtils.ViewModelType {
   final public func showCall(with contact: NADomain.NAContact, isVideoCall: Swift.Bool, completion: @escaping (Swift.Error?) -> Swift.Void)
   @objc final public func setLanguage(language: Swift.String)
   final public func setLanguage(with language: NALocalization.SupportLanguage)
+  @objc final public func didReceive(messageJson: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
   @objc deinit
 }
 extension NetAloFull.NetAloFullManager {

@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/ChatComponent-Swift.h</key>
 		<data>
-		z6S1rAIjIWcbo/lxY1x3dslJ7kg=
+		wKmAyBxs7lfN+U76vQGecf3QC7I=
 		</data>
 		<key>Headers/ChatComponent.h</key>
 		<data>
@@ -34,15 +34,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1xbz14gbFZ7cF/mZHbmo/Rl687c=
+		PPBlGBlW9an+LpRrr2E8taw9rMs=
 		</data>
-		<key>InputBar.nib/objects-14.0+.nib</key>
+		<key>InputBar.nib</key>
 		<data>
 		eim4e/QL7+UBlcw0cG03MnJMfZg=
-		</data>
-		<key>InputBar.nib/runtime.nib</key>
-		<data>
-		bhNnHOcUc95nYTBTBnKmCwACiJU=
 		</data>
 		<key>ListMention.nib</key>
 		<data>
@@ -62,27 +58,27 @@
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		abqdJbt13KReNkAV6oeAstsMhaU=
+		GHvdELv9j9pqWrji0Kt2dL9zHzM=
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		QmMS9bvODPxHL/nWCXBQ4quR/Ok=
+		QV8s3U+TLZbI6SwwhtAyNZXhKMQ=
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		y6zZHsP7QNLNLMIs3EbNFkwj6Ds=
+		9vIChWjEYDHAnPG2/KRD+iqmnzw=
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		abqdJbt13KReNkAV6oeAstsMhaU=
+		GHvdELv9j9pqWrji0Kt2dL9zHzM=
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		QmMS9bvODPxHL/nWCXBQ4quR/Ok=
+		QV8s3U+TLZbI6SwwhtAyNZXhKMQ=
 		</data>
 		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		y6zZHsP7QNLNLMIs3EbNFkwj6Ds=
+		9vIChWjEYDHAnPG2/KRD+iqmnzw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -154,7 +150,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pTmQeIJMBZG0C4kgdFptgEfwhUWpHGoYxVju2bKecTg=
+			rvWmIulSw6XtHo0KGLMw/EhNEjNbSDwd77Z/RlG10tI=
 			</data>
 		</dict>
 		<key>Headers/ChatComponent.h</key>
@@ -164,18 +160,11 @@
 			zK/HmxaRLmcl4RbRDL/RpU1aqRxWlgejd0bWtBsTZdM=
 			</data>
 		</dict>
-		<key>InputBar.nib/objects-14.0+.nib</key>
+		<key>InputBar.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			B4McmzcvdgEpXvhCD0qJS3KkLHyeyjo33EKTxunqHN8=
-			</data>
-		</dict>
-		<key>InputBar.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CA2p1MaSUfwBQYsbmcOC4udahEK9oAHQSQaAPzunwn8=
 			</data>
 		</dict>
 		<key>ListMention.nib</key>
@@ -210,42 +199,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5invOcHIhT8gPYVTPFtEcfsGChd8IoSC2AVpcclpHzc=
+			xk5RVsFHvJcuvHHi9DW3ivUuFYDaMeipOA36V6vIf8I=
 			</data>
 		</dict>
 		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PnWHp9mw5zMKsIeP7Qeak6o7LrF6g2WvyFwbQo0qtbM=
+			4A7QfhjjYcoWOoapbD4O3a9DOcNVToYY11BSeNhiAb8=
 			</data>
 		</dict>
 		<key>Modules/ChatComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e2Zo7co55nFa8j5sy5fDqQ/2PqpJ85sVcYU8PwfDo9Q=
+			C95zO5s8P1kuwLg0t9JV6Bxwe77XhyySeyBwf93U27Y=
 			</data>
 		</dict>
 		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5invOcHIhT8gPYVTPFtEcfsGChd8IoSC2AVpcclpHzc=
+			xk5RVsFHvJcuvHHi9DW3ivUuFYDaMeipOA36V6vIf8I=
 			</data>
 		</dict>
 		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PnWHp9mw5zMKsIeP7Qeak6o7LrF6g2WvyFwbQo0qtbM=
+			4A7QfhjjYcoWOoapbD4O3a9DOcNVToYY11BSeNhiAb8=
 			</data>
 		</dict>
 		<key>Modules/ChatComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e2Zo7co55nFa8j5sy5fDqQ/2PqpJ85sVcYU8PwfDo9Q=
+			C95zO5s8P1kuwLg0t9JV6Bxwe77XhyySeyBwf93U27Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
