@@ -189,7 +189,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import NetAloCoreComponent;
 @import ObjectiveC;
 @import UIKit;
 @import UserNotifications;
@@ -230,7 +229,6 @@ SWIFT_CLASS("_TtC10NetAloFull17NetAloFullManager")
 - (void)showGroupChatWith:(NSString * _Nonnull)groupId completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
 - (void)showCallUserWith:(int64_t)contactId phone:(NSString * _Nullable)phone fullName:(NSString * _Nullable)fullName email:(NSString * _Nullable)email profileUrl:(NSString * _Nonnull)profileUrl isVideoCall:(BOOL)isVideoCall completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
 - (void)setLanguageWithLanguage:(NSString * _Nonnull)language;
-- (void)didReceiveWithMessageJson:(NSString * _Nonnull)messageJson completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -283,6 +281,8 @@ SWIFT_CLASS("_TtC10NetAloFull17NetAloFullManager")
 - (void)requestAddContactSDKWithTargetName:(NSString * _Nonnull)targetName targetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)checkFriendWithTargetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)forceBroadCastUserStatusWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+- (void)didReceiveWithMessageJson:(NSString * _Nonnull)messageJson completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
+- (void)checkTokenAvailable:(NSString * _Nonnull)token completion:(void (^ _Nonnull)(BOOL))completion;
 @end
 
 
@@ -330,7 +330,7 @@ SWIFT_CLASS("_TtC10NetAloFull19NetaloConfiguration")
 SWIFT_CLASS("_TtC10NetAloFull23NetaloConfigurationObjc")
 @interface NetaloConfigurationObjc : NSObject
 @property (nonatomic, strong) NetaloConfiguration * _Nonnull netaloConfiguration;
-- (nonnull instancetype)initWithEnviroment:(NSInteger)enviroment appId:(int64_t)appId appKey:(NSString * _Nonnull)appKey accountKey:(NSString * _Nonnull)accountKey appGroupIdentifier:(NSString * _Nonnull)appGroupIdentifier storeUrl:(NSString * _Nonnull)storeUrl forceUpdateProfile:(BOOL)forceUpdateProfile allowCustomUsername:(BOOL)allowCustomUsername allowCustomProfile:(BOOL)allowCustomProfile allowCustomAlert:(BOOL)allowCustomAlert allowAddContact:(BOOL)allowAddContact allowBlockContact:(BOOL)allowBlockContact allowSetUserProfileUrl:(BOOL)allowSetUserProfileUrl allowEnableLocationFeature:(BOOL)allowEnableLocationFeature allowTrackingUsingSDK:(BOOL)allowTrackingUsingSDK allowTrackingBadgeNumber:(BOOL)allowTrackingBadgeNumber isHiddenEditProfile:(BOOL)isHiddenEditProfile allowAddNewContact:(BOOL)allowAddNewContact hideContactInfo:(BOOL)hideContactInfo allowCreateGroup:(BOOL)allowCreateGroup allowSearchContact:(BOOL)allowSearchContact isVideoCallEnable:(BOOL)isVideoCallEnable isVoiceCallEnable:(BOOL)isVoiceCallEnable isHiddenSecretChat:(BOOL)isHiddenSecretChat isSyncDataInApp:(BOOL)isSyncDataInApp allowReferralCode:(BOOL)allowReferralCode searchByLike:(BOOL)searchByLike allowReplaceCountrycode:(BOOL)allowReplaceCountrycode isSyncContactInApp:(BOOL)isSyncContactInApp permissions:(NSArray<NSNumber *> * _Nonnull)permissions userProfileUrl:(NSString * _Nonnull)userProfileUrl isGroupCallEnable:(BOOL)isGroupCallEnable allowAddGroupMember:(BOOL)allowAddGroupMember OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithEnviroment:(NSInteger)enviroment appId:(int64_t)appId appKey:(NSString * _Nonnull)appKey accountKey:(NSString * _Nonnull)accountKey appGroupIdentifier:(NSString * _Nonnull)appGroupIdentifier storeUrl:(NSString * _Nonnull)storeUrl forceUpdateProfile:(BOOL)forceUpdateProfile allowCustomUsername:(BOOL)allowCustomUsername allowCustomProfile:(BOOL)allowCustomProfile allowCustomAlert:(BOOL)allowCustomAlert allowAddContact:(BOOL)allowAddContact allowBlockContact:(BOOL)allowBlockContact allowSetUserProfileUrl:(BOOL)allowSetUserProfileUrl allowEnableLocationFeature:(BOOL)allowEnableLocationFeature allowTrackingUsingSDK:(BOOL)allowTrackingUsingSDK allowTrackingBadgeNumber:(BOOL)allowTrackingBadgeNumber isHiddenEditProfile:(BOOL)isHiddenEditProfile allowAddNewContact:(BOOL)allowAddNewContact hideContactInfo:(BOOL)hideContactInfo allowCreateGroup:(BOOL)allowCreateGroup allowSearchContact:(BOOL)allowSearchContact isVideoCallEnable:(BOOL)isVideoCallEnable isVoiceCallEnable:(BOOL)isVoiceCallEnable isHiddenSecretChat:(BOOL)isHiddenSecretChat isSyncDataInApp:(BOOL)isSyncDataInApp allowReferralCode:(BOOL)allowReferralCode searchByLike:(BOOL)searchByLike allowReplaceCountrycode:(BOOL)allowReplaceCountrycode isSyncContactInApp:(BOOL)isSyncContactInApp permissions:(NSArray<NSNumber *> * _Nonnull)permissions userProfileUrl:(NSString * _Nonnull)userProfileUrl isGroupCallEnable:(BOOL)isGroupCallEnable allowAddGroupMember:(BOOL)allowAddGroupMember isStickerStore:(BOOL)isStickerStore isStickSortFirstDefault:(BOOL)isStickSortFirstDefault OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -341,12 +341,6 @@ typedef SWIFT_ENUM(NSInteger, NetaloEnviroment, open) {
   NetaloEnviromentProduction = 2,
   NetaloEnviromentStaging = 3,
 };
-
-
-SWIFT_RESILIENT_CLASS("_TtC10NetAloFull9RootSDKVM")
-@interface RootSDKVM : NABaseVM
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 #if __has_attribute(external_source_symbol)

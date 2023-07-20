@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NetAloFull
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NetAloFull
 import AccountComponent
 import AddContactComponent
 import AuthorizationComponent
@@ -166,7 +166,7 @@ public struct StickerLocal {
 }
 @objc public class NetaloConfigurationObjc : ObjectiveC.NSObject {
   @objc public var netaloConfiguration: NetAloFull.NetaloConfiguration
-  @objc public init(enviroment: Swift.Int, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Swift.String, forceUpdateProfile: Swift.Bool, allowCustomUsername: Swift.Bool, allowCustomProfile: Swift.Bool, allowCustomAlert: Swift.Bool, allowAddContact: Swift.Bool, allowBlockContact: Swift.Bool, allowSetUserProfileUrl: Swift.Bool, allowEnableLocationFeature: Swift.Bool, allowTrackingUsingSDK: Swift.Bool, allowTrackingBadgeNumber: Swift.Bool, isHiddenEditProfile: Swift.Bool, allowAddNewContact: Swift.Bool, hideContactInfo: Swift.Bool, allowCreateGroup: Swift.Bool, allowSearchContact: Swift.Bool, isVideoCallEnable: Swift.Bool, isVoiceCallEnable: Swift.Bool, isHiddenSecretChat: Swift.Bool, isSyncDataInApp: Swift.Bool, allowReferralCode: Swift.Bool, searchByLike: Swift.Bool, allowReplaceCountrycode: Swift.Bool, isSyncContactInApp: Swift.Bool, permissions: [Swift.Int], userProfileUrl: Swift.String = "", isGroupCallEnable: Swift.Bool, allowAddGroupMember: Swift.Bool)
+  @objc public init(enviroment: Swift.Int, appId: Swift.Int64, appKey: Swift.String, accountKey: Swift.String, appGroupIdentifier: Swift.String, storeUrl: Swift.String, forceUpdateProfile: Swift.Bool, allowCustomUsername: Swift.Bool, allowCustomProfile: Swift.Bool, allowCustomAlert: Swift.Bool, allowAddContact: Swift.Bool, allowBlockContact: Swift.Bool, allowSetUserProfileUrl: Swift.Bool, allowEnableLocationFeature: Swift.Bool, allowTrackingUsingSDK: Swift.Bool, allowTrackingBadgeNumber: Swift.Bool, isHiddenEditProfile: Swift.Bool, allowAddNewContact: Swift.Bool, hideContactInfo: Swift.Bool, allowCreateGroup: Swift.Bool, allowSearchContact: Swift.Bool, isVideoCallEnable: Swift.Bool, isVoiceCallEnable: Swift.Bool, isHiddenSecretChat: Swift.Bool, isSyncDataInApp: Swift.Bool, allowReferralCode: Swift.Bool, searchByLike: Swift.Bool, allowReplaceCountrycode: Swift.Bool, isSyncContactInApp: Swift.Bool, permissions: [Swift.Int], userProfileUrl: Swift.String = "", isGroupCallEnable: Swift.Bool, allowAddGroupMember: Swift.Bool, isStickerStore: Swift.Bool = true, isStickSortFirstDefault: Swift.Bool = true)
   @objc deinit
 }
 public enum SDKRoute : XCoordinator.Route {
@@ -191,7 +191,7 @@ public enum SDKRoute : XCoordinator.Route {
   public func dismissAllChildren()
   public typealias Event = NetAloFull.SDKComponent.Event
 }
-@objc @_inheritsConvenienceInitializers public class RootSDKVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
+@_inheritsConvenienceInitializers public class RootSDKVM : NetAloCoreComponent.NABaseVM, NACoreUtils.ViewModelType, NACoreUtils.EventPublisherType {
   public var eventPublisher: RxSwift.PublishSubject<NetAloFull.RootSDKVM.Event>
   public enum Event {
     case disConnectSocket
@@ -268,7 +268,6 @@ open class VNDDemoComponent : NACoreUtils.ViewModelType {
   final public func showCall(with contact: NADomain.NAContact, isVideoCall: Swift.Bool, completion: @escaping (Swift.Error?) -> Swift.Void)
   @objc final public func setLanguage(language: Swift.String)
   final public func setLanguage(with language: NALocalization.SupportLanguage)
-  @objc final public func didReceive(messageJson: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
   @objc deinit
 }
 extension NetAloFull.NetAloFullManager {
@@ -284,6 +283,7 @@ extension NetAloFull.NetAloFullManager {
     case pressedCall(NADomain.CallType)
     case sessionExpired
     case socketError(NADomain.NAError)
+    case tokenAvailable(Swift.Bool)
   }
   public enum Scene : Swift.Equatable {
     public static func == (lhs: NetAloFull.NetAloFullManager.Scene, rhs: NetAloFull.NetAloFullManager.Scene) -> Swift.Bool
@@ -334,6 +334,8 @@ extension NetAloFull.NetAloFullManager {
   @objc final public func requestAddContactSDK(targetName: Swift.String, targetPhone: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func checkFriend(targetPhone: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func forceBroadCastUserStatus(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc final public func didReceive(messageJson: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+  @objc final public func checkTokenAvailable(_ token: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
 }
 public enum ModuleRoute : XCoordinator.Route {
   case chat(option: ChatComponent.ChatComponentManager.Option, initState: ChatComponent.ChatComponentManager.InitState, releaseSDKIfNeeded: Swift.Bool = true)

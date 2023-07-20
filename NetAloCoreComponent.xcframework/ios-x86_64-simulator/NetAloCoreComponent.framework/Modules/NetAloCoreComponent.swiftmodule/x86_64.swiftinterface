@@ -1000,6 +1000,7 @@ public enum SDKEventType {
   case showGroupChat(NADomain.NAGroup)
   case showMedia(NetAloLite.MultiImagePickerConfig)
   case releaseSDK
+  case tokenAvailable(Swift.Bool)
 }
 public protocol SDKEventRepo {
   var event: RxSwift.PublishSubject<NetAloCoreComponent.SDKEventType> { get set }

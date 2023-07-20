@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/NetAloFull-Swift.h</key>
 		<data>
-		92kWrxxNVXWYjWj56URViICc9sg=
+		DOD6fbUX+orFN4QuSsUrbrNo+gA=
 		</data>
 		<key>Headers/NetAloFull.h</key>
 		<data>
@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7EnrCMx/VTqmdVU3rx/6gWct6IE=
+		zdz7r/M1G01HqqgFgAaT2dRJB5U=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QZizjpA3qIfAFzgV/SoeUpg6Nug=
+		kadj1RGouYQyaPKTCWKkjO4XgyI=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		v8okabPKUCjpTqb9i9RqX0b2YII=
+		konedPGr7e2S2Ke6OIpP+ZzFS8M=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7zu33FwVE1v3nZAWcLvqqEr4E/Y=
+		G20UUI5Szj1aoArFlp+ahMLHANY=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		QZizjpA3qIfAFzgV/SoeUpg6Nug=
+		kadj1RGouYQyaPKTCWKkjO4XgyI=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		v8okabPKUCjpTqb9i9RqX0b2YII=
+		konedPGr7e2S2Ke6OIpP+ZzFS8M=
 		</data>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		7zu33FwVE1v3nZAWcLvqqEr4E/Y=
+		G20UUI5Szj1aoArFlp+ahMLHANY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nvFsxxSuq3BoZ0bno1HIPWID0kfi3KkwEcFpZp0p3+w=
+			G+K9kYhWF28HUUuhsV/zGDBCeyH8hrXC2TQ+5CAPm5w=
 			</data>
 		</dict>
 		<key>Headers/NetAloFull.h</key>
@@ -96,42 +96,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jKW9zelwakt84GeooLaI4G6b1Ieg5QuISlP1MVXY6HU=
+			gucK6bngtwZ52LG9VEPYbN95Pi4Iocg0WAWo8vLWXmM=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ht/kieFXTwjkH5Q2U2srk0M2KpP0CmhqaIXn66jcu/c=
+			1feghL+LBuoCbP6IJQH2GqpX6lz7F3qhEkUucu/6lRg=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T5tlM0VPRjBY6wT7WC3UC3Pu4FhZS2AltAaUCyWuLu8=
+			OyQtz4/bnPmhiiC+RbiUjYeKojJ7DHCmcaYLIJ91FaA=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jKW9zelwakt84GeooLaI4G6b1Ieg5QuISlP1MVXY6HU=
+			gucK6bngtwZ52LG9VEPYbN95Pi4Iocg0WAWo8vLWXmM=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ht/kieFXTwjkH5Q2U2srk0M2KpP0CmhqaIXn66jcu/c=
+			1feghL+LBuoCbP6IJQH2GqpX6lz7F3qhEkUucu/6lRg=
 			</data>
 		</dict>
 		<key>Modules/NetAloFull.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T5tlM0VPRjBY6wT7WC3UC3Pu4FhZS2AltAaUCyWuLu8=
+			OyQtz4/bnPmhiiC+RbiUjYeKojJ7DHCmcaYLIJ91FaA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

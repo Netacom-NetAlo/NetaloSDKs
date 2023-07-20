@@ -206,11 +206,11 @@
 		</data>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pxD099ayZOMBJSFPuNEoZD2mHRM=
+		FQZrf0U7rcWSiR441DeAs6UNMKI=
 		</data>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IMZT7PAXB71sO5wgWqDT4nrt/hc=
+		KWJ3PQaojJdB5OKZwJKYfb92ihs=
 		</data>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -218,11 +218,11 @@
 		</data>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		pxD099ayZOMBJSFPuNEoZD2mHRM=
+		FQZrf0U7rcWSiR441DeAs6UNMKI=
 		</data>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		IMZT7PAXB71sO5wgWqDT4nrt/hc=
+		KWJ3PQaojJdB5OKZwJKYfb92ihs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -694,14 +694,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gIG6O1OKdcLKn6XNWjnhcwID+T7VkdV7D5aqXYq5DSk=
+			KdSi6DA65PqyrP9Slw/ezLLraafW8G4arRpQaLU8Iug=
 			</data>
 		</dict>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OO54vjZbxAO6qaqRN2yR+6/nNSWTjK/sGdyjpILX7mo=
+			TQSf048L6sF44dnGKb06fk7fW0bYi86lOxPLNNxtapQ=
 			</data>
 		</dict>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftdoc</key>
@@ -715,14 +715,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gIG6O1OKdcLKn6XNWjnhcwID+T7VkdV7D5aqXYq5DSk=
+			KdSi6DA65PqyrP9Slw/ezLLraafW8G4arRpQaLU8Iug=
 			</data>
 		</dict>
 		<key>Modules/NetAloCoreComponent.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OO54vjZbxAO6qaqRN2yR+6/nNSWTjK/sGdyjpILX7mo=
+			TQSf048L6sF44dnGKb06fk7fW0bYi86lOxPLNNxtapQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

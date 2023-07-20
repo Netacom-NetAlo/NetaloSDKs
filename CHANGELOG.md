@@ -1,5 +1,16 @@
 
 
+#V18
+
+- [Fix] Check token
+- [Fix] DidReceive
+
+
+#V17
+
+- DROP
+
+
 #V16
 
 - [Fix] Optimize image flash when enter backgroud mode
