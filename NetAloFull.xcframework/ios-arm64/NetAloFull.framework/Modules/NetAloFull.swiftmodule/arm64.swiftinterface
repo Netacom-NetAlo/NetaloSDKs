@@ -283,7 +283,6 @@ extension NetAloFull.NetAloFullManager {
     case pressedCall(NADomain.CallType)
     case sessionExpired
     case socketError(NADomain.NAError)
-    case tokenAvailable(Swift.Bool)
   }
   public enum Scene : Swift.Equatable {
     public static func == (lhs: NetAloFull.NetAloFullManager.Scene, rhs: NetAloFull.NetAloFullManager.Scene) -> Swift.Bool
@@ -335,7 +334,6 @@ extension NetAloFull.NetAloFullManager {
   @objc final public func checkFriend(targetPhone: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func forceBroadCastUserStatus(completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc final public func didReceive(messageJson: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
-  @objc final public func checkTokenAvailable(_ token: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
 }
 public enum ModuleRoute : XCoordinator.Route {
   case chat(option: ChatComponent.ChatComponentManager.Option, initState: ChatComponent.ChatComponentManager.InitState, releaseSDKIfNeeded: Swift.Bool = true)

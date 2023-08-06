@@ -282,7 +282,6 @@ SWIFT_CLASS("_TtC10NetAloFull17NetAloFullManager")
 - (void)checkFriendWithTargetPhone:(NSString * _Nonnull)targetPhone completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)forceBroadCastUserStatusWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 - (void)didReceiveWithMessageJson:(NSString * _Nonnull)messageJson completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
-- (void)checkTokenAvailable:(NSString * _Nonnull)token completion:(void (^ _Nonnull)(BOOL))completion;
 @end
 
 
