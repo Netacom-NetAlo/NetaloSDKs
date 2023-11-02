@@ -35,6 +35,7 @@ import NetAloCoreComponent
 import NetAloLite
 import NewGroupComponent
 import NotificationComponent
+import PushKit
 import Resolver
 import RxCocoa
 import RxSwift
@@ -334,6 +335,9 @@ extension NetAloFull.NetAloFullManager {
   @objc final public func checkFriend(targetPhone: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func forceBroadCastUserStatus(completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc final public func didReceive(messageJson: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+  final public func updateVoipToken(didUpdate pushCredentials: PushKit.PKPushCredentials)
+  final public func didRecieveCall_iOS11(didReceiveIncomingPushWith payload: PushKit.PKPushPayload)
+  final public func didRecieveCall_iOS8(didReceiveIncomingPushWith payload: PushKit.PKPushPayload)
 }
 public enum ModuleRoute : XCoordinator.Route {
   case chat(option: ChatComponent.ChatComponentManager.Option, initState: ChatComponent.ChatComponentManager.InitState, releaseSDKIfNeeded: Swift.Bool = true)
